@@ -25,16 +25,6 @@ export FCD="$1"
 export COMMIT_HASH="$2"
 BASEDIR=$(dirname "$0")
 
-# Set up SSH key for deploying. Do this first so that we stop immediately if
-# there's a problem.
-ENCRYPTED_KEY_VAR="encrypted_${1}_key"
-ENCRYPTED_KEY_IV="encrypted_${1}_iv"
-(umask 0377; \
-	openssl aes-256-cbc -K "${!ENCRYPTED_KEY_VAR}" -iv "${!ENCRYPTED_KEY_IV}" \
-		-in deploy_key.enc -out deploy_key -d)
-eval "$(ssh-agent -s)"
-ssh-add deploy_key
-
 # Download dependencies and prepare header paths.
 APPLE_OPENSOURCE_LIBS=(Libc)
 UBUNTU_PACKAGES=(glibc/libc6-dev_2.24-8_amd64.deb)
