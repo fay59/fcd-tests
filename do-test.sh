@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# test.sh
+# do-test.sh
 # Copyright (C) 2017 Félix Cloutier.
 # All Rights Reserved.
 #
@@ -19,8 +19,6 @@
 # You should have received a copy of the GNU General Public License
 # along with fcd.  If not, see <http:#www.gnu.org/licenses/>.
 #
-
-set -e
 
 export BASEDIR
 export FCD="$1"
@@ -57,7 +55,7 @@ for LIB in "${APPLE_OPENSOURCE_LIBS[@]}"; do
 		| tail -n 1)
 	URL="https://opensource.apple.com/tarballs/${LIB}/${LATEST}"
 	echo "Downloading ${URL}"
-	curl -s "${ULR}" | tar -zxvf -C "${BASEDIR}/include/apple"
+	curl -s "${URL}" | tar -zx -C "${BASEDIR}/include/apple"
 	APPLE_INCLUDE_PATH+=(-I "${BASEDIR}/include/apple/${LIB}/include")
 done
 
@@ -65,44 +63,48 @@ mkdir -p "${BASEDIR}/include/ubuntu"
 for LIB in "${UBUNTU_PACKAGES[@]}"; do
 	URL="http://ftp.us.debian.org/debian/pool/main/${LIB:0:1}/${LIB}"
 	echo "Downloading ${URL}"
-	curl -s "${URL}" | tar -zxvf -C "${BASEDIR}/include/ubuntu"
+	dpkg -x <(curl -s "${URL}") "${BASEDIR}/include/ubuntu"
 done
 
-function test-fcd {
-	local PROGRAM="$0"
-	local OUTPUT_PATH="${BASEDIR}/output/${PROGRAM}.c"
-	local ERROR_PATH="${BASEDIR}/error/${PROGRAM}.txt"
+function fcd {
+	local -r PROGRAM="$1"
+	local -r PROGRAM_BASE_NAME=$(basename $PROGRAM)
+	local -r OUTPUT_PATH="${BASEDIR}/output/${PROGRAM_BASE_NAME}.c"
+	local -r ERROR_PATH="${BASEDIR}/error/${PROGRAM_BASE_NAME}.log"
 	rm -f "${OUTPUT_PATH}" "${ERROR_PATH}"
 	shift
 	
 	TIMEFORMAT=%R
-	TIME=$(ulimit -SHt 30; time {
-		"${FCD}" -I "${BASEDIR}/include" "$@" "${PROGRAM}" \
+	TIME=$(ulimit -SHt 30; {
+		time "${FCD}" -I . -I "${BASEDIR}/include" "$@" "${PROGRAM}" \
 			> "${OUTPUT_PATH}" \
 			2> "${ERROR_PATH}";
 	} 2>&1)
-	echo '"'"${PROGRAM}"'",'"$TIME" >> "${BASEDIR}/time.csv"
+	echo '"'"${PROGRAM_BASE_NAME}"'",'"$?,${TIME}" >> "${BASEDIR}/time.csv"
 }
 
 # Run tests.
-echo "Program,Time" > "${BASEDIR}/time.csv"
-mkdir -p "${BASEDIR}/output"
+echo "Program,Exit Status,Time" > "${BASEDIR}/time.csv"
+mkdir -p "${BASEDIR}/output" "${BASEDIR}/error"
 for HEADER in "${BASEDIR}"/bin/*.h; do
 	PROGRAM="${HEADER:0:-2}"
 	IFS="" read -r firstLine < "${HEADER}"
 	# Assumed to be #include "linux.h" or #include "osx.h".
-	case "${firstLine:10:-1}" in
+	case "${firstLine:10:-3}" in
 		linux)
-			test-fcd "${PROGRAM}" --header "${HEADER}" "${UBUNTU_INCLUDE_PATH[@]}" ;;
+			fcd "${PROGRAM}" --header "${HEADER}" "${UBUNTU_INCLUDE_PATH[@]}" ;;
 		osx)
-			test-fcd "${PROGRAM}" --header "${HEADER}" "${APPLE_INCLUDE_PATH[@]}" \
+			fcd "${PROGRAM}" --header "${HEADER}" "${APPLE_INCLUDE_PATH[@]}" \
 				--format="${BASEDIR}/../scripts/macho.py" ;;
 		*)
-			test-fcd "${PROGRAM}" --header "${HEADER}" ;;
+			fcd "${PROGRAM}" --header "${HEADER}" ;;
 	esac
 done
 
 # Commit and publish results.
+pushd "${BASEDIR}"
 git add .
 git commit -m "Test results on ${TRAVIS_OS_NAME} for fcd commit ${COMMIT_HASH}"
-git push origin "${TRAVIS_OS_NAME}"
+#git push origin "${TRAVIS_OS_NAME}"
+popd
+
