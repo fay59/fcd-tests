@@ -26,10 +26,10 @@ export COMMIT_HASH="$2"
 BASEDIR=$(dirname "$0")
 
 # Decrypt key, change Git remote for SSH
-ENCRYPTED_KEY_VAR="encrypted_${TRAVIS_ENCRYPTION_LABEL}_key"
-ENCRYPTED_KEY_IV="encrypted_${TRAVIS_ENCRYPTION_LABEL}_iv"
 (
-	umask 0377;
+	ENCRYPTED_KEY_VAR="encrypted_${TRAVIS_ENCRYPTION_LABEL}_key"
+	ENCRYPTED_KEY_IV="encrypted_${TRAVIS_ENCRYPTION_LABEL}_iv"
+	umask 0377
 	openssl aes-256-cbc -K "${!ENCRYPTED_KEY_VAR}" -iv "${!ENCRYPTED_KEY_IV}" \
 		-in deploy_key.enc -out deploy_key -d
 )
@@ -57,7 +57,7 @@ for LIB in "${APPLE_OPENSOURCE_LIBS[@]}"; do
 		| tail -n 1)
 	URL="https://opensource.apple.com/tarballs/${LIB}/${LATEST}"
 	echo "Downloading ${URL}"
-	curl -s "${URL}" | tar -x -C "${BASEDIR}/include/apple"
+	curl -s "${URL}" | tar -zx -C "${BASEDIR}/include/apple"
 	APPLE_INCLUDE_PATH+=(-I "${BASEDIR}/include/apple/${LIB}/include")
 done
 
