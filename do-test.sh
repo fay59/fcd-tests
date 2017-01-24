@@ -25,16 +25,18 @@ export FCD="$1"
 export COMMIT_HASH="$2"
 BASEDIR=$(dirname "$0")
 
-# Decrypt key, change Git remote for SSH
 (
 	ENCRYPTED_KEY_VAR="encrypted_${TRAVIS_ENCRYPTION_LABEL}_key"
 	ENCRYPTED_KEY_IV="encrypted_${TRAVIS_ENCRYPTION_LABEL}_iv"
 	umask 0377
 	openssl aes-256-cbc -K "${!ENCRYPTED_KEY_VAR}" -iv "${!ENCRYPTED_KEY_IV}" \
-		-in deploy_key.enc -out deploy_key -d
+		-in "${BASEDIR}/deploy_key.enc" -out "${BASEDIR}/deploy_key" -d
 )
 eval "$(ssh-agent -s)"
-ssh-add deploy_key
+ssh-add "${BASEDIR}/deploy_key"
+
+git config user.name "Travis CI"
+git config user.email "travis@zneak.github.io"
 git remote set-url origin "git@github.com:$(git remote get-url origin | grep -oh '[^/]*/[^/]*$')"
 
 # Download dependencies and prepare header paths.
@@ -65,12 +67,13 @@ done
 mkdir -p "${BASEDIR}/include/ubuntu"
 for LIB in "${UBUNTU_PACKAGES[@]}"; do
 	URL="http://ftp.us.debian.org/debian/pool/main/${LIB:0:1}/${LIB}"
+	ARCHIVE="$(basename "${LIB}")"
 	echo "Downloading ${URL}"
-	curl -s "${URL}" -o "${LIB}"
+	curl -s "${URL}" -o "${ARCHIVE}"
 	
 	# We can't use dpkg on macOS.
-	DATA_FILE="$(ar -t ${LIB} | tail -n 1)"
-	ar -x "${LIB}" "${DATA_FILE}"
+	DATA_FILE="$(ar -t ${ARCHIVE} | tail -n 1)"
+	ar -x "${ARCHIVE}" "${DATA_FILE}"
 	tar -xf "${DATA_FILE}" -C "${BASEDIR}/include/ubuntu"
 	rm "${DATA_FILE}"
 done
@@ -96,7 +99,7 @@ function fcd {
 echo "Program,Exit Status,Time" > "${BASEDIR}/time.csv"
 mkdir -p "${BASEDIR}/output" "${BASEDIR}/error"
 for HEADER in "${BASEDIR}"/bin/*.h; do
-	PROGRAM="${HEADER:0:-2}"
+	PROGRAM=$(basename "${HEADER}" .h)
 	IFS="" read -r firstLine < "${HEADER}"
 	# Assumed to be #include "linux.h" or #include "osx.h".
 	case "${firstLine:10:-3}" in
