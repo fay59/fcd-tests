@@ -110,12 +110,10 @@ for HEADER in "${BASEDIR}"/bin/*.h; do
 done
 
 # Commit and publish results.
-pushd "${BASEDIR}"
-git remote set-url origin "git@github.com:$(git remote get-url origin | grep -oh '[^/]*/[^/]*$')"
-git config user.name "Travis CI"
-git config user.email "travis@zneak.github.io"
-git add .
-git commit -m "Test results on ${TRAVIS_OS_NAME} for fcd commit ${COMMIT_HASH}"
-git push origin "${TRAVIS_OS_NAME}"
-popd
+git -C "${BASEDIR}" remote set-url origin "git@github.com:$(git remote get-url origin | grep -oh '[^/]*/[^/]*$')"
+git -C "${BASEDIR}" config user.name "Travis CI"
+git -C "${BASEDIR}" config user.email "travis@zneak.github.io"
+git -C "${BASEDIR}" add .
+git -C "${BASEDIR}" commit -m "Test results on ${TRAVIS_OS_NAME} for fcd commit ${COMMIT_HASH}"
+git -C "${BASEDIR}" push origin "${TRAVIS_OS_NAME}"
 

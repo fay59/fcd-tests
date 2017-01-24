@@ -26,10 +26,12 @@ set -e
 # in case anything changed. The actual test logic is kept in a separate file
 # such that it can be updated by a merge.
 
-if git checkout "${TRAVIS_OS_NAME}"; then
-	git merge master
+BASEDIR=$(dirname "$0")
+
+if git -C "${BASEDIR}" checkout "${TRAVIS_OS_NAME}"; then
+	git -C "${BASEDIR}" merge master
 else
-	git checkout -b "${TRAVIS_OS_NAME}"
+	git -C "${BASEDIR}" checkout -b "${TRAVIS_OS_NAME}"
 fi
 
 "$(dirname "$0")/do-test.sh" "$@"
