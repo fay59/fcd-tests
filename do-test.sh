@@ -23,7 +23,12 @@
 export BASEDIR
 export FCD="$1"
 export COMMIT_HASH="$2"
-BASEDIR=$(dirname "$0")
+BASEDIR="$(dirname "$0")"
+
+if [ "${FCD}" = "false" ]; then
+	echo "Build failed!"
+	exit 1
+fi
 
 # Do SSH configuration
 (
@@ -33,9 +38,6 @@ BASEDIR=$(dirname "$0")
 	openssl aes-256-cbc -K "${!ENCRYPTED_KEY_VAR}" -iv "${!ENCRYPTED_KEY_IV}" \
 		-in "${BASEDIR}/deploy_key.enc" -out "${BASEDIR}/deploy_key" -d
 )
-
-mkdir -p 
-echo "Host github.com" > 
 
 # Download dependencies and prepare header paths.
 APPLE_OPENSOURCE_LIBS=(Libc)
