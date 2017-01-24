@@ -25,6 +25,18 @@ export FCD="$1"
 export COMMIT_HASH="$2"
 BASEDIR=$(dirname "$0")
 
+# Decrypt key, change Git remote for SSH
+ENCRYPTED_KEY_VAR="encrypted_${TRAVIS_ENCRYPTION_LABEL}_key"
+ENCRYPTED_KEY_IV="encrypted_${TRAVIS_ENCRYPTION_LABEL}_iv"
+(
+	umask 0377;
+	openssl aes-256-cbc -K "${!ENCRYPTED_KEY_VAR}" -iv "${!ENCRYPTED_KEY_IV}" \
+		-in deploy_key.enc -out deploy_key -d
+)
+eval "$(ssh-agent -s)"
+ssh-add deploy_key
+git remote set-url origin "git@github.com:$(git remote get-url origin | grep -oh '[^/]*/[^/]*$')"
+
 # Download dependencies and prepare header paths.
 APPLE_OPENSOURCE_LIBS=(Libc)
 UBUNTU_PACKAGES=(glibc/libc6-dev_2.24-8_amd64.deb)
