@@ -58,7 +58,7 @@ for LIB in "${APPLE_OPENSOURCE_LIBS[@]}"; do
 	URL="https://opensource.apple.com/tarballs/${LIB}/${LATEST}"
 	echo "Downloading ${URL}"
 	curl -s "${URL}" -o "${LIB}.tar.gz"
-	tar -x -C "${BASEDIR}/include/apple" "${LIB}.tar.gz"
+	tar -xf "${LIB}.tar.gz" -C "${BASEDIR}/include/apple"
 	APPLE_INCLUDE_PATH+=(-I "${BASEDIR}/include/apple/${LIB}/include")
 done
 
