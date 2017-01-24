@@ -35,10 +35,6 @@ BASEDIR=$(dirname "$0")
 eval "$(ssh-agent -s)"
 ssh-add "${BASEDIR}/deploy_key"
 
-git config user.name "Travis CI"
-git config user.email "travis@zneak.github.io"
-git remote set-url origin "git@github.com:$(git remote get-url origin | grep -oh '[^/]*/[^/]*$')"
-
 # Download dependencies and prepare header paths.
 APPLE_OPENSOURCE_LIBS=(Libc)
 UBUNTU_PACKAGES=(glibc/libc6-dev_2.24-8_amd64.deb)
@@ -100,9 +96,9 @@ echo "Program,Exit Status,Time" > "${BASEDIR}/time.csv"
 mkdir -p "${BASEDIR}/output" "${BASEDIR}/error"
 for HEADER in "${BASEDIR}"/bin/*.h; do
 	PROGRAM=$(basename "${HEADER}" .h)
-	IFS="" read -r firstLine < "${HEADER}"
+	IFS="" read -r FIRST_LINE < "${HEADER}"
 	# Assumed to be #include "linux.h" or #include "osx.h".
-	case "${firstLine:10:-3}" in
+	case "${FIRST_LINE:10:${#FIRST_LINE}-13}" in
 		linux)
 			fcd "${PROGRAM}" --header "${HEADER}" "${UBUNTU_INCLUDE_PATH[@]}" ;;
 		osx)
@@ -115,8 +111,11 @@ done
 
 # Commit and publish results.
 pushd "${BASEDIR}"
+git remote set-url origin "git@github.com:$(git remote get-url origin | grep -oh '[^/]*/[^/]*$')"
+git config user.name "Travis CI"
+git config user.email "travis@zneak.github.io"
 git add .
 git commit -m "Test results on ${TRAVIS_OS_NAME} for fcd commit ${COMMIT_HASH}"
-#git push origin "${TRAVIS_OS_NAME}"
+git push origin "${TRAVIS_OS_NAME}"
 popd
 
