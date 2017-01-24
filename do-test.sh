@@ -25,6 +25,7 @@ export FCD="$1"
 export COMMIT_HASH="$2"
 BASEDIR=$(dirname "$0")
 
+# Do SSH configuration
 (
 	ENCRYPTED_KEY_VAR="encrypted_${TRAVIS_ENCRYPTION_LABEL}_key"
 	ENCRYPTED_KEY_IV="encrypted_${TRAVIS_ENCRYPTION_LABEL}_iv"
@@ -32,8 +33,9 @@ BASEDIR=$(dirname "$0")
 	openssl aes-256-cbc -K "${!ENCRYPTED_KEY_VAR}" -iv "${!ENCRYPTED_KEY_IV}" \
 		-in "${BASEDIR}/deploy_key.enc" -out "${BASEDIR}/deploy_key" -d
 )
-eval "$(ssh-agent -s)"
-ssh-add "${BASEDIR}/deploy_key"
+
+mkdir -p 
+echo "Host github.com" > 
 
 # Download dependencies and prepare header paths.
 APPLE_OPENSOURCE_LIBS=(Libc)
@@ -115,5 +117,5 @@ git -C "${BASEDIR}" config user.name "Travis CI"
 git -C "${BASEDIR}" config user.email "travis@zneak.github.io"
 git -C "${BASEDIR}" add .
 git -C "${BASEDIR}" commit -m "Test results on ${TRAVIS_OS_NAME} for fcd commit ${COMMIT_HASH}"
-git -C "${BASEDIR}" push origin "${TRAVIS_OS_NAME}"
+GIT_SSH="${BASEDIR}/ssh-unattend.sh" git -C "${BASEDIR}" push origin "${TRAVIS_OS_NAME}"
 
