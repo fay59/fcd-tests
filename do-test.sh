@@ -45,16 +45,24 @@ for LIB in "${APPLE_OPENSOURCE_LIBS[@]}"; do
 		| tail -n 1)
 	URL="https://opensource.apple.com/tarballs/${LIB}/${LATEST}"
 	echo "Downloading ${URL}"
-	curl -s "${URL}" | tar -zx -C "${BASEDIR}/include/apple"
+	curl -s "${URL}" | tar -x -C "${BASEDIR}/include/apple"
 	APPLE_INCLUDE_PATH+=(-I "${BASEDIR}/include/apple/${LIB}/include")
 done
 
+ARCHIVE="${BASEDIR}/$(mktemp archive.XXXXXX)"
 mkdir -p "${BASEDIR}/include/ubuntu"
 for LIB in "${UBUNTU_PACKAGES[@]}"; do
 	URL="http://ftp.us.debian.org/debian/pool/main/${LIB:0:1}/${LIB}"
 	echo "Downloading ${URL}"
-	dpkg -x <(curl -s "${URL}") "${BASEDIR}/include/ubuntu"
+	curl -s "${URL}" -o "${ARCHIVE}"
+	
+	# We can't use dpkg on macOS.
+	DATA_FILE="$(ar -t ${ARCHIVE} | tail -n 1)"
+	ar -x "${ARCHIVE}" "${DATA_FILE}"
+	tar -xf "${DATA_FILE}" -C "${BASEDIR}/include/ubuntu"
+	rm "${DATA_FILE}"
 done
+rm "${ARCHIVE}"
 
 function fcd {
 	local -r PROGRAM="$1"
