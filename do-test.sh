@@ -20,26 +20,40 @@
 # along with fcd.  If not, see <http:#www.gnu.org/licenses/>.
 #
 
-export BASEDIR
-export FCD="$1"
-export COMMIT_HASH="$2"
+# usage: $0 path/to/fcd
+# This script runs fcd over every binary that has a matching header in the bin/
+# directory, then produces a fancy little report in SUMMARY.md.
+
 BASEDIR="$(dirname "$0")"
+FCD="$1"
 
 if [ "${#FCD}" -eq 0 ]; then
-	echo "Build failed!"
+	echo "usage: $0 path/to/fcd"
 	exit 1
 fi
 
-# Do SSH configuration
-(
-	ENCRYPTED_KEY_VAR="encrypted_${TRAVIS_ENCRYPTION_LABEL}_key"
-	ENCRYPTED_KEY_IV="encrypted_${TRAVIS_ENCRYPTION_LABEL}_iv"
-	umask 0377
-	openssl aes-256-cbc -K "${!ENCRYPTED_KEY_VAR}" -iv "${!ENCRYPTED_KEY_IV}" \
-		-in "${BASEDIR}/deploy_key.enc" -out "${BASEDIR}/deploy_key" -d
-)
+function fcd {
+	local -r PROGRAM="$1"
+	local -r PROGRAM_BASE_NAME=$(basename $PROGRAM)
+	local -r OUTPUT_PATH="${BASEDIR}/output/${PROGRAM_BASE_NAME}.c"
+	local -r ERROR_PATH="${BASEDIR}/error/${PROGRAM_BASE_NAME}.log"
+	rm -f "${OUTPUT_PATH}" "${ERROR_PATH}"
+	shift
+	
+	local TIMEFORMAT="%R"
+	TIME=$(ulimit -SHt 30; {
+		time "${FCD}" -I . -I "${BASEDIR}/include" "$@" "${PROGRAM}" \
+			> "${OUTPUT_PATH}" \
+			2> "${ERROR_PATH}";
+	} 2>&1)
+	local RESULT_STATUS=$?
+	echo "| ${PROGRAM_BASE_NAME} | ${RESULT_STATUS} | ${TIME} |"
+	return $RESULT_STATUS
+}
 
 # Download dependencies and prepare header paths.
+mkdir -p "${BASEDIR}/download"
+
 APPLE_OPENSOURCE_LIBS=(Libc)
 UBUNTU_PACKAGES=(glibc/libc6-dev_2.24-8_amd64.deb)
 
@@ -58,67 +72,42 @@ for LIB in "${APPLE_OPENSOURCE_LIBS[@]}"; do
 		| sort -sn -t- -k2 \
 		| tail -n 1)
 	URL="https://opensource.apple.com/tarballs/${LIB}/${LATEST}"
+	DOWNLOAD_PATH="download/${LIB}.tar.gz"
 	echo "Downloading ${URL}"
-	curl -s "${URL}" -o "${LIB}.tar.gz"
-	tar -xf "${LIB}.tar.gz" -C "${BASEDIR}/include/apple"
+	curl -s "${URL}" -o "${DOWNLOAD_PATH}"
+	tar -xf "${DOWNLOAD_PATH}" -C "${BASEDIR}/include/apple"
 	APPLE_INCLUDE_PATH+=(-I "${BASEDIR}/include/apple/${LIB}/include")
 done
 
 mkdir -p "${BASEDIR}/include/ubuntu"
 for LIB in "${UBUNTU_PACKAGES[@]}"; do
 	URL="http://ftp.us.debian.org/debian/pool/main/${LIB:0:1}/${LIB}"
-	ARCHIVE="$(basename "${LIB}")"
+	DOWNLOAD_PATH="download/$(basename "${LIB}")"
 	echo "Downloading ${URL}"
-	curl -s "${URL}" -o "${ARCHIVE}"
+	curl -s "${URL}" -o "${DOWNLOAD_PATH}"
 	
 	# We can't use dpkg on macOS.
-	DATA_FILE="$(ar -t ${ARCHIVE} | tail -n 1)"
-	ar -x "${ARCHIVE}" "${DATA_FILE}"
+	DATA_FILE="download/$(ar -t ${DOWNLOAD_PATH} | tail -n 1)"
+	ar -x "${DOWNLOAD_PATH}" "${DATA_FILE}"
 	tar -xf "${DATA_FILE}" -C "${BASEDIR}/include/ubuntu"
-	rm "${DATA_FILE}"
 done
 
-function fcd {
-	local -r PROGRAM="$1"
-	local -r PROGRAM_BASE_NAME=$(basename $PROGRAM)
-	local -r OUTPUT_PATH="${BASEDIR}/output/${PROGRAM_BASE_NAME}.c"
-	local -r ERROR_PATH="${BASEDIR}/error/${PROGRAM_BASE_NAME}.log"
-	rm -f "${OUTPUT_PATH}" "${ERROR_PATH}"
-	shift
-	
-	TIMEFORMAT=%R
-	TIME=$(ulimit -SHt 30; {
-		time "${FCD}" -I . -I "${BASEDIR}/include" "$@" "${PROGRAM}" \
-			> "${OUTPUT_PATH}" \
-			2> "${ERROR_PATH}";
-	} 2>&1)
-	echo '"'"${PROGRAM_BASE_NAME}"'",'"$?,${TIME}" >> "${BASEDIR}/time.csv"
-}
-
 # Run tests.
-echo "Program,Exit Status,Time" > "${BASEDIR}/time.csv"
+OUTPUT_LOG="${BASEDIR}/SUMMARY.md"
+echo "| Program | Exit Code | Execution Time |" | tee "${OUTPUT_LOG}"
+echo "| ------- |:--------- | --------------:|" | tee -a "${OUTPUT_LOG}"
 mkdir -p "${BASEDIR}/output" "${BASEDIR}/error"
 for HEADER in "${BASEDIR}"/bin/*.h; do
-	PROGRAM=$(basename "${HEADER}" .h)
+	PROGRAM="${HEADER%.h}"
 	IFS="" read -r FIRST_LINE < "${HEADER}"
 	# Assumed to be #include "linux.h" or #include "osx.h".
 	case "${FIRST_LINE:10:${#FIRST_LINE}-13}" in
 		linux)
-			fcd "${PROGRAM}" --header "${HEADER}" "${UBUNTU_INCLUDE_PATH[@]}" ;;
+			fcd "${PROGRAM}" --header "${HEADER}" "${UBUNTU_INCLUDE_PATH[@]}";;
 		osx)
 			fcd "${PROGRAM}" --header "${HEADER}" "${APPLE_INCLUDE_PATH[@]}" \
 				--format="${BASEDIR}/../scripts/macho.py" ;;
 		*)
 			fcd "${PROGRAM}" --header "${HEADER}" ;;
-	esac
+	esac | tee -a "${OUTPUT_LOG}"
 done
-
-# Commit and publish results.
-REMOTE_PATH=$(git config --get remote.origin.url | grep -oh '[^/]*/[^/]*$')
-git -C "${BASEDIR}" remote set-url origin "git@github.com:${REMOTE_PATH}"
-git -C "${BASEDIR}" config user.name "Travis CI"
-git -C "${BASEDIR}" config user.email "travis@zneak.github.io"
-git -C "${BASEDIR}" add .
-git -C "${BASEDIR}" commit -m "Test results on ${TRAVIS_OS_NAME} for fcd commit ${COMMIT_HASH}"
-GIT_SSH="./ssh-unattend.sh" git -C "${BASEDIR}" push origin "${TRAVIS_OS_NAME}"
-
