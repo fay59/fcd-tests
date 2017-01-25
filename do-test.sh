@@ -52,7 +52,8 @@ function fcd {
 }
 
 # Download dependencies and prepare header paths.
-mkdir -p "${BASEDIR}/download"
+DOWNLOAD_DIR="${BASEDIR}/download"
+mkdir -p "${DOWNLOAD_DIR}"
 
 APPLE_OPENSOURCE_LIBS=(Libc)
 UBUNTU_PACKAGES=(glibc/libc6-dev_2.24-8_amd64.deb)
@@ -72,7 +73,7 @@ for LIB in "${APPLE_OPENSOURCE_LIBS[@]}"; do
 		| sort -sn -t- -k2 \
 		| tail -n 1)
 	URL="https://opensource.apple.com/tarballs/${LIB}/${LATEST}"
-	DOWNLOAD_PATH="download/${LIB}.tar.gz"
+	DOWNLOAD_PATH="${DOWNLOAD_DIR}/${LIB}.tar.gz"
 	echo "Downloading ${URL}"
 	curl -s "${URL}" -o "${DOWNLOAD_PATH}"
 	tar -xf "${DOWNLOAD_PATH}" -C "${BASEDIR}/include/apple"
@@ -82,12 +83,12 @@ done
 mkdir -p "${BASEDIR}/include/ubuntu"
 for LIB in "${UBUNTU_PACKAGES[@]}"; do
 	URL="http://ftp.us.debian.org/debian/pool/main/${LIB:0:1}/${LIB}"
-	DOWNLOAD_PATH="download/$(basename "${LIB}")"
+	DOWNLOAD_PATH="${DOWNLOAD_DIR}/$(basename "${LIB}")"
 	echo "Downloading ${URL}"
 	curl -s "${URL}" -o "${DOWNLOAD_PATH}"
 	
 	# We can't use dpkg on macOS.
-	DATA_FILE="download/$(ar -t ${DOWNLOAD_PATH} | tail -n 1)"
+	DATA_FILE="${DOWNLOAD_DIR}/$(ar -t ${DOWNLOAD_PATH} | tail -n 1)"
 	ar -x "${DOWNLOAD_PATH}" "${DATA_FILE}"
 	tar -xf "${DATA_FILE}" -C "${BASEDIR}/include/ubuntu"
 done
