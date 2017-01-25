@@ -119,5 +119,5 @@ git -C "${BASEDIR}" config user.name "Travis CI"
 git -C "${BASEDIR}" config user.email "travis@zneak.github.io"
 git -C "${BASEDIR}" add .
 git -C "${BASEDIR}" commit -m "Test results on ${TRAVIS_OS_NAME} for fcd commit ${COMMIT_HASH}"
-GIT_SSH="${BASEDIR}/ssh-unattend.sh" git -C "${BASEDIR}" push origin "${TRAVIS_OS_NAME}"
+GIT_SSH="./ssh-unattend.sh" git -C "${BASEDIR}" push origin "${TRAVIS_OS_NAME}"
 

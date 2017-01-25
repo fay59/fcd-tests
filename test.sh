@@ -29,9 +29,14 @@ set -e
 BASEDIR=$(dirname "$0")
 
 if git -C "${BASEDIR}" checkout "${TRAVIS_OS_NAME}"; then
-	git -C "${BASEDIR}" merge master
+	git -C "${BASEDIR}" merge --no-edit master
 else
 	git -C "${BASEDIR}" checkout -b "${TRAVIS_OS_NAME}"
 fi
 
-"$(dirname "$0")/do-test.sh" "$@"
+MERGE_STATUS=$?
+if [ $MERGE_STATUS -ne 0 ]; then
+	exit $MERGE_STATUS
+else
+	"${BASEDIR}/do-test.sh" "$@"
+fi
