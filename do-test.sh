@@ -25,7 +25,7 @@ export FCD="$1"
 export COMMIT_HASH="$2"
 BASEDIR="$(dirname "$0")"
 
-if [ "${FCD}" = "false" ]; then
+if [ "${#FCD}" -eq 0 ]; then
 	echo "Build failed!"
 	exit 1
 fi
@@ -114,7 +114,8 @@ for HEADER in "${BASEDIR}"/bin/*.h; do
 done
 
 # Commit and publish results.
-git -C "${BASEDIR}" remote set-url origin "git@github.com:$(git remote get-url origin | grep -oh '[^/]*/[^/]*$')"
+REMOTE_PATH=$(git config --get remote.origin.url | grep -oh '[^/]*/[^/]*$')
+git -C "${BASEDIR}" remote set-url origin "git@github.com:${REMOTE_PATH}"
 git -C "${BASEDIR}" config user.name "Travis CI"
 git -C "${BASEDIR}" config user.email "travis@zneak.github.io"
 git -C "${BASEDIR}" add .
