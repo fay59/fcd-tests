@@ -37,8 +37,7 @@ fi
 
 # Select platform-specific branch, merge with master if necessary.
 # ------------------------------------------------------------------------------
-git -C "${BASEDIR}" fetch
-if git -C "${BASEDIR}" checkout "${TRAVIS_OS_NAME}"; then
+if git -C "${BASEDIR}" checkout --track "origin/${TRAVIS_OS_NAME}"; then
 	git -C "${BASEDIR}" merge --no-edit master
 else
 	git -C "${BASEDIR}" checkout -b "${TRAVIS_OS_NAME}"
