@@ -2,52 +2,50 @@
 
 void func_4001fb(uint64_t arg0, uint64_t arg1)
 {
-	uint64_t phi12;
 	uint64_t phi_in1 = 10;
 	uint64_t phi_in2 = 5;
 	uint64_t phi_in3 = 5;
 	uint64_t phi_in4 = arg1;
 	uint32_t dispatch5 = 0;
 	dispatch5 = 1;
-	do
+	while (true)
 	{
-		while (dispatch5 != 1)
+		uint64_t phi_in10;
+		uint64_t phi8;
+		uint64_t phi7;
+		if (dispatch5 == 0)
 		{
-			uint64_t phi6;
-			uint64_t phi_in8;
-			if (dispatch5 == 0)
+			uint64_t phi6 = phi_in3;
+			phi7 = phi_in4;
+			if (((uint32_t)(phi7 >> 63) | (__zext uint32_t)(phi7 == 0)) == 0)
 			{
-				phi6 = phi_in1;
-				uint64_t phi7 = phi_in2;
-				phi_in8 = phi7;
-			}
-			if (dispatch5 == 2 || dispatch5 == 0)
-			{
-				uint64_t phi9 = phi_in8;
-				phi_in8 = 4;
-				uint64_t anon10 = phi9 * phi6;
-				phi_in3 = anon10;
-				phi_in4 = phi6;
-				dispatch5 = 2;
-				if (anon10 != 4)
+				phi_in1 = phi7 - 1;
+				phi_in2 = phi6;
+				if (phi7 == 21)
 				{
 					break;
 				}
 			}
-		}
-		uint64_t phi11 = phi_in3;
-		phi12 = phi_in4;
-		if (((uint32_t)(phi12 >> 63) | (__zext uint32_t)(phi12 == 0)) == 0)
-		{
-			phi_in1 = phi12 - 1;
-			phi_in2 = phi11;
-			dispatch5 = 0;
-			if (phi12 == 21)
+			else 
 			{
 				break;
 			}
 		}
+		if (dispatch5 == 1 || phi7 != 21 && dispatch5 == 0 && ((uint32_t)(phi7 >> 63) | (__zext uint32_t)(phi7 == 0)) == 0)
+		{
+			phi8 = phi_in1;
+			uint64_t phi9 = phi_in2;
+			phi_in10 = phi9;
+		}
+		if (dispatch5 == 2 || dispatch5 == 1 || phi7 != 21 && dispatch5 == 0 && ((uint32_t)(phi7 >> 63) | (__zext uint32_t)(phi7 == 0)) == 0)
+		{
+			uint64_t phi11 = phi_in10;
+			phi_in10 = 4;
+			phi_in3 = phi11 * phi8;
+			phi_in4 = phi8;
+			dispatch5 = 0;
+			dispatch5 = 2;
+		}
 	}
-	while (((uint32_t)(phi12 >> 63) | (__zext uint32_t)(phi12 == 0)) == 0);
 	return;
 }

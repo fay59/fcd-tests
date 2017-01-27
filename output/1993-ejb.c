@@ -14,11 +14,11 @@ void __gmon_start__(uint64_t arg0)
 }
 void main(uint64_t arg0, uint64_t arg1)
 {
-	uint8_t anon9;
 	uint64_t* anon5;
+	uint8_t anon9;
+	uint8_t* anon4;
 	uint32_t anon7;
 	uint32_t anon6;
-	uint8_t* anon4;
 	uint64_t* anon1 = (uint64_t*)0x600dc0;
 	uint64_t anon2 = arg1 + 16;
 	*anon1 = anon2;
@@ -42,8 +42,8 @@ void main(uint64_t arg0, uint64_t arg1)
 					if (anon9 != 0)
 					{
 						bool phi26;
-						uint64_t* anon19;
 						uint8_t* phi_in10;
+						uint64_t* anon19;
 						*anon4 = 0;
 						uint8_t* anon11 = (uint8_t*)*anon1;
 						phi_in10 = anon11;
@@ -108,21 +108,16 @@ void main(uint64_t arg0, uint64_t arg1)
 							uint64_t phi30 = phi_in12;
 							if (*(uint8_t*)(phi30 + 3) == 0)
 							{
-								if (*phi29 == 255)
-								{
-									*(uint8_t*)(*anon19 + ((__sext int64_t)*anon8 ^ 0xffffffffffffffff)) = *(uint8_t*)(phi30 + 1);
-									puts((uint8_t*)*anon19);
-								}
 								if (!(*phi29 == 254 || *phi29 == 255))
 								{
+									uint8_t phi_in45;
+									uint8_t* anon33;
 									uint8_t* phi_in44;
 									uint8_t phi_in43;
-									uint8_t* anon38;
+									uint8_t* anon37;
 									uint64_t phi_in36;
 									uint8_t phi_in35;
-									uint8_t* anon33;
-									uint8_t* anon37;
-									uint8_t phi_in45;
+									uint8_t* anon38;
 									*phi29 = 2 - (*(uint8_t*)(phi30 + 1) & 1) + *phi29;
 									main(4195819, arg1);
 									uint8_t* anon32 = (uint8_t*)(*anon1 + 1);
@@ -176,6 +171,11 @@ void main(uint64_t arg0, uint64_t arg1)
 									main(4195974, arg1);
 									uint8_t* anon54 = (uint8_t*)*anon1;
 									*anon54 = *anon54 - 1 - (*(uint8_t*)(*anon1 + 1) & 1);
+								}
+								if (*phi29 == 255)
+								{
+									*(uint8_t*)(*anon19 + ((__sext int64_t)*anon8 ^ 0xffffffffffffffff)) = *(uint8_t*)(phi30 + 1);
+									puts((uint8_t*)*anon19);
 								}
 								if (*phi29 == 254)
 								{

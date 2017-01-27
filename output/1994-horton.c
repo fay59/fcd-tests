@@ -14,12 +14,8 @@ void __gmon_start__(uint64_t arg0)
 }
 void main(uint64_t arg0, uint64_t arg1)
 {
-	uint32_t anon17;
 	uint64_t phi3;
 	uint64_t phi9;
-	uint32_t dispatch18;
-	uint64_t phi13;
-	uint64_t phi_in16;
 	uint64_t phi_in1 = 6297810;
 	uint8_t* phi_in2 = (uint8_t*)0x6018d2;
 	do
@@ -54,84 +50,96 @@ void main(uint64_t arg0, uint64_t arg1)
 	*(uint64_t*)0x604511 = 72340172838076673;
 	uint64_t phi_in10 = 6309016;
 	uint64_t phi_in11 = 16;
-	do
+	while (true)
 	{
 		uint64_t phi12 = phi_in10;
-		phi13 = phi_in11;
-		if (phi13 != 0)
+		uint64_t phi13 = phi_in11;
+		if (phi13 == 0)
+		{
+			uint32_t dispatch18;
+			uint64_t phi_in16;
+			uint64_t phi19;
+			uint32_t anon17;
+			(__asm "movsd qword ptr [rsp], xmm4")();
+			uint32_t phi_in14 = 600;
+			do
+			{
+				uint32_t phi15 = phi_in14;
+				atof();
+				(__asm "movsd xmm1, qword ptr [rsp]")();
+				(__asm "mulsd xmm0, xmm1")();
+				(__asm "mulsd xmm0, xmm1")();
+				(__asm "mulsd xmm0, xmm1")();
+				(__asm "movsd qword ptr [rsp + 8], xmm0")();
+				atof();
+				(__asm "movsd xmm1, qword ptr [rsp]")();
+				(__asm "movsd xmm3, qword ptr [rsp + 8]")();
+				(__asm "mulsd xmm0, xmm1")();
+				(__asm "mulsd xmm0, xmm1")();
+				(__asm "addsd xmm3, xmm0")();
+				(__asm "movsd qword ptr [rsp + 8], xmm3")();
+				atof();
+				(__asm "mulsd xmm0, qword ptr [rsp]")();
+				(__asm "addsd xmm0, qword ptr [rsp + 8]")();
+				(__asm "movsd qword ptr [rsp + 8], xmm0")();
+				atof();
+				(__asm "addsd xmm0, qword ptr [rsp + 8]")();
+				(__asm "movsd xmm5, qword ptr [rip + 0x40f]")();
+				(__asm "subsd xmm5, xmm0")();
+				(__asm "movsd xmm0, qword ptr [rip + 0x40b]")();
+				(__asm "mulsd xmm0, xmm5")();
+				(__asm "addsd xmm0, qword ptr [rip + 0x407]")();
+				(__asm "cvttsd2si eax, xmm0")();
+				(__asm "movsd xmm6, qword ptr [rip + 0x3ca]")();
+				(__asm "addsd xmm6, qword ptr [rsp]")();
+				(__asm "movsd qword ptr [rsp], xmm6")();
+				phi_in16 = 0;
+				anon17 = phi15 - 1;
+				phi_in14 = anon17;
+				dispatch18 = 0;
+			}
+			while (anon17 != 0);
+			do
+			{
+				while (true)
+				{
+					uint64_t phi_in21;
+					uint64_t phi_in22;
+					uint32_t phi_in20;
+					if (dispatch18 == 0)
+					{
+						phi19 = phi_in16;
+						phi_in20 = 0;
+						phi_in21 = 1 - phi19 + 6296192;
+						phi_in22 = 6296192 - phi19;
+					}
+					uint32_t phi23 = phi_in20;
+					uint64_t phi24 = phi_in21;
+					uint64_t phi25 = phi_in22;
+					putchar((__sext int32_t)*(uint8_t*)(((((__sext int64_t)*(uint8_t*)(phi25 + 480) + ((__sext int64_t)*(uint8_t*)(phi25 + 160) << 2) + ((__sext int64_t)*(uint8_t*)phi25 << 3) + ((__sext int64_t)*(uint8_t*)(phi25 + 320) << 1) << 4) + ((__sext int64_t)*(uint8_t*)phi24 << 3) + ((__sext int64_t)*(uint8_t*)(phi24 + 160) << 2) + ((__sext int64_t)*(uint8_t*)(phi24 + 320) << 1) + (__sext int64_t)*(uint8_t*)(phi24 + 480) + 1 & (phi23 < 79 ? 4294967295 : 0)) << 32 >> 32) + 4196472));
+					if (phi23 == 79)
+					{
+						break;
+					}
+					else 
+					{
+						phi_in20 = phi23 + 1;
+						phi_in21 = phi24 + 2;
+						phi_in22 = phi25 + 2;
+						dispatch18 = 1;
+					}
+				}
+				phi_in16 = phi19 - 640;
+				dispatch18 = 0;
+			}
+			while (phi19 != -14720);
+		}
+		else 
 		{
 			*(uint64_t*)phi12 = 72340172838076673;
 			phi_in10 = phi12 + 8;
 			phi_in11 = phi13 - 1;
 		}
-	}
-	while (phi13 != 0);
-	(__asm "movsd qword ptr [rsp], xmm4")();
-	uint32_t phi_in14 = 600;
-	do
-	{
-		uint32_t phi15 = phi_in14;
-		atof();
-		(__asm "movsd xmm1, qword ptr [rsp]")();
-		(__asm "mulsd xmm0, xmm1")();
-		(__asm "mulsd xmm0, xmm1")();
-		(__asm "mulsd xmm0, xmm1")();
-		(__asm "movsd qword ptr [rsp + 8], xmm0")();
-		atof();
-		(__asm "movsd xmm1, qword ptr [rsp]")();
-		(__asm "movsd xmm3, qword ptr [rsp + 8]")();
-		(__asm "mulsd xmm0, xmm1")();
-		(__asm "mulsd xmm0, xmm1")();
-		(__asm "addsd xmm3, xmm0")();
-		(__asm "movsd qword ptr [rsp + 8], xmm3")();
-		atof();
-		(__asm "mulsd xmm0, qword ptr [rsp]")();
-		(__asm "addsd xmm0, qword ptr [rsp + 8]")();
-		(__asm "movsd qword ptr [rsp + 8], xmm0")();
-		atof();
-		(__asm "addsd xmm0, qword ptr [rsp + 8]")();
-		(__asm "movsd xmm5, qword ptr [rip + 0x40f]")();
-		(__asm "subsd xmm5, xmm0")();
-		(__asm "movsd xmm0, qword ptr [rip + 0x40b]")();
-		(__asm "mulsd xmm0, xmm5")();
-		(__asm "addsd xmm0, qword ptr [rip + 0x407]")();
-		(__asm "cvttsd2si eax, xmm0")();
-		(__asm "movsd xmm6, qword ptr [rip + 0x3ca]")();
-		(__asm "addsd xmm6, qword ptr [rsp]")();
-		(__asm "movsd qword ptr [rsp], xmm6")();
-		phi_in16 = 0;
-		anon17 = phi15 - 1;
-		phi_in14 = anon17;
-		dispatch18 = 0;
-	}
-	while (anon17 != 0);
-	while (true)
-	{
-		uint64_t phi19;
-		uint32_t phi_in20;
-		uint64_t phi_in22;
-		uint64_t phi_in21;
-		if (dispatch18 == 0)
-		{
-			phi19 = phi_in16;
-			phi_in20 = 0;
-			phi_in21 = 1 - phi19 + 6296192;
-			phi_in22 = 6296192 - phi19;
-		}
-		uint32_t phi23 = phi_in20;
-		uint64_t phi24 = phi_in21;
-		uint64_t phi25 = phi_in22;
-		putchar((__sext int32_t)*(uint8_t*)(((((__sext int64_t)*(uint8_t*)(phi25 + 480) + ((__sext int64_t)*(uint8_t*)(phi25 + 160) << 2) + ((__sext int64_t)*(uint8_t*)phi25 << 3) + ((__sext int64_t)*(uint8_t*)(phi25 + 320) << 1) << 4) + ((__sext int64_t)*(uint8_t*)phi24 << 3) + ((__sext int64_t)*(uint8_t*)(phi24 + 160) << 2) + ((__sext int64_t)*(uint8_t*)(phi24 + 320) << 1) + (__sext int64_t)*(uint8_t*)(phi24 + 480) + 1 & (phi23 < 79 ? 4294967295 : 0)) << 32 >> 32) + 4196472));
-		phi_in16 = phi19 - 640;
-		dispatch18 = 0;
-		if (phi19 == -14720)
-		{
-			break;
-		}
-		phi_in20 = phi23 + 1;
-		phi_in21 = phi24 + 2;
-		phi_in22 = phi25 + 2;
-		dispatch18 = 1;
 	}
 	return;
 }
