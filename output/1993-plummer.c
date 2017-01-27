@@ -24,9 +24,9 @@ void main(uint64_t arg0, uint64_t arg1, uint64_t arg2)
 	{
 		uint8_t phi_in11;
 		uint64_t anon8;
-		uint64_t* anon7;
 		uint64_t* anon5;
 		uint64_t phi_in4;
+		uint64_t* anon7;
 		if (dispatch3 == 0)
 		{
 			anon5 = (uint64_t*)(arg2 + 8);

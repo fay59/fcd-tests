@@ -43,24 +43,24 @@ void main(uint64_t arg0, uint64_t arg1, uint64_t arg2, uint64_t arg3)
 		uint32_t dispatch5 = 0;
 		while (true)
 		{
-			uint32_t anon37;
-			uint64_t phi27;
-			uint64_t phi_in38;
-			uint64_t phi26;
+			uint32_t phi_in20;
+			uint64_t phi_in19;
 			uint32_t phi25;
+			uint64_t phi_in18;
+			uint32_t anon9;
+			uint64_t phi23;
+			uint64_t anon14;
+			uint64_t phi_in38;
+			uint32_t anon37;
+			uint8_t* anon11;
+			uint64_t phi_in21;
+			uint64_t phi_in8;
 			uint32_t anon36;
 			uint64_t phi24;
-			uint64_t phi_in19;
-			uint64_t phi_in18;
 			uint64_t phi_in22;
-			uint32_t phi_in20;
-			uint64_t anon14;
-			uint64_t phi23;
-			uint32_t anon9;
-			uint8_t* anon11;
-			uint64_t phi_in8;
-			uint64_t phi_in21;
 			uint8_t anon15;
+			uint64_t phi27;
+			uint64_t phi26;
 			if (dispatch5 == 0)
 			{
 				uint64_t phi6 = phi_in4;
@@ -135,13 +135,37 @@ void main(uint64_t arg0, uint64_t arg1, uint64_t arg2, uint64_t arg3)
 					phi_in8 = phi26;
 					dispatch5 = 0;
 				}
-				anon37 = (uint32_t)phi23;
-				if (anon15 != 0 && anon36 != 0 && alloca1.field7 < anon37 && (anon9 != 255 && dispatch5 == 0 || dispatch5 == 2))
+				if (anon15 != 0)
 				{
-					phi_in38 = 0;
+					anon37 = (uint32_t)phi23;
+					if (alloca1.field7 < anon37)
+					{
+						if (anon36 == 0)
+						{
+							if (anon9 != 255 && dispatch5 == 0 || dispatch5 == 2)
+							{
+								alloca1.field7 = anon37;
+								alloca1.field8 = 0;
+								phi_in4 = 0;
+								phi_in8 = phi26;
+								dispatch5 = 0;
+							}
+						}
+						else if (anon9 != 255 && dispatch5 == 0 || dispatch5 == 2)
+						{
+							phi_in38 = 0;
+						}
+					}
+					else if (anon9 != 255 && dispatch5 == 0 || dispatch5 == 2)
+					{
+						alloca1.field2 = 0;
+						phi_in4 = 0;
+						phi_in8 = phi26;
+						dispatch5 = 0;
+					}
 				}
 			}
-			if (dispatch5 == 1 || anon9 != 255 && phi25 <= alloca1.field1 && anon15 != 0 && anon36 != 0 && dispatch5 == 0 && alloca1.field7 < anon37 || phi25 <= alloca1.field1 && anon15 != 0 && anon36 != 0 && dispatch5 == 2 && alloca1.field7 < anon37)
+			if (dispatch5 == 1 || anon9 != 255 && phi25 <= alloca1.field1 && anon36 != 0 && dispatch5 == 0 && anon15 != 0 && alloca1.field7 < anon37 || phi25 <= alloca1.field1 && anon36 != 0 && dispatch5 == 2 && anon15 != 0 && alloca1.field7 < anon37)
 			{
 				uint64_t phi39 = phi_in38;
 				uint32_t anon41 = anon36 - 1;
@@ -160,27 +184,6 @@ void main(uint64_t arg0, uint64_t arg1, uint64_t arg2, uint64_t arg3)
 				{
 					phi_in38 = phi39 - 21;
 					dispatch5 = 1;
-				}
-			}
-			if (phi25 <= alloca1.field1 && anon15 != 0)
-			{
-				if (alloca1.field7 < anon37)
-				{
-					if (anon36 == 0 && (anon9 != 255 && dispatch5 == 0 || dispatch5 == 2))
-					{
-						alloca1.field7 = anon37;
-						alloca1.field8 = 0;
-						phi_in4 = 0;
-						phi_in8 = phi26;
-						dispatch5 = 0;
-					}
-				}
-				else if (anon9 != 255 && dispatch5 == 0 || dispatch5 == 2)
-				{
-					alloca1.field2 = 0;
-					phi_in4 = 0;
-					phi_in8 = phi26;
-					dispatch5 = 0;
 				}
 			}
 		}

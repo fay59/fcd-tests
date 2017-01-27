@@ -14,11 +14,11 @@ void __gmon_start__(uint64_t arg0)
 }
 void main(uint64_t arg0, uint64_t arg1)
 {
-	uint8_t* anon4;
-	uint32_t anon6;
 	uint8_t anon9;
 	uint64_t* anon5;
 	uint32_t anon7;
+	uint32_t anon6;
+	uint8_t* anon4;
 	uint64_t* anon1 = (uint64_t*)0x600dc0;
 	uint64_t anon2 = arg1 + 16;
 	*anon1 = anon2;
@@ -50,8 +50,8 @@ void main(uint64_t arg0, uint64_t arg1)
 						uint64_t phi_in12 = *anon1;
 						if (*anon5 == 0)
 						{
-							uint64_t phi_in16;
 							uint8_t* phi_in15;
+							uint64_t phi_in16;
 							bool phi_in14;
 							int64_t anon13 = (__sext int64_t)anon9;
 							if (((uint32_t)(anon13 >> 30) & 1 | (__zext uint32_t)((uint32_t)(anon13 << 1) == 0)) == 0)
@@ -116,13 +116,13 @@ void main(uint64_t arg0, uint64_t arg1)
 								if (!(*phi29 == 254 || *phi29 == 255))
 								{
 									uint8_t* phi_in44;
+									uint8_t phi_in43;
 									uint8_t* anon38;
-									uint8_t* anon37;
 									uint64_t phi_in36;
 									uint8_t phi_in35;
-									uint8_t phi_in43;
-									uint8_t phi_in45;
 									uint8_t* anon33;
+									uint8_t* anon37;
+									uint8_t phi_in45;
 									*phi29 = 2 - (*(uint8_t*)(phi30 + 1) & 1) + *phi29;
 									main(4195819, arg1);
 									uint8_t* anon32 = (uint8_t*)(*anon1 + 1);

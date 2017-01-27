@@ -14,10 +14,10 @@ void __gmon_start__(uint64_t arg0)
 }
 void main(uint64_t arg0, uint64_t arg1)
 {
-	struct { uint8_t field0[16]; uint64_t field1; uint64_t field2; uint64_t field3; uint64_t field4; uint64_t field5; uint8_t field6[1936]; uint64_t field7; } alloca1;
-	uint64_t phi7;
 	uint32_t phi6;
+	struct { uint8_t field0[16]; uint64_t field1; uint64_t field2; uint64_t field3; uint64_t field4; uint64_t field5; uint8_t field6[1936]; uint64_t field7; } alloca1;
 	uint64_t phi5;
+	uint64_t phi7;
 	alloca1.field7 = arg0;
 	(__asm "movss xmm1, dword ptr [rip + 0x200afe]")();
 	alloca1.field1 = 2699754514630402080;
@@ -78,28 +78,28 @@ void main(uint64_t arg0, uint64_t arg1)
 		uint32_t dispatch14 = 0;
 		while (true)
 		{
-			uint8_t phi_in46;
-			bool anon42;
-			uint8_t* anon25;
+			uint8_t phi_in45;
+			uint32_t phi_in44;
+			bool anon41;
 			uint64_t phi_in36;
-			uint64_t phi32;
-			uint32_t* anon17;
-			uint8_t phi_in31;
-			uint8_t phi_in20;
+			uint8_t phi35;
+			uint8_t phi34;
 			uint64_t phi33;
+			uint64_t phi32;
+			uint8_t phi_in31;
+			uint8_t* anon25;
 			uint8_t phi_in30;
 			uint64_t phi_in28;
 			uint32_t anon26;
-			uint8_t phi_in21;
-			uint8_t phi16;
-			uint8_t phi35;
-			uint8_t phi34;
-			uint8_t phi15;
 			uint32_t phi_in18;
-			uint64_t phi_in29;
 			uint64_t phi_in19;
-			uint32_t phi_in45;
-			uint8_t phi_in47;
+			uint8_t phi_in20;
+			uint32_t* anon17;
+			uint8_t phi15;
+			uint8_t phi_in46;
+			uint8_t phi16;
+			uint64_t phi_in29;
+			uint8_t phi_in21;
 			if (dispatch14 == 0)
 			{
 				phi15 = phi_in12;
@@ -114,7 +114,7 @@ void main(uint64_t arg0, uint64_t arg1)
 				phi_in21 = phi16;
 			}
 			uint8_t anon22 = phi15 | phi16;
-			if (dispatch14 == 4 || dispatch14 == 0 && anon22 == 0)
+			if (dispatch14 == 3 || dispatch14 == 0 && anon22 == 0)
 			{
 				uint32_t phi23 = phi_in18;
 				uint64_t phi24 = phi_in19;
@@ -142,7 +142,7 @@ void main(uint64_t arg0, uint64_t arg1)
 				phi_in30 = 1;
 				phi_in31 = 0;
 			}
-			if (dispatch14 == 3 || dispatch14 == 4 || dispatch14 == 0 && anon22 == 0)
+			if (dispatch14 == 1 || dispatch14 == 3 || dispatch14 == 0 && anon22 == 0)
 			{
 				phi32 = phi_in28;
 				phi33 = phi_in29;
@@ -175,7 +175,7 @@ void main(uint64_t arg0, uint64_t arg1)
 				phi_in36 = phi32;
 			}
 			uint8_t anon37 = phi34 | phi35;
-			if (anon37 == 0 && (dispatch14 == 3 || dispatch14 == 4 || dispatch14 == 0 && anon22 == 0))
+			if (anon37 == 0 && (dispatch14 == 1 || dispatch14 == 3 || dispatch14 == 0 && anon22 == 0))
 			{
 				(__asm "pxor xmm5, xmm5")();
 				(__asm "movaps xmm1, xmm2")();
@@ -184,7 +184,7 @@ void main(uint64_t arg0, uint64_t arg1)
 				(__asm "mulsd xmm3, xmm5")();
 				(__asm "mulsd xmm5, qword ptr [rip + 0x4aa]")();
 			}
-			if (dispatch14 == 2 || dispatch14 == 3 && anon37 == 0 || dispatch14 == 4 && anon37 == 0 || dispatch14 == 0 && anon22 == 0 && anon37 == 0)
+			if (dispatch14 == 4 || dispatch14 == 1 && anon37 == 0 || dispatch14 == 3 && anon37 == 0 || dispatch14 == 0 && anon22 == 0 && anon37 == 0)
 			{
 				(__asm "movaps xmm0, xmm1")();
 				(__asm "pxor xmm12, xmm12")();
@@ -192,62 +192,21 @@ void main(uint64_t arg0, uint64_t arg1)
 				(__asm "cvtss2sd xmm12, xmm0")();
 				(__asm "ucomisd xmm12, xmm3")();
 			}
-			uint8_t anon38 = (phi34 ^ 1) & (phi35 ^ 1);
-			if (anon38 == 0 && (dispatch14 == 2 || dispatch14 == 3 && anon37 == 0 || dispatch14 == 4 && anon37 == 0 || dispatch14 == 0 && anon22 == 0 && anon37 == 0))
+			if (((phi34 ^ 1) & (phi35 ^ 1)) == 0)
 			{
-				(__asm "ucomisd xmm5, xmm12")();
-				(__asm "movss xmm0, dword ptr [rip + 0x43d]")();
-				(__asm "mulss xmm0, xmm1")();
-				(__asm "divss xmm0, xmm8")();
-				(__asm "divss xmm0, xmm11")();
-				(__asm "cvttss2si edx, xmm0")();
-				*anon25 = *(uint8_t*)((phi32 << 32 >> 32) + 4197172);
-				phi_in36 = (__zext uint64_t)*(uint8_t*)((phi32 << 32 >> 32) + 4197172);
-			}
-			if (dispatch14 == 2 && anon38 == 0 || dispatch14 == 3 && anon37 == 0 && anon38 == 0 || dispatch14 == 4 && anon37 == 0 && anon38 == 0 || dispatch14 == 0 && anon22 == 0 && anon37 == 0 && anon38 == 0 || anon37 != 0 && dispatch14 == 3 || anon37 != 0 && dispatch14 == 4 || anon37 != 0 && dispatch14 == 0 && anon22 == 0)
-			{
-				uint64_t phi39 = phi_in36;
-				phi_in28 = phi39;
-				uint64_t anon40 = phi33 - 4;
-				phi_in29 = anon40;
-				phi_in30 = (__zext uint8_t)(phi33 == 240);
-				phi_in31 = (__zext uint8_t)(anon40 < 236);
-				dispatch14 = 3;
-			}
-			if (phi33 == 240)
-			{
-				struct { uint32_t field0; bool field1; } anon41;
-				if (dispatch14 == 2 && anon38 == 0 || dispatch14 == 3 && anon37 == 0 && anon38 == 0 || dispatch14 == 4 && anon37 == 0 && anon38 == 0 || dispatch14 == 0 && anon22 == 0 && anon37 == 0 && anon38 == 0 || anon37 != 0 && dispatch14 == 3 || anon37 != 0 && dispatch14 == 4 || anon37 != 0 && dispatch14 == 0 && anon22 == 0)
+				if (dispatch14 == 4 || dispatch14 == 1 && anon37 == 0 || dispatch14 == 3 && anon37 == 0 || dispatch14 == 0 && anon22 == 0 && anon37 == 0)
 				{
-					(__asm "pxor xmm0, xmm0")();
-					anon41 = llvm.uadd.with.overflow.i32(anon26, 1);
-					(__asm "cvtsi2ss xmm0, ecx")();
-					(__asm "ucomiss xmm10, xmm0")();
-				}
-				anon42 = anon41.field0 == 0 | anon41.field1;
-				if (anon42)
-				{
-					if (dispatch14 == 2 && anon38 == 0 || dispatch14 == 3 && anon37 == 0 && anon38 == 0 || dispatch14 == 4 && anon37 == 0 && anon38 == 0 || dispatch14 == 0 && anon22 == 0 && anon37 == 0 && anon38 == 0 || anon37 != 0 && dispatch14 == 3 || anon37 != 0 && dispatch14 == 4 || anon37 != 0 && dispatch14 == 0 && anon22 == 0)
-					{
-						(__asm "movss dword ptr [rip + 0x200868], xmm1")();
-						*anon17 = anon41.field0;
-						(__asm "movss dword ptr [rip + 0x200862], xmm6")();
-						(__asm "movss dword ptr [rip + 0x2007dd], xmm8")();
-						(__asm "movss dword ptr [rip + 0x2007d9], xmm2")();
-						(__asm "movss dword ptr [rip + 0x2007d8], xmm9")();
-						(__asm "movss dword ptr [rip + 0x2007d4], xmm7")();
-						phi_in20 = (__zext uint8_t)(anon41.field0 == 0);
-						phi_in21 = (__zext uint8_t)anon41.field1;
-					}
-				}
-				else if (dispatch14 == 2 && anon38 == 0 || dispatch14 == 3 && anon37 == 0 && anon38 == 0 || dispatch14 == 4 && anon37 == 0 && anon38 == 0 || dispatch14 == 0 && anon22 == 0 && anon37 == 0 && anon38 == 0 || anon37 != 0 && dispatch14 == 3 || anon37 != 0 && dispatch14 == 4 || anon37 != 0 && dispatch14 == 0 && anon22 == 0)
-				{
-					phi_in18 = anon41.field0;
-					phi_in19 = (__zext uint64_t)anon41.field0;
-					dispatch14 = 4;
+					(__asm "ucomisd xmm5, xmm12")();
+					(__asm "movss xmm0, dword ptr [rip + 0x43d]")();
+					(__asm "mulss xmm0, xmm1")();
+					(__asm "divss xmm0, xmm8")();
+					(__asm "divss xmm0, xmm11")();
+					(__asm "cvttss2si edx, xmm0")();
+					*anon25 = *(uint8_t*)((phi32 << 32 >> 32) + 4197172);
+					phi_in36 = (__zext uint64_t)*(uint8_t*)((phi32 << 32 >> 32) + 4197172);
 				}
 			}
-			if (anon38 != 0 && (dispatch14 == 2 || dispatch14 == 3 && anon37 == 0 || dispatch14 == 4 && anon37 == 0 || dispatch14 == 0 && anon22 == 0 && anon37 == 0))
+			else if (dispatch14 == 4 || dispatch14 == 1 && anon37 == 0 || dispatch14 == 3 && anon37 == 0 || dispatch14 == 0 && anon22 == 0 && anon37 == 0)
 			{
 				(__asm "subss xmm0, xmm2")();
 				(__asm "cvtss2sd xmm1, xmm1")();
@@ -256,27 +215,70 @@ void main(uint64_t arg0, uint64_t arg1)
 				(__asm "divsd xmm0, xmm1")();
 				(__asm "subsd xmm1, xmm0")();
 				(__asm "cvtsd2ss xmm1, xmm1")();
-				dispatch14 = 2;
+				dispatch14 = 4;
 			}
-			if (dispatch14 == 2 && anon38 == 0 && phi33 == 240 && anon42 || dispatch14 == 3 && anon37 == 0 && anon38 == 0 && phi33 == 240 && anon42 || dispatch14 == 4 && anon37 == 0 && anon38 == 0 && phi33 == 240 && anon42 || dispatch14 == 0 && anon22 == 0 && anon37 == 0 && anon38 == 0 && phi33 == 240 && anon42 || anon37 != 0 && dispatch14 == 3 && phi33 == 240 && anon42 || anon37 != 0 && dispatch14 == 4 && phi33 == 240 && anon42 || anon37 != 0 && dispatch14 == 0 && anon22 == 0 && phi33 == 240 && anon42 || anon22 != 0 && dispatch14 == 0)
+			if (dispatch14 == 4 && ((phi34 ^ 1) & (phi35 ^ 1)) == 0 || dispatch14 == 1 && anon37 == 0 && ((phi34 ^ 1) & (phi35 ^ 1)) == 0 || dispatch14 == 3 && anon37 == 0 && ((phi34 ^ 1) & (phi35 ^ 1)) == 0 || dispatch14 == 0 && anon22 == 0 && anon37 == 0 && ((phi34 ^ 1) & (phi35 ^ 1)) == 0 || anon37 != 0 && dispatch14 == 1 || anon37 != 0 && dispatch14 == 3 || anon37 != 0 && dispatch14 == 0 && anon22 == 0)
 			{
-				uint8_t phi43 = phi_in20;
-				uint8_t phi44 = phi_in21;
+				uint64_t phi38 = phi_in36;
+				phi_in28 = phi38;
+				uint64_t anon39 = phi33 - 4;
+				phi_in29 = anon39;
+				phi_in30 = (__zext uint8_t)(phi33 == 240);
+				phi_in31 = (__zext uint8_t)(anon39 < 236);
+				dispatch14 = 1;
+			}
+			if (phi33 == 240)
+			{
+				struct { uint32_t field0; bool field1; } anon40;
+				if (dispatch14 == 4 && ((phi34 ^ 1) & (phi35 ^ 1)) == 0 || dispatch14 == 1 && anon37 == 0 && ((phi34 ^ 1) & (phi35 ^ 1)) == 0 || dispatch14 == 3 && anon37 == 0 && ((phi34 ^ 1) & (phi35 ^ 1)) == 0 || dispatch14 == 0 && anon22 == 0 && anon37 == 0 && ((phi34 ^ 1) & (phi35 ^ 1)) == 0 || anon37 != 0 && dispatch14 == 1 || anon37 != 0 && dispatch14 == 3 || anon37 != 0 && dispatch14 == 0 && anon22 == 0)
+				{
+					(__asm "pxor xmm0, xmm0")();
+					anon40 = llvm.uadd.with.overflow.i32(anon26, 1);
+					(__asm "cvtsi2ss xmm0, ecx")();
+					(__asm "ucomiss xmm10, xmm0")();
+				}
+				anon41 = anon40.field0 == 0 | anon40.field1;
+				if (anon41)
+				{
+					if (dispatch14 == 4 && ((phi34 ^ 1) & (phi35 ^ 1)) == 0 || dispatch14 == 1 && anon37 == 0 && ((phi34 ^ 1) & (phi35 ^ 1)) == 0 || dispatch14 == 3 && anon37 == 0 && ((phi34 ^ 1) & (phi35 ^ 1)) == 0 || dispatch14 == 0 && anon22 == 0 && anon37 == 0 && ((phi34 ^ 1) & (phi35 ^ 1)) == 0 || anon37 != 0 && dispatch14 == 1 || anon37 != 0 && dispatch14 == 3 || anon37 != 0 && dispatch14 == 0 && anon22 == 0)
+					{
+						(__asm "movss dword ptr [rip + 0x200868], xmm1")();
+						*anon17 = anon40.field0;
+						(__asm "movss dword ptr [rip + 0x200862], xmm6")();
+						(__asm "movss dword ptr [rip + 0x2007dd], xmm8")();
+						(__asm "movss dword ptr [rip + 0x2007d9], xmm2")();
+						(__asm "movss dword ptr [rip + 0x2007d8], xmm9")();
+						(__asm "movss dword ptr [rip + 0x2007d4], xmm7")();
+						phi_in20 = (__zext uint8_t)(anon40.field0 == 0);
+						phi_in21 = (__zext uint8_t)anon40.field1;
+					}
+				}
+				else if (dispatch14 == 4 && ((phi34 ^ 1) & (phi35 ^ 1)) == 0 || dispatch14 == 1 && anon37 == 0 && ((phi34 ^ 1) & (phi35 ^ 1)) == 0 || dispatch14 == 3 && anon37 == 0 && ((phi34 ^ 1) & (phi35 ^ 1)) == 0 || dispatch14 == 0 && anon22 == 0 && anon37 == 0 && ((phi34 ^ 1) & (phi35 ^ 1)) == 0 || anon37 != 0 && dispatch14 == 1 || anon37 != 0 && dispatch14 == 3 || anon37 != 0 && dispatch14 == 0 && anon22 == 0)
+				{
+					phi_in18 = anon40.field0;
+					phi_in19 = (__zext uint64_t)anon40.field0;
+					dispatch14 = 3;
+				}
+			}
+			if (dispatch14 == 4 && ((phi34 ^ 1) & (phi35 ^ 1)) == 0 && phi33 == 240 && anon41 || dispatch14 == 1 && anon37 == 0 && ((phi34 ^ 1) & (phi35 ^ 1)) == 0 && phi33 == 240 && anon41 || dispatch14 == 3 && anon37 == 0 && ((phi34 ^ 1) & (phi35 ^ 1)) == 0 && phi33 == 240 && anon41 || dispatch14 == 0 && anon22 == 0 && anon37 == 0 && ((phi34 ^ 1) & (phi35 ^ 1)) == 0 && phi33 == 240 && anon41 || anon37 != 0 && dispatch14 == 1 && phi33 == 240 && anon41 || anon37 != 0 && dispatch14 == 3 && phi33 == 240 && anon41 || anon37 != 0 && dispatch14 == 0 && anon22 == 0 && phi33 == 240 && anon41 || anon22 != 0 && dispatch14 == 0)
+			{
+				uint8_t phi42 = phi_in20;
+				uint8_t phi43 = phi_in21;
 				*anon9 = 4;
-				phi_in45 = 4;
+				phi_in44 = 4;
+				phi_in45 = phi42;
 				phi_in46 = phi43;
-				phi_in47 = phi44;
 			}
-			if (dispatch14 == 1 || dispatch14 == 2 && anon38 == 0 && phi33 == 240 && anon42 || dispatch14 == 3 && anon37 == 0 && anon38 == 0 && phi33 == 240 && anon42 || dispatch14 == 4 && anon37 == 0 && anon38 == 0 && phi33 == 240 && anon42 || dispatch14 == 0 && anon22 == 0 && anon37 == 0 && anon38 == 0 && phi33 == 240 && anon42 || anon37 != 0 && dispatch14 == 3 && phi33 == 240 && anon42 || anon37 != 0 && dispatch14 == 4 && phi33 == 240 && anon42 || anon37 != 0 && dispatch14 == 0 && anon22 == 0 && phi33 == 240 && anon42 || anon22 != 0 && dispatch14 == 0)
+			if (dispatch14 == 2 || dispatch14 == 4 && ((phi34 ^ 1) & (phi35 ^ 1)) == 0 && phi33 == 240 && anon41 || dispatch14 == 1 && anon37 == 0 && ((phi34 ^ 1) & (phi35 ^ 1)) == 0 && phi33 == 240 && anon41 || dispatch14 == 3 && anon37 == 0 && ((phi34 ^ 1) & (phi35 ^ 1)) == 0 && phi33 == 240 && anon41 || dispatch14 == 0 && anon22 == 0 && anon37 == 0 && ((phi34 ^ 1) & (phi35 ^ 1)) == 0 && phi33 == 240 && anon41 || anon37 != 0 && dispatch14 == 1 && phi33 == 240 && anon41 || anon37 != 0 && dispatch14 == 3 && phi33 == 240 && anon41 || anon37 != 0 && dispatch14 == 0 && anon22 == 0 && phi33 == 240 && anon41 || anon22 != 0 && dispatch14 == 0)
 			{
-				uint32_t phi48 = phi_in45;
+				uint32_t phi47 = phi_in44;
+				uint8_t phi48 = phi_in45;
 				uint8_t phi49 = phi_in46;
-				uint8_t phi50 = phi_in47;
 				(__asm "pxor xmm7, xmm7")();
 				(__asm "movss xmm0, dword ptr [rbx*4 + 0x600f90]")();
 				(__asm "ucomiss xmm7, xmm0")();
-				uint32_t phi_in51 = phi48;
-				if ((phi49 | phi50) == 0)
+				uint32_t phi_in50 = phi47;
+				if ((phi48 | phi49) == 0)
 				{
 					(__asm "movsd qword ptr [rsp + 8], xmm4")();
 					m(4196361);
@@ -284,28 +286,28 @@ void main(uint64_t arg0, uint64_t arg1)
 					(__asm "movss xmm10, dword ptr [rip + 0x200715]")();
 					(__asm "movsd xmm4, qword ptr [rsp + 8]")();
 					(__asm "cvtsi2ss xmm0, eax")();
-					phi_in51 = *anon9;
+					phi_in50 = *anon9;
 				}
-				uint32_t phi52 = phi_in51;
+				uint32_t phi51 = phi_in50;
 				(__asm "movss xmm1, dword ptr [rip + 0x3a4]")();
 				(__asm "mulss xmm1, xmm10")();
 				(__asm "movss dword ptr [rbx*4 + 0x600f90], xmm0")();
-				uint32_t anon53 = phi52 - 1;
-				*anon9 = anon53;
+				uint32_t anon52 = phi51 - 1;
+				*anon9 = anon52;
 				(__asm "movss xmm0, dword ptr [rdx*4 + 0x600f90]")();
 				(__asm "subss xmm0, xmm1")();
 				(__asm "movss dword ptr [rdx*4 + 0x600f90], xmm0")();
+				phi_in44 = anon52;
+				uint8_t anon53 = (__zext uint8_t)(phi51 == 256);
 				phi_in45 = anon53;
-				uint8_t anon54 = (__zext uint8_t)(phi52 == 256);
+				uint8_t anon54 = (__zext uint8_t)(anon52 < 255);
 				phi_in46 = anon54;
-				uint8_t anon55 = (__zext uint8_t)(anon53 < 255);
-				phi_in47 = anon55;
-				dispatch14 = 1;
-				if (phi52 == 256)
+				dispatch14 = 2;
+				if (phi51 == 256)
 				{
 					(__asm "ucomiss xmm10, dword ptr [rip + 0x316]")();
-					phi_in12 = anon54;
-					phi_in13 = anon55;
+					phi_in12 = anon53;
+					phi_in13 = anon54;
 					dispatch14 = 0;
 				}
 			}
