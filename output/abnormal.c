@@ -11,8 +11,8 @@ void func_4001fb(uint64_t arg0, uint64_t arg1)
 	while (true)
 	{
 		uint64_t phi_in10;
-		uint64_t phi8;
 		uint64_t phi7;
+		uint64_t phi8;
 		if (dispatch5 == 0)
 		{
 			uint64_t phi6 = phi_in3;

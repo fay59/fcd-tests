@@ -68,13 +68,13 @@ void s(uint64_t arg0)
 	uint64_t phi_in2 = 6301636;
 	do
 	{
-		uint32_t phi_in10;
-		uint32_t phi_in7;
+		uint32_t phi_in12;
 		uint32_t* anon9;
 		uint32_t phi_in8;
-		uint32_t phi_in12;
 		uint32_t phi_in6;
+		uint32_t phi_in10;
 		uint32_t phi_in11;
+		uint32_t phi_in7;
 		uint32_t* phi3 = phi_in1;
 		uint64_t phi4 = phi_in2;
 		uint32_t* anon5 = (uint32_t*)(phi4 + 4);
@@ -136,8 +136,8 @@ void s(uint64_t arg0)
 void w(uint64_t arg0, uint64_t arg1, uint64_t arg2, uint64_t arg3)
 {
 	uint64_t phi709;
-	uint32_t phi_in5;
 	struct { uint8_t field0[4]; uint32_t field1; uint64_t field2; uint8_t field3[8]; uint32_t field4; uint32_t field5; uint8_t field6[48]; uint64_t field7; uint32_t field8; uint8_t field9[4]; uint64_t field10; uint64_t field11; uint32_t field12; uint8_t field13[8]; uint32_t field14; uint8_t field15[56]; uint64_t field16; } alloca1;
+	uint32_t phi_in5;
 	uint64_t phi_in11;
 	alloca1.field16 = arg0;
 	uint64_t anon2 = arg2 << 32;
@@ -159,346 +159,346 @@ void w(uint64_t arg0, uint64_t arg1, uint64_t arg2, uint64_t arg3)
 	uint32_t dispatch13 = 0;
 	do
 	{
-		uint32_t phi_in25;
+		uint64_t phi_in21;
+		uint64_t phi_in24;
+		uint32_t phi_in22;
 		uint32_t phi_in26;
 		uint64_t phi_in27;
-		uint64_t phi_in24;
 		uint32_t phi_in23;
-		uint64_t phi_in21;
-		uint32_t phi_in22;
+		uint32_t phi_in25;
 		while (true)
 		{
-			uint64_t phi708;
 			uint64_t phi694;
 			uint32_t phi693;
-			uint64_t phi687;
-			uint32_t phi684;
+			uint32_t phi685;
+			uint32_t phi682;
+			uint32_t phi680;
+			uint32_t phi678;
 			uint32_t phi677;
 			uint64_t phi655;
-			uint32_t phi701;
+			uint32_t phi676;
+			uint32_t phi681;
 			uint64_t phi686;
-			uint32_t phi682;
-			uint32_t phi679;
-			uint32_t phi680;
-			uint32_t phi268;
-			uint32_t phi_in329;
-			uint32_t phi278;
 			uint32_t phi683;
-			uint32_t phi111;
-			uint64_t phi351;
-			uint64_t phi_in350;
-			uint32_t phi_in61;
-			uint64_t phi_in349;
-			uint32_t phi_in348;
-			uint64_t phi_in167;
-			uint32_t phi_in347;
-			uint32_t phi_in343;
-			uint32_t phi_in337;
-			uint32_t phi_in336;
-			uint32_t phi_in334;
-			uint32_t phi_in333;
-			uint32_t phi_in332;
-			uint32_t phi_in238;
-			uint32_t phi_in330;
-			uint32_t phi_in85;
-			uint32_t phi_in328;
-			uint32_t phi194;
-			uint32_t phi_in325;
-			uint64_t phi_in321;
-			uint64_t phi_in310;
-			uint64_t phi_in318;
-			uint64_t phi_in317;
-			uint32_t phi_in257;
-			uint64_t phi_in66;
-			uint32_t phi_in316;
-			uint32_t phi_in314;
-			uint32_t phi170;
-			uint64_t phi_in312;
-			uint32_t phi_in308;
-			uint64_t phi_in125;
-			uint32_t phi_in307;
-			uint64_t phi_in53;
-			uint32_t phi181;
-			uint32_t phi_in315;
-			uint32_t phi_in305;
-			uint32_t phi_in128;
-			uint32_t phi_in304;
-			uint32_t phi_in302;
-			uint32_t phi_in217;
-			uint32_t phi_in299;
-			uint32_t phi_in294;
-			uint32_t phi_in293;
-			uint32_t phi_in292;
-			uint32_t phi_in291;
-			uint32_t phi_in148;
-			uint32_t phi_in290;
-			uint64_t phi289;
-			uint64_t phi288;
-			uint32_t phi73;
-			uint64_t phi283;
-			uint64_t phi281;
+			uint32_t phi268;
+			uint32_t phi_in30;
+			uint64_t phi197;
+			uint64_t phi_in230;
+			uint32_t phi_in165;
+			uint32_t phi_in326;
+			uint32_t phi_in82;
+			uint32_t phi_in35;
+			uint64_t phi81;
 			uint32_t phi279;
-			uint32_t phi277;
-			uint32_t phi276;
-			uint32_t phi77;
-			uint32_t phi273;
-			uint32_t phi271;
-			uint32_t phi_in323;
-			uint32_t phi266;
-			uint32_t phi_in92;
-			uint32_t phi265;
-			uint32_t phi_in106;
-			uint32_t phi264;
-			uint32_t phi274;
-			uint32_t phi263;
-			uint64_t phi_in169;
-			uint64_t phi260;
-			uint64_t phi284;
-			uint64_t phi_in259;
-			uint32_t phi282;
-			uint64_t phi_in258;
-			uint32_t phi_in303;
-			uint32_t phi_in255;
-			uint64_t phi_in254;
-			uint64_t phi_in253;
-			uint32_t phi190;
-			uint32_t phi269;
+			uint64_t phi_in110;
+			uint32_t phi_in142;
+			uint64_t phi351;
+			uint32_t phi193;
+			uint32_t phi_in348;
+			uint64_t phi_in344;
+			uint32_t phi_in293;
+			uint64_t phi_in342;
+			uint32_t phi_in339;
+			uint32_t phi_in335;
+			uint32_t phi_in246;
+			uint32_t phi_in334;
+			uint32_t phi_in331;
+			uint32_t phi_in336;
+			uint32_t phi_in329;
+			uint32_t phi_in50;
+			uint32_t phi_in328;
+			uint32_t phi173;
 			uint32_t phi_in250;
-			uint32_t phi_in247;
-			uint32_t phi175;
-			uint32_t phi_in244;
+			uint32_t phi_in341;
+			uint32_t phi_in212;
+			uint64_t phi_in350;
+			uint32_t phi_in323;
+			uint64_t phi_in318;
+			uint64_t phi687;
+			uint32_t phi_in145;
+			uint32_t phi_in337;
+			uint32_t phi_in316;
+			uint32_t phi_in129;
+			uint32_t phi_in315;
+			uint32_t phi_in307;
 			uint32_t phi_in306;
-			uint32_t phi_in301;
+			uint32_t phi_in305;
+			uint64_t phi_in313;
+			uint32_t phi118;
+			uint32_t phi_in302;
 			uint32_t phi_in297;
+			uint32_t phi_in294;
+			uint64_t phi_in317;
+			uint32_t phi_in300;
+			uint32_t phi_in299;
+			uint32_t phi_in214;
+			uint32_t phi287;
+			uint32_t phi285;
+			uint32_t phi_in340;
+			uint64_t phi283;
+			uint64_t phi288;
+			uint32_t phi_in33;
+			uint64_t phi281;
+			uint32_t phi_in201;
+			uint32_t phi278;
+			uint32_t phi277;
+			uint32_t phi_in64;
+			uint32_t phi276;
+			uint32_t phi275;
 			uint32_t phi272;
+			uint32_t phi270;
+			uint32_t phi263;
+			uint64_t phi284;
+			uint64_t phi_in345;
+			uint32_t phi262;
+			uint32_t phi280;
+			uint64_t phi_in259;
+			uint32_t phi267;
+			uint64_t phi45;
+			uint64_t phi_in258;
+			uint32_t phi_in257;
+			uint32_t phi_in256;
+			uint64_t phi_in254;
+			uint32_t phi_in327;
+			uint32_t phi_in252;
+			uint64_t phi_in251;
+			uint32_t phi_in248;
+			uint32_t phi_in247;
+			uint32_t phi_in245;
+			uint32_t phi_in244;
+			uint32_t phi_in235;
+			uint32_t phi_in243;
 			uint32_t phi_in242;
 			uint32_t phi_in241;
-			uint64_t phi_in342;
-			uint32_t phi681;
 			uint32_t phi_in240;
-			uint32_t phi_in143;
 			uint32_t phi_in239;
-			uint32_t phi_in339;
-			uint32_t phi_in236;
-			uint32_t phi_in252;
-			uint32_t phi_in234;
+			uint64_t phi124;
+			uint32_t phi_in237;
 			uint32_t phi_in231;
-			uint64_t phi_in230;
-			uint32_t phi_in221;
-			uint32_t phi_in309;
+			uint64_t phi_in227;
+			uint64_t phi_in226;
+			uint64_t phi_in48;
+			uint64_t phi_in222;
+			uint32_t phi701;
+			uint64_t phi_in53;
 			uint32_t phi_in220;
-			uint32_t phi_in135;
 			uint32_t phi_in219;
-			uint32_t phi_in215;
-			uint32_t phi43;
-			uint32_t phi_in249;
-			uint32_t phi_in214;
-			uint64_t phi79;
+			uint32_t phi_in216;
+			uint32_t phi_in149;
+			uint64_t phi_in109;
+			uint32_t phi_in296;
+			uint32_t phi_in218;
 			uint32_t phi_in213;
+			uint32_t phi_in303;
+			uint32_t phi_in152;
+			uint32_t phi_in211;
+			uint32_t phi_in210;
 			uint32_t phi_in209;
-			uint32_t phi_in346;
+			uint32_t phi_in65;
 			uint64_t phi_in208;
-			uint32_t phi_in207;
+			uint32_t phi_in330;
+			uint32_t phi_in292;
+			uint32_t phi186;
+			uint32_t phi_in206;
+			uint32_t phi114;
+			uint64_t phi_in349;
 			uint32_t phi_in205;
 			uint32_t phi_in204;
-			uint32_t phi_in331;
-			uint32_t phi_in202;
-			uint64_t phi_in313;
-			uint32_t phi_in201;
-			uint32_t phi_in200;
-			uint32_t phi_in311;
-			uint32_t phi75;
-			uint32_t phi_in233;
-			uint64_t phi_in199;
-			uint64_t phi197;
-			uint32_t phi702;
-			uint32_t phi173;
-			uint32_t phi193;
-			uint32_t phi192;
-			uint32_t phi_in256;
-			uint32_t phi189;
-			uint32_t phi678;
-			uint32_t phi186;
-			uint32_t phi_in235;
-			uint32_t phi177;
-			uint32_t phi_in212;
-			uint32_t phi_in326;
-			uint64_t phi81;
-			uint64_t phi196;
-			uint64_t phi_in168;
-			uint32_t phi_in248;
-			uint32_t phi_in165;
-			uint32_t phi_in218;
-			uint32_t phi_in206;
-			uint32_t phi_in163;
-			uint64_t phi_in162;
-			uint32_t phi188;
-			uint32_t phi74;
-			uint32_t phi_in58;
-			uint32_t phi_in87;
-			uint32_t phi_in156;
-			uint32_t phi_in154;
-			uint64_t phi191;
-			uint64_t phi_in67;
-			uint32_t phi_in147;
-			uint32_t phi_in150;
-			uint32_t phi_in146;
-			uint32_t phi_in50;
-			uint64_t phi_in166;
-			uint32_t phi_in130;
-			uint32_t phi71;
-			uint32_t phi_in145;
-			uint32_t phi_in142;
-			uint32_t phi_in243;
-			uint32_t phi676;
-			uint32_t phi_in141;
-			uint32_t phi_in140;
-			uint32_t phi_in160;
-			uint32_t phi_in101;
-			uint32_t phi_in84;
-			uint64_t phi_in137;
-			uint32_t phi_in134;
-			uint32_t phi_in131;
-			uint32_t phi_in211;
-			uint32_t phi_in56;
-			uint32_t phi172;
-			uint32_t phi187;
-			uint32_t phi_in126;
-			uint64_t phi124;
-			uint64_t phi123;
+			uint32_t phi_in314;
+			uint32_t phi_in203;
+			uint64_t phi_in312;
 			uint32_t phi_in338;
-			uint32_t phi_in83;
-			uint64_t phi122;
-			uint64_t phi121;
-			uint32_t phi_in164;
-			uint32_t phi120;
-			uint32_t phi118;
-			uint32_t phi116;
-			uint32_t phi117;
-			uint32_t phi115;
-			uint64_t phi44;
-			uint32_t phi_in90;
-			uint32_t phi114;
-			uint32_t phi113;
-			uint64_t phi_in226;
-			uint32_t phi112;
-			uint32_t phi_in295;
-			uint32_t phi685;
-			uint32_t phi119;
-			uint32_t phi261;
-			uint32_t phi_in32;
-			uint32_t phi_in216;
-			uint64_t phi_in110;
-			uint32_t phi183;
-			uint64_t phi_in108;
-			uint32_t phi_in340;
-			uint32_t phi72;
-			uint32_t phi_in103;
-			uint32_t phi_in99;
-			uint32_t phi_in98;
-			uint32_t phi_in97;
-			uint32_t phi_in152;
-			uint64_t phi_in93;
-			uint32_t phi176;
-			uint32_t phi_in225;
-			uint32_t phi42;
-			uint32_t phi_in52;
-			uint32_t phi182;
-			uint32_t phi_in91;
-			uint32_t phi_in223;
-			uint64_t phi703;
-			uint32_t phi_in161;
-			uint64_t phi_in345;
-			uint32_t phi_in86;
-			uint32_t phi_in129;
-			uint64_t phi_in107;
-			uint32_t phi180;
-			uint32_t phi_in46;
-			uint32_t phi_in324;
-			uint32_t phi_in127;
-			uint32_t phi286;
-			uint32_t phi285;
-			uint64_t phi_in136;
-			uint32_t phi_in31;
-			uint32_t phi_in49;
-			uint32_t phi_in341;
-			uint32_t phi_in155;
-			uint32_t phi_in237;
-			uint64_t phi_in68;
-			uint32_t phi69;
+			uint32_t phi_in311;
+			uint32_t phi_in200;
+			uint64_t phi198;
+			uint32_t phi271;
+			uint64_t phi195;
+			uint64_t phi289;
+			uint32_t phi194;
+			uint64_t phi_in253;
+			uint32_t phi_in234;
+			uint32_t phi187;
+			uint32_t phi_in128;
+			uint64_t phi80;
+			uint32_t phi_in87;
 			uint32_t phi185;
-			uint64_t phi_in222;
-			uint32_t phi171;
-			uint32_t phi_in322;
-			uint32_t phi_in246;
+			uint32_t phi184;
+			uint32_t phi181;
+			uint32_t phi189;
+			uint32_t phi180;
+			uint32_t phi702;
+			uint32_t phi_in86;
+			uint32_t phi178;
+			uint32_t phi_in233;
+			uint32_t phi176;
+			uint32_t phi175;
+			uint64_t phi_in169;
+			uint32_t phi_in207;
+			uint64_t phi_in167;
 			uint32_t phi_in63;
+			uint32_t phi286;
+			uint32_t phi_in91;
+			uint32_t phi_in51;
+			uint32_t phi_in161;
+			uint32_t phi_in159;
+			uint32_t phi_in31;
+			uint32_t phi_in156;
+			uint32_t phi_in238;
+			uint32_t phi_in143;
+			uint32_t phi_in154;
+			uint32_t phi_in298;
+			uint32_t phi_in151;
+			uint64_t phi196;
+			uint32_t phi_in164;
+			uint32_t phi113;
+			uint32_t phi18;
+			uint32_t phi_in347;
+			uint32_t phi_in131;
+			uint32_t phi_in141;
+			uint32_t phi_in225;
+			uint32_t phi_in158;
+			uint32_t phi_in106;
+			uint32_t phi172;
+			uint64_t phi_in136;
+			uint32_t phi_in135;
+			uint32_t phi_in132;
+			uint32_t phi_in49;
+			uint64_t phi_in66;
+			uint32_t phi_in133;
+			uint32_t phi_in56;
+			uint32_t phi_in127;
+			uint32_t phi_in153;
+			uint64_t phi_in125;
+			uint32_t phi_in290;
+			uint32_t phi_in147;
+			uint64_t phi123;
+			uint64_t phi260;
+			uint32_t phi_in217;
+			uint32_t phi_in332;
+			uint64_t phi122;
+			uint32_t phi111;
+			uint32_t phi170;
+			uint32_t phi_in148;
+			uint64_t phi700;
+			uint32_t phi120;
+			uint32_t phi119;
+			uint32_t phi_in325;
+			uint32_t phi116;
+			uint32_t phi_in52;
+			uint64_t phi_in108;
+			uint32_t phi_in291;
+			uint64_t phi_in107;
+			uint32_t phi265;
+			uint32_t phi183;
+			uint32_t phi_in160;
+			uint32_t phi679;
+			uint32_t phi179;
+			uint32_t phi_in104;
+			uint32_t phi_in130;
+			uint32_t phi_in103;
+			uint32_t phi_in98;
+			uint32_t phi_in163;
+			uint64_t phi_in94;
+			uint32_t phi_in146;
+			uint32_t phi261;
+			uint32_t phi_in92;
+			uint32_t phi_in333;
+			uint32_t phi269;
+			uint64_t phi703;
+			uint32_t phi_in221;
+			uint32_t phi_in89;
+			uint32_t phi_in85;
+			uint32_t phi182;
+			uint32_t phi_in249;
+			uint64_t phi79;
+			uint32_t phi77;
+			uint32_t phi76;
+			uint32_t phi_in223;
+			uint64_t phi_in67;
+			uint32_t phi_in232;
+			uint32_t phi75;
+			uint32_t phi_in134;
+			uint32_t phi74;
+			uint32_t phi_in90;
+			uint64_t phi_in166;
+			uint32_t phi73;
+			uint32_t phi190;
+			uint32_t phi71;
+			uint32_t phi_in150;
+			uint64_t phi_in93;
+			uint64_t phi_in68;
+			uint32_t phi_in304;
+			uint64_t phi_in137;
+			uint32_t phi_in60;
+			uint32_t phi_in343;
+			uint64_t phi_in321;
+			uint32_t phi_in155;
+			uint32_t phi69;
+			uint32_t phi_in324;
+			uint32_t phi42;
+			uint32_t phi_in32;
+			uint32_t phi273;
+			uint32_t phi188;
+			uint32_t phi274;
+			uint32_t phi_in105;
+			uint32_t phi40;
+			uint64_t phi44;
+			uint32_t phi72;
+			uint64_t phi708;
+			uint32_t phi192;
+			uint32_t phi70;
+			uint32_t phi117;
+			uint32_t phi_in57;
+			uint32_t phi_in101;
+			uint32_t phi_in58;
+			uint32_t phi282;
+			uint32_t phi_in215;
+			uint32_t phi174;
+			uint32_t phi266;
+			uint32_t phi_in346;
+			uint32_t phi_in301;
+			uint32_t phi_in59;
+			uint32_t phi78;
+			uint32_t phi_in47;
+			uint32_t phi43;
+			uint32_t phi_in309;
+			uint64_t phi_in36;
+			uint64_t phi_in310;
+			uint64_t phi_in199;
+			uint32_t phi_in34;
+			uint64_t phi_in37;
+			uint32_t phi_in322;
+			uint32_t phi264;
+			uint32_t* anon28;
 			uint32_t phi41;
 			uint32_t phi_in62;
-			uint32_t phi_in210;
-			uint32_t phi_in105;
-			uint64_t phi700;
-			uint32_t* anon28;
-			uint32_t phi178;
-			uint32_t phi270;
-			uint32_t phi_in245;
-			uint32_t phi78;
-			uint32_t phi_in335;
-			uint32_t phi184;
-			uint32_t phi_in149;
-			uint64_t phi195;
-			uint32_t phi_in133;
-			uint32_t phi_in296;
+			uint32_t phi_in236;
+			uint32_t phi112;
+			uint32_t phi_in84;
+			uint32_t phi_in202;
+			uint32_t phi171;
+			uint32_t phi_in140;
+			uint64_t phi191;
+			uint32_t phi_in61;
 			uint32_t phi_in100;
-			uint32_t phi_in232;
-			uint32_t phi_in59;
-			uint32_t phi_in298;
-			uint32_t phi_in47;
-			uint32_t phi275;
-			uint32_t phi_in64;
-			uint32_t phi_in159;
-			uint64_t phi_in227;
-			uint32_t phi70;
-			uint32_t phi_in132;
-			uint32_t phi_in33;
-			uint64_t phi_in88;
-			uint32_t phi_in57;
-			uint64_t phi_in48;
-			uint32_t phi_in224;
-			uint64_t phi_in109;
-			uint64_t phi80;
-			uint32_t phi_in51;
-			uint64_t phi_in251;
-			uint32_t phi_in65;
-			uint64_t phi45;
-			uint64_t phi198;
-			uint32_t phi280;
-			uint32_t phi_in89;
+			uint32_t phi684;
 			uint32_t phi_in102;
+			uint32_t phi_in83;
+			uint64_t phi_in168;
+			uint32_t phi_in224;
+			uint32_t phi_in126;
+			uint32_t phi115;
 			uint32_t phi_in157;
-			uint32_t phi40;
-			uint64_t phi_in344;
-			uint64_t phi_in36;
-			uint32_t phi_in300;
-			uint32_t phi174;
-			uint32_t phi_in104;
-			uint32_t phi_in82;
-			uint32_t phi_in153;
-			uint32_t phi_in30;
-			uint32_t phi_in158;
-			uint32_t phi_in203;
-			uint32_t phi262;
-			uint64_t phi_in94;
-			uint32_t phi179;
-			uint32_t phi_in151;
-			uint64_t phi_in37;
-			uint32_t phi_in327;
-			uint32_t phi287;
-			uint32_t phi_in60;
-			uint32_t phi18;
-			uint32_t phi_in35;
-			uint32_t phi267;
-			uint32_t phi_in34;
-			uint32_t phi76;
+			uint64_t phi121;
+			uint32_t phi_in46;
+			uint32_t phi_in308;
+			uint32_t phi_in97;
+			uint32_t phi_in99;
+			uint32_t phi_in255;
+			uint64_t phi_in162;
+			uint64_t phi_in88;
+			uint32_t phi_in295;
+			uint32_t phi177;
 			if (dispatch13 == 0)
 			{
 				uint32_t phi14 = phi_in4;
@@ -579,7 +579,7 @@ void w(uint64_t arg0, uint64_t arg1, uint64_t arg2, uint64_t arg3)
 				phi_in67 = 0;
 				phi_in68 = phi45;
 			}
-			if (dispatch13 == 3 || dispatch13 == 1 && phi43 < *anon54 || dispatch13 == 0 && phi18 < *anon28 && phi43 < *anon54)
+			if (dispatch13 == 2 || dispatch13 == 1 && phi43 < *anon54 || dispatch13 == 0 && phi18 < *anon28 && phi43 < *anon54)
 			{
 				phi69 = phi_in56;
 				phi70 = phi_in57;
@@ -610,7 +610,7 @@ void w(uint64_t arg0, uint64_t arg1, uint64_t arg2, uint64_t arg3)
 			}
 			int64_t anon96 = (__sext int64_t)*(uint32_t*)(phi80 + *(uint64_t*)(phi81 + 32) + 6301632);
 			uint32_t* anon95 = (uint32_t*)((anon96 << 2) + 6300992);
-			if (*(uint32_t*)(phi81 + 4) < *anon95 && (dispatch13 == 3 || dispatch13 == 1 && phi43 < *anon54 || dispatch13 == 0 && phi18 < *anon28 && phi43 < *anon54))
+			if (*(uint32_t*)(phi81 + 4) < *anon95 && (dispatch13 == 2 || dispatch13 == 1 && phi43 < *anon54 || dispatch13 == 0 && phi18 < *anon28 && phi43 < *anon54))
 			{
 				*(uint64_t*)(phi81 + 72) = phi80;
 				*anon95 = *(uint32_t*)(phi81 + 24);
@@ -630,7 +630,7 @@ void w(uint64_t arg0, uint64_t arg1, uint64_t arg2, uint64_t arg3)
 				phi_in109 = anon96 * 12;
 				phi_in110 = phi79;
 			}
-			if (dispatch13 == 2 || dispatch13 == 3 && *(uint32_t*)(phi81 + 4) < *anon95 || dispatch13 == 1 && phi43 < *anon54 && *(uint32_t*)(phi81 + 4) < *anon95 || dispatch13 == 0 && phi18 < *anon28 && phi43 < *anon54 && *(uint32_t*)(phi81 + 4) < *anon95)
+			if (dispatch13 == 5 || dispatch13 == 2 && *(uint32_t*)(phi81 + 4) < *anon95 || dispatch13 == 1 && phi43 < *anon54 && *(uint32_t*)(phi81 + 4) < *anon95 || dispatch13 == 0 && phi18 < *anon28 && phi43 < *anon54 && *(uint32_t*)(phi81 + 4) < *anon95)
 			{
 				phi111 = phi_in97;
 				phi112 = phi_in98;
@@ -662,7 +662,7 @@ void w(uint64_t arg0, uint64_t arg1, uint64_t arg2, uint64_t arg3)
 			}
 			int64_t anon139 = (__sext int64_t)*(uint32_t*)(phi122 + phi123 + 6301632);
 			uint32_t* anon138 = (uint32_t*)((anon139 << 2) + 6300992);
-			if (*(uint32_t*)(phi121 + 24) < *anon138 && (dispatch13 == 2 || dispatch13 == 3 && *(uint32_t*)(phi81 + 4) < *anon95 || dispatch13 == 1 && phi43 < *anon54 && *(uint32_t*)(phi81 + 4) < *anon95 || dispatch13 == 0 && phi18 < *anon28 && phi43 < *anon54 && *(uint32_t*)(phi81 + 4) < *anon95))
+			if (*(uint32_t*)(phi121 + 24) < *anon138 && (dispatch13 == 5 || dispatch13 == 2 && *(uint32_t*)(phi81 + 4) < *anon95 || dispatch13 == 1 && phi43 < *anon54 && *(uint32_t*)(phi81 + 4) < *anon95 || dispatch13 == 0 && phi18 < *anon28 && phi43 < *anon54 && *(uint32_t*)(phi81 + 4) < *anon95))
 			{
 				*anon138 = *(uint32_t*)(phi121 + 28);
 				phi_in140 = phi111;
@@ -696,7 +696,7 @@ void w(uint64_t arg0, uint64_t arg1, uint64_t arg2, uint64_t arg3)
 				phi_in168 = anon139 * 12;
 				phi_in169 = phi124;
 			}
-			if (dispatch13 == 4 || dispatch13 == 2 && *(uint32_t*)(phi121 + 24) < *anon138 || dispatch13 == 3 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 || dispatch13 == 1 && phi43 < *anon54 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 || dispatch13 == 0 && phi18 < *anon28 && phi43 < *anon54 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138)
+			if (dispatch13 == 4 || dispatch13 == 5 && *(uint32_t*)(phi121 + 24) < *anon138 || dispatch13 == 2 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 || dispatch13 == 1 && phi43 < *anon54 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 || dispatch13 == 0 && phi18 < *anon28 && phi43 < *anon54 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138)
 			{
 				phi170 = phi_in140;
 				phi171 = phi_in141;
@@ -759,7 +759,7 @@ void w(uint64_t arg0, uint64_t arg1, uint64_t arg2, uint64_t arg3)
 			}
 			int64_t anon229 = (__sext int64_t)*(uint32_t*)(phi196 + phi197 + 6301632);
 			uint32_t* anon228 = (uint32_t*)((anon229 << 2) + 6300992);
-			if (*(uint32_t*)(phi195 + 28) < *anon228 && (dispatch13 == 4 || dispatch13 == 2 && *(uint32_t*)(phi121 + 24) < *anon138 || dispatch13 == 3 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 || dispatch13 == 1 && phi43 < *anon54 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 || dispatch13 == 0 && phi18 < *anon28 && phi43 < *anon54 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138))
+			if (*(uint32_t*)(phi195 + 28) < *anon228 && (dispatch13 == 4 || dispatch13 == 5 && *(uint32_t*)(phi121 + 24) < *anon138 || dispatch13 == 2 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 || dispatch13 == 1 && phi43 < *anon54 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 || dispatch13 == 0 && phi18 < *anon28 && phi43 < *anon54 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138))
 			{
 				*anon228 = *(uint32_t*)(phi195 + 40);
 				*(uint32_t*)(phi195 + 120) = (uint32_t)phi198 + 9;
@@ -794,7 +794,7 @@ void w(uint64_t arg0, uint64_t arg1, uint64_t arg2, uint64_t arg3)
 				phi_in258 = phi195;
 				phi_in259 = phi198 & 0xffffffff;
 			}
-			if (dispatch13 == 5 || dispatch13 == 4 && *(uint32_t*)(phi195 + 28) < *anon228 || dispatch13 == 2 && *(uint32_t*)(phi121 + 24) < *anon138 && *(uint32_t*)(phi195 + 28) < *anon228 || dispatch13 == 3 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 && *(uint32_t*)(phi195 + 28) < *anon228 || dispatch13 == 1 && phi43 < *anon54 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 && *(uint32_t*)(phi195 + 28) < *anon228 || dispatch13 == 0 && phi18 < *anon28 && phi43 < *anon54 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 && *(uint32_t*)(phi195 + 28) < *anon228)
+			if (dispatch13 == 6 || dispatch13 == 4 && *(uint32_t*)(phi195 + 28) < *anon228 || dispatch13 == 5 && *(uint32_t*)(phi121 + 24) < *anon138 && *(uint32_t*)(phi195 + 28) < *anon228 || dispatch13 == 2 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 && *(uint32_t*)(phi195 + 28) < *anon228 || dispatch13 == 1 && phi43 < *anon54 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 && *(uint32_t*)(phi195 + 28) < *anon228 || dispatch13 == 0 && phi18 < *anon28 && phi43 < *anon54 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 && *(uint32_t*)(phi195 + 28) < *anon228)
 			{
 				phi260 = phi_in230;
 				phi261 = phi_in231;
@@ -858,7 +858,7 @@ void w(uint64_t arg0, uint64_t arg1, uint64_t arg2, uint64_t arg3)
 			}
 			int64_t anon320 = (__sext int64_t)*(uint32_t*)(phi260 + anon229 * 12 + 6301632);
 			uint32_t* anon319 = (uint32_t*)((anon320 << 2) + 6300992);
-			if (*(uint32_t*)(phi288 + 40) < *anon319 && (dispatch13 == 5 || dispatch13 == 4 && *(uint32_t*)(phi195 + 28) < *anon228 || dispatch13 == 2 && *(uint32_t*)(phi121 + 24) < *anon138 && *(uint32_t*)(phi195 + 28) < *anon228 || dispatch13 == 3 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 && *(uint32_t*)(phi195 + 28) < *anon228 || dispatch13 == 1 && phi43 < *anon54 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 && *(uint32_t*)(phi195 + 28) < *anon228 || dispatch13 == 0 && phi18 < *anon28 && phi43 < *anon54 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 && *(uint32_t*)(phi195 + 28) < *anon228))
+			if (*(uint32_t*)(phi288 + 40) < *anon319 && (dispatch13 == 6 || dispatch13 == 4 && *(uint32_t*)(phi195 + 28) < *anon228 || dispatch13 == 5 && *(uint32_t*)(phi121 + 24) < *anon138 && *(uint32_t*)(phi195 + 28) < *anon228 || dispatch13 == 2 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 && *(uint32_t*)(phi195 + 28) < *anon228 || dispatch13 == 1 && phi43 < *anon54 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 && *(uint32_t*)(phi195 + 28) < *anon228 || dispatch13 == 0 && phi18 < *anon28 && phi43 < *anon54 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 && *(uint32_t*)(phi195 + 28) < *anon228))
 			{
 				*anon319 = *(uint32_t*)(phi288 + 44);
 				phi_in321 = 0;
@@ -892,7 +892,7 @@ void w(uint64_t arg0, uint64_t arg1, uint64_t arg2, uint64_t arg3)
 				phi_in349 = phi288;
 				phi_in350 = phi289;
 			}
-			if (dispatch13 == 6 || dispatch13 == 5 && *(uint32_t*)(phi288 + 40) < *anon319 || dispatch13 == 4 && *(uint32_t*)(phi195 + 28) < *anon228 && *(uint32_t*)(phi288 + 40) < *anon319 || dispatch13 == 2 && *(uint32_t*)(phi121 + 24) < *anon138 && *(uint32_t*)(phi195 + 28) < *anon228 && *(uint32_t*)(phi288 + 40) < *anon319 || dispatch13 == 3 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 && *(uint32_t*)(phi195 + 28) < *anon228 && *(uint32_t*)(phi288 + 40) < *anon319 || dispatch13 == 1 && phi43 < *anon54 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 && *(uint32_t*)(phi195 + 28) < *anon228 && *(uint32_t*)(phi288 + 40) < *anon319 || dispatch13 == 0 && phi18 < *anon28 && phi43 < *anon54 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 && *(uint32_t*)(phi195 + 28) < *anon228 && *(uint32_t*)(phi288 + 40) < *anon319)
+			if (dispatch13 == 3 || dispatch13 == 6 && *(uint32_t*)(phi288 + 40) < *anon319 || dispatch13 == 4 && *(uint32_t*)(phi195 + 28) < *anon228 && *(uint32_t*)(phi288 + 40) < *anon319 || dispatch13 == 5 && *(uint32_t*)(phi121 + 24) < *anon138 && *(uint32_t*)(phi195 + 28) < *anon228 && *(uint32_t*)(phi288 + 40) < *anon319 || dispatch13 == 2 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 && *(uint32_t*)(phi195 + 28) < *anon228 && *(uint32_t*)(phi288 + 40) < *anon319 || dispatch13 == 1 && phi43 < *anon54 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 && *(uint32_t*)(phi195 + 28) < *anon228 && *(uint32_t*)(phi288 + 40) < *anon319 || dispatch13 == 0 && phi18 < *anon28 && phi43 < *anon54 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 && *(uint32_t*)(phi195 + 28) < *anon228 && *(uint32_t*)(phi288 + 40) < *anon319)
 			{
 				phi351 = phi_in321;
 				uint32_t phi352 = phi_in322;
@@ -1477,9 +1477,9 @@ void w(uint64_t arg0, uint64_t arg1, uint64_t arg2, uint64_t arg3)
 				phi_in348 = phi614;
 				phi_in349 = phi615;
 				phi_in350 = phi616;
-				dispatch13 = 6;
+				dispatch13 = 3;
 			}
-			if (*(uint32_t*)(phi288 + 40) >= *anon319 && dispatch13 == 5 || *(uint32_t*)(phi288 + 40) >= *anon319 && dispatch13 == 4 && *(uint32_t*)(phi195 + 28) < *anon228 || *(uint32_t*)(phi288 + 40) >= *anon319 && dispatch13 == 2 && *(uint32_t*)(phi121 + 24) < *anon138 && *(uint32_t*)(phi195 + 28) < *anon228 || *(uint32_t*)(phi288 + 40) >= *anon319 && dispatch13 == 3 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 && *(uint32_t*)(phi195 + 28) < *anon228 || *(uint32_t*)(phi288 + 40) >= *anon319 && dispatch13 == 1 && phi43 < *anon54 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 && *(uint32_t*)(phi195 + 28) < *anon228 || *(uint32_t*)(phi288 + 40) >= *anon319 && dispatch13 == 0 && phi18 < *anon28 && phi43 < *anon54 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 && *(uint32_t*)(phi195 + 28) < *anon228 || dispatch13 == 6 && phi351 == 8 || dispatch13 == 5 && *(uint32_t*)(phi288 + 40) < *anon319 && phi351 == 8 || dispatch13 == 4 && *(uint32_t*)(phi195 + 28) < *anon228 && *(uint32_t*)(phi288 + 40) < *anon319 && phi351 == 8 || dispatch13 == 2 && *(uint32_t*)(phi121 + 24) < *anon138 && *(uint32_t*)(phi195 + 28) < *anon228 && *(uint32_t*)(phi288 + 40) < *anon319 && phi351 == 8 || dispatch13 == 3 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 && *(uint32_t*)(phi195 + 28) < *anon228 && *(uint32_t*)(phi288 + 40) < *anon319 && phi351 == 8 || dispatch13 == 1 && phi43 < *anon54 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 && *(uint32_t*)(phi195 + 28) < *anon228 && *(uint32_t*)(phi288 + 40) < *anon319 && phi351 == 8 || dispatch13 == 0 && phi18 < *anon28 && phi43 < *anon54 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 && *(uint32_t*)(phi195 + 28) < *anon228 && *(uint32_t*)(phi288 + 40) < *anon319 && phi351 == 8)
+			if (*(uint32_t*)(phi288 + 40) >= *anon319 && dispatch13 == 6 || *(uint32_t*)(phi288 + 40) >= *anon319 && dispatch13 == 4 && *(uint32_t*)(phi195 + 28) < *anon228 || *(uint32_t*)(phi288 + 40) >= *anon319 && dispatch13 == 5 && *(uint32_t*)(phi121 + 24) < *anon138 && *(uint32_t*)(phi195 + 28) < *anon228 || *(uint32_t*)(phi288 + 40) >= *anon319 && dispatch13 == 2 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 && *(uint32_t*)(phi195 + 28) < *anon228 || *(uint32_t*)(phi288 + 40) >= *anon319 && dispatch13 == 1 && phi43 < *anon54 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 && *(uint32_t*)(phi195 + 28) < *anon228 || *(uint32_t*)(phi288 + 40) >= *anon319 && dispatch13 == 0 && phi18 < *anon28 && phi43 < *anon54 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 && *(uint32_t*)(phi195 + 28) < *anon228 || dispatch13 == 3 && phi351 == 8 || dispatch13 == 6 && *(uint32_t*)(phi288 + 40) < *anon319 && phi351 == 8 || dispatch13 == 4 && *(uint32_t*)(phi195 + 28) < *anon228 && *(uint32_t*)(phi288 + 40) < *anon319 && phi351 == 8 || dispatch13 == 5 && *(uint32_t*)(phi121 + 24) < *anon138 && *(uint32_t*)(phi195 + 28) < *anon228 && *(uint32_t*)(phi288 + 40) < *anon319 && phi351 == 8 || dispatch13 == 2 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 && *(uint32_t*)(phi195 + 28) < *anon228 && *(uint32_t*)(phi288 + 40) < *anon319 && phi351 == 8 || dispatch13 == 1 && phi43 < *anon54 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 && *(uint32_t*)(phi195 + 28) < *anon228 && *(uint32_t*)(phi288 + 40) < *anon319 && phi351 == 8 || dispatch13 == 0 && phi18 < *anon28 && phi43 < *anon54 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 && *(uint32_t*)(phi195 + 28) < *anon228 && *(uint32_t*)(phi288 + 40) < *anon319 && phi351 == 8)
 			{
 				uint32_t phi617 = phi_in290;
 				uint32_t phi618 = phi_in291;
@@ -1569,9 +1569,9 @@ void w(uint64_t arg0, uint64_t arg1, uint64_t arg2, uint64_t arg3)
 				phi_in257 = phi643;
 				phi_in258 = phi644;
 				phi_in259 = phi645;
-				dispatch13 = 5;
+				dispatch13 = 6;
 			}
-			if (dispatch13 == 6 && phi351 == 8 && phi260 == 8 || *(uint32_t*)(phi288 + 40) >= *anon319 && dispatch13 == 0 && phi18 < *anon28 && phi43 < *anon54 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 && *(uint32_t*)(phi195 + 28) < *anon228 && phi260 == 8 || *(uint32_t*)(phi288 + 40) >= *anon319 && dispatch13 == 1 && phi43 < *anon54 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 && *(uint32_t*)(phi195 + 28) < *anon228 && phi260 == 8 || *(uint32_t*)(phi288 + 40) >= *anon319 && dispatch13 == 3 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 && *(uint32_t*)(phi195 + 28) < *anon228 && phi260 == 8 || *(uint32_t*)(phi288 + 40) >= *anon319 && dispatch13 == 2 && *(uint32_t*)(phi121 + 24) < *anon138 && *(uint32_t*)(phi195 + 28) < *anon228 && phi260 == 8 || *(uint32_t*)(phi288 + 40) >= *anon319 && dispatch13 == 4 && *(uint32_t*)(phi195 + 28) < *anon228 && phi260 == 8 || dispatch13 == 1 && phi43 < *anon54 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 && *(uint32_t*)(phi195 + 28) < *anon228 && *(uint32_t*)(phi288 + 40) < *anon319 && phi351 == 8 && phi260 == 8 || *(uint32_t*)(phi288 + 40) >= *anon319 && dispatch13 == 5 && phi260 == 8 || *(uint32_t*)(phi195 + 28) >= *anon228 && dispatch13 == 0 && phi18 < *anon28 && phi43 < *anon54 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 || dispatch13 == 0 && phi18 < *anon28 && phi43 < *anon54 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 && *(uint32_t*)(phi195 + 28) < *anon228 && *(uint32_t*)(phi288 + 40) < *anon319 && phi351 == 8 && phi260 == 8 || dispatch13 == 3 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 && *(uint32_t*)(phi195 + 28) < *anon228 && *(uint32_t*)(phi288 + 40) < *anon319 && phi351 == 8 && phi260 == 8 || *(uint32_t*)(phi195 + 28) >= *anon228 && dispatch13 == 1 && phi43 < *anon54 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 || dispatch13 == 2 && *(uint32_t*)(phi121 + 24) < *anon138 && *(uint32_t*)(phi195 + 28) < *anon228 && *(uint32_t*)(phi288 + 40) < *anon319 && phi351 == 8 && phi260 == 8 || *(uint32_t*)(phi195 + 28) >= *anon228 && dispatch13 == 3 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 || dispatch13 == 4 && *(uint32_t*)(phi195 + 28) < *anon228 && *(uint32_t*)(phi288 + 40) < *anon319 && phi351 == 8 && phi260 == 8 || *(uint32_t*)(phi195 + 28) >= *anon228 && dispatch13 == 2 && *(uint32_t*)(phi121 + 24) < *anon138 || dispatch13 == 5 && *(uint32_t*)(phi288 + 40) < *anon319 && phi351 == 8 && phi260 == 8 || *(uint32_t*)(phi195 + 28) >= *anon228 && dispatch13 == 4)
+			if (*(uint32_t*)(phi195 + 28) >= *anon228 && dispatch13 == 5 && *(uint32_t*)(phi121 + 24) < *anon138 || dispatch13 == 4 && *(uint32_t*)(phi195 + 28) < *anon228 && *(uint32_t*)(phi288 + 40) < *anon319 && phi351 == 8 && phi260 == 8 || dispatch13 == 6 && *(uint32_t*)(phi288 + 40) < *anon319 && phi351 == 8 && phi260 == 8 || *(uint32_t*)(phi195 + 28) >= *anon228 && dispatch13 == 2 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 || *(uint32_t*)(phi195 + 28) >= *anon228 && dispatch13 == 1 && phi43 < *anon54 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 || dispatch13 == 5 && *(uint32_t*)(phi121 + 24) < *anon138 && *(uint32_t*)(phi195 + 28) < *anon228 && *(uint32_t*)(phi288 + 40) < *anon319 && phi351 == 8 && phi260 == 8 || dispatch13 == 2 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 && *(uint32_t*)(phi195 + 28) < *anon228 && *(uint32_t*)(phi288 + 40) < *anon319 && phi351 == 8 && phi260 == 8 || *(uint32_t*)(phi195 + 28) >= *anon228 && dispatch13 == 0 && phi18 < *anon28 && phi43 < *anon54 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 || *(uint32_t*)(phi288 + 40) >= *anon319 && dispatch13 == 6 && phi260 == 8 || *(uint32_t*)(phi288 + 40) >= *anon319 && dispatch13 == 4 && *(uint32_t*)(phi195 + 28) < *anon228 && phi260 == 8 || dispatch13 == 1 && phi43 < *anon54 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 && *(uint32_t*)(phi195 + 28) < *anon228 && *(uint32_t*)(phi288 + 40) < *anon319 && phi351 == 8 && phi260 == 8 || dispatch13 == 0 && phi18 < *anon28 && phi43 < *anon54 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 && *(uint32_t*)(phi195 + 28) < *anon228 && *(uint32_t*)(phi288 + 40) < *anon319 && phi351 == 8 && phi260 == 8 || *(uint32_t*)(phi288 + 40) >= *anon319 && dispatch13 == 5 && *(uint32_t*)(phi121 + 24) < *anon138 && *(uint32_t*)(phi195 + 28) < *anon228 && phi260 == 8 || *(uint32_t*)(phi288 + 40) >= *anon319 && dispatch13 == 1 && phi43 < *anon54 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 && *(uint32_t*)(phi195 + 28) < *anon228 && phi260 == 8 || *(uint32_t*)(phi288 + 40) >= *anon319 && dispatch13 == 2 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 && *(uint32_t*)(phi195 + 28) < *anon228 && phi260 == 8 || *(uint32_t*)(phi288 + 40) >= *anon319 && dispatch13 == 0 && phi18 < *anon28 && phi43 < *anon54 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 && *(uint32_t*)(phi195 + 28) < *anon228 && phi260 == 8 || *(uint32_t*)(phi195 + 28) >= *anon228 && dispatch13 == 4 || dispatch13 == 3 && phi351 == 8 && phi260 == 8)
 			{
 				uint64_t phi646 = phi_in199;
 				uint32_t phi647 = phi_in200;
@@ -1646,7 +1646,7 @@ void w(uint64_t arg0, uint64_t arg1, uint64_t arg2, uint64_t arg3)
 				phi_in169 = phi674;
 				dispatch13 = 4;
 			}
-			if (*(uint32_t*)(phi121 + 24) >= *anon138 && dispatch13 == 0 && phi18 < *anon28 && phi43 < *anon54 && *(uint32_t*)(phi81 + 4) < *anon95 || *(uint32_t*)(phi195 + 28) >= *anon228 && dispatch13 == 4 && phi655 == 8 || *(uint32_t*)(phi288 + 40) >= *anon319 && dispatch13 == 0 && phi18 < *anon28 && phi43 < *anon54 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 && *(uint32_t*)(phi195 + 28) < *anon228 && phi260 == 8 && phi655 == 8 || *(uint32_t*)(phi121 + 24) >= *anon138 && dispatch13 == 1 && phi43 < *anon54 && *(uint32_t*)(phi81 + 4) < *anon95 || *(uint32_t*)(phi288 + 40) >= *anon319 && dispatch13 == 1 && phi43 < *anon54 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 && *(uint32_t*)(phi195 + 28) < *anon228 && phi260 == 8 && phi655 == 8 || dispatch13 == 0 && phi18 < *anon28 && phi43 < *anon54 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 && *(uint32_t*)(phi195 + 28) < *anon228 && *(uint32_t*)(phi288 + 40) < *anon319 && phi351 == 8 && phi260 == 8 && phi655 == 8 || *(uint32_t*)(phi121 + 24) >= *anon138 && dispatch13 == 2 || *(uint32_t*)(phi288 + 40) >= *anon319 && dispatch13 == 3 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 && *(uint32_t*)(phi195 + 28) < *anon228 && phi260 == 8 && phi655 == 8 || *(uint32_t*)(phi121 + 24) >= *anon138 && dispatch13 == 3 && *(uint32_t*)(phi81 + 4) < *anon95 || dispatch13 == 1 && phi43 < *anon54 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 && *(uint32_t*)(phi195 + 28) < *anon228 && *(uint32_t*)(phi288 + 40) < *anon319 && phi351 == 8 && phi260 == 8 && phi655 == 8 || *(uint32_t*)(phi288 + 40) >= *anon319 && dispatch13 == 2 && *(uint32_t*)(phi121 + 24) < *anon138 && *(uint32_t*)(phi195 + 28) < *anon228 && phi260 == 8 && phi655 == 8 || *(uint32_t*)(phi288 + 40) >= *anon319 && dispatch13 == 5 && phi260 == 8 && phi655 == 8 || *(uint32_t*)(phi288 + 40) >= *anon319 && dispatch13 == 4 && *(uint32_t*)(phi195 + 28) < *anon228 && phi260 == 8 && phi655 == 8 || dispatch13 == 3 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 && *(uint32_t*)(phi195 + 28) < *anon228 && *(uint32_t*)(phi288 + 40) < *anon319 && phi351 == 8 && phi260 == 8 && phi655 == 8 || *(uint32_t*)(phi195 + 28) >= *anon228 && dispatch13 == 0 && phi18 < *anon28 && phi43 < *anon54 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 && phi655 == 8 || dispatch13 == 2 && *(uint32_t*)(phi121 + 24) < *anon138 && *(uint32_t*)(phi195 + 28) < *anon228 && *(uint32_t*)(phi288 + 40) < *anon319 && phi351 == 8 && phi260 == 8 && phi655 == 8 || *(uint32_t*)(phi195 + 28) >= *anon228 && dispatch13 == 3 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 && phi655 == 8 || dispatch13 == 4 && *(uint32_t*)(phi195 + 28) < *anon228 && *(uint32_t*)(phi288 + 40) < *anon319 && phi351 == 8 && phi260 == 8 && phi655 == 8 || *(uint32_t*)(phi195 + 28) >= *anon228 && dispatch13 == 1 && phi43 < *anon54 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 && phi655 == 8 || dispatch13 == 6 && phi351 == 8 && phi260 == 8 && phi655 == 8 || *(uint32_t*)(phi195 + 28) >= *anon228 && dispatch13 == 2 && *(uint32_t*)(phi121 + 24) < *anon138 && phi655 == 8 || dispatch13 == 5 && *(uint32_t*)(phi288 + 40) < *anon319 && phi351 == 8 && phi260 == 8 && phi655 == 8)
+			if (*(uint32_t*)(phi195 + 28) >= *anon228 && dispatch13 == 5 && *(uint32_t*)(phi121 + 24) < *anon138 && phi655 == 8 || dispatch13 == 6 && *(uint32_t*)(phi288 + 40) < *anon319 && phi351 == 8 && phi260 == 8 && phi655 == 8 || *(uint32_t*)(phi195 + 28) >= *anon228 && dispatch13 == 4 && phi655 == 8 || *(uint32_t*)(phi121 + 24) >= *anon138 && dispatch13 == 0 && phi18 < *anon28 && phi43 < *anon54 && *(uint32_t*)(phi81 + 4) < *anon95 || dispatch13 == 4 && *(uint32_t*)(phi195 + 28) < *anon228 && *(uint32_t*)(phi288 + 40) < *anon319 && phi351 == 8 && phi260 == 8 && phi655 == 8 || *(uint32_t*)(phi121 + 24) >= *anon138 && dispatch13 == 1 && phi43 < *anon54 && *(uint32_t*)(phi81 + 4) < *anon95 || dispatch13 == 5 && *(uint32_t*)(phi121 + 24) < *anon138 && *(uint32_t*)(phi195 + 28) < *anon228 && *(uint32_t*)(phi288 + 40) < *anon319 && phi351 == 8 && phi260 == 8 && phi655 == 8 || *(uint32_t*)(phi121 + 24) >= *anon138 && dispatch13 == 2 && *(uint32_t*)(phi81 + 4) < *anon95 || dispatch13 == 2 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 && *(uint32_t*)(phi195 + 28) < *anon228 && *(uint32_t*)(phi288 + 40) < *anon319 && phi351 == 8 && phi260 == 8 && phi655 == 8 || *(uint32_t*)(phi121 + 24) >= *anon138 && dispatch13 == 5 || *(uint32_t*)(phi288 + 40) >= *anon319 && dispatch13 == 5 && *(uint32_t*)(phi121 + 24) < *anon138 && *(uint32_t*)(phi195 + 28) < *anon228 && phi260 == 8 && phi655 == 8 || dispatch13 == 1 && phi43 < *anon54 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 && *(uint32_t*)(phi195 + 28) < *anon228 && *(uint32_t*)(phi288 + 40) < *anon319 && phi351 == 8 && phi260 == 8 && phi655 == 8 || *(uint32_t*)(phi288 + 40) >= *anon319 && dispatch13 == 4 && *(uint32_t*)(phi195 + 28) < *anon228 && phi260 == 8 && phi655 == 8 || dispatch13 == 0 && phi18 < *anon28 && phi43 < *anon54 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 && *(uint32_t*)(phi195 + 28) < *anon228 && *(uint32_t*)(phi288 + 40) < *anon319 && phi351 == 8 && phi260 == 8 && phi655 == 8 || *(uint32_t*)(phi288 + 40) >= *anon319 && dispatch13 == 2 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 && *(uint32_t*)(phi195 + 28) < *anon228 && phi260 == 8 && phi655 == 8 || *(uint32_t*)(phi288 + 40) >= *anon319 && dispatch13 == 6 && phi260 == 8 && phi655 == 8 || *(uint32_t*)(phi195 + 28) >= *anon228 && dispatch13 == 0 && phi18 < *anon28 && phi43 < *anon54 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 && phi655 == 8 || *(uint32_t*)(phi288 + 40) >= *anon319 && dispatch13 == 1 && phi43 < *anon54 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 && *(uint32_t*)(phi195 + 28) < *anon228 && phi260 == 8 && phi655 == 8 || *(uint32_t*)(phi195 + 28) >= *anon228 && dispatch13 == 1 && phi43 < *anon54 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 && phi655 == 8 || *(uint32_t*)(phi288 + 40) >= *anon319 && dispatch13 == 0 && phi18 < *anon28 && phi43 < *anon54 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 && *(uint32_t*)(phi195 + 28) < *anon228 && phi260 == 8 && phi655 == 8 || *(uint32_t*)(phi195 + 28) >= *anon228 && dispatch13 == 2 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 && phi655 == 8 || dispatch13 == 3 && phi351 == 8 && phi260 == 8 && phi655 == 8)
 			{
 				uint64_t phi675 = phi_in125;
 				phi676 = phi_in126;
@@ -1675,9 +1675,9 @@ void w(uint64_t arg0, uint64_t arg1, uint64_t arg2, uint64_t arg3)
 				phi_in108 = phi122 + 4;
 				phi_in109 = phi675;
 				phi_in110 = phi687;
-				dispatch13 = 2;
+				dispatch13 = 5;
 			}
-			if (phi122 == 8 && (*(uint32_t*)(phi121 + 24) >= *anon138 && dispatch13 == 3 && *(uint32_t*)(phi81 + 4) < *anon95 || dispatch13 == 4 && *(uint32_t*)(phi195 + 28) < *anon228 && *(uint32_t*)(phi288 + 40) < *anon319 && phi351 == 8 && phi260 == 8 && phi655 == 8 || *(uint32_t*)(phi121 + 24) >= *anon138 && dispatch13 == 1 && phi43 < *anon54 && *(uint32_t*)(phi81 + 4) < *anon95 || dispatch13 == 2 && *(uint32_t*)(phi121 + 24) < *anon138 && *(uint32_t*)(phi195 + 28) < *anon228 && *(uint32_t*)(phi288 + 40) < *anon319 && phi351 == 8 && phi260 == 8 && phi655 == 8 || *(uint32_t*)(phi121 + 24) >= *anon138 && dispatch13 == 0 && phi18 < *anon28 && phi43 < *anon54 && *(uint32_t*)(phi81 + 4) < *anon95 || dispatch13 == 6 && phi351 == 8 && phi260 == 8 && phi655 == 8 || *(uint32_t*)(phi288 + 40) >= *anon319 && dispatch13 == 0 && phi18 < *anon28 && phi43 < *anon54 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 && *(uint32_t*)(phi195 + 28) < *anon228 && phi260 == 8 && phi655 == 8 || dispatch13 == 5 && *(uint32_t*)(phi288 + 40) < *anon319 && phi351 == 8 && phi260 == 8 && phi655 == 8 || *(uint32_t*)(phi121 + 24) >= *anon138 && dispatch13 == 2 || dispatch13 == 0 && phi18 < *anon28 && phi43 < *anon54 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 && *(uint32_t*)(phi195 + 28) < *anon228 && *(uint32_t*)(phi288 + 40) < *anon319 && phi351 == 8 && phi260 == 8 && phi655 == 8 || *(uint32_t*)(phi195 + 28) >= *anon228 && dispatch13 == 1 && phi43 < *anon54 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 && phi655 == 8 || *(uint32_t*)(phi288 + 40) >= *anon319 && dispatch13 == 3 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 && *(uint32_t*)(phi195 + 28) < *anon228 && phi260 == 8 && phi655 == 8 || *(uint32_t*)(phi288 + 40) >= *anon319 && dispatch13 == 5 && phi260 == 8 && phi655 == 8 || *(uint32_t*)(phi195 + 28) >= *anon228 && dispatch13 == 0 && phi18 < *anon28 && phi43 < *anon54 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 && phi655 == 8 || *(uint32_t*)(phi288 + 40) >= *anon319 && dispatch13 == 1 && phi43 < *anon54 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 && *(uint32_t*)(phi195 + 28) < *anon228 && phi260 == 8 && phi655 == 8 || *(uint32_t*)(phi288 + 40) >= *anon319 && dispatch13 == 4 && *(uint32_t*)(phi195 + 28) < *anon228 && phi260 == 8 && phi655 == 8 || *(uint32_t*)(phi195 + 28) >= *anon228 && dispatch13 == 2 && *(uint32_t*)(phi121 + 24) < *anon138 && phi655 == 8 || *(uint32_t*)(phi195 + 28) >= *anon228 && dispatch13 == 4 && phi655 == 8 || dispatch13 == 3 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 && *(uint32_t*)(phi195 + 28) < *anon228 && *(uint32_t*)(phi288 + 40) < *anon319 && phi351 == 8 && phi260 == 8 && phi655 == 8 || dispatch13 == 1 && phi43 < *anon54 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 && *(uint32_t*)(phi195 + 28) < *anon228 && *(uint32_t*)(phi288 + 40) < *anon319 && phi351 == 8 && phi260 == 8 && phi655 == 8 || *(uint32_t*)(phi288 + 40) >= *anon319 && dispatch13 == 2 && *(uint32_t*)(phi121 + 24) < *anon138 && *(uint32_t*)(phi195 + 28) < *anon228 && phi260 == 8 && phi655 == 8 || *(uint32_t*)(phi195 + 28) >= *anon228 && dispatch13 == 3 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 && phi655 == 8))
+			if (phi122 == 8 && (*(uint32_t*)(phi121 + 24) >= *anon138 && dispatch13 == 0 && phi18 < *anon28 && phi43 < *anon54 && *(uint32_t*)(phi81 + 4) < *anon95 || *(uint32_t*)(phi288 + 40) >= *anon319 && dispatch13 == 6 && phi260 == 8 && phi655 == 8 || dispatch13 == 2 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 && *(uint32_t*)(phi195 + 28) < *anon228 && *(uint32_t*)(phi288 + 40) < *anon319 && phi351 == 8 && phi260 == 8 && phi655 == 8 || *(uint32_t*)(phi195 + 28) >= *anon228 && dispatch13 == 4 && phi655 == 8 || *(uint32_t*)(phi121 + 24) >= *anon138 && dispatch13 == 1 && phi43 < *anon54 && *(uint32_t*)(phi81 + 4) < *anon95 || dispatch13 == 5 && *(uint32_t*)(phi121 + 24) < *anon138 && *(uint32_t*)(phi195 + 28) < *anon228 && *(uint32_t*)(phi288 + 40) < *anon319 && phi351 == 8 && phi260 == 8 && phi655 == 8 || *(uint32_t*)(phi195 + 28) >= *anon228 && dispatch13 == 0 && phi18 < *anon28 && phi43 < *anon54 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 && phi655 == 8 || *(uint32_t*)(phi121 + 24) >= *anon138 && dispatch13 == 5 || dispatch13 == 4 && *(uint32_t*)(phi195 + 28) < *anon228 && *(uint32_t*)(phi288 + 40) < *anon319 && phi351 == 8 && phi260 == 8 && phi655 == 8 || dispatch13 == 6 && *(uint32_t*)(phi288 + 40) < *anon319 && phi351 == 8 && phi260 == 8 && phi655 == 8 || *(uint32_t*)(phi121 + 24) >= *anon138 && dispatch13 == 2 && *(uint32_t*)(phi81 + 4) < *anon95 || dispatch13 == 3 && phi351 == 8 && phi260 == 8 && phi655 == 8 || *(uint32_t*)(phi288 + 40) >= *anon319 && dispatch13 == 0 && phi18 < *anon28 && phi43 < *anon54 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 && *(uint32_t*)(phi195 + 28) < *anon228 && phi260 == 8 && phi655 == 8 || *(uint32_t*)(phi288 + 40) >= *anon319 && dispatch13 == 1 && phi43 < *anon54 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 && *(uint32_t*)(phi195 + 28) < *anon228 && phi260 == 8 && phi655 == 8 || dispatch13 == 0 && phi18 < *anon28 && phi43 < *anon54 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 && *(uint32_t*)(phi195 + 28) < *anon228 && *(uint32_t*)(phi288 + 40) < *anon319 && phi351 == 8 && phi260 == 8 && phi655 == 8 || *(uint32_t*)(phi288 + 40) >= *anon319 && dispatch13 == 2 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 && *(uint32_t*)(phi195 + 28) < *anon228 && phi260 == 8 && phi655 == 8 || *(uint32_t*)(phi195 + 28) >= *anon228 && dispatch13 == 1 && phi43 < *anon54 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 && phi655 == 8 || *(uint32_t*)(phi195 + 28) >= *anon228 && dispatch13 == 5 && *(uint32_t*)(phi121 + 24) < *anon138 && phi655 == 8 || *(uint32_t*)(phi288 + 40) >= *anon319 && dispatch13 == 4 && *(uint32_t*)(phi195 + 28) < *anon228 && phi260 == 8 && phi655 == 8 || dispatch13 == 1 && phi43 < *anon54 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 && *(uint32_t*)(phi195 + 28) < *anon228 && *(uint32_t*)(phi288 + 40) < *anon319 && phi351 == 8 && phi260 == 8 && phi655 == 8 || *(uint32_t*)(phi288 + 40) >= *anon319 && dispatch13 == 5 && *(uint32_t*)(phi121 + 24) < *anon138 && *(uint32_t*)(phi195 + 28) < *anon228 && phi260 == 8 && phi655 == 8 || *(uint32_t*)(phi195 + 28) >= *anon228 && dispatch13 == 2 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 && phi655 == 8))
 			{
 				phi_in82 = phi676;
 				phi_in83 = phi677;
@@ -1693,7 +1693,7 @@ void w(uint64_t arg0, uint64_t arg1, uint64_t arg2, uint64_t arg3)
 				phi_in93 = phi687;
 				phi_in94 = phi686;
 			}
-			if (*(uint32_t*)(phi288 + 40) >= *anon319 && dispatch13 == 5 && phi260 == 8 && phi655 == 8 && phi122 == 8 || dispatch13 == 3 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 && *(uint32_t*)(phi195 + 28) < *anon228 && *(uint32_t*)(phi288 + 40) < *anon319 && phi351 == 8 && phi260 == 8 && phi655 == 8 && phi122 == 8 || *(uint32_t*)(phi195 + 28) >= *anon228 && dispatch13 == 0 && phi18 < *anon28 && phi43 < *anon54 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 && phi655 == 8 && phi122 == 8 || dispatch13 == 1 && phi43 < *anon54 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 && *(uint32_t*)(phi195 + 28) < *anon228 && *(uint32_t*)(phi288 + 40) < *anon319 && phi351 == 8 && phi260 == 8 && phi655 == 8 && phi122 == 8 || dispatch13 == 4 && *(uint32_t*)(phi195 + 28) < *anon228 && *(uint32_t*)(phi288 + 40) < *anon319 && phi351 == 8 && phi260 == 8 && phi655 == 8 && phi122 == 8 || *(uint32_t*)(phi121 + 24) >= *anon138 && dispatch13 == 3 && *(uint32_t*)(phi81 + 4) < *anon95 && phi122 == 8 || *(uint32_t*)(phi288 + 40) >= *anon319 && dispatch13 == 2 && *(uint32_t*)(phi121 + 24) < *anon138 && *(uint32_t*)(phi195 + 28) < *anon228 && phi260 == 8 && phi655 == 8 && phi122 == 8 || *(uint32_t*)(phi121 + 24) >= *anon138 && dispatch13 == 2 && phi122 == 8 || dispatch13 == 2 && *(uint32_t*)(phi121 + 24) < *anon138 && *(uint32_t*)(phi195 + 28) < *anon228 && *(uint32_t*)(phi288 + 40) < *anon319 && phi351 == 8 && phi260 == 8 && phi655 == 8 && phi122 == 8 || *(uint32_t*)(phi288 + 40) >= *anon319 && dispatch13 == 4 && *(uint32_t*)(phi195 + 28) < *anon228 && phi260 == 8 && phi655 == 8 && phi122 == 8 || *(uint32_t*)(phi288 + 40) >= *anon319 && dispatch13 == 0 && phi18 < *anon28 && phi43 < *anon54 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 && *(uint32_t*)(phi195 + 28) < *anon228 && phi260 == 8 && phi655 == 8 && phi122 == 8 || *(uint32_t*)(phi195 + 28) >= *anon228 && dispatch13 == 4 && phi655 == 8 && phi122 == 8 || *(uint32_t*)(phi81 + 4) >= *anon95 && dispatch13 == 0 && phi18 < *anon28 && phi43 < *anon54 || dispatch13 == 6 && phi351 == 8 && phi260 == 8 && phi655 == 8 && phi122 == 8 || *(uint32_t*)(phi121 + 24) >= *anon138 && dispatch13 == 0 && phi18 < *anon28 && phi43 < *anon54 && *(uint32_t*)(phi81 + 4) < *anon95 && phi122 == 8 || dispatch13 == 5 && *(uint32_t*)(phi288 + 40) < *anon319 && phi351 == 8 && phi260 == 8 && phi655 == 8 && phi122 == 8 || *(uint32_t*)(phi121 + 24) >= *anon138 && dispatch13 == 1 && phi43 < *anon54 && *(uint32_t*)(phi81 + 4) < *anon95 && phi122 == 8 || *(uint32_t*)(phi288 + 40) >= *anon319 && dispatch13 == 3 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 && *(uint32_t*)(phi195 + 28) < *anon228 && phi260 == 8 && phi655 == 8 && phi122 == 8 || *(uint32_t*)(phi195 + 28) >= *anon228 && dispatch13 == 1 && phi43 < *anon54 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 && phi655 == 8 && phi122 == 8 || *(uint32_t*)(phi288 + 40) >= *anon319 && dispatch13 == 1 && phi43 < *anon54 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 && *(uint32_t*)(phi195 + 28) < *anon228 && phi260 == 8 && phi655 == 8 && phi122 == 8 || *(uint32_t*)(phi195 + 28) >= *anon228 && dispatch13 == 3 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 && phi655 == 8 && phi122 == 8 || dispatch13 == 0 && phi18 < *anon28 && phi43 < *anon54 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 && *(uint32_t*)(phi195 + 28) < *anon228 && *(uint32_t*)(phi288 + 40) < *anon319 && phi351 == 8 && phi260 == 8 && phi655 == 8 && phi122 == 8 || *(uint32_t*)(phi81 + 4) >= *anon95 && dispatch13 == 3 || *(uint32_t*)(phi81 + 4) >= *anon95 && dispatch13 == 1 && phi43 < *anon54 || *(uint32_t*)(phi195 + 28) >= *anon228 && dispatch13 == 2 && *(uint32_t*)(phi121 + 24) < *anon138 && phi655 == 8 && phi122 == 8)
+			if (*(uint32_t*)(phi288 + 40) >= *anon319 && dispatch13 == 5 && *(uint32_t*)(phi121 + 24) < *anon138 && *(uint32_t*)(phi195 + 28) < *anon228 && phi260 == 8 && phi655 == 8 && phi122 == 8 || *(uint32_t*)(phi121 + 24) >= *anon138 && dispatch13 == 5 && phi122 == 8 || *(uint32_t*)(phi121 + 24) >= *anon138 && dispatch13 == 2 && *(uint32_t*)(phi81 + 4) < *anon95 && phi122 == 8 || dispatch13 == 2 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 && *(uint32_t*)(phi195 + 28) < *anon228 && *(uint32_t*)(phi288 + 40) < *anon319 && phi351 == 8 && phi260 == 8 && phi655 == 8 && phi122 == 8 || *(uint32_t*)(phi288 + 40) >= *anon319 && dispatch13 == 2 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 && *(uint32_t*)(phi195 + 28) < *anon228 && phi260 == 8 && phi655 == 8 && phi122 == 8 || dispatch13 == 1 && phi43 < *anon54 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 && *(uint32_t*)(phi195 + 28) < *anon228 && *(uint32_t*)(phi288 + 40) < *anon319 && phi351 == 8 && phi260 == 8 && phi655 == 8 && phi122 == 8 || *(uint32_t*)(phi121 + 24) >= *anon138 && dispatch13 == 1 && phi43 < *anon54 && *(uint32_t*)(phi81 + 4) < *anon95 && phi122 == 8 || *(uint32_t*)(phi288 + 40) >= *anon319 && dispatch13 == 6 && phi260 == 8 && phi655 == 8 && phi122 == 8 || *(uint32_t*)(phi195 + 28) >= *anon228 && dispatch13 == 0 && phi18 < *anon28 && phi43 < *anon54 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 && phi655 == 8 && phi122 == 8 || dispatch13 == 4 && *(uint32_t*)(phi195 + 28) < *anon228 && *(uint32_t*)(phi288 + 40) < *anon319 && phi351 == 8 && phi260 == 8 && phi655 == 8 && phi122 == 8 || *(uint32_t*)(phi288 + 40) >= *anon319 && dispatch13 == 4 && *(uint32_t*)(phi195 + 28) < *anon228 && phi260 == 8 && phi655 == 8 && phi122 == 8 || dispatch13 == 5 && *(uint32_t*)(phi121 + 24) < *anon138 && *(uint32_t*)(phi195 + 28) < *anon228 && *(uint32_t*)(phi288 + 40) < *anon319 && phi351 == 8 && phi260 == 8 && phi655 == 8 && phi122 == 8 || dispatch13 == 3 && phi351 == 8 && phi260 == 8 && phi655 == 8 && phi122 == 8 || *(uint32_t*)(phi195 + 28) >= *anon228 && dispatch13 == 2 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 && phi655 == 8 && phi122 == 8 || *(uint32_t*)(phi81 + 4) >= *anon95 && dispatch13 == 0 && phi18 < *anon28 && phi43 < *anon54 || *(uint32_t*)(phi195 + 28) >= *anon228 && dispatch13 == 1 && phi43 < *anon54 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 && phi655 == 8 && phi122 == 8 || dispatch13 == 6 && *(uint32_t*)(phi288 + 40) < *anon319 && phi351 == 8 && phi260 == 8 && phi655 == 8 && phi122 == 8 || *(uint32_t*)(phi288 + 40) >= *anon319 && dispatch13 == 1 && phi43 < *anon54 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 && *(uint32_t*)(phi195 + 28) < *anon228 && phi260 == 8 && phi655 == 8 && phi122 == 8 || *(uint32_t*)(phi195 + 28) >= *anon228 && dispatch13 == 4 && phi655 == 8 && phi122 == 8 || *(uint32_t*)(phi81 + 4) >= *anon95 && dispatch13 == 1 && phi43 < *anon54 || *(uint32_t*)(phi121 + 24) >= *anon138 && dispatch13 == 0 && phi18 < *anon28 && phi43 < *anon54 && *(uint32_t*)(phi81 + 4) < *anon95 && phi122 == 8 || *(uint32_t*)(phi195 + 28) >= *anon228 && dispatch13 == 5 && *(uint32_t*)(phi121 + 24) < *anon138 && phi655 == 8 && phi122 == 8 || *(uint32_t*)(phi288 + 40) >= *anon319 && dispatch13 == 0 && phi18 < *anon28 && phi43 < *anon54 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 && *(uint32_t*)(phi195 + 28) < *anon228 && phi260 == 8 && phi655 == 8 && phi122 == 8 || dispatch13 == 0 && phi18 < *anon28 && phi43 < *anon54 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 && *(uint32_t*)(phi195 + 28) < *anon228 && *(uint32_t*)(phi288 + 40) < *anon319 && phi351 == 8 && phi260 == 8 && phi655 == 8 && phi122 == 8 || *(uint32_t*)(phi81 + 4) >= *anon95 && dispatch13 == 2)
 			{
 				uint32_t phi688 = phi_in82;
 				uint32_t phi689 = phi_in83;
@@ -1721,9 +1721,9 @@ void w(uint64_t arg0, uint64_t arg1, uint64_t arg2, uint64_t arg3)
 				phi_in66 = phi699;
 				phi_in67 = phi694 + 4;
 				phi_in68 = phi700;
-				dispatch13 = 3;
+				dispatch13 = 2;
 			}
-			if (phi694 == 8 && (dispatch13 == 4 && *(uint32_t*)(phi195 + 28) < *anon228 && *(uint32_t*)(phi288 + 40) < *anon319 && phi351 == 8 && phi260 == 8 && phi655 == 8 && phi122 == 8 || *(uint32_t*)(phi195 + 28) >= *anon228 && dispatch13 == 0 && phi18 < *anon28 && phi43 < *anon54 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 && phi655 == 8 && phi122 == 8 || *(uint32_t*)(phi195 + 28) >= *anon228 && dispatch13 == 1 && phi43 < *anon54 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 && phi655 == 8 && phi122 == 8 || dispatch13 == 5 && *(uint32_t*)(phi288 + 40) < *anon319 && phi351 == 8 && phi260 == 8 && phi655 == 8 && phi122 == 8 || dispatch13 == 3 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 && *(uint32_t*)(phi195 + 28) < *anon228 && *(uint32_t*)(phi288 + 40) < *anon319 && phi351 == 8 && phi260 == 8 && phi655 == 8 && phi122 == 8 || *(uint32_t*)(phi288 + 40) >= *anon319 && dispatch13 == 4 && *(uint32_t*)(phi195 + 28) < *anon228 && phi260 == 8 && phi655 == 8 && phi122 == 8 || *(uint32_t*)(phi288 + 40) >= *anon319 && dispatch13 == 2 && *(uint32_t*)(phi121 + 24) < *anon138 && *(uint32_t*)(phi195 + 28) < *anon228 && phi260 == 8 && phi655 == 8 && phi122 == 8 || *(uint32_t*)(phi288 + 40) >= *anon319 && dispatch13 == 5 && phi260 == 8 && phi655 == 8 && phi122 == 8 || dispatch13 == 2 && *(uint32_t*)(phi121 + 24) < *anon138 && *(uint32_t*)(phi195 + 28) < *anon228 && *(uint32_t*)(phi288 + 40) < *anon319 && phi351 == 8 && phi260 == 8 && phi655 == 8 && phi122 == 8 || *(uint32_t*)(phi121 + 24) >= *anon138 && dispatch13 == 2 && phi122 == 8 || dispatch13 == 0 && phi18 < *anon28 && phi43 < *anon54 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 && *(uint32_t*)(phi195 + 28) < *anon228 && *(uint32_t*)(phi288 + 40) < *anon319 && phi351 == 8 && phi260 == 8 && phi655 == 8 && phi122 == 8 || *(uint32_t*)(phi121 + 24) >= *anon138 && dispatch13 == 0 && phi18 < *anon28 && phi43 < *anon54 && *(uint32_t*)(phi81 + 4) < *anon95 && phi122 == 8 || *(uint32_t*)(phi288 + 40) >= *anon319 && dispatch13 == 1 && phi43 < *anon54 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 && *(uint32_t*)(phi195 + 28) < *anon228 && phi260 == 8 && phi655 == 8 && phi122 == 8 || dispatch13 == 1 && phi43 < *anon54 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 && *(uint32_t*)(phi195 + 28) < *anon228 && *(uint32_t*)(phi288 + 40) < *anon319 && phi351 == 8 && phi260 == 8 && phi655 == 8 && phi122 == 8 || *(uint32_t*)(phi121 + 24) >= *anon138 && dispatch13 == 3 && *(uint32_t*)(phi81 + 4) < *anon95 && phi122 == 8 || *(uint32_t*)(phi288 + 40) >= *anon319 && dispatch13 == 3 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 && *(uint32_t*)(phi195 + 28) < *anon228 && phi260 == 8 && phi655 == 8 && phi122 == 8 || *(uint32_t*)(phi121 + 24) >= *anon138 && dispatch13 == 1 && phi43 < *anon54 && *(uint32_t*)(phi81 + 4) < *anon95 && phi122 == 8 || *(uint32_t*)(phi288 + 40) >= *anon319 && dispatch13 == 0 && phi18 < *anon28 && phi43 < *anon54 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 && *(uint32_t*)(phi195 + 28) < *anon228 && phi260 == 8 && phi655 == 8 && phi122 == 8 || dispatch13 == 6 && phi351 == 8 && phi260 == 8 && phi655 == 8 && phi122 == 8 || *(uint32_t*)(phi195 + 28) >= *anon228 && dispatch13 == 3 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 && phi655 == 8 && phi122 == 8 || *(uint32_t*)(phi81 + 4) >= *anon95 && dispatch13 == 0 && phi18 < *anon28 && phi43 < *anon54 || *(uint32_t*)(phi195 + 28) >= *anon228 && dispatch13 == 4 && phi655 == 8 && phi122 == 8 || *(uint32_t*)(phi81 + 4) >= *anon95 && dispatch13 == 1 && phi43 < *anon54 || *(uint32_t*)(phi81 + 4) >= *anon95 && dispatch13 == 3 || *(uint32_t*)(phi195 + 28) >= *anon228 && dispatch13 == 2 && *(uint32_t*)(phi121 + 24) < *anon138 && phi655 == 8 && phi122 == 8))
+			if (phi694 == 8 && (*(uint32_t*)(phi288 + 40) >= *anon319 && dispatch13 == 6 && phi260 == 8 && phi655 == 8 && phi122 == 8 || dispatch13 == 2 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 && *(uint32_t*)(phi195 + 28) < *anon228 && *(uint32_t*)(phi288 + 40) < *anon319 && phi351 == 8 && phi260 == 8 && phi655 == 8 && phi122 == 8 || *(uint32_t*)(phi195 + 28) >= *anon228 && dispatch13 == 0 && phi18 < *anon28 && phi43 < *anon54 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 && phi655 == 8 && phi122 == 8 || *(uint32_t*)(phi195 + 28) >= *anon228 && dispatch13 == 1 && phi43 < *anon54 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 && phi655 == 8 && phi122 == 8 || *(uint32_t*)(phi121 + 24) >= *anon138 && dispatch13 == 2 && *(uint32_t*)(phi81 + 4) < *anon95 && phi122 == 8 || dispatch13 == 6 && *(uint32_t*)(phi288 + 40) < *anon319 && phi351 == 8 && phi260 == 8 && phi655 == 8 && phi122 == 8 || *(uint32_t*)(phi288 + 40) >= *anon319 && dispatch13 == 5 && *(uint32_t*)(phi121 + 24) < *anon138 && *(uint32_t*)(phi195 + 28) < *anon228 && phi260 == 8 && phi655 == 8 && phi122 == 8 || *(uint32_t*)(phi121 + 24) >= *anon138 && dispatch13 == 5 && phi122 == 8 || dispatch13 == 4 && *(uint32_t*)(phi195 + 28) < *anon228 && *(uint32_t*)(phi288 + 40) < *anon319 && phi351 == 8 && phi260 == 8 && phi655 == 8 && phi122 == 8 || *(uint32_t*)(phi288 + 40) >= *anon319 && dispatch13 == 4 && *(uint32_t*)(phi195 + 28) < *anon228 && phi260 == 8 && phi655 == 8 && phi122 == 8 || dispatch13 == 5 && *(uint32_t*)(phi121 + 24) < *anon138 && *(uint32_t*)(phi195 + 28) < *anon228 && *(uint32_t*)(phi288 + 40) < *anon319 && phi351 == 8 && phi260 == 8 && phi655 == 8 && phi122 == 8 || *(uint32_t*)(phi81 + 4) >= *anon95 && dispatch13 == 1 && phi43 < *anon54 || *(uint32_t*)(phi195 + 28) >= *anon228 && dispatch13 == 4 && phi655 == 8 && phi122 == 8 || *(uint32_t*)(phi81 + 4) >= *anon95 && dispatch13 == 0 && phi18 < *anon28 && phi43 < *anon54 || *(uint32_t*)(phi288 + 40) >= *anon319 && dispatch13 == 0 && phi18 < *anon28 && phi43 < *anon54 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 && *(uint32_t*)(phi195 + 28) < *anon228 && phi260 == 8 && phi655 == 8 && phi122 == 8 || *(uint32_t*)(phi121 + 24) >= *anon138 && dispatch13 == 0 && phi18 < *anon28 && phi43 < *anon54 && *(uint32_t*)(phi81 + 4) < *anon95 && phi122 == 8 || dispatch13 == 3 && phi351 == 8 && phi260 == 8 && phi655 == 8 && phi122 == 8 || *(uint32_t*)(phi121 + 24) >= *anon138 && dispatch13 == 1 && phi43 < *anon54 && *(uint32_t*)(phi81 + 4) < *anon95 && phi122 == 8 || *(uint32_t*)(phi288 + 40) >= *anon319 && dispatch13 == 2 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 && *(uint32_t*)(phi195 + 28) < *anon228 && phi260 == 8 && phi655 == 8 && phi122 == 8 || dispatch13 == 1 && phi43 < *anon54 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 && *(uint32_t*)(phi195 + 28) < *anon228 && *(uint32_t*)(phi288 + 40) < *anon319 && phi351 == 8 && phi260 == 8 && phi655 == 8 && phi122 == 8 || *(uint32_t*)(phi195 + 28) >= *anon228 && dispatch13 == 2 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 && phi655 == 8 && phi122 == 8 || dispatch13 == 0 && phi18 < *anon28 && phi43 < *anon54 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 && *(uint32_t*)(phi195 + 28) < *anon228 && *(uint32_t*)(phi288 + 40) < *anon319 && phi351 == 8 && phi260 == 8 && phi655 == 8 && phi122 == 8 || *(uint32_t*)(phi288 + 40) >= *anon319 && dispatch13 == 1 && phi43 < *anon54 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 && *(uint32_t*)(phi195 + 28) < *anon228 && phi260 == 8 && phi655 == 8 && phi122 == 8 || *(uint32_t*)(phi195 + 28) >= *anon228 && dispatch13 == 5 && *(uint32_t*)(phi121 + 24) < *anon138 && phi655 == 8 && phi122 == 8 || *(uint32_t*)(phi81 + 4) >= *anon95 && dispatch13 == 2))
 			{
 				phi_in46 = *(uint32_t*)(phi700 + 68);
 				phi_in47 = phi693;
@@ -1734,7 +1734,7 @@ void w(uint64_t arg0, uint64_t arg1, uint64_t arg2, uint64_t arg3)
 				phi_in52 = *(uint32_t*)(phi700 + 68);
 				phi_in53 = phi700;
 			}
-			if (*(uint32_t*)(phi121 + 24) >= *anon138 && dispatch13 == 0 && phi18 < *anon28 && phi43 < *anon54 && *(uint32_t*)(phi81 + 4) < *anon95 && phi122 == 8 && phi694 == 8 || *(uint32_t*)(phi288 + 40) >= *anon319 && dispatch13 == 1 && phi43 < *anon54 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 && *(uint32_t*)(phi195 + 28) < *anon228 && phi260 == 8 && phi655 == 8 && phi122 == 8 && phi694 == 8 || *(uint32_t*)(phi195 + 28) >= *anon228 && dispatch13 == 4 && phi655 == 8 && phi122 == 8 && phi694 == 8 || *(uint32_t*)(phi288 + 40) >= *anon319 && dispatch13 == 3 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 && *(uint32_t*)(phi195 + 28) < *anon228 && phi260 == 8 && phi655 == 8 && phi122 == 8 && phi694 == 8 || dispatch13 == 2 && *(uint32_t*)(phi121 + 24) < *anon138 && *(uint32_t*)(phi195 + 28) < *anon228 && *(uint32_t*)(phi288 + 40) < *anon319 && phi351 == 8 && phi260 == 8 && phi655 == 8 && phi122 == 8 && phi694 == 8 || *(uint32_t*)(phi288 + 40) >= *anon319 && dispatch13 == 0 && phi18 < *anon28 && phi43 < *anon54 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 && *(uint32_t*)(phi195 + 28) < *anon228 && phi260 == 8 && phi655 == 8 && phi122 == 8 && phi694 == 8 || *(uint32_t*)(phi195 + 28) >= *anon228 && dispatch13 == 3 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 && phi655 == 8 && phi122 == 8 && phi694 == 8 || dispatch13 == 3 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 && *(uint32_t*)(phi195 + 28) < *anon228 && *(uint32_t*)(phi288 + 40) < *anon319 && phi351 == 8 && phi260 == 8 && phi655 == 8 && phi122 == 8 && phi694 == 8 || *(uint32_t*)(phi195 + 28) >= *anon228 && dispatch13 == 2 && *(uint32_t*)(phi121 + 24) < *anon138 && phi655 == 8 && phi122 == 8 && phi694 == 8 || dispatch13 == 6 && phi351 == 8 && phi260 == 8 && phi655 == 8 && phi122 == 8 && phi694 == 8 || *(uint32_t*)(phi195 + 28) >= *anon228 && dispatch13 == 1 && phi43 < *anon54 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 && phi655 == 8 && phi122 == 8 && phi694 == 8 || dispatch13 == 1 && phi43 < *anon54 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 && *(uint32_t*)(phi195 + 28) < *anon228 && *(uint32_t*)(phi288 + 40) < *anon319 && phi351 == 8 && phi260 == 8 && phi655 == 8 && phi122 == 8 && phi694 == 8 || dispatch13 == 4 && *(uint32_t*)(phi195 + 28) < *anon228 && *(uint32_t*)(phi288 + 40) < *anon319 && phi351 == 8 && phi260 == 8 && phi655 == 8 && phi122 == 8 && phi694 == 8 || *(uint32_t*)(phi288 + 40) >= *anon319 && dispatch13 == 5 && phi260 == 8 && phi655 == 8 && phi122 == 8 && phi694 == 8 || *(uint32_t*)(phi81 + 4) >= *anon95 && dispatch13 == 3 && phi694 == 8 || *(uint32_t*)(phi195 + 28) >= *anon228 && dispatch13 == 0 && phi18 < *anon28 && phi43 < *anon54 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 && phi655 == 8 && phi122 == 8 && phi694 == 8 || dispatch13 == 5 && *(uint32_t*)(phi288 + 40) < *anon319 && phi351 == 8 && phi260 == 8 && phi655 == 8 && phi122 == 8 && phi694 == 8 || dispatch13 == 0 && phi18 < *anon28 && phi43 < *anon54 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 && *(uint32_t*)(phi195 + 28) < *anon228 && *(uint32_t*)(phi288 + 40) < *anon319 && phi351 == 8 && phi260 == 8 && phi655 == 8 && phi122 == 8 && phi694 == 8 || *(uint32_t*)(phi81 + 4) >= *anon95 && dispatch13 == 0 && phi18 < *anon28 && phi43 < *anon54 && phi694 == 8 || *(uint32_t*)(phi121 + 24) >= *anon138 && dispatch13 == 3 && *(uint32_t*)(phi81 + 4) < *anon95 && phi122 == 8 && phi694 == 8 || *(uint32_t*)(phi288 + 40) >= *anon319 && dispatch13 == 4 && *(uint32_t*)(phi195 + 28) < *anon228 && phi260 == 8 && phi655 == 8 && phi122 == 8 && phi694 == 8 || *(uint32_t*)(phi81 + 4) >= *anon95 && dispatch13 == 1 && phi43 < *anon54 && phi694 == 8 || *(uint32_t*)(phi121 + 24) >= *anon138 && dispatch13 == 2 && phi122 == 8 && phi694 == 8 || phi43 >= *anon54 && dispatch13 == 0 && phi18 < *anon28 || *(uint32_t*)(phi288 + 40) >= *anon319 && dispatch13 == 2 && *(uint32_t*)(phi121 + 24) < *anon138 && *(uint32_t*)(phi195 + 28) < *anon228 && phi260 == 8 && phi655 == 8 && phi122 == 8 && phi694 == 8 || *(uint32_t*)(phi121 + 24) >= *anon138 && dispatch13 == 1 && phi43 < *anon54 && *(uint32_t*)(phi81 + 4) < *anon95 && phi122 == 8 && phi694 == 8 || phi43 >= *anon54 && dispatch13 == 1)
+			if (*(uint32_t*)(phi121 + 24) >= *anon138 && dispatch13 == 1 && phi43 < *anon54 && *(uint32_t*)(phi81 + 4) < *anon95 && phi122 == 8 && phi694 == 8 || *(uint32_t*)(phi288 + 40) >= *anon319 && dispatch13 == 5 && *(uint32_t*)(phi121 + 24) < *anon138 && *(uint32_t*)(phi195 + 28) < *anon228 && phi260 == 8 && phi655 == 8 && phi122 == 8 && phi694 == 8 || *(uint32_t*)(phi288 + 40) >= *anon319 && dispatch13 == 4 && *(uint32_t*)(phi195 + 28) < *anon228 && phi260 == 8 && phi655 == 8 && phi122 == 8 && phi694 == 8 || *(uint32_t*)(phi121 + 24) >= *anon138 && dispatch13 == 5 && phi122 == 8 && phi694 == 8 || *(uint32_t*)(phi121 + 24) >= *anon138 && dispatch13 == 2 && *(uint32_t*)(phi81 + 4) < *anon95 && phi122 == 8 && phi694 == 8 || dispatch13 == 5 && *(uint32_t*)(phi121 + 24) < *anon138 && *(uint32_t*)(phi195 + 28) < *anon228 && *(uint32_t*)(phi288 + 40) < *anon319 && phi351 == 8 && phi260 == 8 && phi655 == 8 && phi122 == 8 && phi694 == 8 || *(uint32_t*)(phi288 + 40) >= *anon319 && dispatch13 == 1 && phi43 < *anon54 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 && *(uint32_t*)(phi195 + 28) < *anon228 && phi260 == 8 && phi655 == 8 && phi122 == 8 && phi694 == 8 || dispatch13 == 1 && phi43 < *anon54 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 && *(uint32_t*)(phi195 + 28) < *anon228 && *(uint32_t*)(phi288 + 40) < *anon319 && phi351 == 8 && phi260 == 8 && phi655 == 8 && phi122 == 8 && phi694 == 8 || *(uint32_t*)(phi195 + 28) >= *anon228 && dispatch13 == 4 && phi655 == 8 && phi122 == 8 && phi694 == 8 || *(uint32_t*)(phi195 + 28) >= *anon228 && dispatch13 == 5 && *(uint32_t*)(phi121 + 24) < *anon138 && phi655 == 8 && phi122 == 8 && phi694 == 8 || *(uint32_t*)(phi288 + 40) >= *anon319 && dispatch13 == 2 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 && *(uint32_t*)(phi195 + 28) < *anon228 && phi260 == 8 && phi655 == 8 && phi122 == 8 && phi694 == 8 || *(uint32_t*)(phi121 + 24) >= *anon138 && dispatch13 == 0 && phi18 < *anon28 && phi43 < *anon54 && *(uint32_t*)(phi81 + 4) < *anon95 && phi122 == 8 && phi694 == 8 || dispatch13 == 2 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 && *(uint32_t*)(phi195 + 28) < *anon228 && *(uint32_t*)(phi288 + 40) < *anon319 && phi351 == 8 && phi260 == 8 && phi655 == 8 && phi122 == 8 && phi694 == 8 || dispatch13 == 3 && phi351 == 8 && phi260 == 8 && phi655 == 8 && phi122 == 8 && phi694 == 8 || *(uint32_t*)(phi81 + 4) >= *anon95 && dispatch13 == 1 && phi43 < *anon54 && phi694 == 8 || *(uint32_t*)(phi81 + 4) >= *anon95 && dispatch13 == 2 && phi694 == 8 || *(uint32_t*)(phi195 + 28) >= *anon228 && dispatch13 == 1 && phi43 < *anon54 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 && phi655 == 8 && phi122 == 8 && phi694 == 8 || dispatch13 == 0 && phi18 < *anon28 && phi43 < *anon54 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 && *(uint32_t*)(phi195 + 28) < *anon228 && *(uint32_t*)(phi288 + 40) < *anon319 && phi351 == 8 && phi260 == 8 && phi655 == 8 && phi122 == 8 && phi694 == 8 || *(uint32_t*)(phi288 + 40) >= *anon319 && dispatch13 == 0 && phi18 < *anon28 && phi43 < *anon54 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 && *(uint32_t*)(phi195 + 28) < *anon228 && phi260 == 8 && phi655 == 8 && phi122 == 8 && phi694 == 8 || *(uint32_t*)(phi195 + 28) >= *anon228 && dispatch13 == 2 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 && phi655 == 8 && phi122 == 8 && phi694 == 8 || dispatch13 == 4 && *(uint32_t*)(phi195 + 28) < *anon228 && *(uint32_t*)(phi288 + 40) < *anon319 && phi351 == 8 && phi260 == 8 && phi655 == 8 && phi122 == 8 && phi694 == 8 || *(uint32_t*)(phi288 + 40) >= *anon319 && dispatch13 == 6 && phi260 == 8 && phi655 == 8 && phi122 == 8 && phi694 == 8 || phi43 >= *anon54 && dispatch13 == 0 && phi18 < *anon28 || phi43 >= *anon54 && dispatch13 == 1 || dispatch13 == 6 && *(uint32_t*)(phi288 + 40) < *anon319 && phi351 == 8 && phi260 == 8 && phi655 == 8 && phi122 == 8 && phi694 == 8 || *(uint32_t*)(phi195 + 28) >= *anon228 && dispatch13 == 0 && phi18 < *anon28 && phi43 < *anon54 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 && phi655 == 8 && phi122 == 8 && phi694 == 8 || *(uint32_t*)(phi81 + 4) >= *anon95 && dispatch13 == 0 && phi18 < *anon28 && phi43 < *anon54 && phi694 == 8)
 			{
 				phi701 = phi_in46;
 				phi702 = phi_in47;
@@ -1754,7 +1754,7 @@ void w(uint64_t arg0, uint64_t arg1, uint64_t arg2, uint64_t arg3)
 				phi_in37 = phi708;
 				dispatch13 = 1;
 			}
-			if (phi703 == 8 && (*(uint32_t*)(phi288 + 40) >= *anon319 && dispatch13 == 0 && phi18 < *anon28 && phi43 < *anon54 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 && *(uint32_t*)(phi195 + 28) < *anon228 && phi260 == 8 && phi655 == 8 && phi122 == 8 && phi694 == 8 || *(uint32_t*)(phi195 + 28) >= *anon228 && dispatch13 == 3 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 && phi655 == 8 && phi122 == 8 && phi694 == 8 || *(uint32_t*)(phi195 + 28) >= *anon228 && dispatch13 == 2 && *(uint32_t*)(phi121 + 24) < *anon138 && phi655 == 8 && phi122 == 8 && phi694 == 8 || *(uint32_t*)(phi81 + 4) >= *anon95 && dispatch13 == 3 && phi694 == 8 || dispatch13 == 6 && phi351 == 8 && phi260 == 8 && phi655 == 8 && phi122 == 8 && phi694 == 8 || *(uint32_t*)(phi81 + 4) >= *anon95 && dispatch13 == 0 && phi18 < *anon28 && phi43 < *anon54 && phi694 == 8 || *(uint32_t*)(phi195 + 28) >= *anon228 && dispatch13 == 4 && phi655 == 8 && phi122 == 8 && phi694 == 8 || *(uint32_t*)(phi195 + 28) >= *anon228 && dispatch13 == 1 && phi43 < *anon54 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 && phi655 == 8 && phi122 == 8 && phi694 == 8 || *(uint32_t*)(phi81 + 4) >= *anon95 && dispatch13 == 1 && phi43 < *anon54 && phi694 == 8 || *(uint32_t*)(phi121 + 24) >= *anon138 && dispatch13 == 0 && phi18 < *anon28 && phi43 < *anon54 && *(uint32_t*)(phi81 + 4) < *anon95 && phi122 == 8 && phi694 == 8 || phi43 >= *anon54 && dispatch13 == 0 && phi18 < *anon28 || *(uint32_t*)(phi195 + 28) >= *anon228 && dispatch13 == 0 && phi18 < *anon28 && phi43 < *anon54 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 && phi655 == 8 && phi122 == 8 && phi694 == 8 || dispatch13 == 5 && *(uint32_t*)(phi288 + 40) < *anon319 && phi351 == 8 && phi260 == 8 && phi655 == 8 && phi122 == 8 && phi694 == 8 || phi43 >= *anon54 && dispatch13 == 1 || *(uint32_t*)(phi121 + 24) >= *anon138 && dispatch13 == 1 && phi43 < *anon54 && *(uint32_t*)(phi81 + 4) < *anon95 && phi122 == 8 && phi694 == 8 || *(uint32_t*)(phi288 + 40) >= *anon319 && dispatch13 == 5 && phi260 == 8 && phi655 == 8 && phi122 == 8 && phi694 == 8 || dispatch13 == 4 && *(uint32_t*)(phi195 + 28) < *anon228 && *(uint32_t*)(phi288 + 40) < *anon319 && phi351 == 8 && phi260 == 8 && phi655 == 8 && phi122 == 8 && phi694 == 8 || *(uint32_t*)(phi121 + 24) >= *anon138 && dispatch13 == 3 && *(uint32_t*)(phi81 + 4) < *anon95 && phi122 == 8 && phi694 == 8 || *(uint32_t*)(phi288 + 40) >= *anon319 && dispatch13 == 4 && *(uint32_t*)(phi195 + 28) < *anon228 && phi260 == 8 && phi655 == 8 && phi122 == 8 && phi694 == 8 || dispatch13 == 2 && *(uint32_t*)(phi121 + 24) < *anon138 && *(uint32_t*)(phi195 + 28) < *anon228 && *(uint32_t*)(phi288 + 40) < *anon319 && phi351 == 8 && phi260 == 8 && phi655 == 8 && phi122 == 8 && phi694 == 8 || *(uint32_t*)(phi121 + 24) >= *anon138 && dispatch13 == 2 && phi122 == 8 && phi694 == 8 || *(uint32_t*)(phi288 + 40) >= *anon319 && dispatch13 == 2 && *(uint32_t*)(phi121 + 24) < *anon138 && *(uint32_t*)(phi195 + 28) < *anon228 && phi260 == 8 && phi655 == 8 && phi122 == 8 && phi694 == 8 || dispatch13 == 3 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 && *(uint32_t*)(phi195 + 28) < *anon228 && *(uint32_t*)(phi288 + 40) < *anon319 && phi351 == 8 && phi260 == 8 && phi655 == 8 && phi122 == 8 && phi694 == 8 || *(uint32_t*)(phi288 + 40) >= *anon319 && dispatch13 == 3 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 && *(uint32_t*)(phi195 + 28) < *anon228 && phi260 == 8 && phi655 == 8 && phi122 == 8 && phi694 == 8 || dispatch13 == 1 && phi43 < *anon54 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 && *(uint32_t*)(phi195 + 28) < *anon228 && *(uint32_t*)(phi288 + 40) < *anon319 && phi351 == 8 && phi260 == 8 && phi655 == 8 && phi122 == 8 && phi694 == 8 || *(uint32_t*)(phi288 + 40) >= *anon319 && dispatch13 == 1 && phi43 < *anon54 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 && *(uint32_t*)(phi195 + 28) < *anon228 && phi260 == 8 && phi655 == 8 && phi122 == 8 && phi694 == 8 || dispatch13 == 0 && phi18 < *anon28 && phi43 < *anon54 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 && *(uint32_t*)(phi195 + 28) < *anon228 && *(uint32_t*)(phi288 + 40) < *anon319 && phi351 == 8 && phi260 == 8 && phi655 == 8 && phi122 == 8 && phi694 == 8))
+			if (phi703 == 8 && (*(uint32_t*)(phi195 + 28) >= *anon228 && dispatch13 == 4 && phi655 == 8 && phi122 == 8 && phi694 == 8 || dispatch13 == 0 && phi18 < *anon28 && phi43 < *anon54 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 && *(uint32_t*)(phi195 + 28) < *anon228 && *(uint32_t*)(phi288 + 40) < *anon319 && phi351 == 8 && phi260 == 8 && phi655 == 8 && phi122 == 8 && phi694 == 8 || dispatch13 == 1 && phi43 < *anon54 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 && *(uint32_t*)(phi195 + 28) < *anon228 && *(uint32_t*)(phi288 + 40) < *anon319 && phi351 == 8 && phi260 == 8 && phi655 == 8 && phi122 == 8 && phi694 == 8 || *(uint32_t*)(phi195 + 28) >= *anon228 && dispatch13 == 5 && *(uint32_t*)(phi121 + 24) < *anon138 && phi655 == 8 && phi122 == 8 && phi694 == 8 || *(uint32_t*)(phi288 + 40) >= *anon319 && dispatch13 == 1 && phi43 < *anon54 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 && *(uint32_t*)(phi195 + 28) < *anon228 && phi260 == 8 && phi655 == 8 && phi122 == 8 && phi694 == 8 || *(uint32_t*)(phi288 + 40) >= *anon319 && dispatch13 == 0 && phi18 < *anon28 && phi43 < *anon54 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 && *(uint32_t*)(phi195 + 28) < *anon228 && phi260 == 8 && phi655 == 8 && phi122 == 8 && phi694 == 8 || *(uint32_t*)(phi81 + 4) >= *anon95 && dispatch13 == 0 && phi18 < *anon28 && phi43 < *anon54 && phi694 == 8 || *(uint32_t*)(phi195 + 28) >= *anon228 && dispatch13 == 2 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 && phi655 == 8 && phi122 == 8 && phi694 == 8 || phi43 >= *anon54 && dispatch13 == 1 || dispatch13 == 6 && *(uint32_t*)(phi288 + 40) < *anon319 && phi351 == 8 && phi260 == 8 && phi655 == 8 && phi122 == 8 && phi694 == 8 || *(uint32_t*)(phi81 + 4) >= *anon95 && dispatch13 == 2 && phi694 == 8 || *(uint32_t*)(phi195 + 28) >= *anon228 && dispatch13 == 1 && phi43 < *anon54 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 && phi655 == 8 && phi122 == 8 && phi694 == 8 || dispatch13 == 3 && phi351 == 8 && phi260 == 8 && phi655 == 8 && phi122 == 8 && phi694 == 8 || *(uint32_t*)(phi81 + 4) >= *anon95 && dispatch13 == 1 && phi43 < *anon54 && phi694 == 8 || dispatch13 == 4 && *(uint32_t*)(phi195 + 28) < *anon228 && *(uint32_t*)(phi288 + 40) < *anon319 && phi351 == 8 && phi260 == 8 && phi655 == 8 && phi122 == 8 && phi694 == 8 || *(uint32_t*)(phi195 + 28) >= *anon228 && dispatch13 == 0 && phi18 < *anon28 && phi43 < *anon54 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 && phi655 == 8 && phi122 == 8 && phi694 == 8 || *(uint32_t*)(phi288 + 40) >= *anon319 && dispatch13 == 4 && *(uint32_t*)(phi195 + 28) < *anon228 && phi260 == 8 && phi655 == 8 && phi122 == 8 && phi694 == 8 || phi43 >= *anon54 && dispatch13 == 0 && phi18 < *anon28 || *(uint32_t*)(phi288 + 40) >= *anon319 && dispatch13 == 6 && phi260 == 8 && phi655 == 8 && phi122 == 8 && phi694 == 8 || *(uint32_t*)(phi121 + 24) >= *anon138 && dispatch13 == 5 && phi122 == 8 && phi694 == 8 || *(uint32_t*)(phi121 + 24) >= *anon138 && dispatch13 == 2 && *(uint32_t*)(phi81 + 4) < *anon95 && phi122 == 8 && phi694 == 8 || *(uint32_t*)(phi288 + 40) >= *anon319 && dispatch13 == 5 && *(uint32_t*)(phi121 + 24) < *anon138 && *(uint32_t*)(phi195 + 28) < *anon228 && phi260 == 8 && phi655 == 8 && phi122 == 8 && phi694 == 8 || *(uint32_t*)(phi121 + 24) >= *anon138 && dispatch13 == 1 && phi43 < *anon54 && *(uint32_t*)(phi81 + 4) < *anon95 && phi122 == 8 && phi694 == 8 || dispatch13 == 5 && *(uint32_t*)(phi121 + 24) < *anon138 && *(uint32_t*)(phi195 + 28) < *anon228 && *(uint32_t*)(phi288 + 40) < *anon319 && phi351 == 8 && phi260 == 8 && phi655 == 8 && phi122 == 8 && phi694 == 8 || *(uint32_t*)(phi288 + 40) >= *anon319 && dispatch13 == 2 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 && *(uint32_t*)(phi195 + 28) < *anon228 && phi260 == 8 && phi655 == 8 && phi122 == 8 && phi694 == 8 || *(uint32_t*)(phi121 + 24) >= *anon138 && dispatch13 == 0 && phi18 < *anon28 && phi43 < *anon54 && *(uint32_t*)(phi81 + 4) < *anon95 && phi122 == 8 && phi694 == 8 || dispatch13 == 2 && *(uint32_t*)(phi81 + 4) < *anon95 && *(uint32_t*)(phi121 + 24) < *anon138 && *(uint32_t*)(phi195 + 28) < *anon228 && *(uint32_t*)(phi288 + 40) < *anon319 && phi351 == 8 && phi260 == 8 && phi655 == 8 && phi122 == 8 && phi694 == 8))
 			{
 				phi_in21 = *(uint64_t*)(phi708 + 48);
 				phi_in22 = phi702;
@@ -1847,9 +1847,9 @@ void t(uint64_t arg0)
 	uint64_t phi_in16 = 3;
 	do
 	{
-		uint32_t* anon21;
 		uint64_t anon19;
 		uint64_t phi17;
+		uint32_t* anon21;
 		do
 		{
 			do
@@ -1897,12 +1897,12 @@ void r(uint64_t arg0, uint64_t arg1)
 	uint32_t dispatch5 = 0;
 	while (true)
 	{
+		uint32_t phi7;
 		uint64_t anon12;
+		uint32_t phi_in8;
 		uint32_t phi10;
 		uint32_t phi_in9;
-		uint32_t phi_in8;
 		uint32_t phi11;
-		uint32_t phi7;
 		if (dispatch5 == 0)
 		{
 			uint32_t phi6 = phi_in1;
@@ -1984,9 +1984,6 @@ void r(uint64_t arg0, uint64_t arg1)
 }
 void m(uint64_t arg0)
 {
-	uint32_t anon69;
-	uint32_t anon60;
-	uint64_t phi33;
 	struct { uint8_t field0[48]; uint8_t field1[24]; uint64_t field2; } alloca1;
 	alloca1.field2 = arg0;
 	getpid(4198911);
@@ -1995,131 +1992,134 @@ void m(uint64_t arg0)
 	(__asm "movdqa xmm2, xmmword ptr [rip + 0xc6c]")();
 	(__asm "movdqa xmm1, xmmword ptr [rip + 0xc74]")();
 	uint32_t dispatch2 = 0;
-	do
+	while (true)
 	{
-		uint32_t phi48;
-		uint64_t phi_in32;
+		uint32_t anon69;
+		uint64_t phi33;
+		uint64_t phi14;
+		uint64_t phi13;
+		uint64_t phi_in11;
+		uint32_t anon60;
+		uint64_t phi_in12;
 		do
 		{
-			uint32_t phi_in40;
-			uint32_t* anon39;
-			uint32_t phi_in38;
-			uint32_t phi_in36;
-			uint32_t phi_in42;
-			uint32_t phi_in41;
-			uint32_t phi_in37;
-			while (dispatch2 != 1)
+			uint32_t phi48;
+			uint64_t phi_in32;
+			do
 			{
-				uint64_t phi16;
-				uint64_t phi13;
-				uint32_t phi31;
-				uint64_t phi_in8;
-				uint64_t phi_in3;
-				uint64_t phi_in15;
-				uint64_t phi_in12;
-				uint64_t phi6;
-				uint64_t phi_in7;
-				uint64_t phi9;
-				uint64_t phi14;
-				uint64_t phi5;
-				uint64_t phi_in11;
-				uint64_t phi_in4;
-				uint64_t phi10;
-				if (dispatch2 == 0)
+				uint32_t phi_in42;
+				uint32_t phi_in40;
+				uint32_t phi_in41;
+				uint32_t* anon39;
+				uint32_t phi_in36;
+				uint32_t phi_in38;
+				uint32_t phi_in37;
+				while (dispatch2 != 2)
 				{
-					(__asm "movaps xmmword ptr [rip + 0x20158f], xmm0")();
-					(__asm "movaps xmmword ptr [rip + 0x201598], xmm0")();
-					(__asm "movaps xmmword ptr [rip + 0x2015a1], xmm0")();
-					(__asm "movaps xmmword ptr [rip + 0x2012fa], xmm2")();
-					(__asm "movaps xmmword ptr [rip + 0x201473], xmm1")();
-					(__asm "movaps xmmword ptr [rip + 0x20159c], xmm0")();
-					(__asm "movaps xmmword ptr [rip + 0x2015a5], xmm0")();
-					(__asm "movaps xmmword ptr [rip + 0x2015ae], xmm0")();
-					(__asm "movaps xmmword ptr [rip + 0x2012e7], xmm2")();
-					(__asm "movaps xmmword ptr [rip + 0x201460], xmm1")();
-					(__asm "movaps xmmword ptr [rip + 0x2015a9], xmm0")();
-					(__asm "movaps xmmword ptr [rip + 0x2015b2], xmm0")();
-					(__asm "movaps xmmword ptr [rip + 0x2015bb], xmm0")();
-					(__asm "movaps xmmword ptr [rip + 0x2012d4], xmm2")();
-					(__asm "movaps xmmword ptr [rip + 0x20144d], xmm1")();
-					(__asm "movaps xmmword ptr [rip + 0x2015b6], xmm0")();
-					(__asm "movaps xmmword ptr [rip + 0x2015bf], xmm0")();
-					(__asm "movaps xmmword ptr [rip + 0x2015c8], xmm0")();
-					(__asm "movaps xmmword ptr [rip + 0x2012c1], xmm2")();
-					(__asm "movaps xmmword ptr [rip + 0x20143a], xmm1")();
-					(__asm "movaps xmmword ptr [rip + 0x2015c3], xmm0")();
-					(__asm "movaps xmmword ptr [rip + 0x2015cc], xmm0")();
-					(__asm "movaps xmmword ptr [rip + 0x2015d5], xmm0")();
-					(__asm "movaps xmmword ptr [rip + 0x2012ae], xmm2")();
-					(__asm "movaps xmmword ptr [rip + 0x201427], xmm1")();
-					(__asm "movaps xmmword ptr [rip + 0x2015d0], xmm0")();
-					(__asm "movaps xmmword ptr [rip + 0x2015d9], xmm0")();
-					(__asm "movaps xmmword ptr [rip + 0x2015e2], xmm0")();
-					(__asm "movaps xmmword ptr [rip + 0x20129b], xmm2")();
-					(__asm "movaps xmmword ptr [rip + 0x201414], xmm1")();
-					(__asm "movaps xmmword ptr [rip + 0x2015dd], xmm0")();
-					(__asm "movaps xmmword ptr [rip + 0x2015e6], xmm0")();
-					(__asm "movaps xmmword ptr [rip + 0x2015ef], xmm0")();
-					(__asm "movaps xmmword ptr [rsp + 0x20], xmm0")();
-					(__asm "movaps xmmword ptr [rip + 0x201283], xmm2")();
-					(__asm "movaps xmmword ptr [rsp + 0x10], xmm2")();
-					(__asm "movaps xmmword ptr [rip + 0x2013f7], xmm1")();
-					(__asm "movaps xmmword ptr [rsp], xmm1")();
-					phi_in3 = 6301504;
-					phi_in4 = 15;
-				}
-				if (dispatch2 == 5 || dispatch2 == 0)
-				{
-					phi5 = phi_in3;
-					phi6 = phi_in4;
-				}
-				if (phi6 == 0)
-				{
+					uint64_t phi_in8;
+					uint32_t phi31;
+					uint64_t phi16;
+					uint64_t phi_in4;
+					uint64_t phi5;
+					uint64_t phi_in15;
+					uint64_t phi10;
+					uint64_t phi6;
+					uint64_t phi_in7;
+					uint64_t phi_in3;
+					uint64_t phi9;
+					if (dispatch2 == 0)
+					{
+						(__asm "movaps xmmword ptr [rip + 0x20158f], xmm0")();
+						(__asm "movaps xmmword ptr [rip + 0x201598], xmm0")();
+						(__asm "movaps xmmword ptr [rip + 0x2015a1], xmm0")();
+						(__asm "movaps xmmword ptr [rip + 0x2012fa], xmm2")();
+						(__asm "movaps xmmword ptr [rip + 0x201473], xmm1")();
+						(__asm "movaps xmmword ptr [rip + 0x20159c], xmm0")();
+						(__asm "movaps xmmword ptr [rip + 0x2015a5], xmm0")();
+						(__asm "movaps xmmword ptr [rip + 0x2015ae], xmm0")();
+						(__asm "movaps xmmword ptr [rip + 0x2012e7], xmm2")();
+						(__asm "movaps xmmword ptr [rip + 0x201460], xmm1")();
+						(__asm "movaps xmmword ptr [rip + 0x2015a9], xmm0")();
+						(__asm "movaps xmmword ptr [rip + 0x2015b2], xmm0")();
+						(__asm "movaps xmmword ptr [rip + 0x2015bb], xmm0")();
+						(__asm "movaps xmmword ptr [rip + 0x2012d4], xmm2")();
+						(__asm "movaps xmmword ptr [rip + 0x20144d], xmm1")();
+						(__asm "movaps xmmword ptr [rip + 0x2015b6], xmm0")();
+						(__asm "movaps xmmword ptr [rip + 0x2015bf], xmm0")();
+						(__asm "movaps xmmword ptr [rip + 0x2015c8], xmm0")();
+						(__asm "movaps xmmword ptr [rip + 0x2012c1], xmm2")();
+						(__asm "movaps xmmword ptr [rip + 0x20143a], xmm1")();
+						(__asm "movaps xmmword ptr [rip + 0x2015c3], xmm0")();
+						(__asm "movaps xmmword ptr [rip + 0x2015cc], xmm0")();
+						(__asm "movaps xmmword ptr [rip + 0x2015d5], xmm0")();
+						(__asm "movaps xmmword ptr [rip + 0x2012ae], xmm2")();
+						(__asm "movaps xmmword ptr [rip + 0x201427], xmm1")();
+						(__asm "movaps xmmword ptr [rip + 0x2015d0], xmm0")();
+						(__asm "movaps xmmword ptr [rip + 0x2015d9], xmm0")();
+						(__asm "movaps xmmword ptr [rip + 0x2015e2], xmm0")();
+						(__asm "movaps xmmword ptr [rip + 0x20129b], xmm2")();
+						(__asm "movaps xmmword ptr [rip + 0x201414], xmm1")();
+						(__asm "movaps xmmword ptr [rip + 0x2015dd], xmm0")();
+						(__asm "movaps xmmword ptr [rip + 0x2015e6], xmm0")();
+						(__asm "movaps xmmword ptr [rip + 0x2015ef], xmm0")();
+						(__asm "movaps xmmword ptr [rsp + 0x20], xmm0")();
+						(__asm "movaps xmmword ptr [rip + 0x201283], xmm2")();
+						(__asm "movaps xmmword ptr [rsp + 0x10], xmm2")();
+						(__asm "movaps xmmword ptr [rip + 0x2013f7], xmm1")();
+						(__asm "movaps xmmword ptr [rsp], xmm1")();
+						phi_in3 = 6301504;
+						phi_in4 = 15;
+					}
 					if (dispatch2 == 5 || dispatch2 == 0)
 					{
-						*(uint32_t*)0x602918 = 4294967295;
-						*(uint32_t*)0x602914 = 4294967295;
-						*(uint32_t*)0x602910 = 4294967295;
-						*(uint32_t*)0x6025b0 = 60;
-						*(uint32_t*)0x602730 = 3;
-						*(uint32_t*)0x602924 = 4294967295;
-						*(uint32_t*)0x602920 = 4294967295;
-						*(uint32_t*)0x60291c = 4294967295;
-						*(uint32_t*)0x6025b4 = 60;
-						*(uint32_t*)0x602734 = 3;
-						phi_in7 = 15;
-						phi_in8 = 6300864;
+						phi5 = phi_in3;
+						phi6 = phi_in4;
 					}
-				}
-				else if (dispatch2 == 5 || dispatch2 == 0)
-				{
-					*(uint64_t*)phi5 = 0;
-					phi_in3 = phi5 + 8;
-					phi_in4 = phi6 - 1;
-					dispatch2 = 5;
-				}
-				if (dispatch2 == 4 || dispatch2 == 5 && phi6 == 0 || dispatch2 == 0 && phi6 == 0)
-				{
-					phi9 = phi_in7;
-					phi10 = phi_in8;
-					phi_in11 = 6301248;
-					phi_in12 = 15;
-				}
-				if (phi9 != 0 && (dispatch2 == 4 || dispatch2 == 5 && phi6 == 0 || dispatch2 == 0 && phi6 == 0))
-				{
-					*(uint64_t*)phi10 = 0;
-					phi_in7 = phi9 - 1;
-					phi_in8 = phi10 + 8;
-					dispatch2 = 4;
-				}
-				if (dispatch2 == 3 || dispatch2 == 4 && phi9 == 0 || dispatch2 == 5 && phi6 == 0 && phi9 == 0 || dispatch2 == 0 && phi6 == 0 && phi9 == 0)
-				{
-					phi13 = phi_in11;
-					phi14 = phi_in12;
-				}
-				if (phi14 == 0)
-				{
-					if (dispatch2 == 3 || dispatch2 == 4 && phi9 == 0 || dispatch2 == 5 && phi6 == 0 && phi9 == 0 || dispatch2 == 0 && phi6 == 0 && phi9 == 0)
+					if (phi6 == 0)
+					{
+						if (dispatch2 == 5 || dispatch2 == 0)
+						{
+							*(uint32_t*)0x602918 = 4294967295;
+							*(uint32_t*)0x602914 = 4294967295;
+							*(uint32_t*)0x602910 = 4294967295;
+							*(uint32_t*)0x6025b0 = 60;
+							*(uint32_t*)0x602730 = 3;
+							*(uint32_t*)0x602924 = 4294967295;
+							*(uint32_t*)0x602920 = 4294967295;
+							*(uint32_t*)0x60291c = 4294967295;
+							*(uint32_t*)0x6025b4 = 60;
+							*(uint32_t*)0x602734 = 3;
+							phi_in7 = 15;
+							phi_in8 = 6300864;
+						}
+					}
+					else if (dispatch2 == 5 || dispatch2 == 0)
+					{
+						*(uint64_t*)phi5 = 0;
+						phi_in3 = phi5 + 8;
+						phi_in4 = phi6 - 1;
+						dispatch2 = 5;
+					}
+					if (dispatch2 == 4 || dispatch2 == 5 && phi6 == 0 || dispatch2 == 0 && phi6 == 0)
+					{
+						phi9 = phi_in7;
+						phi10 = phi_in8;
+						phi_in11 = 6301248;
+						phi_in12 = 15;
+					}
+					if (phi9 != 0 && (dispatch2 == 4 || dispatch2 == 5 && phi6 == 0 || dispatch2 == 0 && phi6 == 0))
+					{
+						*(uint64_t*)phi10 = 0;
+						phi_in7 = phi9 - 1;
+						phi_in8 = phi10 + 8;
+						dispatch2 = 4;
+					}
+					if (dispatch2 == 1 || dispatch2 == 4 && phi9 == 0 || dispatch2 == 5 && phi6 == 0 && phi9 == 0 || dispatch2 == 0 && phi6 == 0 && phi9 == 0)
+					{
+						phi13 = phi_in11;
+						phi14 = phi_in12;
+					}
+					if (phi14 == 0 && (dispatch2 == 1 || dispatch2 == 4 && phi9 == 0 || dispatch2 == 5 && phi6 == 0 && phi9 == 0 || dispatch2 == 0 && phi6 == 0 && phi9 == 0))
 					{
 						r(4199339, 0);
 						(__asm "movdqa xmm0, xmmword ptr [rsp + 0x20]")();
@@ -2127,229 +2127,226 @@ void m(uint64_t arg0)
 						(__asm "movdqa xmm1, xmmword ptr [rsp]")();
 						phi_in15 = 6301636;
 					}
-				}
-				else if (dispatch2 == 3 || dispatch2 == 4 && phi9 == 0 || dispatch2 == 5 && phi6 == 0 && phi9 == 0 || dispatch2 == 0 && phi6 == 0 && phi9 == 0)
-				{
-					*(uint64_t*)phi13 = 0;
-					phi_in11 = phi13 + 8;
-					phi_in12 = phi14 - 1;
-					dispatch2 = 3;
-				}
-				if (dispatch2 == 2 || dispatch2 == 3 && phi14 == 0 || dispatch2 == 4 && phi9 == 0 && phi14 == 0 || dispatch2 == 5 && phi6 == 0 && phi9 == 0 && phi14 == 0 || dispatch2 == 0 && phi6 == 0 && phi9 == 0 && phi14 == 0)
-				{
-					uint32_t phi_in23;
-					uint32_t* anon22;
-					uint32_t phi_in21;
-					uint32_t phi_in20;
-					uint32_t phi_in24;
-					uint32_t phi_in25;
-					uint32_t phi_in19;
-					phi16 = phi_in15;
-					uint32_t* anon17 = (uint32_t*)(phi16 + 4);
-					uint32_t* anon18 = (uint32_t*)phi16;
-					if (*anon17 < *anon18)
+					if (dispatch2 == 3 || dispatch2 == 1 && phi14 == 0 || dispatch2 == 4 && phi9 == 0 && phi14 == 0 || dispatch2 == 5 && phi6 == 0 && phi9 == 0 && phi14 == 0 || dispatch2 == 0 && phi6 == 0 && phi9 == 0 && phi14 == 0)
 					{
-						*anon18 = *anon17;
-						*anon17 = *anon18;
-						phi_in19 = *anon18;
-						phi_in20 = *anon17;
-						anon22 = (uint32_t*)(phi16 - 4);
-						phi_in21 = *anon22;
-						phi_in23 = *anon18;
-						phi_in24 = *anon17;
-					}
-					else 
-					{
-						phi_in19 = *anon17;
-						phi_in20 = *anon18;
-						phi_in25 = *anon22;
-					}
-					if (*anon17 < *anon18 && *anon17 < *anon22 || *anon17 >= *anon18 && *anon18 < *anon22)
-					{
-						uint32_t phi26 = phi_in19;
-						uint32_t phi27 = phi_in20;
-						*anon18 = *anon22;
-						*anon22 = phi27;
-						phi_in21 = phi27;
-						phi_in23 = phi26;
-						phi_in24 = *anon22;
-					}
-					if (*anon17 < *anon18 && *anon17 < *anon22 || *anon17 >= *anon18 && *anon18 < *anon22 || *anon17 >= *anon22 && *anon17 < *anon18)
-					{
-						uint32_t phi28 = phi_in21;
-						uint32_t phi29 = phi_in23;
-						uint32_t phi30 = phi_in24;
-						phi_in25 = phi28;
-						if (phi29 < phi30)
+						uint32_t phi_in25;
+						uint32_t* anon22;
+						uint32_t phi_in20;
+						uint32_t phi_in19;
+						uint32_t phi_in21;
+						uint32_t phi_in24;
+						uint32_t phi_in23;
+						phi16 = phi_in15;
+						uint32_t* anon17 = (uint32_t*)(phi16 + 4);
+						uint32_t* anon18 = (uint32_t*)phi16;
+						if (*anon17 < *anon18)
 						{
-							*anon17 = phi30;
-							*anon18 = phi29;
+							*anon18 = *anon17;
+							*anon17 = *anon18;
+							phi_in19 = *anon18;
+							phi_in20 = *anon17;
+							anon22 = (uint32_t*)(phi16 - 4);
+							phi_in21 = *anon22;
+							phi_in23 = *anon18;
+							phi_in24 = *anon17;
+						}
+						else 
+						{
+							phi_in19 = *anon17;
+							phi_in20 = *anon18;
 							phi_in25 = *anon22;
 						}
+						if (*anon17 < *anon18 && *anon17 < *anon22 || *anon17 >= *anon18 && *anon18 < *anon22)
+						{
+							uint32_t phi26 = phi_in19;
+							uint32_t phi27 = phi_in20;
+							*anon18 = *anon22;
+							*anon22 = phi27;
+							phi_in21 = phi27;
+							phi_in23 = phi26;
+							phi_in24 = *anon22;
+						}
+						if (*anon17 < *anon18 && *anon17 < *anon22 || *anon17 >= *anon18 && *anon18 < *anon22 || *anon17 >= *anon22 && *anon17 < *anon18)
+						{
+							uint32_t phi28 = phi_in21;
+							uint32_t phi29 = phi_in23;
+							uint32_t phi30 = phi_in24;
+							phi_in25 = phi28;
+							if (phi29 < phi30)
+							{
+								*anon17 = phi30;
+								*anon18 = phi29;
+								phi_in25 = *anon22;
+							}
+						}
+						phi31 = phi_in25;
+						phi_in32 = 6301636;
+						if (phi31 == 255)
+						{
+							break;
+						}
 					}
-					phi31 = phi_in25;
-					phi_in32 = 6301636;
-					if (phi31 == 255)
+					if (phi31 != 255 && (dispatch2 == 3 || dispatch2 == 1 && phi14 == 0 || dispatch2 == 4 && phi9 == 0 && phi14 == 0 || dispatch2 == 5 && phi6 == 0 && phi9 == 0 && phi14 == 0 || dispatch2 == 0 && phi6 == 0 && phi9 == 0 && phi14 == 0))
 					{
-						break;
+						phi_in32 = 6301636;
+						phi_in15 = phi16 + 12;
+						dispatch2 = 3;
+						if (phi16 == 6301984)
+						{
+							break;
+						}
 					}
 				}
-				if (phi31 != 255 && (dispatch2 == 2 || dispatch2 == 3 && phi14 == 0 || dispatch2 == 4 && phi9 == 0 && phi14 == 0 || dispatch2 == 5 && phi6 == 0 && phi9 == 0 && phi14 == 0 || dispatch2 == 0 && phi6 == 0 && phi9 == 0 && phi14 == 0))
+				phi33 = phi_in32;
+				uint32_t* anon34 = (uint32_t*)(phi33 + 4);
+				uint32_t* anon35 = (uint32_t*)phi33;
+				if (*anon34 < *anon35)
 				{
-					phi_in32 = 6301636;
-					phi_in15 = phi16 + 12;
-					dispatch2 = 2;
-					if (phi16 == 6301984)
-					{
-						break;
-					}
+					*anon35 = *anon34;
+					*anon34 = *anon35;
+					phi_in36 = *anon35;
+					phi_in37 = *anon34;
+					anon39 = (uint32_t*)(phi33 - 4);
+					phi_in38 = *anon39;
+					phi_in40 = *anon35;
+					phi_in41 = *anon34;
 				}
-			}
-			phi33 = phi_in32;
-			uint32_t* anon34 = (uint32_t*)(phi33 + 4);
-			uint32_t* anon35 = (uint32_t*)phi33;
-			if (*anon34 < *anon35)
-			{
-				*anon35 = *anon34;
-				*anon34 = *anon35;
-				phi_in36 = *anon35;
-				phi_in37 = *anon34;
-				anon39 = (uint32_t*)(phi33 - 4);
-				phi_in38 = *anon39;
-				phi_in40 = *anon35;
-				phi_in41 = *anon34;
-			}
-			else 
-			{
-				phi_in36 = *anon34;
-				phi_in37 = *anon35;
-				phi_in42 = *anon39;
-			}
-			if (*anon34 < *anon35 && *anon34 < *anon39 || *anon34 >= *anon35 && *anon35 < *anon39)
-			{
-				uint32_t phi43 = phi_in36;
-				uint32_t phi44 = phi_in37;
-				*anon35 = *anon39;
-				*anon39 = phi44;
-				phi_in38 = phi44;
-				phi_in40 = phi43;
-				phi_in41 = *anon39;
-			}
-			if (*anon34 < *anon35 && *anon34 < *anon39 || *anon34 >= *anon35 && *anon35 < *anon39 || *anon34 >= *anon39 && *anon34 < *anon35)
-			{
-				uint32_t phi45 = phi_in38;
-				uint32_t phi46 = phi_in40;
-				uint32_t phi47 = phi_in41;
-				phi_in42 = phi45;
-				if (phi46 < phi47)
+				else 
 				{
-					*anon34 = phi47;
-					*anon35 = phi46;
+					phi_in36 = *anon34;
+					phi_in37 = *anon35;
 					phi_in42 = *anon39;
 				}
+				if (*anon34 < *anon35 && *anon34 < *anon39 || *anon34 >= *anon35 && *anon35 < *anon39)
+				{
+					uint32_t phi43 = phi_in36;
+					uint32_t phi44 = phi_in37;
+					*anon35 = *anon39;
+					*anon39 = phi44;
+					phi_in38 = phi44;
+					phi_in40 = phi43;
+					phi_in41 = *anon39;
+				}
+				if (*anon34 < *anon35 && *anon34 < *anon39 || *anon34 >= *anon35 && *anon35 < *anon39 || *anon34 >= *anon39 && *anon34 < *anon35)
+				{
+					uint32_t phi45 = phi_in38;
+					uint32_t phi46 = phi_in40;
+					uint32_t phi47 = phi_in41;
+					phi_in42 = phi45;
+					if (phi46 < phi47)
+					{
+						*anon34 = phi47;
+						*anon35 = phi46;
+						phi_in42 = *anon39;
+					}
+				}
+				phi48 = phi_in42;
+				dispatch2 = 0;
 			}
-			phi48 = phi_in42;
-			dispatch2 = 0;
+			while (phi48 == 255);
+			phi_in32 = phi33 + 12;
+			dispatch2 = 2;
 		}
-		while (phi48 == 255);
-		phi_in32 = phi33 + 12;
-		dispatch2 = 1;
-	}
-	while (phi33 != 6301984);
-	uint64_t phi_in49 = 4;
-	uint32_t dispatch50 = 0;
-	do
-	{
-		uint64_t phi51;
-		uint32_t* anon59;
+		while (phi33 != 6301984);
+		uint64_t phi_in49 = 4;
+		uint32_t dispatch50 = 0;
 		do
 		{
-			uint64_t anon57;
+			uint32_t* anon59;
+			uint64_t phi51;
 			do
 			{
-				while (dispatch50 != 1)
+				uint64_t anon57;
+				do
 				{
-					if (dispatch50 == 0)
+					while (dispatch50 != 1)
 					{
-						phi51 = phi_in49;
-						uint64_t anon52 = random();
-						phi_in49 = phi51;
-						dispatch50 = 0;
-						uint64_t anon55 = anon52 << 32;
-						uint64_t anon54 = anon52 + (((anon52 & 0xffffffff) * 2290649225 + anon55 >> 32 >> 4) - (anon55 >> 32 >> 31) << 32 >> 32) * 4294967266 << 32 >> 30;
-						uint32_t* anon53 = (uint32_t*)(anon54 + 6301504);
-						if (*anon53 == 0)
+						if (dispatch50 == 0)
 						{
+							phi51 = phi_in49;
+							uint64_t anon52 = random();
 							phi_in49 = phi51;
 							dispatch50 = 0;
-							if (*(uint32_t*)(anon54 + 6300864) == 0)
+							uint64_t anon55 = anon52 << 32;
+							uint64_t anon54 = anon52 + (((anon52 & 0xffffffff) * 2290649225 + anon55 >> 32 >> 4) - (anon55 >> 32 >> 31) << 32 >> 32) * 4294967266 << 32 >> 30;
+							uint32_t* anon53 = (uint32_t*)(anon54 + 6301504);
+							if (*anon53 == 0)
 							{
-								*anon53 = 1;
-								break;
+								phi_in49 = phi51;
+								dispatch50 = 0;
+								if (*(uint32_t*)(anon54 + 6300864) == 0)
+								{
+									*anon53 = 1;
+									break;
+								}
 							}
 						}
 					}
+					uint64_t anon56 = random();
+					dispatch50 = 1;
+					uint64_t anon58 = anon56 << 32;
+					anon57 = anon56 + (((anon56 & 0xffffffff) * 2290649225 + anon58 >> 32 >> 4) - (anon58 >> 32 >> 31) << 32 >> 32) * 4294967266 << 32 >> 30;
 				}
-				uint64_t anon56 = random();
+				while (*(uint32_t*)(anon57 + 6301504) != 0);
 				dispatch50 = 1;
-				uint64_t anon58 = anon56 << 32;
-				anon57 = anon56 + (((anon56 & 0xffffffff) * 2290649225 + anon58 >> 32 >> 4) - (anon58 >> 32 >> 31) << 32 >> 32) * 4294967266 << 32 >> 30;
+				anon59 = (uint32_t*)(anon57 + 6300864);
 			}
-			while (*(uint32_t*)(anon57 + 6301504) != 0);
-			dispatch50 = 1;
-			anon59 = (uint32_t*)(anon57 + 6300864);
+			while (*anon59 != 0);
+			*anon59 = 1;
+			anon60 = (uint32_t)phi51 - 1;
+			phi_in49 = (__zext uint64_t)anon60;
+			dispatch50 = 0;
 		}
-		while (*anon59 != 0);
-		*anon59 = 1;
-		anon60 = (uint32_t)phi51 - 1;
-		phi_in49 = (__zext uint64_t)anon60;
-		dispatch50 = 0;
-	}
-	while (anon60 != 0);
-	uint64_t anon61 = random();
-	uint64_t anon62 = anon61 << 32;
-	w(4198271, (uint64_t)&alloca1.field1, anon61 + (((anon61 & 0xffffffff) * 2290649225 + anon62 >> 32 >> 4) - (anon62 >> 32 >> 31) << 32 >> 32) * 4294967266 & 0xffffffff, 0);
-	uint64_t phi_in63 = 3;
-	do
-	{
-		uint64_t anon66;
-		uint64_t phi64;
-		uint32_t* anon68;
+		while (anon60 != 0);
+		uint64_t anon61 = random();
+		uint64_t anon62 = anon61 << 32;
+		w(4198271, (uint64_t)&alloca1.field1, anon61 + (((anon61 & 0xffffffff) * 2290649225 + anon62 >> 32 >> 4) - (anon62 >> 32 >> 31) << 32 >> 32) * 4294967266 & 0xffffffff, 0);
+		uint64_t phi_in63 = 3;
 		do
 		{
+			uint32_t* anon68;
+			uint64_t anon66;
+			uint64_t phi64;
 			do
 			{
 				do
 				{
 					do
 					{
-						phi64 = phi_in63;
-						uint64_t anon65 = random();
+						do
+						{
+							phi64 = phi_in63;
+							uint64_t anon65 = random();
+							phi_in63 = phi64;
+							uint64_t anon67 = anon65 << 32;
+							anon66 = anon65 + (((anon65 & 0xffffffff) * 2290649225 + anon67 >> 32 >> 4) - (anon67 >> 32 >> 31) << 32 >> 32) * 4294967266 << 32 >> 30;
+						}
+						while (*(uint32_t*)(anon66 + 6301504) != 0);
 						phi_in63 = phi64;
-						uint64_t anon67 = anon65 << 32;
-						anon66 = anon65 + (((anon65 & 0xffffffff) * 2290649225 + anon67 >> 32 >> 4) - (anon67 >> 32 >> 31) << 32 >> 32) * 4294967266 << 32 >> 30;
 					}
-					while (*(uint32_t*)(anon66 + 6301504) != 0);
+					while (*(uint32_t*)(anon66 + 6300864) != 0);
 					phi_in63 = phi64;
+					anon68 = (uint32_t*)(anon66 + 6301120);
 				}
-				while (*(uint32_t*)(anon66 + 6300864) != 0);
+				while (*anon68 != 0);
 				phi_in63 = phi64;
-				anon68 = (uint32_t*)(anon66 + 6301120);
 			}
-			while (*anon68 != 0);
-			phi_in63 = phi64;
+			while (*(uint32_t*)(anon66 + 6300992) == 0);
+			*anon68 = 1;
+			anon69 = (uint32_t)phi64 - 1;
+			phi_in63 = (__zext uint64_t)anon69;
 		}
-		while (*(uint32_t*)(anon66 + 6300992) == 0);
-		*anon68 = 1;
-		anon69 = (uint32_t)phi64 - 1;
-		phi_in63 = (__zext uint64_t)anon69;
-	}
-	while (anon69 != 0);
-	while (true)
-	{
-		uint64_t anon70 = random();
-		uint64_t anon71 = anon70 << 32;
-		*(uint32_t*)0x60292c = (uint32_t)anon70 + (uint32_t)(((anon70 & 0xffffffff) * 2290649225 + anon71 >> 32 >> 4) - (anon71 >> 32 >> 31)) * 4294967266;
+		while (anon69 != 0);
+		while (true)
+		{
+			uint64_t anon70 = random();
+			uint64_t anon71 = anon70 << 32;
+			*(uint32_t*)0x60292c = (uint32_t)anon70 + (uint32_t)(((anon70 & 0xffffffff) * 2290649225 + anon71 >> 32 >> 4) - (anon71 >> 32 >> 31)) * 4294967266;
+		}
+		*(uint64_t*)phi13 = 0;
+		phi_in11 = phi13 + 8;
+		phi_in12 = phi14 - 1;
+		dispatch2 = 1;
 	}
 }
 void q(uint64_t arg0, uint64_t arg1)
@@ -2374,13 +2371,13 @@ void q(uint64_t arg0, uint64_t arg1)
 		uint32_t dispatch5 = 0;
 		while (true)
 		{
+			uint64_t phi29;
 			uint64_t phi_in24;
-			uint64_t phi21;
+			uint64_t phi6;
 			uint8_t anon20;
 			uint16_t** anon14;
-			uint64_t phi6;
 			uint32_t anon13;
-			uint64_t phi29;
+			uint64_t phi21;
 			uint32_t phi7;
 			uint32_t anon26;
 			if (dispatch5 == 0)
@@ -2515,23 +2512,12 @@ void q(uint64_t arg0, uint64_t arg1)
 }
 struct nn(uint64_t arg0)
 {
-	uint32_t phi_in32;
-	struct _IO_FILE** anon30;
-	uint32_t anon29;
-	uint32_t* anon24;
-	uint32_t* anon14;
-	uint64_t anon15;
-	uint32_t anon19;
-	uint32_t* anon22;
-	uint64_t anon25;
-	uint32_t* anon21;
+	uint32_t phi_in54;
 	uint32_t* anon20;
-	uint32_t dispatch16;
-	uint64_t phi13;
-	uint64_t phi12;
-	uint32_t dispatch11;
 	uint64_t phi_in9;
 	int64_t anon8;
+	uint32_t dispatch11;
+	uint32_t dispatch16;
 	uint64_t phi_in10;
 	uint32_t* anon18;
 	do
@@ -2586,177 +2572,233 @@ struct nn(uint64_t arg0)
 		dispatch11 = 0;
 	}
 	while (*(uint32_t*)(anon8 + 6301504) != 0);
-	if (dispatch11 == 0)
+	while (true)
 	{
-		uint32_t* anon17;
-		phi12 = phi_in9;
-		phi13 = phi_in10;
-		printf((uint8_t*)0x401d03);
-		anon15 = phi12 << 2;
-		anon14 = (uint32_t*)(anon15 + 6301120);
-		if (*anon14 == 0)
+		uint16_t** phi_in36;
+		struct _IO_FILE** anon30;
+		uint32_t anon29;
+		uint16_t** anon35;
+		uint32_t* anon14;
+		uint32_t anon19;
+		uint64_t anon25;
+		uint64_t anon15;
+		uint16_t** anon38;
+		uint64_t phi12;
+		uint32_t* anon21;
+		uint8_t anon31;
+		uint32_t* anon22;
+		uint32_t* anon24;
+		uint64_t phi13;
+		if (dispatch11 == 0)
 		{
-			dispatch16 = 0;
-		}
-		else 
-		{
-			anon17 = (uint32_t*)0x602928;
-			*anon17 = *anon17 + 1;
-			puts((uint8_t*)0x401d17);
-			anon18 = (uint32_t*)0x602490;
-			*anon18 = *anon18 + 20;
-			*anon14 = 0;
-			dispatch16 = 0;
-		}
-		if (*(uint32_t*)(anon15 + 6300992) != 0)
-		{
-			dispatch16 = 3;
-			anon19 = (uint32_t)phi13;
-			anon20 = (uint32_t*)0x60292c;
-			if (*(uint32_t*)(anon15 + 6300864) == 0 && anon19 == *anon20)
+			uint32_t* anon17;
+			phi12 = phi_in9;
+			phi13 = phi_in10;
+			printf((uint8_t*)0x401d03);
+			anon15 = phi12 << 2;
+			anon14 = (uint32_t*)(anon15 + 6301120);
+			if (*anon14 == 0)
 			{
-				if (*anon17 != 0)
+				dispatch16 = 0;
+				if (*(uint32_t*)(anon15 + 6300992) == 0)
 				{
-					anon21 = (uint32_t*)0x60248c;
-					*anon21 = *anon21 + 1;
-					*anon17 = *anon17 - 1;
-					*anon18 = *anon18 - 20;
-					puts((uint8_t*)0x401d48);
-				}
-				dispatch16 = 1;
-				if (*anon21 == 3 && true)
-				{
-					puts((uint8_t*)0x401df8);
-					*anon17 = 3;
-					*anon18 = *anon18 + 200;
-					*anon20 = 4294967295;
+					break;
 				}
 			}
+			else 
+			{
+				anon17 = (uint32_t*)0x602928;
+				*anon17 = *anon17 + 1;
+				puts((uint8_t*)0x401d17);
+				anon18 = (uint32_t*)0x602490;
+				*anon18 = *anon18 + 20;
+				*anon14 = 0;
+				dispatch16 = 0;
+				if (*(uint32_t*)(anon15 + 6300992) == 0)
+				{
+					break;
+				}
+			}
+			if (*(uint32_t*)(anon15 + 6300992) != 0)
+			{
+				dispatch16 = 3;
+				if (*(uint32_t*)(anon15 + 6300864) != 0)
+				{
+					break;
+				}
+				anon19 = (uint32_t)phi13;
+				anon20 = (uint32_t*)0x60292c;
+				if (*(uint32_t*)(anon15 + 6300864) == 0 && anon19 == *anon20)
+				{
+					if (*anon17 != 0)
+					{
+						anon21 = (uint32_t*)0x60248c;
+						*anon21 = *anon21 + 1;
+						*anon17 = *anon17 - 1;
+						*anon18 = *anon18 - 20;
+						puts((uint8_t*)0x401d48);
+					}
+					dispatch16 = 1;
+					if (*anon21 != 3)
+					{
+						break;
+					}
+					if (*anon21 == 3 && true)
+					{
+						puts((uint8_t*)0x401df8);
+						*anon17 = 3;
+						*anon18 = *anon18 + 200;
+						*anon20 = 4294967295;
+					}
+				}
+			}
+			anon22 = (uint32_t*)(anon15 + 6301504);
+			if (*anon22 == 0 && (*(uint32_t*)(anon15 + 6300992) != 0 && *anon14 == 0 && *(uint32_t*)(anon15 + 6300864) == 0 && anon19 == *anon20 && *anon21 == 3 || *anon14 != 0 && *(uint32_t*)(anon15 + 6300992) != 0 && *(uint32_t*)(anon15 + 6300864) == 0 && anon19 == *anon20 && *anon21 == 3 || *(uint32_t*)(anon15 + 6300992) != 0 && anon19 != *anon20 && *anon14 == 0 && *(uint32_t*)(anon15 + 6300864) == 0 || *anon14 != 0 && anon19 != *anon20 && *(uint32_t*)(anon15 + 6300992) != 0 && *(uint32_t*)(anon15 + 6300864) == 0))
+			{
+				uint64_t phi_in26;
+				if (*(uint32_t*)(anon15 + 6300992) < 3)
+				{
+					puts((uint8_t*)0x401d7b);
+				}
+				anon25 = phi12 * 12;
+				anon24 = (uint32_t*)(anon25 + 6301632);
+				int64_t anon23 = (__sext int64_t)*anon24;
+				if (*(uint32_t*)((anon23 << 2) + 6300864) == 0 && *(uint32_t*)(((__sext int64_t)*(uint32_t*)(anon25 + 6301636) << 2) + 6300864) == 0)
+				{
+					phi_in26 = anon23;
+				}
+				if (*(uint32_t*)((anon23 << 2) + 6300864) != 0 || *(uint32_t*)(((__sext int64_t)*(uint32_t*)(anon25 + 6301636) << 2) + 6300864) != 0 && *(uint32_t*)((anon23 << 2) + 6300864) == 0 || *(uint32_t*)(((__sext int64_t)*(uint32_t*)(anon25 + 6301640) << 2) + 6300864) != 0 && *(uint32_t*)((anon23 << 2) + 6300864) == 0 && *(uint32_t*)(((__sext int64_t)*(uint32_t*)(anon25 + 6301636) << 2) + 6300864) == 0)
+				{
+					puts((uint8_t*)0x401d8e);
+					phi_in26 = (__sext int64_t)*anon24;
+				}
+				uint64_t phi27 = phi_in26;
+				if (*(uint32_t*)((phi27 << 2) + 6301504) != 0 || *(uint32_t*)(((__sext int64_t)*(uint32_t*)(anon25 + 6301636) << 2) + 6301504) != 0 && *(uint32_t*)((phi27 << 2) + 6301504) == 0 || *(uint32_t*)(((__sext int64_t)*(uint32_t*)(anon25 + 6301640) << 2) + 6301504) != 0 && *(uint32_t*)((phi27 << 2) + 6301504) == 0 && *(uint32_t*)(((__sext int64_t)*(uint32_t*)(anon25 + 6301636) << 2) + 6301504) == 0)
+				{
+					puts((uint8_t*)0x401da0);
+				}
+				printf((uint8_t*)0x401e58);
+				uint32_t* anon28 = (uint32_t*)(anon15 + 6301248);
+				if (*anon28 == 0)
+				{
+					*anon18 = *anon18 + 10;
+					*anon28 = 1;
+				}
+			}
 		}
-		anon22 = (uint32_t*)(anon15 + 6301504);
-		if (*anon22 == 0 && (*(uint32_t*)(anon15 + 6300992) != 0 && *anon14 == 0 && *(uint32_t*)(anon15 + 6300864) == 0 && anon19 == *anon20 && *anon21 == 3 || *anon14 != 0 && *(uint32_t*)(anon15 + 6300992) != 0 && *(uint32_t*)(anon15 + 6300864) == 0 && anon19 == *anon20 && *anon21 == 3 || *(uint32_t*)(anon15 + 6300992) != 0 && anon19 != *anon20 && *anon14 == 0 && *(uint32_t*)(anon15 + 6300864) == 0 || *anon14 != 0 && anon19 != *anon20 && *(uint32_t*)(anon15 + 6300992) != 0 && *(uint32_t*)(anon15 + 6300864) == 0))
+		if (*(uint32_t*)(anon15 + 6300992) != 0 && dispatch11 == 0 && *anon14 == 0 && *(uint32_t*)(anon15 + 6300864) == 0 && anon19 == *anon20 && *anon21 == 3 && *anon22 == 0 || *anon14 != 0 && dispatch11 == 0 && *(uint32_t*)(anon15 + 6300992) != 0 && *(uint32_t*)(anon15 + 6300864) == 0 && anon19 == *anon20 && *anon21 == 3 && *anon22 == 0 || *(uint32_t*)(anon15 + 6300992) != 0 && anon19 != *anon20 && dispatch11 == 0 && *anon14 == 0 && *(uint32_t*)(anon15 + 6300864) == 0 && *anon22 == 0 || *anon14 != 0 && anon19 != *anon20 && dispatch11 == 0 && *(uint32_t*)(anon15 + 6300992) != 0 && *(uint32_t*)(anon15 + 6300864) == 0 && *anon22 == 0 || dispatch11 == 1)
 		{
-			uint64_t phi_in26;
-			if (*(uint32_t*)(anon15 + 6300992) < 3)
+			anon30 = (struct _IO_FILE**)0x602480;
+			anon29 = _IO_getc(*anon30);
+			dispatch16 = 2;
+			anon31 = (uint8_t)anon29;
+			if (anon31 == 113)
 			{
-				puts((uint8_t*)0x401d7b);
-			}
-			anon25 = phi12 * 12;
-			anon24 = (uint32_t*)(anon25 + 6301632);
-			int64_t anon23 = (__sext int64_t)*anon24;
-			if (*(uint32_t*)((anon23 << 2) + 6300864) == 0 && *(uint32_t*)(((__sext int64_t)*(uint32_t*)(anon25 + 6301636) << 2) + 6300864) == 0)
-			{
-				phi_in26 = anon23;
-			}
-			if (*(uint32_t*)((anon23 << 2) + 6300864) != 0 || *(uint32_t*)(((__sext int64_t)*(uint32_t*)(anon25 + 6301636) << 2) + 6300864) != 0 && *(uint32_t*)((anon23 << 2) + 6300864) == 0 || *(uint32_t*)(((__sext int64_t)*(uint32_t*)(anon25 + 6301640) << 2) + 6300864) != 0 && *(uint32_t*)((anon23 << 2) + 6300864) == 0 && *(uint32_t*)(((__sext int64_t)*(uint32_t*)(anon25 + 6301636) << 2) + 6300864) == 0)
-			{
-				puts((uint8_t*)0x401d8e);
-				phi_in26 = (__sext int64_t)*anon24;
-			}
-			uint64_t phi27 = phi_in26;
-			if (*(uint32_t*)((phi27 << 2) + 6301504) != 0 || *(uint32_t*)(((__sext int64_t)*(uint32_t*)(anon25 + 6301636) << 2) + 6301504) != 0 && *(uint32_t*)((phi27 << 2) + 6301504) == 0 || *(uint32_t*)(((__sext int64_t)*(uint32_t*)(anon25 + 6301640) << 2) + 6301504) != 0 && *(uint32_t*)((phi27 << 2) + 6301504) == 0 && *(uint32_t*)(((__sext int64_t)*(uint32_t*)(anon25 + 6301636) << 2) + 6301504) == 0)
-			{
-				puts((uint8_t*)0x401da0);
-			}
-			printf((uint8_t*)0x401e58);
-			uint32_t* anon28 = (uint32_t*)(anon15 + 6301248);
-			if (*anon28 == 0)
-			{
-				*anon18 = *anon18 + 10;
-				*anon28 = 1;
+				break;
 			}
 		}
-	}
-	if (*(uint32_t*)(anon15 + 6300992) != 0 && dispatch11 == 0 && *anon14 == 0 && *(uint32_t*)(anon15 + 6300864) == 0 && anon19 == *anon20 && *anon21 == 3 && *anon22 == 0 || *anon14 != 0 && dispatch11 == 0 && *(uint32_t*)(anon15 + 6300992) != 0 && *(uint32_t*)(anon15 + 6300864) == 0 && anon19 == *anon20 && *anon21 == 3 && *anon22 == 0 || *(uint32_t*)(anon15 + 6300992) != 0 && anon19 != *anon20 && dispatch11 == 0 && *anon14 == 0 && *(uint32_t*)(anon15 + 6300864) == 0 && *anon22 == 0 || *anon14 != 0 && anon19 != *anon20 && dispatch11 == 0 && *(uint32_t*)(anon15 + 6300992) != 0 && *(uint32_t*)(anon15 + 6300864) == 0 && *anon22 == 0 || dispatch11 == 1)
-	{
-		anon30 = (struct _IO_FILE**)0x602480;
-		anon29 = _IO_getc(*anon30);
-		dispatch16 = 2;
-	}
-	uint8_t anon31 = (uint8_t)anon29;
-	if ((anon31 == 115) && (*(uint32_t*)(anon15 + 6300992) != 0 && dispatch11 == 0 && *anon14 == 0 && *(uint32_t*)(anon15 + 6300864) == 0 && anon19 == *anon20 && *anon21 == 3 && *anon22 == 0 || *anon14 != 0 && dispatch11 == 0 && *(uint32_t*)(anon15 + 6300992) != 0 && *(uint32_t*)(anon15 + 6300864) == 0 && anon19 == *anon20 && *anon21 == 3 && *anon22 == 0 || *(uint32_t*)(anon15 + 6300992) != 0 && anon19 != *anon20 && dispatch11 == 0 && *anon14 == 0 && *(uint32_t*)(anon15 + 6300864) == 0 && *anon22 == 0 || *anon14 != 0 && anon19 != *anon20 && dispatch11 == 0 && *(uint32_t*)(anon15 + 6300992) != 0 && *(uint32_t*)(anon15 + 6300864) == 0 && *anon22 == 0 || dispatch11 == 1))
-	{
-		q(4200890, phi13 & 0xffffffff);
+		bool anon32 = anon31 == 105;
+		if (anon32 && (*(uint32_t*)(anon15 + 6300992) != 0 && dispatch11 == 0 && *anon14 == 0 && *(uint32_t*)(anon15 + 6300864) == 0 && anon19 == *anon20 && *anon21 == 3 && *anon22 == 0 || *anon14 != 0 && dispatch11 == 0 && *(uint32_t*)(anon15 + 6300992) != 0 && *(uint32_t*)(anon15 + 6300864) == 0 && anon19 == *anon20 && *anon21 == 3 && *anon22 == 0 || *(uint32_t*)(anon15 + 6300992) != 0 && anon19 != *anon20 && dispatch11 == 0 && *anon14 == 0 && *(uint32_t*)(anon15 + 6300864) == 0 && *anon22 == 0 || *anon14 != 0 && anon19 != *anon20 && dispatch11 == 0 && *(uint32_t*)(anon15 + 6300992) != 0 && *(uint32_t*)(anon15 + 6300864) == 0 && *anon22 == 0 || dispatch11 == 1))
+		{
+			printf((uint8_t*)0x401dba);
+		}
+		bool anon33 = anon31 == 115;
+		if (anon33 && (*(uint32_t*)(anon15 + 6300992) != 0 && dispatch11 == 0 && *anon14 == 0 && *(uint32_t*)(anon15 + 6300864) == 0 && anon19 == *anon20 && *anon21 == 3 && *anon22 == 0 || *anon14 != 0 && dispatch11 == 0 && *(uint32_t*)(anon15 + 6300992) != 0 && *(uint32_t*)(anon15 + 6300864) == 0 && anon19 == *anon20 && *anon21 == 3 && *anon22 == 0 || *(uint32_t*)(anon15 + 6300992) != 0 && anon19 != *anon20 && dispatch11 == 0 && *anon14 == 0 && *(uint32_t*)(anon15 + 6300864) == 0 && *anon22 == 0 || *anon14 != 0 && anon19 != *anon20 && dispatch11 == 0 && *(uint32_t*)(anon15 + 6300992) != 0 && *(uint32_t*)(anon15 + 6300864) == 0 && *anon22 == 0 || dispatch11 == 1))
+		{
+			q(4200890, phi13 & 0xffffffff);
+		}
+		bool anon34 = anon31 == 108;
+		if (anon34 && (*(uint32_t*)(anon15 + 6300992) != 0 && dispatch11 == 0 && *anon14 == 0 && *(uint32_t*)(anon15 + 6300864) == 0 && anon19 == *anon20 && *anon21 == 3 && *anon22 == 0 || *anon14 != 0 && dispatch11 == 0 && *(uint32_t*)(anon15 + 6300992) != 0 && *(uint32_t*)(anon15 + 6300864) == 0 && anon19 == *anon20 && *anon21 == 3 && *anon22 == 0 || *(uint32_t*)(anon15 + 6300992) != 0 && anon19 != *anon20 && dispatch11 == 0 && *anon14 == 0 && *(uint32_t*)(anon15 + 6300864) == 0 && *anon22 == 0 || *anon14 != 0 && anon19 != *anon20 && dispatch11 == 0 && *(uint32_t*)(anon15 + 6300992) != 0 && *(uint32_t*)(anon15 + 6300864) == 0 && *anon22 == 0 || dispatch11 == 1))
+		{
+			anon35 = __ctype_b_loc();
+			phi_in9 = phi12;
+			phi_in10 = phi13;
+			phi_in36 = anon35;
+			dispatch11 = 0;
+		}
+		bool anon37 = !(anon31 == 115 || anon31 == 108 || anon31 == 105 || anon31 == 113);
+		if (*(uint32_t*)(anon15 + 6300992) != 0 && dispatch11 == 0 && *anon14 == 0 && *(uint32_t*)(anon15 + 6300864) == 0 && anon19 == *anon20 && *anon21 == 3 && *anon22 == 0 && anon33 || *anon14 != 0 && dispatch11 == 0 && *(uint32_t*)(anon15 + 6300992) != 0 && *(uint32_t*)(anon15 + 6300864) == 0 && anon19 == *anon20 && *anon21 == 3 && *anon22 == 0 && anon33 || *(uint32_t*)(anon15 + 6300992) != 0 && anon19 != *anon20 && dispatch11 == 0 && *anon14 == 0 && *(uint32_t*)(anon15 + 6300864) == 0 && *anon22 == 0 && anon33 || *anon14 != 0 && anon19 != *anon20 && dispatch11 == 0 && *(uint32_t*)(anon15 + 6300992) != 0 && *(uint32_t*)(anon15 + 6300864) == 0 && *anon22 == 0 && anon33 || dispatch11 == 1 && anon33 || *(uint32_t*)(anon15 + 6300992) != 0 && dispatch11 == 0 && *anon14 == 0 && *(uint32_t*)(anon15 + 6300864) == 0 && anon19 == *anon20 && *anon21 == 3 && *anon22 == 0 && anon32 || *anon14 != 0 && dispatch11 == 0 && *(uint32_t*)(anon15 + 6300992) != 0 && *(uint32_t*)(anon15 + 6300864) == 0 && anon19 == *anon20 && *anon21 == 3 && *anon22 == 0 && anon32 || *(uint32_t*)(anon15 + 6300992) != 0 && anon19 != *anon20 && dispatch11 == 0 && *anon14 == 0 && *(uint32_t*)(anon15 + 6300864) == 0 && *anon22 == 0 && anon32 || *anon14 != 0 && anon19 != *anon20 && dispatch11 == 0 && *(uint32_t*)(anon15 + 6300992) != 0 && *(uint32_t*)(anon15 + 6300864) == 0 && *anon22 == 0 && anon32 || dispatch11 == 1 && anon32 || *(uint32_t*)(anon15 + 6300992) != 0 && dispatch11 == 0 && *anon14 == 0 && *(uint32_t*)(anon15 + 6300864) == 0 && anon19 == *anon20 && *anon21 == 3 && *anon22 == 0 && anon37 || *anon14 != 0 && dispatch11 == 0 && *(uint32_t*)(anon15 + 6300992) != 0 && *(uint32_t*)(anon15 + 6300864) == 0 && anon19 == *anon20 && *anon21 == 3 && *anon22 == 0 && anon37 || *(uint32_t*)(anon15 + 6300992) != 0 && anon19 != *anon20 && dispatch11 == 0 && *anon14 == 0 && *(uint32_t*)(anon15 + 6300864) == 0 && *anon22 == 0 && anon37 || *anon14 != 0 && anon19 != *anon20 && dispatch11 == 0 && *(uint32_t*)(anon15 + 6300992) != 0 && *(uint32_t*)(anon15 + 6300864) == 0 && *anon22 == 0 && anon37 || dispatch11 == 1 && anon37)
+		{
+			anon38 = __ctype_b_loc();
+			phi_in36 = anon38;
+			dispatch11 = 1;
+		}
+		uint8_t anon39 = *(uint8_t*)(*(uint64_t*)anon38 + ((__zext uint64_t)(anon29 << 24 >> 24) >> 7 | 1)) & 8;
+		uint8_t anon40 = *(uint8_t*)(*(uint64_t*)anon35 + 217) & 8;
+		if (anon39 != 0 && dispatch11 == 1 && anon37 || *anon14 != 0 && anon39 != 0 && dispatch11 == 0 && *(uint32_t*)(anon15 + 6300992) != 0 && *(uint32_t*)(anon15 + 6300864) == 0 && anon19 == *anon20 && *anon21 == 3 && *anon22 == 0 && anon32 || *(uint32_t*)(anon15 + 6300992) != 0 && anon40 != 0 && dispatch11 == 0 && *anon14 == 0 && *(uint32_t*)(anon15 + 6300864) == 0 && anon19 == *anon20 && *anon21 == 3 && *anon22 == 0 && anon34 || *anon14 != 0 && anon19 != *anon20 && anon39 != 0 && dispatch11 == 0 && *(uint32_t*)(anon15 + 6300992) != 0 && *(uint32_t*)(anon15 + 6300864) == 0 && *anon22 == 0 && anon32 || *(uint32_t*)(anon15 + 6300992) != 0 && anon19 != *anon20 && anon39 != 0 && dispatch11 == 0 && *anon14 == 0 && *(uint32_t*)(anon15 + 6300864) == 0 && *anon22 == 0 && anon32 || *anon14 != 0 && anon40 != 0 && dispatch11 == 0 && *(uint32_t*)(anon15 + 6300992) != 0 && *(uint32_t*)(anon15 + 6300864) == 0 && anon19 == *anon20 && *anon21 == 3 && *anon22 == 0 && anon34 || *(uint32_t*)(anon15 + 6300992) != 0 && anon39 != 0 && dispatch11 == 0 && *anon14 == 0 && *(uint32_t*)(anon15 + 6300864) == 0 && anon19 == *anon20 && *anon21 == 3 && *anon22 == 0 && anon33 || anon39 != 0 && dispatch11 == 1 && anon32 || *(uint32_t*)(anon15 + 6300992) != 0 && anon19 != *anon20 && anon40 != 0 && dispatch11 == 0 && *anon14 == 0 && *(uint32_t*)(anon15 + 6300864) == 0 && *anon22 == 0 && anon34 || *anon14 != 0 && anon39 != 0 && dispatch11 == 0 && *(uint32_t*)(anon15 + 6300992) != 0 && *(uint32_t*)(anon15 + 6300864) == 0 && anon19 == *anon20 && *anon21 == 3 && *anon22 == 0 && anon33 || *(uint32_t*)(anon15 + 6300992) != 0 && anon39 != 0 && dispatch11 == 0 && *anon14 == 0 && *(uint32_t*)(anon15 + 6300864) == 0 && anon19 == *anon20 && *anon21 == 3 && *anon22 == 0 && anon37 || anon40 != 0 && dispatch11 == 1 && anon34 || *anon14 != 0 && anon19 != *anon20 && anon40 != 0 && dispatch11 == 0 && *(uint32_t*)(anon15 + 6300992) != 0 && *(uint32_t*)(anon15 + 6300864) == 0 && *anon22 == 0 && anon34 || *(uint32_t*)(anon15 + 6300992) != 0 && anon19 != *anon20 && anon39 != 0 && dispatch11 == 0 && *anon14 == 0 && *(uint32_t*)(anon15 + 6300864) == 0 && *anon22 == 0 && anon33 || *anon14 != 0 && anon39 != 0 && dispatch11 == 0 && *(uint32_t*)(anon15 + 6300992) != 0 && *(uint32_t*)(anon15 + 6300864) == 0 && anon19 == *anon20 && *anon21 == 3 && *anon22 == 0 && anon37 || *anon14 != 0 && anon19 != *anon20 && anon39 != 0 && dispatch11 == 0 && *(uint32_t*)(anon15 + 6300992) != 0 && *(uint32_t*)(anon15 + 6300864) == 0 && *anon22 == 0 && anon33 || *(uint32_t*)(anon15 + 6300992) != 0 && anon19 != *anon20 && anon39 != 0 && dispatch11 == 0 && *anon14 == 0 && *(uint32_t*)(anon15 + 6300864) == 0 && *anon22 == 0 && anon37 || anon39 != 0 && dispatch11 == 1 && anon33 || *anon14 != 0 && anon19 != *anon20 && anon39 != 0 && dispatch11 == 0 && *(uint32_t*)(anon15 + 6300992) != 0 && *(uint32_t*)(anon15 + 6300864) == 0 && *anon22 == 0 && anon37 || *(uint32_t*)(anon15 + 6300992) != 0 && anon39 != 0 && dispatch11 == 0 && *anon14 == 0 && *(uint32_t*)(anon15 + 6300864) == 0 && anon19 == *anon20 && *anon21 == 3 && *anon22 == 0 && anon32)
+		{
+			uint64_t phi_in43;
+			uint16_t** phi41 = phi_in36;
+			uint32_t anon42 = _IO_getc(*anon30);
+			int64_t anon44 = (__sext int64_t)anon31 + 4294967248;
+			phi_in43 = anon44 & 0xffffffff;
+			uint32_t anon45 = anon42 << 24 >> 24;
+			if ((*(uint8_t*)(*(uint64_t*)phi41 + ((__zext uint64_t)anon45 << 1 | 1)) & 8) != 0)
+			{
+				phi_in43 = (__zext uint64_t)((uint32_t)anon44 * 10 + anon45 - 48);
+			}
+			uint64_t phi46 = phi_in43;
+			uint32_t anon47 = (uint32_t)phi46;
+			if (*anon24 != anon47 && *(uint32_t*)(anon25 + 6301636) != anon47)
+			{
+				phi_in9 = phi12;
+				phi_in10 = phi13;
+				dispatch11 = 0;
+			}
+			if (*anon24 == anon47 || *anon24 != anon47 && *(uint32_t*)(anon25 + 6301636) == anon47 || *anon24 != anon47 && *(uint32_t*)(anon25 + 6301636) != anon47 && *(uint32_t*)(anon25 + 6301640) == anon47)
+			{
+				uint64_t anon48 = phi46 << 32 >> 32;
+				phi_in9 = anon48;
+				phi_in10 = anon48;
+				dispatch11 = 0;
+			}
+		}
+		if (*anon22 != 0 && dispatch11 == 0 && (*(uint32_t*)(anon15 + 6300992) != 0 && *anon14 == 0 && *(uint32_t*)(anon15 + 6300864) == 0 && anon19 == *anon20 && *anon21 == 3 || *anon14 != 0 && *(uint32_t*)(anon15 + 6300992) != 0 && *(uint32_t*)(anon15 + 6300864) == 0 && anon19 == *anon20 && *anon21 == 3 || *(uint32_t*)(anon15 + 6300992) != 0 && anon19 != *anon20 && *anon14 == 0 && *(uint32_t*)(anon15 + 6300864) == 0 || *anon14 != 0 && anon19 != *anon20 && *(uint32_t*)(anon15 + 6300992) != 0 && *(uint32_t*)(anon15 + 6300864) == 0))
+		{
+			*anon22 = 0;
+			uint64_t anon49 = random();
+			uint32_t anon50 = (uint32_t)anon49;
+			*(uint32_t*)(((__sext int64_t)(anon50 + (((uint32_t)((anon49 & 0xffffffff) * 2290649225 >> 32) + anon50 >> 4) - (anon50 >> 31)) * 4294967266) << 2) + 6301504) = 1;
+			uint64_t anon51 = random();
+			printf((uint8_t*)0x401e28);
+			*anon18 = *anon18 - 10;
+			uint32_t anon53 = (uint32_t)anon51;
+			int64_t anon52 = (__sext int64_t)(anon53 + ((uint32_t)((anon51 & 0xffffffff) * 6585616521 >> 36) - (anon53 >> 31)) * 4294967266);
+			phi_in9 = anon52;
+			phi_in10 = anon52;
+			dispatch11 = 0;
+		}
 	}
 	if (dispatch16 == 3)
 	{
 		puts((uint8_t*)0x401d36);
-		phi_in32 = *anon18 - 50;
+		phi_in54 = *anon18 - 50;
 	}
 	if (dispatch16 == 1)
 	{
 		puts((uint8_t*)0x401d62);
 		while (true)
 		{
-			uint64_t anon33 = random();
-			uint32_t anon34 = (uint32_t)anon33;
-			*anon20 = anon34 + (((uint32_t)((anon33 & 0xffffffff) * 2290649225 >> 32) + anon34 >> 4) - (anon34 >> 31)) * 4294967266;
+			uint64_t anon55 = random();
+			uint32_t anon56 = (uint32_t)anon55;
+			*anon20 = anon56 + (((uint32_t)((anon55 & 0xffffffff) * 2290649225 >> 32) + anon56 >> 4) - (anon56 >> 31)) * 4294967266;
 		}
 	}
 	if (dispatch16 == 0)
 	{
 		puts((uint8_t*)0x401d2a);
-		phi_in32 = *anon18 - 100;
+		phi_in54 = *anon18 - 100;
 	}
 	if (dispatch16 == 0 || dispatch16 == 3)
 	{
-		uint32_t phi35 = phi_in32;
-		*anon18 = phi35;
+		uint32_t phi57 = phi_in54;
+		*anon18 = phi57;
 	}
 	if (dispatch16 == 2 || dispatch16 == 0 || dispatch16 == 3)
 	{
 		printf((uint8_t*)0x401cf1);
 		exit(0);
 	}
-	uint16_t** anon36 = __ctype_b_loc();
-	phi_in9 = phi12;
-	phi_in10 = phi13;
-	uint16_t** phi_in37 = anon36;
-	dispatch11 = 0;
-	printf((uint8_t*)0x401dba);
-	uint16_t** anon38 = __ctype_b_loc();
-	phi_in37 = anon38;
-	dispatch11 = 1;
-	if ((*(uint8_t*)(*(uint64_t*)anon38 + ((__zext uint64_t)(anon29 << 24 >> 24) >> 7 | 1)) & 8) != 0 || (*(uint8_t*)(*(uint64_t*)anon36 + 217) & 8) != 0)
-	{
-		uint64_t phi_in41;
-		uint16_t** phi39 = phi_in37;
-		uint32_t anon40 = _IO_getc(*anon30);
-		int64_t anon42 = (__sext int64_t)anon31 + 4294967248;
-		phi_in41 = anon42 & 0xffffffff;
-		uint32_t anon43 = anon40 << 24 >> 24;
-		if ((*(uint8_t*)(*(uint64_t*)phi39 + ((__zext uint64_t)anon43 << 1 | 1)) & 8) != 0)
-		{
-			phi_in41 = (__zext uint64_t)((uint32_t)anon42 * 10 + anon43 - 48);
-		}
-		uint64_t phi44 = phi_in41;
-		uint32_t anon45 = (uint32_t)phi44;
-		if (*anon24 != anon45 && *(uint32_t*)(anon25 + 6301636) != anon45)
-		{
-			phi_in9 = phi12;
-			phi_in10 = phi13;
-			dispatch11 = 0;
-		}
-		if (*anon24 == anon45 || *anon24 != anon45 && *(uint32_t*)(anon25 + 6301636) == anon45 || *anon24 != anon45 && *(uint32_t*)(anon25 + 6301636) != anon45 && *(uint32_t*)(anon25 + 6301640) == anon45)
-		{
-			uint64_t anon46 = phi44 << 32 >> 32;
-			phi_in9 = anon46;
-			phi_in10 = anon46;
-			dispatch11 = 0;
-		}
-	}
-	*anon22 = 0;
-	uint64_t anon47 = random();
-	uint32_t anon48 = (uint32_t)anon47;
-	*(uint32_t*)(((__sext int64_t)(anon48 + (((uint32_t)((anon47 & 0xffffffff) * 2290649225 >> 32) + anon48 >> 4) - (anon48 >> 31)) * 4294967266) << 2) + 6301504) = 1;
-	uint64_t anon49 = random();
-	printf((uint8_t*)0x401e28);
-	*anon18 = *anon18 - 10;
-	uint32_t anon51 = (uint32_t)anon49;
-	int64_t anon50 = (__sext int64_t)(anon51 + ((uint32_t)((anon49 & 0xffffffff) * 6585616521 >> 36) - (anon51 >> 31)) * 4294967266);
-	phi_in9 = anon50;
-	phi_in10 = anon50;
-	dispatch11 = 0;
 }
 void __libc_csu_init(uint64_t arg0, uint64_t arg1, uint64_t arg2, uint64_t arg3)
 {

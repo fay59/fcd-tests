@@ -14,25 +14,25 @@ void __gmon_start__(uint64_t arg0)
 }
 void main(uint64_t arg0, uint64_t arg1)
 {
-	uint64_t* anon67;
-	void(** anon66)(uint64_t, uint64_t);
-	uint32_t phi_in63;
-	uint64_t phi_in62;
 	uint32_t phi_in61;
+	uint64_t* anon67;
+	uint64_t phi_in62;
 	uint32_t dispatch57;
-	uint32_t phi_in3;
-	uint32_t* anon8;
-	uint32_t phi17;
-	int32_t anon36;
 	uint64_t phi_in60;
 	uint64_t phi_in24;
+	int32_t anon36;
+	uint32_t phi_in63;
 	void(** anon21)(uint64_t);
-	uint32_t phi_in15;
+	uint32_t* anon8;
+	uint32_t phi_in19;
 	uint32_t* anon6;
-	struct { uint32_t field0; uint32_t field1; uint64_t field2; uint64_t field3; uint64_t field4; uint64_t field5; uint64_t field6; uint8_t field7[56]; uint64_t field8; } alloca1;
+	uint32_t phi17;
+	void(** anon66)(uint64_t, uint64_t);
 	uint64_t phi_in35;
 	uint32_t phi_in18;
-	uint32_t phi_in19;
+	uint32_t phi_in15;
+	struct { uint32_t field0; uint32_t field1; uint64_t field2; uint64_t field3; uint64_t field4; uint64_t field5; uint64_t field6; uint8_t field7[56]; uint64_t field8; } alloca1;
+	uint32_t phi_in3;
 	alloca1.field8 = arg0;
 	*(uint64_t*)0x601aa0 = 4195536;
 	*(uint64_t*)0x601a88 = 4195568;
@@ -130,10 +130,10 @@ void main(uint64_t arg0, uint64_t arg1)
 			do
 			{
 				uint32_t* anon50;
-				uint32_t phi49;
 				uint64_t phi48;
-				uint32_t phi47;
 				uint64_t phi40;
+				uint32_t phi49;
+				uint32_t phi47;
 				do
 				{
 					phi40 = phi_in39;
@@ -233,8 +233,8 @@ void main(uint64_t arg0, uint64_t arg1)
 			uint8_t* anon71 = (uint8_t*)(anon72 + 6296384);
 			if (*anon71 == 32)
 			{
-				uint64_t anon79;
 				void(** anon78)(uint64_t, uint64_t, uint64_t);
+				uint64_t anon79;
 				uint32_t* anon73 = (uint32_t*)phi69;
 				*anon73 = 1;
 				*anon71 = 46;
