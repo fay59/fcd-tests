@@ -14,10 +14,10 @@ void __gmon_start__(uint64_t arg0)
 }
 void main(uint64_t arg0, uint64_t arg1)
 {
-	uint32_t phi_in22;
 	uint64_t anon16;
-	uint32_t* anon19;
 	uint32_t* anon11;
+	uint32_t* anon19;
+	uint32_t phi_in22;
 	struct { uint8_t field0; uint8_t field1[512]; uint32_t field2; uint8_t field3[420]; uint64_t field4; } alloca1;
 	alloca1.field4 = arg0;
 	struct __sFILE** anon3 = (struct __sFILE**)0x600c18;
@@ -30,8 +30,8 @@ void main(uint64_t arg0, uint64_t arg1)
 		uint8_t* anon21;
 		do
 		{
-			uint64_t anon9;
 			uint64_t anon8;
+			uint64_t anon9;
 			uint64_t phi7;
 			while (true)
 			{
@@ -80,11 +80,11 @@ void main(uint64_t arg0, uint64_t arg1)
 		{
 			while (true)
 			{
+				uint32_t anon35;
 				uint32_t anon29;
-				uint64_t phi_in28;
 				uint32_t phi_in27;
 				uint32_t* anon26;
-				uint32_t anon35;
+				uint64_t phi_in28;
 				if (dispatch24 == 0)
 				{
 					uint32_t phi25 = phi_in22;

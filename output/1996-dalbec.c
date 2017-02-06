@@ -16,10 +16,10 @@ void main(uint64_t arg0, uint64_t arg1, uint64_t arg2, uint64_t arg3, uint64_t a
 {
 	uint64_t anon22;
 	uint32_t anon21;
-	uint64_t phi12;
 	uint32_t anon20;
 	uint32_t anon14;
 	uint32_t phi13;
+	uint64_t phi12;
 	uint64_t phi11;
 	uint64_t phi8;
 	uint64_t phi7;

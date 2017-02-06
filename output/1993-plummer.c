@@ -23,16 +23,16 @@ void main(uint64_t arg0, uint64_t arg1, uint64_t arg2)
 	while (true)
 	{
 		uint8_t phi_in11;
-		uint64_t* anon5;
-		uint64_t phi_in4;
 		uint64_t anon8;
 		uint64_t* anon7;
+		uint64_t* anon5;
+		uint64_t phi_in4;
 		if (dispatch3 == 0)
 		{
 			anon5 = (uint64_t*)(arg2 + 8);
 			phi_in4 = *anon5;
 		}
-		if (dispatch3 == 1 || dispatch3 == 0)
+		if (dispatch3 == 2 || dispatch3 == 0)
 		{
 			uint64_t phi6 = phi_in4;
 			printf((uint8_t*)phi6);
@@ -40,16 +40,16 @@ void main(uint64_t arg0, uint64_t arg1, uint64_t arg2)
 			anon8 = *anon1 - 1;
 			*anon7 = anon8;
 			phi_in4 = *anon5;
-			dispatch3 = 1;
+			dispatch3 = 2;
 		}
-		if (anon8 >= *anon5 && (dispatch3 == 1 || dispatch3 == 0))
+		if (anon8 >= *anon5 && (dispatch3 == 2 || dispatch3 == 0))
 		{
 			uint8_t* anon9 = (uint8_t*)anon8;
 			uint8_t anon10 = *anon9 + 1;
 			*anon9 = anon10;
 			phi_in11 = anon10;
 		}
-		if (dispatch3 == 2 || anon8 >= *anon5 && dispatch3 == 1 || anon8 >= *anon5 && dispatch3 == 0)
+		if (dispatch3 == 1 || anon8 >= *anon5 && dispatch3 == 2 || anon8 >= *anon5 && dispatch3 == 0)
 		{
 			uint8_t phi12 = phi_in11;
 			dispatch3 = 0;
@@ -60,13 +60,13 @@ void main(uint64_t arg0, uint64_t arg1, uint64_t arg2)
 				uint8_t anon13 = (anon14 + **(uint8_t**)0x6009a8) * anon14;
 				*(uint8_t*)*anon7 = anon13;
 				phi_in4 = *anon5;
-				dispatch3 = 1;
+				dispatch3 = 2;
 				if (*anon5 <= *anon7)
 				{
 					uint8_t anon15 = anon13 + 1;
 					*(uint8_t*)*anon7 = anon15;
 					phi_in11 = anon15;
-					dispatch3 = 2;
+					dispatch3 = 1;
 				}
 			}
 		}

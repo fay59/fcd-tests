@@ -95,12 +95,12 @@ void frame_dummy(uint64_t arg0)
 uint64_t mAIn(uint64_t arg0, uint64_t arg1, uint64_t arg2)
 {
 	uint32_t anon19;
-	uint32_t anon18;
-	uint32_t anon20;
 	uint64_t phi_in14;
-	uint32_t* anon13;
+	uint32_t anon18;
 	uint32_t anon10;
 	uint32_t anon9;
+	uint32_t anon20;
+	uint32_t* anon13;
 	uint64_t anon6;
 	uint32_t* anon1 = (uint32_t*)0x600ad0;
 	uint64_t anon3 = (__zext uint64_t)*anon1 + 1;

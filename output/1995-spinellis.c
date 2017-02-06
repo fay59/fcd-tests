@@ -23,8 +23,8 @@ void _IO_getc(uint64_t arg0)
 void main(uint64_t arg0)
 {
 	uint32_t anon6;
-	uint64_t anon4;
 	uint32_t phi_in2;
+	uint64_t anon4;
 	do
 	{
 		uint32_t phi1 = phi_in2;
