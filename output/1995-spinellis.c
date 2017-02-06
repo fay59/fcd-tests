@@ -8,31 +8,43 @@ void _init(uint64_t arg0)
 	}
 	return;
 }
+void _IO_putc(uint64_t arg0)
+{
+	__indirect_jump(*(uint64_t*)0x600ba8);
+}
 void __gmon_start__(uint64_t arg0)
 {
 	__indirect_jump(*(uint64_t*)0x600bb8);
 }
+void _IO_getc(uint64_t arg0)
+{
+	__indirect_jump(*(uint64_t*)0x600bc0);
+}
 void main(uint64_t arg0)
 {
-	uint32_t anon4;
-	uint8_t* anon2;
+	uint32_t anon6;
+	uint64_t anon4;
+	uint32_t phi_in2;
 	do
 	{
-		uint32_t anon1 = _IO_getc(*(struct _IO_FILE**)0x600be8);
-		anon2 = strchr((uint8_t*)(*(uint64_t*)0x600bd8 & 0xffffffff), anon1);
+		uint32_t phi1 = phi_in2;
+		_IO_getc(4195636);
+		uint8_t* anon3 = strchr((uint8_t*)(*(uint64_t*)0x600bd8 & 0xffffffff), phi1);
+		anon4 = (uint64_t)anon3;
+		phi_in2 = (uint32_t)anon4 - (uint32_t)*(uint64_t*)0x600bd8;
 	}
-	while ((uint32_t)(uint64_t)anon2 - (uint32_t)*(uint64_t*)0x600bd8 != 6);
+	while ((uint32_t)(anon4 - *(uint64_t*)0x600bd8) != 6);
 	do
 	{
-		uint64_t anon3 = n(4195685);
-		anon4 = (uint32_t)anon3;
-		*(uint32_t*)0x600bf4 = anon4;
-		if (anon4 != 36)
+		uint64_t anon5 = n(4195685);
+		anon6 = (uint32_t)anon5;
+		*(uint32_t*)0x600bf4 = anon6;
+		if (anon6 != 36)
 		{
-			_IO_putc(anon4, *(struct _IO_FILE**)0x600be0);
+			_IO_putc(4195678);
 		}
 	}
-	while (anon4 != 36);
+	while (anon6 != 36);
 	return;
 }
 void _start(uint64_t arg0, uint64_t arg1, uint64_t arg2)
@@ -68,23 +80,25 @@ void frame_dummy(uint64_t arg0)
 }
 void b(uint64_t arg0)
 {
-	_IO_getc(*(struct _IO_FILE**)0x600be8);
+	_IO_getc(4195965);
 	return;
 }
 uint64_t n(uint64_t arg0)
 {
-	struct _IO_FILE** anon2 = (struct _IO_FILE**)0x600be8;
-	uint32_t anon1 = _IO_getc(*anon2);
-	uint64_t* anon4 = (uint64_t*)0x600bd8;
-	uint8_t* anon3 = strchr((uint8_t*)(*anon4 & 0xffffffff), anon1);
-	uint32_t anon5 = _IO_getc(*anon2);
-	uint8_t* anon6 = strchr((uint8_t*)(*anon4 & 0xffffffff), anon5);
-	uint32_t anon7 = _IO_getc(*anon2);
-	uint8_t* anon8 = strchr((uint8_t*)(*anon4 & 0xffffffff), anon7);
+	_IO_getc(4196018);
+	uint64_t* anon3 = (uint64_t*)0x600bd8;
+	uint8_t* anon2 = (uint8_t*)(*anon3 & 0xffffffff);
+	uint64_t anon1 = strlen(anon2);
+	_IO_getc(4196053);
+	uint32_t anon5 = (uint32_t)(uint64_t)&anon2[anon1] - (uint32_t)*anon3;
+	uint8_t* anon4 = strchr((uint8_t*)(*anon3 & 0xffffffff), anon5);
+	_IO_getc(4196099);
+	uint64_t anon8 = (uint64_t)anon4 - *anon3;
+	uint32_t anon7 = (uint32_t)(anon8 + (anon8 >> 31 & 1) << 32 >> 33) + anon5 * 3;
+	uint8_t* anon6 = strchr((uint8_t*)(*anon3 & 0xffffffff), anon7);
 	uint32_t phi_in9 = 32;
-	uint64_t anon11 = (uint64_t)anon6 - *anon4;
-	uint64_t anon12 = (uint64_t)anon8 - *anon4;
-	uint32_t anon10 = ((uint32_t)(anon11 + (anon11 >> 31 & 1) << 32 >> 33) + ((uint32_t)(uint64_t)anon3 - (uint32_t)*anon4) * 3) * 3 + (uint32_t)((anon12 >> 31 & 1) + anon12 << 32 >> 33);
+	uint64_t anon11 = (uint64_t)anon6 - *anon3;
+	uint32_t anon10 = anon7 * 3 + (uint32_t)((anon11 >> 31 & 1) + anon11 << 32 >> 33);
 	if (anon10 != 0)
 	{
 		phi_in9 = 10;
@@ -93,19 +107,20 @@ uint64_t n(uint64_t arg0)
 			phi_in9 = 9;
 			if (anon10 != 2)
 			{
-				phi_in9 = anon10 + 94;
+				uint32_t anon12 = anon10 + 94;
+				phi_in9 = anon12;
 				if (anon10 >= 33)
 				{
-					uint32_t anon13 = _IO_getc(*anon2);
-					uint8_t* anon14 = strchr((uint8_t*)(*anon4 & 0xffffffff), anon13);
-					uint64_t anon15 = (uint64_t)anon14 - *anon4;
-					phi_in9 = (uint32_t)(anon15 + (anon15 >> 31 & 1) << 32 >> 33) + anon10 + (anon10 << 1) - 64;
+					_IO_getc(4196178);
+					uint8_t* anon13 = strchr((uint8_t*)(*anon3 & 0xffffffff), anon12);
+					uint64_t anon14 = (uint64_t)anon13 - *anon3;
+					phi_in9 = (uint32_t)(anon14 + (anon14 >> 31 & 1) << 32 >> 33) + anon10 + (anon10 << 1) - 64;
 				}
 			}
 		}
 	}
-	uint32_t phi16 = phi_in9;
-	return (__zext uint64_t)phi16;
+	uint32_t phi15 = phi_in9;
+	return (__zext uint64_t)phi15;
 }
 void __libc_csu_init(uint64_t arg0, uint64_t arg1, uint64_t arg2, uint64_t arg3)
 {

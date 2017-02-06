@@ -14,6 +14,7 @@ void __gmon_start__(uint64_t arg0)
 }
 void main(uint64_t arg0, uint64_t arg1)
 {
+	uint64_t phi9;
 	uint64_t phi3;
 	uint64_t phi_in1 = 6297810;
 	uint8_t* phi_in2 = (uint8_t*)0x6018d2;
@@ -33,33 +34,32 @@ void main(uint64_t arg0, uint64_t arg1)
 	(__asm "movsd xmm4, qword ptr [rip + 0x4c7]")();
 	uint64_t phi_in6 = 6297816;
 	uint64_t phi_in7 = 16;
-	while (true)
+	do
 	{
 		uint64_t phi8 = phi_in6;
-		uint64_t phi9 = phi_in7;
-		if (phi9 == 0)
+		phi9 = phi_in7;
+		if (phi9 != 0)
 		{
-			uint32_t dispatch18;
-			uint32_t anon17;
-			uint64_t phi13;
-			uint64_t phi_in16;
+			*(uint64_t*)phi8 = 72340172838076673;
+			phi_in6 = phi8 + 8;
+			phi_in7 = phi9 - 1;
+		}
+	}
+	while (phi9 != 0);
+	*(uint64_t*)0x604492 = 72340172838076673;
+	*(uint64_t*)0x604511 = 72340172838076673;
+	uint64_t phi_in10 = 6309016;
+	uint64_t phi_in11 = 16;
+	while (true)
+	{
+		uint64_t phi12 = phi_in10;
+		uint64_t phi13 = phi_in11;
+		if (phi13 == 0)
+		{
 			uint64_t phi19;
-			*(uint64_t*)0x604492 = 72340172838076673;
-			*(uint64_t*)0x604511 = 72340172838076673;
-			uint64_t phi_in10 = 6309016;
-			uint64_t phi_in11 = 16;
-			do
-			{
-				uint64_t phi12 = phi_in10;
-				phi13 = phi_in11;
-				if (phi13 != 0)
-				{
-					*(uint64_t*)phi12 = 72340172838076673;
-					phi_in10 = phi12 + 8;
-					phi_in11 = phi13 - 1;
-				}
-			}
-			while (phi13 != 0);
+			uint64_t phi_in16;
+			uint32_t anon17;
+			uint32_t dispatch18;
 			(__asm "movsd qword ptr [rsp], xmm4")();
 			uint32_t phi_in14 = 600;
 			do
@@ -103,9 +103,9 @@ void main(uint64_t arg0, uint64_t arg1)
 			{
 				while (true)
 				{
-					uint64_t phi_in22;
 					uint64_t phi_in21;
 					uint32_t phi_in20;
+					uint64_t phi_in22;
 					if (dispatch18 == 0)
 					{
 						phi19 = phi_in16;
@@ -136,9 +136,9 @@ void main(uint64_t arg0, uint64_t arg1)
 		}
 		else 
 		{
-			*(uint64_t*)phi8 = 72340172838076673;
-			phi_in6 = phi8 + 8;
-			phi_in7 = phi9 - 1;
+			*(uint64_t*)phi12 = 72340172838076673;
+			phi_in10 = phi12 + 8;
+			phi_in11 = phi13 - 1;
 		}
 	}
 	return;

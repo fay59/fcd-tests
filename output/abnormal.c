@@ -10,9 +10,9 @@ void func_4001fb(uint64_t arg0, uint64_t arg1)
 	dispatch5 = 1;
 	while (true)
 	{
-		uint64_t phi_in10;
-		uint64_t phi7;
 		uint64_t phi8;
+		uint64_t phi7;
+		uint64_t phi_in10;
 		if (dispatch5 == 0)
 		{
 			uint64_t phi6 = phi_in3;
@@ -43,8 +43,8 @@ void func_4001fb(uint64_t arg0, uint64_t arg1)
 			phi_in10 = 4;
 			phi_in3 = phi11 * phi8;
 			phi_in4 = phi8;
-			dispatch5 = 0;
 			dispatch5 = 2;
+			dispatch5 = 0;
 		}
 	}
 	return;
