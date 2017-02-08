@@ -35,16 +35,13 @@ fi
 function fcd {
 	local -r PROGRAM="$1"
 	local -r PROGRAM_BASE_NAME=$(basename $PROGRAM)
-	local -r OUTPUT_PATH="${BASEDIR}/output/${PROGRAM_BASE_NAME}.c"
-	local -r ERROR_PATH="${BASEDIR}/error/${PROGRAM_BASE_NAME}.log"
 	rm -f "${OUTPUT_PATH}" "${ERROR_PATH}"
-	shift
 	
 	local TIMEFORMAT="%R"
 	TIME=$(ulimit -SHt 30; {
-		time "${FCD}" -I . -I "${BASEDIR}/include" "$@" "${PROGRAM}" \
-			> "${OUTPUT_PATH}" \
-			2> "${ERROR_PATH}";
+		time "${FCD}" -I . -I "${BASEDIR}/include" "$@" \
+			> "${BASEDIR}/output/${PROGRAM_BASE_NAME}.c" \
+			2> "${BASEDIR}/error/${PROGRAM_BASE_NAME}.log";
 	} 2>&1)
 	local RESULT_STATUS=$?
 	echo "| ${PROGRAM_BASE_NAME} | ${RESULT_STATUS} | ${TIME} |"
@@ -56,7 +53,7 @@ DOWNLOAD_DIR="${BASEDIR}/download"
 mkdir -p "${DOWNLOAD_DIR}"
 
 APPLE_OPENSOURCE_LIBS=(Libc)
-UBUNTU_PACKAGES=(glibc/libc6-dev_2.24-8_amd64.deb)
+UBUNTU_PACKAGES=(glibc/libc6-dev_2.24-9_amd64.deb)
 
 # The Ubuntu include path is essentially static since everything goes to
 # /usr/include.
@@ -88,9 +85,10 @@ for LIB in "${UBUNTU_PACKAGES[@]}"; do
 	curl -s "${URL}" -o "${DOWNLOAD_PATH}"
 	
 	# We can't use dpkg on macOS.
-	DATA_FILE="${DOWNLOAD_DIR}/$(ar -t ${DOWNLOAD_PATH} | tail -n 1)"
-	ar -x "${DOWNLOAD_PATH}" "${DATA_FILE}"
-	tar -xf "${DATA_FILE}" -C "${BASEDIR}/include/ubuntu"
+	DATA_FILE_NAME="$(ar -t ${DOWNLOAD_PATH} | tail -n 1)"
+	ar -x "${DOWNLOAD_PATH}" "${DATA_FILE_NAME}"
+	tar -xf "${DATA_FILE_NAME}" -C "${BASEDIR}/include/ubuntu"
+	rm "${DATA_FILE_NAME}"
 done
 
 # Run tests.
