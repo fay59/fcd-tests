@@ -67,28 +67,28 @@ void main(uint64_t arg0, uint64_t arg1)
 				uint32_t dispatch13 = 0;
 				while (true)
 				{
-					uint8_t phi_in45;
-					uint32_t phi_in17;
 					uint8_t phi_in44;
 					bool anon40;
-					uint64_t phi_in35;
-					uint8_t phi33;
-					uint8_t phi34;
+					uint32_t phi_in43;
+					uint32_t anon25;
+					uint64_t phi_in18;
 					uint64_t phi32;
+					uint64_t phi31;
+					uint8_t phi_in30;
+					uint8_t phi15;
+					uint8_t phi34;
 					uint8_t phi_in29;
 					uint64_t phi_in28;
 					uint64_t phi_in27;
-					uint32_t anon25;
 					uint8_t* anon24;
-					uint8_t phi15;
-					uint8_t phi_in19;
-					uint64_t phi_in18;
-					uint32_t* anon16;
-					uint32_t phi_in43;
-					uint64_t phi31;
-					uint8_t phi_in20;
-					uint8_t phi_in30;
+					uint8_t phi_in45;
+					uint32_t phi_in17;
+					uint64_t phi_in35;
 					uint8_t phi14;
+					uint8_t phi_in20;
+					uint32_t* anon16;
+					uint8_t phi_in19;
+					uint8_t phi33;
 					if (dispatch13 == 0)
 					{
 						phi14 = phi_in11;

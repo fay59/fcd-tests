@@ -65,38 +65,38 @@ void main(uint64_t arg0)
 					uint64_t phi_in49;
 					uint64_t phi25;
 					uint64_t phi23;
-					uint64_t phi24;
-					uint64_t phi21;
 					uint64_t phi22;
+					uint64_t phi21;
+					uint64_t phi24;
 					while (true)
 					{
-						uint64_t phi_in36;
-						uint64_t* phi42;
-						uint64_t phi_in57;
-						uint64_t phi_in55;
-						uint64_t phi_in52;
-						uint64_t phi46;
-						uint16_t phi45;
-						uint64_t phi38;
-						uint64_t phi_in29;
-						uint64_t* phi_in33;
-						uint64_t phi40;
-						uint64_t phi_in30;
-						uint64_t phi47;
-						uint64_t phi44;
-						uint64_t phi41;
-						uint64_t phi_in28;
-						uint64_t phi_in27;
 						uint64_t phi39;
-						uint64_t anon58;
+						uint64_t* phi_in31;
+						uint64_t phi_in57;
+						uint64_t phi38;
+						uint64_t phi_in52;
+						uint64_t phi_in56;
 						uint64_t* phi_in54;
 						uint64_t phi_in53;
-						uint64_t* phi_in31;
-						uint64_t phi_in34;
-						uint64_t phi_in56;
-						uint16_t phi_in35;
+						uint64_t phi_in27;
+						uint64_t phi_in36;
+						uint64_t phi47;
+						uint64_t phi46;
+						uint64_t phi44;
+						uint64_t* phi42;
 						uint64_t* phi43;
+						uint64_t* phi_in33;
+						uint16_t phi_in35;
+						uint64_t phi_in34;
+						uint64_t phi_in30;
 						uint64_t phi_in37;
+						uint64_t phi_in28;
+						uint64_t phi41;
+						uint64_t phi_in29;
+						uint64_t anon58;
+						uint16_t phi45;
+						uint64_t phi40;
+						uint64_t phi_in55;
 						if (dispatch20 == 0)
 						{
 							phi21 = phi_in14;
@@ -153,14 +153,14 @@ void main(uint64_t arg0)
 						}
 						else if (dispatch20 == 2 || dispatch20 == 0)
 						{
-							uint64_t phi_in66;
-							uint64_t phi_in68;
 							uint64_t phi_in67;
-							uint64_t* phi_in64;
-							uint64_t phi_in63;
-							uint64_t phi_in61;
+							uint64_t phi_in66;
 							uint64_t phi_in62;
+							uint64_t* phi_in64;
+							uint64_t phi_in61;
+							uint64_t phi_in63;
 							uint64_t* phi_in65;
+							uint64_t phi_in68;
 							uint16_t anon59 = (uint16_t)phi40 + phi45 * (uint16_t)phi24;
 							uint128_t anon60 = (__zext uint128_t)anon59 * 3777893186295716171 >> 75;
 							*(uint16_t*)phi39 = anon59 + (uint16_t)anon60 * 55536;
@@ -338,8 +338,8 @@ void main(uint64_t arg0)
 				while (true)
 				{
 					uint64_t anon123;
-					uint64_t phi118;
 					uint64_t phi_in124;
+					uint64_t phi118;
 					if (dispatch116 == 0)
 					{
 						phi118 = phi_in111;

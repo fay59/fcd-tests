@@ -19,13 +19,13 @@ void main(uint64_t arg0)
 	uint32_t dispatch3 = 0;
 	while (true)
 	{
-		uint32_t phi13;
 		uint64_t phi12;
-		uint64_t phi11;
-		uint32_t phi_in10;
-		uint64_t phi_in9;
 		uint64_t phi_in8;
 		uint64_t phi_in5;
+		uint64_t phi_in9;
+		uint32_t phi13;
+		uint64_t phi11;
+		uint32_t phi_in10;
 		uint32_t anon7;
 		if (dispatch3 == 0)
 		{

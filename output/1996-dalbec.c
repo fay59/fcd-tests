@@ -16,14 +16,14 @@ void main(uint64_t arg0, uint64_t arg1, uint64_t arg2, uint64_t arg3, uint64_t a
 {
 	uint64_t anon22;
 	uint32_t anon20;
-	uint64_t phi11;
 	uint32_t anon14;
+	uint64_t phi8;
 	uint32_t phi13;
+	uint64_t phi11;
+	uint32_t anon21;
 	uint64_t phi7;
 	uint64_t phi12;
-	uint32_t anon21;
 	struct { uint8_t field0[8]; uint32_t field1; uint8_t field2[3]; uint8_t field3; uint8_t field4[56]; uint64_t field5; } alloca1;
-	uint64_t phi8;
 	alloca1.field5 = arg0;
 	uint64_t phi_in2 = arg4 & 0xffffffff;
 	uint64_t phi_in3 = arg6 & 0xffffffff;
