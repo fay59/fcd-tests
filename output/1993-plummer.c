@@ -22,11 +22,11 @@ void main(uint64_t arg0, uint64_t arg1, uint64_t arg2)
 	uint32_t dispatch3 = 0;
 	while (true)
 	{
-		uint64_t anon8;
-		uint8_t phi_in11;
+		uint64_t* anon5;
 		uint64_t* anon7;
 		uint64_t phi_in4;
-		uint64_t* anon5;
+		uint8_t phi_in11;
+		uint64_t anon8;
 		if (dispatch3 == 0)
 		{
 			anon5 = (uint64_t*)(arg2 + 8);
