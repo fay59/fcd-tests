@@ -22,10 +22,10 @@ void main(uint64_t arg0, uint64_t arg1, uint64_t arg2)
 	uint32_t dispatch3 = 0;
 	while (true)
 	{
-		uint8_t phi_in11;
 		uint64_t anon8;
-		uint64_t phi_in4;
+		uint8_t phi_in11;
 		uint64_t* anon7;
+		uint64_t phi_in4;
 		uint64_t* anon5;
 		if (dispatch3 == 0)
 		{
@@ -53,11 +53,11 @@ void main(uint64_t arg0, uint64_t arg1, uint64_t arg2)
 		{
 			uint8_t phi12 = phi_in11;
 			dispatch3 = 0;
-			if ((__sext int32_t)phi12 > (uint32_t)arg1 * (uint32_t)((__sext int64_t)**(uint8_t**)0x6009a8 + (arg1 << 1)))
+			if ((__sext int32_t)phi12 > (uint32_t)((__sext int64_t)**(uint8_t**)0x6009a8 + (arg1 << 1)) * (uint32_t)arg1)
 			{
 				*anon7 = *anon7 - 1;
 				uint8_t anon14 = (uint8_t)arg1;
-				uint8_t anon13 = anon14 * (anon14 + **(uint8_t**)0x6009a8);
+				uint8_t anon13 = (anon14 + **(uint8_t**)0x6009a8) * anon14;
 				*(uint8_t*)*anon7 = anon13;
 				phi_in4 = *anon5;
 				dispatch3 = 2;
