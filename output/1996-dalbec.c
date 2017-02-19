@@ -14,19 +14,19 @@ void __gmon_start__(uint64_t arg0)
 }
 void main(uint64_t arg0, uint64_t arg1, uint64_t arg2, uint64_t arg3, uint64_t arg4, uint64_t arg5, uint64_t arg6)
 {
+	uint32_t anon37;
 	uint32_t anon36;
 	uint64_t phi28;
-	uint32_t phi21;
-	uint64_t phi20;
-	uint32_t phi22;
-	uint32_t anon29;
-	uint64_t phi16;
-	uint32_t anon37;
-	uint32_t phi24;
 	uint32_t phi26;
-	uint32_t phi_in7;
-	struct { uint8_t field0[24]; uint8_t field1[48]; uint64_t field2; } alloca1;
+	uint32_t phi24;
+	uint32_t phi22;
 	uint64_t phi17;
+	uint64_t phi20;
+	uint64_t phi16;
+	uint32_t phi21;
+	struct { uint8_t field0[24]; uint8_t field1[48]; uint64_t field2; } alloca1;
+	uint32_t phi_in7;
+	uint32_t anon29;
 	alloca1.field2 = arg0;
 	uint64_t alloca2 = (uint64_t)&alloca1.field1;
 	uint64_t alloca3 = arg2 & 0xffffffff;

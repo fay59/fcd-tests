@@ -96,12 +96,12 @@ uint64_t mAIn(uint64_t arg0, uint64_t arg1, uint64_t arg2)
 {
 	uint32_t anon21;
 	uint32_t anon19;
-	uint32_t* anon14;
 	uint32_t anon20;
 	uint32_t anon11;
 	uint32_t anon10;
 	uint64_t phi_in15;
 	uint32_t anon22;
+	uint32_t* anon14;
 	uint32_t* anon1 = (uint32_t*)0x600ad0;
 	uint32_t anon2 = *anon1 + 1;
 	*anon1 = anon2;

@@ -19,16 +19,16 @@ void main(uint64_t arg0)
 	uint32_t dispatch3 = 0;
 	while (true)
 	{
-		uint32_t phi17;
 		uint64_t phi16;
-		uint64_t phi15;
 		uint64_t phi_in13;
+		uint64_t phi_in12;
+		uint32_t phi17;
 		uint32_t anon11;
 		uint64_t phi_in7;
-		uint32_t phi_in14;
-		uint64_t phi_in12;
+		uint64_t phi15;
 		uint64_t phi_in5;
 		uint64_t phi_in8;
+		uint32_t phi_in14;
 		if (dispatch3 == 0)
 		{
 			uint64_t phi4 = phi_in5;

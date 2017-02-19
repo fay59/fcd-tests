@@ -96,13 +96,13 @@ uint64_t n(uint64_t arg0)
 			phi_in9 = (uint32_t)(anon15 + (anon15 >> 31 & 1) << 32 >> 33) + anon10 + (anon10 << 1) - 64;
 		}
 	}
-	if (anon10 == 1)
-	{
-		phi_in9 = 10;
-	}
 	if (anon10 == 2)
 	{
 		phi_in9 = 9;
+	}
+	if (anon10 == 1)
+	{
+		phi_in9 = 10;
 	}
 	uint32_t phi16 = phi_in9;
 	return (__zext uint64_t)phi16;

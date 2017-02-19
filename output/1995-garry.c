@@ -68,8 +68,8 @@ void frame_dummy(uint64_t arg0)
 }
 uint64_t cb(uint64_t arg0)
 {
-	uint64_t anon8;
 	uint16_t anon9;
+	uint64_t anon8;
 	uint8_t* anon2 = (uint8_t*)0x603b40;
 	uint8_t* anon3 = (uint8_t*)0x601248;
 	uint8_t* anon1 = strchr(anon2, (__sext int32_t)*anon3);
@@ -104,20 +104,20 @@ uint64_t cb(uint64_t arg0)
 		uint64_t phi_in23;
 		while (true)
 		{
-			uint64_t anon32;
-			uint8_t* phi29;
-			uint64_t phi28;
-			uint64_t phi27;
 			uint8_t* phi_in26;
-			uint64_t phi_in25;
-			uint8_t* anon33;
-			uint64_t phi_in24;
-			uint8_t* phi22;
-			uint64_t phi_in36;
-			uint8_t* anon30;
 			uint8_t* anon34;
+			uint64_t phi_in36;
+			uint64_t anon32;
 			uint8_t* anon31;
+			uint8_t* anon30;
+			uint8_t* phi29;
+			uint64_t phi27;
+			uint64_t phi_in25;
+			uint64_t phi28;
+			uint8_t* phi22;
 			uint64_t phi_in35;
+			uint64_t phi_in24;
+			uint8_t* anon33;
 			if (dispatch18 == 0)
 			{
 				uint64_t phi19 = phi_in14;
@@ -203,8 +203,8 @@ uint64_t cb(uint64_t arg0)
 							uint64_t anon47 = (__zext uint64_t)*(uint8_t*)anon46 + 4294967248;
 							if ((uint8_t)anon47 < 10)
 							{
-								uint64_t phi_in50;
 								uint64_t phi_in48;
+								uint64_t phi_in50;
 								uint64_t anon49 = anon47 + (anon45 << 3);
 								phi_in48 = anon49;
 								uint64_t anon51 = phi37 + 3;

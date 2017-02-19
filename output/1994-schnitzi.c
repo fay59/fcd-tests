@@ -18,11 +18,11 @@ void gets(uint64_t arg0)
 }
 void main(uint64_t arg0, uint64_t arg1)
 {
-	struct { uint8_t field0; uint8_t field1[512]; uint32_t field2; uint8_t field3[420]; uint64_t field4; } alloca1;
-	uint64_t anon14;
-	uint32_t* anon16;
 	uint32_t phi_in18;
+	uint32_t* anon16;
+	uint64_t anon14;
 	uint32_t* anon10;
+	struct { uint8_t field0; uint8_t field1[512]; uint32_t field2; uint8_t field3[420]; uint64_t field4; } alloca1;
 	alloca1.field4 = arg0;
 	struct _IO_FILE** anon3 = (struct _IO_FILE**)0x600c18;
 	uint64_t anon2 = ftell(*anon3);
