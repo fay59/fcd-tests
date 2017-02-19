@@ -37,7 +37,7 @@ void func_4001fb(uint64_t arg0, uint64_t arg1)
 		}
 		uint64_t phi11 = phi_in3;
 		phi12 = phi_in4;
-		if (((uint32_t)(phi12 >> 63) | (__zext uint32_t)(phi12 == 0)) == 0)
+		if (phi12 >= 1)
 		{
 			phi_in1 = phi12 - 1;
 			phi_in2 = phi11;
@@ -48,6 +48,6 @@ void func_4001fb(uint64_t arg0, uint64_t arg1)
 			}
 		}
 	}
-	while (((uint32_t)(phi12 >> 63) | (__zext uint32_t)(phi12 == 0)) == 0);
+	while (phi12 >= 1);
 	return;
 }
