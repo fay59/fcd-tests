@@ -16,14 +16,14 @@ void main(uint64_t arg0, uint64_t arg1, uint64_t arg2, uint64_t arg3, uint64_t a
 {
 	uint32_t phi_in25;
 	uint32_t anon20;
-	uint64_t anon19;
 	uint32_t anon14;
+	uint64_t anon19;
+	uint32_t phi13;
 	uint64_t phi12;
-	uint64_t phi11;
 	uint64_t phi_in10;
 	uint64_t anon21;
+	uint64_t phi11;
 	uint64_t phi8;
-	uint32_t phi13;
 	uint64_t phi7;
 	struct { uint8_t field0[8]; uint32_t field1; uint8_t field2[3]; uint8_t field3; uint8_t field4[56]; uint64_t field5; } alloca1;
 	alloca1.field5 = arg0;
@@ -54,7 +54,7 @@ void main(uint64_t arg0, uint64_t arg1, uint64_t arg2, uint64_t arg3, uint64_t a
 				phi_in3 = anon16 & 0xffffffff;
 				phi_in10 = phi9;
 				phi_in4 = 1;
-				uint32_t anon18 = (*anon15 ^ 0xffffffff) - *anon15;
+				uint32_t anon18 = ~*anon15 - *anon15;
 				phi_in5 = (__zext uint64_t)anon18;
 				phi_in6 = anon18;
 			}
@@ -70,7 +70,7 @@ void main(uint64_t arg0, uint64_t arg1, uint64_t arg2, uint64_t arg3, uint64_t a
 		anon20 = (__zext uint32_t)(phi13 == 0);
 	}
 	while (phi13 > anon20);
-	if ((__zext uint32_t)(phi13 == 255) < (phi13 ^ 0xffffffff) | (phi11 & 1) == 0)
+	if ((__zext uint32_t)(phi13 == 255) < ~phi13 | (phi11 & 1) == 0)
 	{
 		return;
 	}

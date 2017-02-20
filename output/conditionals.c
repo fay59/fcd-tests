@@ -5,7 +5,7 @@ uint32_t main(uint32_t arg0, uint8_t** arg1)
 	uint64_t anon2 = (__zext uint64_t)arg0;
 	uint64_t anon3 = anon2 + 2 & 0xffffffff;
 	uint64_t anon1 = testO_64(4194946, anon2, anon3);
-	uint64_t anon4 = testO_32(4194960, anon2, anon3);
+	uint64_t anon4 = testO_32(4194960, anon2, (__zext uint64_t)(arg0 + 2));
 	uint64_t anon5 = testNO_64(4194974, anon2, anon3);
 	uint64_t anon6 = testNO_32(4194988, anon2, anon3);
 	uint64_t anon7 = testB_64(4195002, anon2, anon3);
@@ -125,22 +125,22 @@ uint64_t testNS_32(uint64_t arg0, uint64_t arg1, uint64_t arg2)
 uint64_t testPE_64(uint64_t arg0, uint64_t arg1, uint64_t arg2)
 {
 	uint32_t anon1 = llvm.ctpop.i32((uint32_t)(arg1 - arg2) & 0xff);
-	return (__zext uint64_t)(anon1 & 1 ^ 1);
+	return (__zext uint64_t)anon1 & 1 ^ 1;
 }
 uint64_t testPE_32(uint64_t arg0, uint64_t arg1, uint64_t arg2)
 {
 	uint32_t anon1 = llvm.ctpop.i32((uint32_t)arg1 - (uint32_t)arg2 & 0xff);
-	return (__zext uint64_t)(anon1 & 1 ^ 1);
+	return (__zext uint64_t)anon1 & 1 ^ 1;
 }
 uint64_t testPO_64(uint64_t arg0, uint64_t arg1, uint64_t arg2)
 {
 	uint32_t anon1 = llvm.ctpop.i32((uint32_t)(arg1 - arg2) & 0xff);
-	return (__zext uint64_t)(anon1 & 1);
+	return (__zext uint64_t)anon1 & 1;
 }
 uint64_t testPO_32(uint64_t arg0, uint64_t arg1, uint64_t arg2)
 {
 	uint32_t anon1 = llvm.ctpop.i32((uint32_t)arg1 - (uint32_t)arg2 & 0xff);
-	return (__zext uint64_t)(anon1 & 1);
+	return (__zext uint64_t)anon1 & 1;
 }
 uint64_t testNGE_64(uint64_t arg0, uint64_t arg1, uint64_t arg2)
 {
@@ -168,9 +168,15 @@ uint64_t testNG_32(uint64_t arg0, uint64_t arg1, uint64_t arg2)
 }
 uint64_t testNLE_64(uint64_t arg0, uint64_t arg1, uint64_t arg2)
 {
-	return (__zext uint64_t)(arg1 > arg2);
+	struct { uint64_t field0; bool field1; } anon1 = llvm.ssub.with.overflow.i64(arg1, arg2);
+	uint64_t anon2 = arg1 - arg2;
+	return ((__zext uint64_t)(anon2 < 0 ^ anon1.field1) ^ 1) & (__zext uint64_t)(anon2 != 0);
 }
 uint64_t testNLE_32(uint64_t arg0, uint64_t arg1, uint64_t arg2)
 {
-	return (__zext uint64_t)((uint32_t)arg1 > (uint32_t)arg2);
+	uint32_t anon2 = (uint32_t)arg1;
+	uint32_t anon3 = (uint32_t)arg2;
+	struct { uint32_t field0; bool field1; } anon1 = llvm.ssub.with.overflow.i32(anon2, anon3);
+	uint32_t anon4 = anon2 - anon3;
+	return ((__zext uint64_t)(anon4 < 0 ^ anon1.field1) ^ 1) & (__zext uint64_t)(anon4 != 0);
 }

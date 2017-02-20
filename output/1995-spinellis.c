@@ -14,8 +14,8 @@ void __gmon_start__(uint64_t arg0)
 }
 void main(uint64_t arg0)
 {
-	uint32_t anon4;
 	uint8_t* anon2;
+	uint32_t anon4;
 	do
 	{
 		uint32_t anon1 = _IO_getc(*(struct _IO_FILE**)0x600be8);
@@ -84,7 +84,7 @@ uint64_t n(uint64_t arg0)
 	uint32_t phi_in9 = 32;
 	uint64_t anon11 = (uint64_t)anon6 - *anon4;
 	uint64_t anon12 = (uint64_t)anon8 - *anon4;
-	uint32_t anon10 = ((uint32_t)(anon11 + (anon11 >> 31 & 1) << 32 >> 33) + ((uint32_t)(uint64_t)anon3 - (uint32_t)*anon4) * 3) * 3 + (uint32_t)((anon12 >> 31 & 1) + anon12 << 32 >> 33);
+	uint32_t anon10 = (uint32_t)((anon11 + (anon11 >> 31 & 1) << 32 >> 33) + ((uint64_t)anon3 - *anon4) * 3) * 3 + (uint32_t)((anon12 >> 31 & 1) + anon12 << 32 >> 33);
 	if (anon10 != 0)
 	{
 		phi_in9 = 10;
