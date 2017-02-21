@@ -1,1 +1,0 @@
-Assertion failed: (isa<BinaryOperator>(offsetUser) || isa<PHINode>(offsetUser)), function getUnionTypes, file /Users/travis/build/zneak/fcd/fcd/pass_locals.cpp, line 152.

@@ -1,1 +1,0 @@
-Assertion failed: (front == 0 || back == 0 || signbit(front) == signbit(back)), function readObject, file /Users/travis/build/zneak/fcd/fcd/pass_locals.cpp, line 951.
