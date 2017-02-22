@@ -19,66 +19,57 @@ void main(uint64_t arg0)
 	uint32_t dispatch3 = 0;
 	while (true)
 	{
-		uint32_t phi17;
-		uint64_t phi15;
-		uint64_t phi16;
-		uint64_t phi_in7;
-		uint32_t anon11;
-		uint32_t phi_in14;
-		uint64_t phi_in13;
-		uint64_t phi_in12;
+		uint64_t phi11;
+		uint32_t phi_in10;
 		uint64_t phi_in8;
+		uint32_t phi13;
+		uint64_t phi_in9;
+		uint32_t anon7;
 		uint64_t phi_in5;
+		uint64_t phi12;
 		if (dispatch3 == 0)
 		{
 			uint64_t phi4 = phi_in5;
 			uint64_t phi6 = phi_in2;
-			phi_in7 = phi4;
-			phi_in8 = phi6;
-		}
-		if (dispatch3 == 2 || dispatch3 == 0)
-		{
-			uint64_t phi9 = phi_in7;
-			uint64_t phi10 = phi_in8;
-			anon11 = _IO_getc(anon1);
-			phi_in12 = phi9;
-			phi_in13 = phi10;
-			phi_in14 = anon11;
-			if (anon11 == 255)
+			anon7 = _IO_getc(anon1);
+			phi_in8 = phi4;
+			phi_in9 = phi6;
+			phi_in10 = anon7;
+			if (anon7 == 255)
 			{
 				break;
 			}
 		}
-		if (dispatch3 == 1 || anon11 != 255 && dispatch3 == 2 || anon11 != 255 && dispatch3 == 0)
+		if (dispatch3 == 1 || anon7 != 255 && dispatch3 == 0)
 		{
-			phi15 = phi_in12;
-			phi16 = phi_in13;
-			phi17 = phi_in14;
-			phi_in7 = phi15;
-			phi_in8 = phi16;
-			dispatch3 = 2;
+			phi11 = phi_in8;
+			phi12 = phi_in9;
+			phi13 = phi_in10;
+			phi_in5 = phi11;
+			phi_in2 = phi12;
+			dispatch3 = 0;
 		}
-		uint32_t anon18 = phi17 - 74;
-		if (anon18 < 16)
+		uint32_t anon14 = phi13 - 74;
+		if (((__zext uint8_t)(phi13 != 89) & (__zext uint8_t)(anon14 > 14)) == 0)
 		{
-			if ((uint32_t)phi16 == 1)
+			if ((uint32_t)phi12 == 1)
 			{
-				if (dispatch3 == 1 || anon11 != 255 && dispatch3 == 2 || anon11 != 255 && dispatch3 == 0)
+				if (dispatch3 == 1 || anon7 != 255 && dispatch3 == 0)
 				{
-					_IO_putc(anon18 << 4 | (uint32_t)phi15 - 74, *(struct _IO_FILE**)0x600ac0);
-					phi_in5 = phi15 & 0xffffffff;
-					phi_in2 = phi16 & 0xffffffffffffff00;
+					_IO_putc(anon14 << 4 | (uint32_t)phi11 - 74, *(struct _IO_FILE**)0x600ac0);
+					phi_in5 = phi11 & 0xffffffff;
+					phi_in2 = phi12 & 0xffffffffffffff00;
 					dispatch3 = 0;
 				}
 			}
-			else if (dispatch3 == 1 || anon11 != 255 && dispatch3 == 2 || anon11 != 255 && dispatch3 == 0)
+			else if (dispatch3 == 1 || anon7 != 255 && dispatch3 == 0)
 			{
-				uint32_t anon19 = _IO_getc(anon1);
-				phi_in12 = (__zext uint64_t)phi17;
-				phi_in13 = 1;
-				phi_in14 = anon19;
+				uint32_t anon15 = _IO_getc(anon1);
+				phi_in8 = (__zext uint64_t)phi13;
+				phi_in9 = 1;
+				phi_in10 = anon15;
 				dispatch3 = 1;
-				if (anon19 == 255)
+				if (anon15 == 255)
 				{
 					break;
 				}
