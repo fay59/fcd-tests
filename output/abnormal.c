@@ -1,21 +1,20 @@
 #include "tests/bin/abnormal.h"
 
-void func_4001fb(uint64_t arg0, uint64_t arg1, uint64_t arg2)
+void func_4001fb(uint64_t arg0, uint64_t arg1)
 {
 	uint64_t phi12;
-	*(uint64_t*)(arg1 - 8) = arg0;
 	uint64_t phi_in1 = 10;
 	uint64_t phi_in2 = 5;
 	uint64_t phi_in3 = 5;
-	uint64_t phi_in4 = arg2;
+	uint64_t phi_in4 = arg1;
 	uint32_t dispatch5 = 0;
 	dispatch5 = 1;
 	do
 	{
 		while (dispatch5 != 1)
 		{
-			uint64_t phi_in8;
 			uint64_t phi6;
+			uint64_t phi_in8;
 			if (dispatch5 == 0)
 			{
 				phi6 = phi_in1;
