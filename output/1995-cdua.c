@@ -16,22 +16,22 @@ void main(uint64_t arg0, uint64_t arg1)
 {
 	uint64_t* anon68;
 	uint32_t phi_in63;
-	int32_t anon36;
-	uint32_t phi_in19;
-	uint32_t phi_in65;
-	uint32_t phi_in3;
-	void(** anon67)(uint64_t, uint64_t);
-	void(** anon21)(uint64_t);
-	uint32_t phi17;
-	uint64_t phi_in60;
-	uint64_t phi_in24;
-	uint32_t phi_in18;
 	uint32_t dispatch58;
-	uint32_t* anon8;
-	uint32_t* anon6;
-	struct { uint32_t field0; uint32_t field1; uint64_t field2; uint64_t field3; uint64_t field4; uint64_t field5; uint64_t field6; uint8_t field7[56]; uint64_t field8; } alloca1;
+	uint64_t phi_in60;
+	int32_t anon36;
 	uint64_t phi_in64;
+	uint32_t phi17;
+	uint64_t phi_in24;
+	struct { uint32_t field0; uint32_t field1; uint64_t field2; uint64_t field3; uint64_t field4; uint64_t field5; uint64_t field6; uint8_t field7[56]; uint64_t field8; } alloca1;
 	uint32_t phi_in15;
+	void(** anon21)(uint64_t);
+	uint32_t* anon8;
+	uint32_t phi_in19;
+	void(** anon67)(uint64_t, uint64_t);
+	uint32_t phi_in3;
+	uint32_t phi_in18;
+	uint32_t* anon6;
+	uint32_t phi_in65;
 	alloca1.field8 = arg0;
 	*(uint64_t*)0x601aa0 = 4195536;
 	*(uint64_t*)0x601a88 = 4195568;
@@ -130,10 +130,10 @@ void main(uint64_t arg0, uint64_t arg1)
 			do
 			{
 				uint32_t* anon51;
-				uint32_t phi50;
+				uint64_t phi49;
 				uint32_t phi48;
 				uint64_t phi41;
-				uint64_t phi49;
+				uint32_t phi50;
 				do
 				{
 					phi41 = phi_in40;

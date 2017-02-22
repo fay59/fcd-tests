@@ -24,10 +24,10 @@ void main(uint64_t arg0, uint64_t arg1, uint64_t arg2)
 	while (true)
 	{
 		uint8_t phi_in12;
-		uint64_t* anon8;
-		uint64_t anon9;
 		uint64_t* anon6;
 		uint64_t phi_in5;
+		uint64_t* anon8;
+		uint64_t anon9;
 		if (dispatch4 == 0)
 		{
 			anon6 = (uint64_t*)(arg2 + 8);
