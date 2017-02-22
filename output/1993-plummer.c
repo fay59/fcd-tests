@@ -24,10 +24,10 @@ void main(uint64_t arg0, uint64_t arg1, uint64_t arg2)
 	while (true)
 	{
 		uint8_t phi_in12;
-		uint64_t* anon6;
-		uint64_t phi_in5;
-		uint64_t* anon8;
 		uint64_t anon9;
+		uint64_t* anon6;
+		uint64_t* anon8;
+		uint64_t phi_in5;
 		if (dispatch4 == 0)
 		{
 			anon6 = (uint64_t*)(arg2 + 8);
@@ -54,10 +54,10 @@ void main(uint64_t arg0, uint64_t arg1, uint64_t arg2)
 		{
 			uint8_t phi13 = phi_in12;
 			dispatch4 = 0;
-			if ((__sext int32_t)phi13 > (uint32_t)((__sext int64_t)**(uint8_t**)0x6009a8 + (arg1 << 1)) * (uint32_t)arg1)
+			if ((__sext int32_t)phi13 > (uint32_t)arg1 * (uint32_t)((__sext int64_t)**(uint8_t**)0x6009a8 + (arg1 << 1)))
 			{
 				*anon8 = *anon8 - 1;
-				uint8_t anon14 = (uint8_t)((__zext uint64_t)((uint8_t)arg1 + **(uint8_t**)0x6009a8) * (anon3 >> 32));
+				uint8_t anon14 = (uint8_t)((anon3 >> 32) * (__zext uint64_t)((uint8_t)arg1 + **(uint8_t**)0x6009a8));
 				*(uint8_t*)*anon8 = anon14;
 				phi_in5 = *anon6;
 				dispatch4 = 2;
