@@ -25,11 +25,11 @@ fi
 
 # Select platform-specific branch, merge with master if necessary.
 # ------------------------------------------------------------------------------
-if git -C "${BASEDIR}" checkout --track "origin/${TRAVIS_OS_NAME}"; then
-	git -C "${BASEDIR}" show --summary
-	git -C "${BASEDIR}" merge --no-edit master
+TEST_GIT="git -C ${BASEDIR}"
+if $TEST_GIT checkout --track "origin/${TRAVIS_OS_NAME}"; then
+	$TEST_GIT merge --no-edit master
 else
-	git -C "${BASEDIR}" checkout -b "${TRAVIS_OS_NAME}"
+	$TEST_GIT checkout -b "${TRAVIS_OS_NAME}"
 fi
 
 MERGE_STATUS=$?
@@ -56,11 +56,18 @@ fi
 		-in "${BASEDIR}/deploy_key.enc" -out "${BASEDIR}/deploy_key" -d
 )
 
-REMOTE_PATH=$(git -C "${BASEDIR}" config --get remote.origin.url | grep -oh '[^/]*/[^/]*$')
-git -C "${BASEDIR}" remote set-url origin "git@github.com:${REMOTE_PATH}"
-git -C "${BASEDIR}" config user.name "Travis CI"
-git -C "${BASEDIR}" config user.email "travis@zneak.github.io"
-git -C "${BASEDIR}" add .
-git -C "${BASEDIR}" commit -m "Test results on ${TRAVIS_OS_NAME} for fcd commit ${COMMIT_HASH}"
-GIT_SSH="./ssh-unattend.sh" git -C "${BASEDIR}" push origin "${TRAVIS_OS_NAME}"
+REMOTE_PATH=$($TEST_GIT config --get remote.origin.url | grep -oh '[^/]*/[^/]*$')
+$TEST_GIT remote set-url origin "git@github.com:${REMOTE_PATH}"
+$TEST_GIT config user.name "Travis CI"
+$TEST_GIT config user.email "travis@zneak.github.io"
+$TEST_GIT add .
+$TEST_GIT commit -m "Test results on ${TRAVIS_OS_NAME} for fcd commit ${COMMIT_HASH}"
+
+# Try to push at most 3 times
+seq 1 3 | while
+	read && ! GIT_SSH="./ssh-unattend.sh" $TEST_GIT push origin "${TRAVIS_OS_NAME}"
+do
+	$TEST_GIT pull -s ours --no-edit origin "${TRAVIS_OS_NAME}"
+done
+
 
