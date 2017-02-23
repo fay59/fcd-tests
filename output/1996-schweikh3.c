@@ -40,8 +40,8 @@ void main(uint64_t arg0, uint64_t arg1, uint64_t arg2)
 		uint8_t* phi25;
 		if (anon3 == 0)
 		{
-			uint8_t* phi_in23;
 			uint8_t* anon10;
+			uint8_t* phi_in23;
 			uint64_t* anon6 = (uint64_t*)0x6012b0;
 			uint64_t* anon8 = (uint64_t*)0x601288;
 			uint64_t anon7 = *anon6 | *anon8;
@@ -52,11 +52,11 @@ void main(uint64_t arg0, uint64_t arg1, uint64_t arg2)
 				uint64_t anon19;
 				do
 				{
-					uint64_t phi_in14;
+					uint64_t phi_in15;
 					uint8_t* anon13;
 					uint8_t* phi_in12;
 					uint8_t* anon11;
-					uint64_t phi_in15;
+					uint64_t phi_in14;
 					anon10 = (uint8_t*)0x400cf0;
 					printf(anon10);
 					if (*anon1 == 99)
@@ -105,7 +105,11 @@ void main(uint64_t arg0, uint64_t arg1, uint64_t arg2)
 				phi_in23 = anon24;
 			}
 			phi25 = phi_in23;
-			if (phi25 != null)
+			if (phi25 == null)
+			{
+				__assert_fail((uint8_t*)0x400c74, anon4, 75, anon5);
+			}
+			else 
 			{
 				printf(anon10);
 				_IO_putc(10, *anon2);
@@ -138,13 +142,9 @@ void main(uint64_t arg0, uint64_t arg1, uint64_t arg2)
 			wait(4196544);
 			puts((uint8_t*)0x400ce2);
 		}
-		if (anon3 != 0 || anon3 == 0 && phi25 != null)
+		if (anon3 != 0 || phi25 != null && anon3 == 0)
 		{
 			return;
-		}
-		if (anon3 == 0 && phi25 == null)
-		{
-			__assert_fail((uint8_t*)0x400c74, anon4, 75, anon5);
 		}
 	}
 }

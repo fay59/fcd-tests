@@ -14,24 +14,25 @@ void __gmon_start__(uint64_t arg0)
 }
 void main(uint64_t arg0, uint64_t arg1)
 {
+	uint32_t phi_in64;
+	uint64_t phi_in61;
 	uint64_t* anon68;
-	void(** anon67)(uint64_t, uint64_t);
-	uint64_t phi_in60;
-	uint32_t dispatch58;
-	uint32_t phi_in63;
-	uint32_t phi_in19;
-	uint64_t phi_in64;
-	uint64_t phi_in24;
-	uint32_t phi_in18;
-	uint32_t phi17;
-	uint32_t phi_in65;
+	uint64_t phi_in63;
 	int32_t anon36;
-	uint32_t phi_in15;
-	uint32_t phi_in3;
-	void(** anon21)(uint64_t);
+	void(** anon67)(uint64_t, uint64_t);
 	uint32_t* anon8;
+	uint32_t phi_in19;
 	uint32_t* anon6;
+	uint32_t phi_in18;
+	uint32_t phi_in15;
+	void(** anon21)(uint64_t);
+	uint64_t phi_in35;
+	uint32_t phi_in62;
+	uint32_t dispatch58;
 	struct { uint32_t field0; uint32_t field1; uint64_t field2; uint64_t field3; uint64_t field4; uint64_t field5; uint64_t field6; uint8_t field7[56]; uint64_t field8; } alloca1;
+	uint64_t phi_in24;
+	uint32_t phi_in3;
+	uint32_t phi17;
 	alloca1.field8 = arg0;
 	*(uint64_t*)0x601aa0 = 4195536;
 	*(uint64_t*)0x601a88 = 4195568;
@@ -116,7 +117,7 @@ void main(uint64_t arg0, uint64_t arg1)
 		uint32_t anon34 = phi22 - 160;
 		int64_t anon33 = (__sext int64_t)anon34;
 		alloca1.field4 = anon33;
-		uint64_t phi_in35 = anon25;
+		phi_in35 = anon25;
 		anon36 = (__sext int32_t)*(uint8_t*)(anon33 + 6296384) + (__sext int32_t)*(uint8_t*)(anon27 + 6296384) + (__sext int32_t)*(uint8_t*)(anon29 + 6296384) + (__sext int32_t)*(uint8_t*)(anon31 + 6296384);
 		if (anon36 != 128)
 		{
@@ -144,17 +145,17 @@ void main(uint64_t arg0, uint64_t arg1)
 					uint64_t phi_in45 = 4294967216;
 					uint32_t phi_in46 = anon34;
 					uint2_t anon47 = (uint2_t)anon42;
-					if (anon47 == 0)
-					{
-						phi_in44 = 80;
-						phi_in45 = 80;
-						phi_in46 = anon32;
-					}
 					if (!(anon47 == 0 || anon47 == 1))
 					{
 						phi_in44 = anon43 == 2 ? 1 : 4294967295;
 						phi_in45 = anon43 == 2 ? 1 : 4294967295;
 						phi_in46 = anon43 == 2 ? anon28 : anon30;
+					}
+					if (anon47 == 0)
+					{
+						phi_in44 = 80;
+						phi_in45 = 80;
+						phi_in46 = anon32;
 					}
 					phi48 = phi_in44;
 					phi49 = phi_in45;
@@ -195,46 +196,46 @@ void main(uint64_t arg0, uint64_t arg1)
 			}
 			while (*anon4 == 1840);
 		}
-		if (anon36 != 128 && dispatch58 == 0 || anon36 == 128)
-		{
-			uint64_t phi59 = phi_in35;
-			phi_in60 = phi59;
-		}
 	}
 	if (phi23 != 1840 || phi23 == 1840 && anon36 != 128 && dispatch58 == 1)
 	{
-		uint64_t phi61 = phi_in24;
-		uint32_t phi62 = phi_in26;
-		phi_in60 = phi61;
-		phi_in63 = phi22;
-		phi_in64 = phi61;
-		phi_in65 = phi62;
+		uint64_t phi59 = phi_in24;
+		uint32_t phi60 = phi_in26;
+		phi_in61 = phi59;
+		phi_in62 = phi22;
+		phi_in63 = phi59;
+		phi_in64 = phi60;
+	}
+	if (phi23 == 1840 && (anon36 != 128 && dispatch58 == 0 || anon36 == 128))
+	{
+		uint64_t phi65 = phi_in35;
+		phi_in61 = phi65;
 	}
 	if (*anon6 == phi22 && (phi23 != 1840 || phi23 == 1840 && anon36 != 128 && dispatch58 == 0 || phi23 == 1840 && anon36 == 128 || phi23 == 1840 && anon36 != 128 && dispatch58 == 1))
 	{
-		uint64_t phi66 = phi_in60;
+		uint64_t phi66 = phi_in61;
 		*anon4 = 1;
 		anon67 = (void(**)(uint64_t, uint64_t))0x601aa0;
 		anon68 = (uint64_t*)0x601258;
 		(*anon67)(*anon68, *(uint64_t*)0x6012a8);
 		(*(void(**)())0x601aa8)();
-		phi_in63 = 162;
-		phi_in64 = phi66;
-		phi_in65 = *anon4;
+		phi_in62 = 162;
+		phi_in63 = phi66;
+		phi_in64 = *anon4;
 	}
 	if (phi23 == 1840 && anon36 != 128 && dispatch58 == 0 && *anon6 == phi22 || phi23 == 1840 && anon36 == 128 && *anon6 == phi22 || phi23 == 1840 && anon36 != 128 && dispatch58 == 1 && *anon6 == phi22 || phi23 != 1840 && *anon6 == phi22 || *anon6 != phi22 && phi23 == 1840 && anon36 != 128 && dispatch58 == 1 || phi23 != 1840 && *anon6 != phi22)
 	{
-		uint32_t phi69 = phi_in63;
-		uint64_t phi70 = phi_in64;
-		uint32_t phi71 = phi_in65;
+		uint32_t phi69 = phi_in62;
+		uint64_t phi70 = phi_in63;
+		uint32_t phi71 = phi_in64;
 		if (phi71 == 1)
 		{
 			int64_t anon73 = (__sext int64_t)phi69;
 			uint8_t* anon72 = (uint8_t*)(anon73 + 6296384);
 			if (*anon72 == 32)
 			{
-				uint64_t anon80;
 				void(** anon79)(uint64_t, uint64_t, uint64_t);
+				uint64_t anon80;
 				uint32_t* anon74 = (uint32_t*)phi70;
 				*anon74 = 1;
 				*anon72 = 46;
