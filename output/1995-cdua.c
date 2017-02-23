@@ -14,25 +14,25 @@ void __gmon_start__(uint64_t arg0)
 }
 void main(uint64_t arg0, uint64_t arg1)
 {
-	uint32_t phi_in64;
-	uint64_t phi_in61;
-	uint64_t* anon68;
-	uint64_t phi_in63;
-	int32_t anon36;
-	void(** anon67)(uint64_t, uint64_t);
-	uint32_t* anon8;
-	uint32_t phi_in19;
-	uint32_t* anon6;
-	uint32_t phi_in18;
-	uint32_t phi_in15;
-	void(** anon21)(uint64_t);
-	uint64_t phi_in35;
-	uint32_t phi_in62;
-	uint32_t dispatch58;
 	struct { uint32_t field0; uint32_t field1; uint64_t field2; uint64_t field3; uint64_t field4; uint64_t field5; uint64_t field6; uint8_t field7[56]; uint64_t field8; } alloca1;
-	uint64_t phi_in24;
 	uint32_t phi_in3;
+	uint32_t* anon6;
+	uint32_t* anon8;
+	uint32_t phi_in15;
 	uint32_t phi17;
+	uint32_t phi_in18;
+	uint32_t phi_in19;
+	void(** anon21)(uint64_t);
+	uint64_t phi_in24;
+	uint64_t phi_in35;
+	int32_t anon36;
+	uint32_t dispatch58;
+	uint64_t phi_in61;
+	uint32_t phi_in62;
+	uint64_t phi_in63;
+	uint32_t phi_in64;
+	void(** anon67)(uint64_t, uint64_t);
+	uint64_t* anon68;
 	alloca1.field8 = arg0;
 	*(uint64_t*)0x601aa0 = 4195536;
 	*(uint64_t*)0x601a88 = 4195568;
@@ -130,32 +130,32 @@ void main(uint64_t arg0, uint64_t arg1)
 			uint64_t phi_in40 = anon25;
 			do
 			{
-				uint32_t* anon51;
-				uint32_t phi50;
+				uint64_t phi41;
 				uint32_t phi48;
 				uint64_t phi49;
-				uint64_t phi41;
+				uint32_t phi50;
+				uint32_t* anon51;
 				do
 				{
 					phi41 = phi_in40;
 					uint64_t anon42 = (*(uint64_t(**)())0x601ab0)();
 					uint32_t anon43 = (uint32_t)anon42 & 3;
 					*(uint32_t*)0x601a98 = anon43;
-					uint32_t phi_in44 = 4294967216;
-					uint64_t phi_in45 = 4294967216;
-					uint32_t phi_in46 = anon34;
+					uint32_t phi_in44 = 80;
+					uint64_t phi_in45 = 80;
+					uint32_t phi_in46 = anon32;
 					uint2_t anon47 = (uint2_t)anon42;
+					if (anon47 == 1)
+					{
+						phi_in44 = 4294967216;
+						phi_in45 = 4294967216;
+						phi_in46 = anon34;
+					}
 					if (!(anon47 == 0 || anon47 == 1))
 					{
 						phi_in44 = anon43 == 2 ? 1 : 4294967295;
 						phi_in45 = anon43 == 2 ? 1 : 4294967295;
 						phi_in46 = anon43 == 2 ? anon28 : anon30;
-					}
-					if (anon47 == 0)
-					{
-						phi_in44 = 80;
-						phi_in45 = 80;
-						phi_in46 = anon32;
 					}
 					phi48 = phi_in44;
 					phi49 = phi_in45;

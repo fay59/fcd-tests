@@ -18,9 +18,9 @@ void wait(uint64_t arg0)
 }
 void main(uint64_t arg0, uint64_t arg1, uint64_t arg2)
 {
-	uint8_t* anon5;
-	uint8_t* anon4;
 	uint8_t* anon1;
+	uint8_t* anon4;
+	uint8_t* anon5;
 	if (**(uint8_t**)(((arg1 << 32) - 4294967296 >> 29) + arg2) == 99)
 	{
 		anon1 = (uint8_t*)0x601290;
@@ -52,11 +52,11 @@ void main(uint64_t arg0, uint64_t arg1, uint64_t arg2)
 				uint64_t anon19;
 				do
 				{
-					uint64_t phi_in15;
-					uint8_t* anon13;
-					uint8_t* phi_in12;
 					uint8_t* anon11;
+					uint8_t* phi_in12;
+					uint8_t* anon13;
 					uint64_t phi_in14;
+					uint64_t phi_in15;
 					anon10 = (uint8_t*)0x400cf0;
 					printf(anon10);
 					if (*anon1 == 99)

@@ -5,10 +5,10 @@ uint32_t main(uint32_t arg0, uint8_t** arg1)
 	uint64_t anon2 = (__zext uint64_t)arg0;
 	uint64_t anon3 = anon2 + 2 & 0xffffffff;
 	uint64_t anon1 = testO_64(4194946, anon2, anon3);
-	uint64_t anon4 = testO_32(4194960, anon2, (__zext uint64_t)(arg0 + 2));
+	uint64_t anon4 = testO_32(4194960, anon2, anon3);
 	uint64_t anon5 = testNO_64(4194974, anon2, anon3);
 	uint64_t anon6 = testNO_32(4194988, anon2, anon3);
-	uint64_t anon7 = testB_64(4195002, anon2, anon3);
+	uint64_t anon7 = testB_64(4195002, anon2, (__zext uint64_t)(arg0 + 2));
 	uint64_t anon8 = testB_32(4195016, anon2, anon3);
 	uint64_t anon9 = testAE_64(4195030, anon2, anon3);
 	uint64_t anon10 = testAE_32(4195044, anon2, anon3);

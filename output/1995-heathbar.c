@@ -94,13 +94,13 @@ void frame_dummy(uint64_t arg0)
 }
 uint64_t mAIn(uint64_t arg0, uint64_t arg1, uint64_t arg2)
 {
-	uint32_t anon19;
+	uint64_t anon6;
+	uint64_t anon9;
+	uint32_t* anon13;
 	uint64_t phi_in14;
 	uint8_t anon17;
-	uint32_t* anon13;
 	uint32_t anon18;
-	uint64_t anon9;
-	uint64_t anon6;
+	uint32_t anon19;
 	uint32_t* anon1 = (uint32_t*)0x600ad0;
 	uint64_t anon3 = (__zext uint64_t)*anon1 + 1;
 	uint32_t anon2 = (uint32_t)anon3;
@@ -154,13 +154,13 @@ uint64_t mAIn(uint64_t arg0, uint64_t arg1, uint64_t arg2)
 			phi_in14 = 0;
 		}
 	}
-	bool anon20 = anon9 == 0 | (uint32_t)arg2 == 0;
-	bool anon21 = anon19 != 0 | anon18 == 0 | (arg2 & 0xff) == 0;
-	if (!anon20 && anon4 == 0 || anon4 != 0 && anon17 != 0 && anon21)
+	bool anon20 = anon19 != 0 | anon18 == 0 | (arg2 & 0xff) == 0;
+	bool anon21 = anon9 == 0 | (uint32_t)arg2 == 0;
+	if (anon4 != 0 && anon17 != 0 && anon20 || !anon21 && anon4 == 0)
 	{
 		phi_in14 = 1;
 	}
-	if (anon4 == 0 && anon20 || !anon20 && anon4 == 0 || anon4 != 0 && anon17 != 0 && anon21 || anon4 != 0 && anon17 != 0 && !anon21)
+	if (anon4 == 0 && anon21 || anon4 != 0 && anon17 != 0 && anon20 || !anon21 && anon4 == 0 || anon4 != 0 && anon17 != 0 && !anon20)
 	{
 		uint64_t phi22 = phi_in14;
 		return phi22;

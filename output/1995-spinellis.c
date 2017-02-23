@@ -14,8 +14,8 @@ void __gmon_start__(uint64_t arg0)
 }
 void main(uint64_t arg0)
 {
-	uint32_t anon4;
 	uint8_t* anon2;
+	uint32_t anon4;
 	do
 	{
 		uint32_t anon1 = _IO_getc(*(struct _IO_FILE**)0x600be8);

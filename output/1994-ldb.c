@@ -20,8 +20,8 @@ void main(uint64_t arg0)
 {
 	while (true)
 	{
-		uint32_t phi_in4;
 		uint32_t* anon3;
+		uint32_t phi_in4;
 		uint32_t* anon1 = (uint32_t*)0x600d34;
 		if (*anon1 == 0)
 		{
