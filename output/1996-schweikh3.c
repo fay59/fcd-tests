@@ -19,8 +19,8 @@ void wait(uint64_t arg0)
 void main(uint64_t arg0, uint64_t arg1, uint64_t arg2)
 {
 	uint8_t* anon1;
-	uint8_t* anon5;
 	uint8_t* anon4;
+	uint8_t* anon5;
 	if (**(uint8_t**)(((arg1 << 32) - 4294967296 >> 29) + arg2) == 99)
 	{
 		anon1 = (uint8_t*)0x601290;
@@ -37,7 +37,7 @@ void main(uint64_t arg0, uint64_t arg1, uint64_t arg2)
 	}
 	else 
 	{
-		uint8_t* anon22;
+		uint8_t* phi19;
 		if (anon3 == 0)
 		{
 			uint8_t* anon10;
@@ -45,56 +45,61 @@ void main(uint64_t arg0, uint64_t arg1, uint64_t arg2)
 			uint64_t* anon8 = (uint64_t*)0x601288;
 			uint64_t anon7 = *anon6 | *anon8;
 			*anon6 = anon7;
-			uint64_t phi_in9 = anon7;
+			uint64_t phi9 = anon7;
 			if (*anon8 != 0)
 			{
-				uint64_t anon19;
+				uint64_t anon16;
 				do
 				{
-					uint64_t phi_in14;
-					uint8_t* anon13;
-					uint8_t* phi_in12;
-					uint64_t phi_in15;
 					uint8_t* anon11;
+					uint8_t* phi12;
+					uint8_t* anon13;
+					uint64_t phi14;
+					uint64_t phi15;
 					anon10 = (uint8_t*)0x400cf0;
 					printf(anon10);
 					if (*anon1 == 99)
 					{
 						anon11 = calloc(*anon6, 1);
-						phi_in12 = anon11;
+						phi12 = anon11;
 					}
 					else 
 					{
 						anon13 = malloc(*anon6);
-						phi_in12 = anon13;
+						phi12 = anon13;
 					}
 					if (*anon1 == 99 && anon11 == null || *anon1 != 99 && anon13 == null)
 					{
 						puts((uint8_t*)0x400c6d);
-						phi_in14 = *anon6 & ~*anon8;
-						phi_in15 = *anon8;
+						phi14 = *anon6 & ~*anon8;
+						phi15 = *anon8;
 					}
 					if (anon11 != null && *anon1 == 99 || *anon1 != 99 && anon13 != null)
 					{
-						uint8_t* phi16 = phi_in12;
 						puts((uint8_t*)0x400c67);
-						free(phi16);
-						phi_in14 = *anon6;
-						phi_in15 = *anon8;
+						free(phi12);
+						phi14 = *anon6;
+						phi15 = *anon8;
 					}
-					uint64_t phi17 = phi_in14;
-					uint64_t phi18 = phi_in15;
-					anon19 = phi18 >> 1;
-					*anon8 = anon19;
-					uint64_t anon20 = anon19 | phi17;
-					*anon6 = anon20;
-					phi_in9 = anon20;
+					anon16 = phi15 >> 1;
+					*anon8 = anon16;
+					uint64_t anon17 = anon16 | phi14;
+					*anon6 = anon17;
+					phi9 = anon17;
 				}
-				while (anon19 != 0);
+				while (anon16 != 0);
 			}
-			uint64_t phi21 = phi_in9;
-			anon22 = malloc(phi21);
-			if (anon22 == null)
+			if (*anon1 == 99)
+			{
+				uint8_t* anon18 = calloc(phi9, 1);
+				phi19 = anon18;
+			}
+			else 
+			{
+				uint8_t* anon20 = malloc(phi9);
+				phi19 = anon20;
+			}
+			if (phi19 == null)
 			{
 				__assert_fail((uint8_t*)0x400c74, anon4, 75, anon5);
 			}
@@ -103,27 +108,26 @@ void main(uint64_t arg0, uint64_t arg1, uint64_t arg2)
 				printf(anon10);
 				_IO_putc(10, *anon2);
 				*anon8 = 0;
-				uint64_t phi_in23 = 0;
+				uint64_t phi21 = 0;
 				if (*anon6 != 0)
 				{
-					uint64_t anon26;
+					uint64_t anon24;
 					do
 					{
-						uint64_t phi24 = phi_in23;
-						time(null);
-						*(uint8_t*)((uint64_t)anon22 + phi24) = 7;
+						uint64_t anon22 = time(null);
+						*(uint8_t*)((uint64_t)phi19 + phi21) = 7;
 						printf((uint8_t*)0x400c84);
-						uint64_t anon25 = time(null);
-						difftime(anon25);
+						uint64_t anon23 = time(null);
+						difftime(anon23, anon22);
 						(__asm "subsd xmm0, qword ptr [rip + 0x331]")();
 						(__asm "ucomisd xmm0, qword ptr [rip + 0x331]")();
-						anon26 = *anon8 + 1024;
-						*anon8 = anon26;
-						phi_in23 = *anon8 & 0xf;
+						anon24 = *anon8 + 1024;
+						*anon8 = anon24;
+						phi21 = *anon8 & 0xf;
 					}
-					while (*anon6 > anon26);
+					while (*anon6 > anon24);
 				}
-				free(anon22);
+				free(phi19);
 			}
 		}
 		else 
@@ -131,7 +135,7 @@ void main(uint64_t arg0, uint64_t arg1, uint64_t arg2)
 			wait(4196544);
 			puts((uint8_t*)0x400ce2);
 		}
-		if (anon3 != 0 || anon22 != null && anon3 == 0)
+		if (anon3 != 0 || phi19 != null && anon3 == 0)
 		{
 			return;
 		}

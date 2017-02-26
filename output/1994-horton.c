@@ -15,16 +15,15 @@ void __gmon_start__(uint64_t arg0)
 void main(uint64_t arg0, uint64_t arg1)
 {
 	uint64_t phi_in1 = 6297810;
-	uint8_t* phi_in2 = (uint8_t*)0x6018d2;
+	uint8_t* phi2 = (uint8_t*)0x6018d2;
 	while (true)
 	{
 		uint64_t phi3 = phi_in1;
-		uint8_t* phi4 = phi_in2;
-		*phi4 = 1;
-		*(uint8_t*)((uint64_t)phi4 + 134) = 1;
-		uint64_t anon5 = phi3 + 160;
-		phi_in1 = anon5;
-		phi_in2 = (uint8_t*)anon5;
+		*phi2 = 1;
+		*(uint8_t*)((uint64_t)phi2 + 134) = 1;
+		uint64_t anon4 = phi3 + 160;
+		phi_in1 = anon4;
+		phi2 = (uint8_t*)anon4;
 	}
 }
 void _start(uint64_t arg0, uint64_t arg1, uint64_t arg2)

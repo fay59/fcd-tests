@@ -21,7 +21,7 @@ void main(uint64_t arg0)
 	while (true)
 	{
 		uint32_t* anon3;
-		uint32_t phi_in4;
+		uint32_t phi4;
 		uint32_t* anon1 = (uint32_t*)0x600d34;
 		if (*anon1 == 0)
 		{
@@ -29,7 +29,7 @@ void main(uint64_t arg0)
 			anon3 = (uint32_t*)0x600d38;
 			uint64_t anon2 = time((uint64_t*)(__zext uint64_t)*anon3);
 			srand((uint32_t)anon2);
-			phi_in4 = *anon1;
+			phi4 = *anon1;
 		}
 		else 
 		{
@@ -37,10 +37,9 @@ void main(uint64_t arg0)
 			*anon1 = *anon1 + 1;
 			gets(4195690);
 			uint32_t anon5 = puts((uint8_t*)(((__sext int64_t)*anon3 << 2) + 6294336));
-			phi_in4 = anon5 & *anon3;
+			phi4 = anon5 & *anon3;
 		}
-		uint32_t phi6 = phi_in4;
-		if (phi6 == 0)
+		if (phi4 == 0)
 		{
 			break;
 		}
