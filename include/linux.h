@@ -10,6 +10,8 @@
 typedef int main_f(int, char**, char**);
 typedef void init_fini_f(void);
 
+void __cxa_finalize(void* d);
+void __gmon_start__(void);
 void __assert_fail(const char* message, const char* file, int line, const char* function) __attribute__((noreturn));
 void __stack_chk_fail(void) __attribute__((noreturn));
 int __libc_start_main(main_f* main, int argc, char** argv, init_fini_f* init, init_fini_f* fini, init_fini_f* rtld_fini, void* stack_end);
