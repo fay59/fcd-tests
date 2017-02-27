@@ -41,7 +41,7 @@ DOWNLOAD_DIR="${BASEDIR}/download"
 mkdir -p "${DOWNLOAD_DIR}"
 
 APPLE_OPENSOURCE_LIBS=(Libc)
-UBUNTU_PACKAGES=(glibc/libc6-dev_2.24-9_amd64.deb)
+UBUNTU_PACKAGES=(glibc/libc6-dev_2.24-9_amd64.deb linux/linux-libc-dev_3.16.39-1_amd64.deb)
 
 # The Ubuntu include path is essentially static since everything goes to
 # /usr/include.
@@ -53,30 +53,37 @@ APPLE_INCLUDE_PATH=()
 
 mkdir -p "${BASEDIR}/include/apple"
 for LIB in "${APPLE_OPENSOURCE_LIBS[@]}"; do
-	LATEST=$(curl -s "https://opensource.apple.com/tarballs/${LIB}/" \
-		| grep -oh "${LIB}"'-[0-9.]*\.tar\.gz' \
-		| sort -sn -t- -k2 \
-		| tail -n 1)
-	URL="https://opensource.apple.com/tarballs/${LIB}/${LATEST}"
 	DOWNLOAD_PATH="${DOWNLOAD_DIR}/${LIB}.tar.gz"
-	echo "Downloading ${URL}"
-	curl -s "${URL}" -o "${DOWNLOAD_PATH}"
-	tar -xf "${DOWNLOAD_PATH}" -C "${BASEDIR}/include/apple"
-	APPLE_INCLUDE_PATH+=(-I "${BASEDIR}/include/apple/${LIB}/include")
+	EXTRACT_PATH="${BASEDIR}/include/apple/${LIB}"
+	if [ ! -d "${EXTRACT_PATH}" ]; then
+		LATEST=$(curl -s "https://opensource.apple.com/tarballs/${LIB}/" \
+			| grep -oh "${LIB}"'-[0-9.]*\.tar\.gz' \
+			| sort -sn -t- -k2 \
+			| tail -n 1)
+		URL="https://opensource.apple.com/tarballs/${LIB}/${LATEST}"
+		echo "Downloading ${URL}"
+		curl -s "${URL}" -o "${DOWNLOAD_PATH}"
+		tar -xf "${DOWNLOAD_PATH}" -C "${BASEDIR}/include/apple"
+	fi
+	APPLE_INCLUDE_PATH+=(-I "${EXTRACT_PATH}/include")
 done
 
 mkdir -p "${BASEDIR}/include/ubuntu"
 for LIB in "${UBUNTU_PACKAGES[@]}"; do
 	URL="http://ftp.us.debian.org/debian/pool/main/${LIB:0:1}/${LIB}"
 	DOWNLOAD_PATH="${DOWNLOAD_DIR}/$(basename "${LIB}")"
-	echo "Downloading ${URL}"
-	curl -s "${URL}" -o "${DOWNLOAD_PATH}"
+	# As a proxy for whether it has been downloaded or not, check if we have
+	# the file downloaded.
+	if [ ! -f "${DOWNLOAD_PATH}" ]; then
+		echo "Downloading ${URL}"
+		curl -s "${URL}" -o "${DOWNLOAD_PATH}"
 	
-	# We can't use dpkg on macOS.
-	DATA_FILE_NAME="$(ar -t ${DOWNLOAD_PATH} | tail -n 1)"
-	ar -x "${DOWNLOAD_PATH}" "${DATA_FILE_NAME}"
-	tar -xf "${DATA_FILE_NAME}" -C "${BASEDIR}/include/ubuntu"
-	rm "${DATA_FILE_NAME}"
+		# We can't use dpkg on macOS.
+		DATA_FILE_NAME="$(ar -t ${DOWNLOAD_PATH} | tail -n 1)"
+		ar -x "${DOWNLOAD_PATH}" "${DATA_FILE_NAME}"
+		tar -xf "${DATA_FILE_NAME}" -C "${BASEDIR}/include/ubuntu"
+		rm "${DATA_FILE_NAME}"
+	fi
 done
 
 # Run tests.
