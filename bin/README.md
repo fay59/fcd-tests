@@ -10,6 +10,10 @@ Malicious or potentially malicious binaries, and binaries of unknown origin, are
 
 These programs are [IOCCC winners][1] from a given year. IOCCC content is distributed under the [CC BY-SA 3.0][2] license. Authors are identified in the binary name using the same name as the IOCCC displays.
 
+## bkp2017-hiddensc
+
+Taken from the 2017 edition of the Boston Key Party, with [Jeff Crowell's permission][4].
+
 ## abnormal, conditionals
 
 These programs were built on purpose to test specific features of fcd. These binaries are donated to the public domain.
@@ -21,3 +25,4 @@ These programs were built on purpose to test specific features of fcd. These bin
   [1]: http://www.ioccc.org/faq.html
   [2]: https://creativecommons.org/licenses/by-sa/3.0/
   [3]: https://github.com/GavinHigham/ceffectpp
+  [4]: https://twitter.com/jeffreycrowell/status/835986452496297984
