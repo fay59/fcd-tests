@@ -4,13 +4,9 @@ void _init(uint64_t arg0)
 {
 	if (*(uint64_t*)0x600a68 != 0)
 	{
-		__gmon_start__(4195477);
+		__gmon_start__();
 	}
 	return;
-}
-void __gmon_start__(uint64_t arg0)
-{
-	__indirect_jump(*(uint64_t*)0x600aa0);
 }
 void gets(uint64_t arg0)
 {
