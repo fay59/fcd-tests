@@ -10,14 +10,14 @@ void _init(uint64_t arg0)
 }
 void main(uint64_t arg0, uint64_t arg1)
 {
-	uint32_t anon66;
+	uint32_t anon63;
 	l(4195589);
 	uint32_t phi_in1 = 60;
 	uint32_t dispatch2 = 0;
 	do
 	{
 		uint32_t phi3;
-		uint64_t anon47;
+		uint64_t anon44;
 		while (true)
 		{
 			uint64_t phi4;
@@ -27,10 +27,10 @@ void main(uint64_t arg0, uint64_t arg1)
 			uint32_t phi_in9;
 			uint32_t anon13;
 			uint32_t anon14;
-			uint64_t phi15;
-			uint64_t phi16;
+			uint64_t phi_in15;
+			uint64_t phi_in16;
 			uint64_t phi_in17;
-			uint32_t phi18;
+			uint32_t phi_in18;
 			uint32_t anon19;
 			uint32_t anon20;
 			uint32_t anon22;
@@ -44,27 +44,24 @@ void main(uint64_t arg0, uint64_t arg1)
 			uint32_t phi_in30;
 			uint8_t* anon32;
 			uint32_t anon33;
-			uint64_t phi_in34;
-			uint64_t phi_in35;
-			uint64_t phi36;
-			uint32_t phi_in37;
-			uint32_t phi_in38;
-			uint64_t phi_in39;
-			uint32_t phi42;
-			uint32_t anon48;
+			uint64_t phi34;
+			uint32_t phi_in35;
+			uint64_t phi_in36;
+			uint32_t phi39;
+			uint32_t anon45;
+			uint32_t anon46;
+			uint64_t anon47;
 			uint32_t anon49;
-			uint64_t anon50;
-			uint32_t anon52;
-			uint32_t anon54;
-			uint32_t anon56;
-			uint64_t phi57;
-			uint64_t phi_in58;
-			uint64_t phi59;
-			uint64_t phi_in60;
-			uint64_t phi61;
-			uint64_t anon62;
-			uint32_t phi_in63;
-			uint32_t anon65;
+			uint32_t anon51;
+			uint32_t anon53;
+			uint64_t phi54;
+			uint64_t phi_in55;
+			uint64_t phi56;
+			uint64_t phi_in57;
+			uint64_t phi58;
+			uint64_t anon59;
+			uint32_t phi_in60;
+			uint32_t anon62;
 			if (dispatch2 == 0)
 			{
 				phi3 = phi_in1;
@@ -98,10 +95,10 @@ void main(uint64_t arg0, uint64_t arg1)
 				}
 				if (phi8 == 8 && (dispatch2 == 1 || dispatch2 == 2 || dispatch2 == 0))
 				{
-					phi15 = phi4;
-					phi16 = 0;
+					phi_in15 = phi4;
+					phi_in16 = 0;
 					phi_in17 = 1;
-					phi18 = 1;
+					phi_in18 = 1;
 				}
 			}
 			if (dispatch2 == 10 || anon13 != 0 && dispatch2 == 1 && anon14 == 9 && phi8 == 8 || anon13 != 0 && dispatch2 == 2 && anon14 == 9 && phi8 == 8 || anon13 != 0 && dispatch2 == 0 && anon14 == 9 && phi8 == 8)
@@ -176,129 +173,126 @@ void main(uint64_t arg0, uint64_t arg1)
 			if (anon33 == 9 && (dispatch2 == 13 || dispatch2 == 11 && phi25 + 28 == phi27 && anon29 == 6297768 || dispatch2 == 12 && phi25 + 28 == phi27 && anon29 == 6297768 || anon22 != 0 && dispatch2 == 9 && ((__zext uint8_t)(anon20 != 56) & (__zext uint8_t)(anon20 - 49 > 6)) == 0 && phi25 + 28 == phi27 && anon29 == 6297768 || anon22 != 0 && dispatch2 == 8 && ((__zext uint8_t)(anon19 != 72) & (__zext uint8_t)(anon19 - 65 > 6)) == 0 && ((__zext uint8_t)(anon20 != 56) & (__zext uint8_t)(anon20 - 49 > 6)) == 0 && phi25 + 28 == phi27 && anon29 == 6297768 || anon22 != 0 && dispatch2 == 10 && ((__zext uint8_t)(anon19 != 72) & (__zext uint8_t)(anon19 - 65 > 6)) == 0 && ((__zext uint8_t)(anon20 != 56) & (__zext uint8_t)(anon20 - 49 > 6)) == 0 && phi25 + 28 == phi27 && anon29 == 6297768 || anon13 != 0 && anon22 != 0 && dispatch2 == 1 && anon14 == 9 && phi8 == 8 && ((__zext uint8_t)(anon19 != 72) & (__zext uint8_t)(anon19 - 65 > 6)) == 0 && ((__zext uint8_t)(anon20 != 56) & (__zext uint8_t)(anon20 - 49 > 6)) == 0 && phi25 + 28 == phi27 && anon29 == 6297768 || anon13 != 0 && anon22 != 0 && dispatch2 == 2 && anon14 == 9 && phi8 == 8 && ((__zext uint8_t)(anon19 != 72) & (__zext uint8_t)(anon19 - 65 > 6)) == 0 && ((__zext uint8_t)(anon20 != 56) & (__zext uint8_t)(anon20 - 49 > 6)) == 0 && phi25 + 28 == phi27 && anon29 == 6297768 || anon13 != 0 && anon22 != 0 && dispatch2 == 0 && anon14 == 9 && phi8 == 8 && ((__zext uint8_t)(anon19 != 72) & (__zext uint8_t)(anon19 - 65 > 6)) == 0 && ((__zext uint8_t)(anon20 != 56) & (__zext uint8_t)(anon20 - 49 > 6)) == 0 && phi25 + 28 == phi27 && anon29 == 6297768))
 			{
 				putchar(10);
-				phi15 = phi4;
-				phi16 = 0;
+				phi_in15 = phi4;
+				phi_in16 = 0;
 				phi_in17 = 1;
-				phi18 = 1;
+				phi_in18 = 1;
 			}
 			if (dispatch2 == 4 || dispatch2 == 1 && anon14 == 9 && phi8 == 8 && anon13 == 0 || dispatch2 == 2 && anon14 == 9 && phi8 == 8 && anon13 == 0 || dispatch2 == 0 && anon14 == 9 && phi8 == 8 && anon13 == 0 || dispatch2 == 13 && anon33 == 9 || dispatch2 == 11 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9 || dispatch2 == 12 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9 || anon22 != 0 && dispatch2 == 9 && ((__zext uint8_t)(anon20 != 56) & (__zext uint8_t)(anon20 - 49 > 6)) == 0 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9 || anon22 != 0 && dispatch2 == 8 && ((__zext uint8_t)(anon19 != 72) & (__zext uint8_t)(anon19 - 65 > 6)) == 0 && ((__zext uint8_t)(anon20 != 56) & (__zext uint8_t)(anon20 - 49 > 6)) == 0 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9 || anon22 != 0 && dispatch2 == 10 && ((__zext uint8_t)(anon19 != 72) & (__zext uint8_t)(anon19 - 65 > 6)) == 0 && ((__zext uint8_t)(anon20 != 56) & (__zext uint8_t)(anon20 - 49 > 6)) == 0 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9 || anon13 != 0 && anon22 != 0 && dispatch2 == 1 && anon14 == 9 && phi8 == 8 && ((__zext uint8_t)(anon19 != 72) & (__zext uint8_t)(anon19 - 65 > 6)) == 0 && ((__zext uint8_t)(anon20 != 56) & (__zext uint8_t)(anon20 - 49 > 6)) == 0 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9 || anon13 != 0 && anon22 != 0 && dispatch2 == 2 && anon14 == 9 && phi8 == 8 && ((__zext uint8_t)(anon19 != 72) & (__zext uint8_t)(anon19 - 65 > 6)) == 0 && ((__zext uint8_t)(anon20 != 56) & (__zext uint8_t)(anon20 - 49 > 6)) == 0 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9 || anon13 != 0 && anon22 != 0 && dispatch2 == 0 && anon14 == 9 && phi8 == 8 && ((__zext uint8_t)(anon19 != 72) & (__zext uint8_t)(anon19 - 65 > 6)) == 0 && ((__zext uint8_t)(anon20 != 56) & (__zext uint8_t)(anon20 - 49 > 6)) == 0 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9)
 			{
-				phi_in34 = phi15;
-				phi_in35 = phi16;
-				phi36 = phi_in17;
-				phi_in37 = phi18;
-				phi_in38 = 1;
-				phi_in39 = 1;
+				phi34 = phi_in17;
+				phi_in35 = 1;
+				phi_in36 = 1;
 			}
 			if (dispatch2 == 3 || dispatch2 == 4 || dispatch2 == 1 && anon14 == 9 && phi8 == 8 && anon13 == 0 || dispatch2 == 2 && anon14 == 9 && phi8 == 8 && anon13 == 0 || dispatch2 == 0 && anon14 == 9 && phi8 == 8 && anon13 == 0 || dispatch2 == 13 && anon33 == 9 || dispatch2 == 11 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9 || dispatch2 == 12 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9 || anon22 != 0 && dispatch2 == 9 && ((__zext uint8_t)(anon20 != 56) & (__zext uint8_t)(anon20 - 49 > 6)) == 0 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9 || anon22 != 0 && dispatch2 == 8 && ((__zext uint8_t)(anon19 != 72) & (__zext uint8_t)(anon19 - 65 > 6)) == 0 && ((__zext uint8_t)(anon20 != 56) & (__zext uint8_t)(anon20 - 49 > 6)) == 0 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9 || anon22 != 0 && dispatch2 == 10 && ((__zext uint8_t)(anon19 != 72) & (__zext uint8_t)(anon19 - 65 > 6)) == 0 && ((__zext uint8_t)(anon20 != 56) & (__zext uint8_t)(anon20 - 49 > 6)) == 0 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9 || anon13 != 0 && anon22 != 0 && dispatch2 == 1 && anon14 == 9 && phi8 == 8 && ((__zext uint8_t)(anon19 != 72) & (__zext uint8_t)(anon19 - 65 > 6)) == 0 && ((__zext uint8_t)(anon20 != 56) & (__zext uint8_t)(anon20 - 49 > 6)) == 0 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9 || anon13 != 0 && anon22 != 0 && dispatch2 == 2 && anon14 == 9 && phi8 == 8 && ((__zext uint8_t)(anon19 != 72) & (__zext uint8_t)(anon19 - 65 > 6)) == 0 && ((__zext uint8_t)(anon20 != 56) & (__zext uint8_t)(anon20 - 49 > 6)) == 0 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9 || anon13 != 0 && anon22 != 0 && dispatch2 == 0 && anon14 == 9 && phi8 == 8 && ((__zext uint8_t)(anon19 != 72) & (__zext uint8_t)(anon19 - 65 > 6)) == 0 && ((__zext uint8_t)(anon20 != 56) & (__zext uint8_t)(anon20 - 49 > 6)) == 0 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9)
 			{
-				uint64_t phi40 = phi_in34;
-				uint64_t phi41 = phi_in35;
-				phi42 = phi_in38;
-				uint32_t phi43 = phi_in37;
-				uint64_t phi44 = phi_in39;
-				uint64_t anon45 = m.constprop.1(4195713, (__zext uint64_t)phi43, phi44);
-				uint64_t anon46 = random();
-				anon48 = (uint32_t)anon45 + (uint32_t)anon46 + ((uint32_t)((anon46 & 0xffffffff) / 6) - (uint32_t)(anon46 << 32 >> 32 >> 31)) * 4294967290;
-				anon49 = (uint32_t)phi41;
-				anon47 = anon48 > anon49 ? phi36 : phi40;
-				phi_in34 = anon47;
-				anon50 = anon48 > anon49 ? (__zext uint64_t)anon48 : phi41;
-				phi_in35 = anon50;
-				uint32_t anon51 = phi42 + 1;
-				phi_in38 = anon51;
-				anon52 = (uint32_t)phi36;
-				phi_in37 = anon52;
-				phi_in39 = (__zext uint64_t)anon51;
+				uint64_t phi37 = phi_in15;
+				uint64_t phi38 = phi_in16;
+				phi39 = phi_in35;
+				uint32_t phi40 = phi_in18;
+				uint64_t phi41 = phi_in36;
+				uint64_t anon42 = m.constprop.1(4195713, (__zext uint64_t)phi40, phi41);
+				uint64_t anon43 = random();
+				anon45 = (uint32_t)anon42 + (uint32_t)anon43 + ((uint32_t)((anon43 & 0xffffffff) / 6) - (uint32_t)(anon43 << 32 >> 32 >> 31)) * 4294967290;
+				anon46 = (uint32_t)phi38;
+				anon44 = anon45 > anon46 ? phi34 : phi37;
+				phi_in15 = anon44;
+				anon47 = anon45 > anon46 ? (__zext uint64_t)anon45 : phi38;
+				phi_in16 = anon47;
+				uint32_t anon48 = phi39 + 1;
+				phi_in35 = anon48;
+				anon49 = (uint32_t)phi34;
+				phi_in18 = anon49;
+				phi_in36 = (__zext uint64_t)anon48;
 				dispatch2 = 3;
 			}
-			if (phi42 == 8)
+			if (phi39 == 8)
 			{
 				if (dispatch2 == 3 || dispatch2 == 4 || dispatch2 == 1 && anon14 == 9 && phi8 == 8 && anon13 == 0 || dispatch2 == 2 && anon14 == 9 && phi8 == 8 && anon13 == 0 || dispatch2 == 0 && anon14 == 9 && phi8 == 8 && anon13 == 0 || dispatch2 == 13 && anon33 == 9 || dispatch2 == 11 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9 || dispatch2 == 12 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9 || anon22 != 0 && dispatch2 == 9 && ((__zext uint8_t)(anon20 != 56) & (__zext uint8_t)(anon20 - 49 > 6)) == 0 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9 || anon22 != 0 && dispatch2 == 8 && ((__zext uint8_t)(anon19 != 72) & (__zext uint8_t)(anon19 - 65 > 6)) == 0 && ((__zext uint8_t)(anon20 != 56) & (__zext uint8_t)(anon20 - 49 > 6)) == 0 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9 || anon22 != 0 && dispatch2 == 10 && ((__zext uint8_t)(anon19 != 72) & (__zext uint8_t)(anon19 - 65 > 6)) == 0 && ((__zext uint8_t)(anon20 != 56) & (__zext uint8_t)(anon20 - 49 > 6)) == 0 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9 || anon13 != 0 && anon22 != 0 && dispatch2 == 1 && anon14 == 9 && phi8 == 8 && ((__zext uint8_t)(anon19 != 72) & (__zext uint8_t)(anon19 - 65 > 6)) == 0 && ((__zext uint8_t)(anon20 != 56) & (__zext uint8_t)(anon20 - 49 > 6)) == 0 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9 || anon13 != 0 && anon22 != 0 && dispatch2 == 2 && anon14 == 9 && phi8 == 8 && ((__zext uint8_t)(anon19 != 72) & (__zext uint8_t)(anon19 - 65 > 6)) == 0 && ((__zext uint8_t)(anon20 != 56) & (__zext uint8_t)(anon20 - 49 > 6)) == 0 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9 || anon13 != 0 && anon22 != 0 && dispatch2 == 0 && anon14 == 9 && phi8 == 8 && ((__zext uint8_t)(anon19 != 72) & (__zext uint8_t)(anon19 - 65 > 6)) == 0 && ((__zext uint8_t)(anon20 != 56) & (__zext uint8_t)(anon20 - 49 > 6)) == 0 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9)
 				{
-					phi15 = anon47;
-					phi16 = anon50;
-					uint32_t anon53 = anon52 + 1;
-					phi_in17 = (__zext uint64_t)anon53;
-					phi18 = anon53;
+					phi_in15 = anon44;
+					phi_in16 = anon47;
+					uint32_t anon50 = anon49 + 1;
+					phi_in17 = (__zext uint64_t)anon50;
+					phi_in18 = anon50;
 					dispatch2 = 4;
 				}
-				if (anon52 == 8)
+				if (anon49 == 8)
 				{
-					anon54 = anon48 > anon49 ? anon48 : anon49;
-					if ((dispatch2 == 3 || dispatch2 == 4 || dispatch2 == 1 && anon14 == 9 && phi8 == 8 && anon13 == 0 || dispatch2 == 2 && anon14 == 9 && phi8 == 8 && anon13 == 0 || dispatch2 == 0 && anon14 == 9 && phi8 == 8 && anon13 == 0 || dispatch2 == 13 && anon33 == 9 || dispatch2 == 11 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9 || dispatch2 == 12 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9 || anon22 != 0 && dispatch2 == 9 && ((__zext uint8_t)(anon20 != 56) & (__zext uint8_t)(anon20 - 49 > 6)) == 0 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9 || anon22 != 0 && dispatch2 == 8 && ((__zext uint8_t)(anon19 != 72) & (__zext uint8_t)(anon19 - 65 > 6)) == 0 && ((__zext uint8_t)(anon20 != 56) & (__zext uint8_t)(anon20 - 49 > 6)) == 0 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9 || anon22 != 0 && dispatch2 == 10 && ((__zext uint8_t)(anon19 != 72) & (__zext uint8_t)(anon19 - 65 > 6)) == 0 && ((__zext uint8_t)(anon20 != 56) & (__zext uint8_t)(anon20 - 49 > 6)) == 0 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9 || anon13 != 0 && anon22 != 0 && dispatch2 == 1 && anon14 == 9 && phi8 == 8 && ((__zext uint8_t)(anon19 != 72) & (__zext uint8_t)(anon19 - 65 > 6)) == 0 && ((__zext uint8_t)(anon20 != 56) & (__zext uint8_t)(anon20 - 49 > 6)) == 0 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9 || anon13 != 0 && anon22 != 0 && dispatch2 == 2 && anon14 == 9 && phi8 == 8 && ((__zext uint8_t)(anon19 != 72) & (__zext uint8_t)(anon19 - 65 > 6)) == 0 && ((__zext uint8_t)(anon20 != 56) & (__zext uint8_t)(anon20 - 49 > 6)) == 0 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9 || anon13 != 0 && anon22 != 0 && dispatch2 == 0 && anon14 == 9 && phi8 == 8 && ((__zext uint8_t)(anon19 != 72) & (__zext uint8_t)(anon19 - 65 > 6)) == 0 && ((__zext uint8_t)(anon20 != 56) & (__zext uint8_t)(anon20 - 49 > 6)) == 0 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9) && anon54 == 0)
+					anon51 = anon45 > anon46 ? anon45 : anon46;
+					if ((dispatch2 == 3 || dispatch2 == 4 || dispatch2 == 1 && anon14 == 9 && phi8 == 8 && anon13 == 0 || dispatch2 == 2 && anon14 == 9 && phi8 == 8 && anon13 == 0 || dispatch2 == 0 && anon14 == 9 && phi8 == 8 && anon13 == 0 || dispatch2 == 13 && anon33 == 9 || dispatch2 == 11 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9 || dispatch2 == 12 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9 || anon22 != 0 && dispatch2 == 9 && ((__zext uint8_t)(anon20 != 56) & (__zext uint8_t)(anon20 - 49 > 6)) == 0 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9 || anon22 != 0 && dispatch2 == 8 && ((__zext uint8_t)(anon19 != 72) & (__zext uint8_t)(anon19 - 65 > 6)) == 0 && ((__zext uint8_t)(anon20 != 56) & (__zext uint8_t)(anon20 - 49 > 6)) == 0 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9 || anon22 != 0 && dispatch2 == 10 && ((__zext uint8_t)(anon19 != 72) & (__zext uint8_t)(anon19 - 65 > 6)) == 0 && ((__zext uint8_t)(anon20 != 56) & (__zext uint8_t)(anon20 - 49 > 6)) == 0 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9 || anon13 != 0 && anon22 != 0 && dispatch2 == 1 && anon14 == 9 && phi8 == 8 && ((__zext uint8_t)(anon19 != 72) & (__zext uint8_t)(anon19 - 65 > 6)) == 0 && ((__zext uint8_t)(anon20 != 56) & (__zext uint8_t)(anon20 - 49 > 6)) == 0 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9 || anon13 != 0 && anon22 != 0 && dispatch2 == 2 && anon14 == 9 && phi8 == 8 && ((__zext uint8_t)(anon19 != 72) & (__zext uint8_t)(anon19 - 65 > 6)) == 0 && ((__zext uint8_t)(anon20 != 56) & (__zext uint8_t)(anon20 - 49 > 6)) == 0 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9 || anon13 != 0 && anon22 != 0 && dispatch2 == 0 && anon14 == 9 && phi8 == 8 && ((__zext uint8_t)(anon19 != 72) & (__zext uint8_t)(anon19 - 65 > 6)) == 0 && ((__zext uint8_t)(anon20 != 56) & (__zext uint8_t)(anon20 - 49 > 6)) == 0 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9) && anon51 == 0)
 					{
 						break;
 					}
-					if (anon54 != 0)
+					if (anon51 != 0)
 					{
 						if (dispatch2 == 3 || dispatch2 == 4 || dispatch2 == 1 && anon14 == 9 && phi8 == 8 && anon13 == 0 || dispatch2 == 2 && anon14 == 9 && phi8 == 8 && anon13 == 0 || dispatch2 == 0 && anon14 == 9 && phi8 == 8 && anon13 == 0 || dispatch2 == 13 && anon33 == 9 || dispatch2 == 11 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9 || dispatch2 == 12 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9 || anon22 != 0 && dispatch2 == 9 && ((__zext uint8_t)(anon20 != 56) & (__zext uint8_t)(anon20 - 49 > 6)) == 0 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9 || anon22 != 0 && dispatch2 == 8 && ((__zext uint8_t)(anon19 != 72) & (__zext uint8_t)(anon19 - 65 > 6)) == 0 && ((__zext uint8_t)(anon20 != 56) & (__zext uint8_t)(anon20 - 49 > 6)) == 0 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9 || anon22 != 0 && dispatch2 == 10 && ((__zext uint8_t)(anon19 != 72) & (__zext uint8_t)(anon19 - 65 > 6)) == 0 && ((__zext uint8_t)(anon20 != 56) & (__zext uint8_t)(anon20 - 49 > 6)) == 0 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9 || anon13 != 0 && anon22 != 0 && dispatch2 == 1 && anon14 == 9 && phi8 == 8 && ((__zext uint8_t)(anon19 != 72) & (__zext uint8_t)(anon19 - 65 > 6)) == 0 && ((__zext uint8_t)(anon20 != 56) & (__zext uint8_t)(anon20 - 49 > 6)) == 0 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9 || anon13 != 0 && anon22 != 0 && dispatch2 == 2 && anon14 == 9 && phi8 == 8 && ((__zext uint8_t)(anon19 != 72) & (__zext uint8_t)(anon19 - 65 > 6)) == 0 && ((__zext uint8_t)(anon20 != 56) & (__zext uint8_t)(anon20 - 49 > 6)) == 0 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9 || anon13 != 0 && anon22 != 0 && dispatch2 == 0 && anon14 == 9 && phi8 == 8 && ((__zext uint8_t)(anon19 != 72) & (__zext uint8_t)(anon19 - 65 > 6)) == 0 && ((__zext uint8_t)(anon20 != 56) & (__zext uint8_t)(anon20 - 49 > 6)) == 0 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9)
 						{
-							uint64_t anon55 = m.constprop.1(4196072, anon47 & 0xffffffff, (__zext uint64_t)*(uint32_t*)(arg1 - 72));
-							anon56 = (uint32_t)anon55;
-							if (anon56 == 0)
+							uint64_t anon52 = m.constprop.1(4196072, anon44 & 0xffffffff, (__zext uint64_t)*(uint32_t*)(arg1 - 72));
+							anon53 = (uint32_t)anon52;
+							if (anon53 == 0)
 							{
 								break;
 							}
 						}
-						if (anon56 != 0 && (dispatch2 == 3 || dispatch2 == 4 || dispatch2 == 1 && anon14 == 9 && phi8 == 8 && anon13 == 0 || dispatch2 == 2 && anon14 == 9 && phi8 == 8 && anon13 == 0 || dispatch2 == 0 && anon14 == 9 && phi8 == 8 && anon13 == 0 || dispatch2 == 13 && anon33 == 9 || dispatch2 == 11 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9 || dispatch2 == 12 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9 || anon22 != 0 && dispatch2 == 9 && ((__zext uint8_t)(anon20 != 56) & (__zext uint8_t)(anon20 - 49 > 6)) == 0 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9 || anon22 != 0 && dispatch2 == 8 && ((__zext uint8_t)(anon19 != 72) & (__zext uint8_t)(anon19 - 65 > 6)) == 0 && ((__zext uint8_t)(anon20 != 56) & (__zext uint8_t)(anon20 - 49 > 6)) == 0 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9 || anon22 != 0 && dispatch2 == 10 && ((__zext uint8_t)(anon19 != 72) & (__zext uint8_t)(anon19 - 65 > 6)) == 0 && ((__zext uint8_t)(anon20 != 56) & (__zext uint8_t)(anon20 - 49 > 6)) == 0 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9 || anon13 != 0 && anon22 != 0 && dispatch2 == 1 && anon14 == 9 && phi8 == 8 && ((__zext uint8_t)(anon19 != 72) & (__zext uint8_t)(anon19 - 65 > 6)) == 0 && ((__zext uint8_t)(anon20 != 56) & (__zext uint8_t)(anon20 - 49 > 6)) == 0 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9 || anon13 != 0 && anon22 != 0 && dispatch2 == 2 && anon14 == 9 && phi8 == 8 && ((__zext uint8_t)(anon19 != 72) & (__zext uint8_t)(anon19 - 65 > 6)) == 0 && ((__zext uint8_t)(anon20 != 56) & (__zext uint8_t)(anon20 - 49 > 6)) == 0 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9 || anon13 != 0 && anon22 != 0 && dispatch2 == 0 && anon14 == 9 && phi8 == 8 && ((__zext uint8_t)(anon19 != 72) & (__zext uint8_t)(anon19 - 65 > 6)) == 0 && ((__zext uint8_t)(anon20 != 56) & (__zext uint8_t)(anon20 - 49 > 6)) == 0 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9))
+						if (anon53 != 0 && (dispatch2 == 3 || dispatch2 == 4 || dispatch2 == 1 && anon14 == 9 && phi8 == 8 && anon13 == 0 || dispatch2 == 2 && anon14 == 9 && phi8 == 8 && anon13 == 0 || dispatch2 == 0 && anon14 == 9 && phi8 == 8 && anon13 == 0 || dispatch2 == 13 && anon33 == 9 || dispatch2 == 11 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9 || dispatch2 == 12 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9 || anon22 != 0 && dispatch2 == 9 && ((__zext uint8_t)(anon20 != 56) & (__zext uint8_t)(anon20 - 49 > 6)) == 0 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9 || anon22 != 0 && dispatch2 == 8 && ((__zext uint8_t)(anon19 != 72) & (__zext uint8_t)(anon19 - 65 > 6)) == 0 && ((__zext uint8_t)(anon20 != 56) & (__zext uint8_t)(anon20 - 49 > 6)) == 0 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9 || anon22 != 0 && dispatch2 == 10 && ((__zext uint8_t)(anon19 != 72) & (__zext uint8_t)(anon19 - 65 > 6)) == 0 && ((__zext uint8_t)(anon20 != 56) & (__zext uint8_t)(anon20 - 49 > 6)) == 0 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9 || anon13 != 0 && anon22 != 0 && dispatch2 == 1 && anon14 == 9 && phi8 == 8 && ((__zext uint8_t)(anon19 != 72) & (__zext uint8_t)(anon19 - 65 > 6)) == 0 && ((__zext uint8_t)(anon20 != 56) & (__zext uint8_t)(anon20 - 49 > 6)) == 0 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9 || anon13 != 0 && anon22 != 0 && dispatch2 == 2 && anon14 == 9 && phi8 == 8 && ((__zext uint8_t)(anon19 != 72) & (__zext uint8_t)(anon19 - 65 > 6)) == 0 && ((__zext uint8_t)(anon20 != 56) & (__zext uint8_t)(anon20 - 49 > 6)) == 0 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9 || anon13 != 0 && anon22 != 0 && dispatch2 == 0 && anon14 == 9 && phi8 == 8 && ((__zext uint8_t)(anon19 != 72) & (__zext uint8_t)(anon19 - 65 > 6)) == 0 && ((__zext uint8_t)(anon20 != 56) & (__zext uint8_t)(anon20 - 49 > 6)) == 0 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9))
 						{
 							putchar(10);
-							phi57 = 65;
-							phi_in58 = 6297448;
+							phi54 = 65;
+							phi_in55 = 6297448;
 						}
 					}
 				}
 			}
-			if (dispatch2 == 6 || anon56 != 0 && dispatch2 == 3 && phi42 == 8 && anon52 == 8 && anon54 != 0 || anon56 != 0 && dispatch2 == 4 && phi42 == 8 && anon52 == 8 && anon54 != 0 || anon56 != 0 && dispatch2 == 1 && anon14 == 9 && phi8 == 8 && anon13 == 0 && phi42 == 8 && anon52 == 8 && anon54 != 0 || anon56 != 0 && dispatch2 == 2 && anon14 == 9 && phi8 == 8 && anon13 == 0 && phi42 == 8 && anon52 == 8 && anon54 != 0 || anon56 != 0 && dispatch2 == 0 && anon14 == 9 && phi8 == 8 && anon13 == 0 && phi42 == 8 && anon52 == 8 && anon54 != 0 || anon56 != 0 && dispatch2 == 13 && anon33 == 9 && phi42 == 8 && anon52 == 8 && anon54 != 0 || anon56 != 0 && dispatch2 == 11 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9 && phi42 == 8 && anon52 == 8 && anon54 != 0 || anon56 != 0 && dispatch2 == 12 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9 && phi42 == 8 && anon52 == 8 && anon54 != 0 || anon22 != 0 && anon56 != 0 && dispatch2 == 9 && ((__zext uint8_t)(anon20 != 56) & (__zext uint8_t)(anon20 - 49 > 6)) == 0 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9 && phi42 == 8 && anon52 == 8 && anon54 != 0 || anon22 != 0 && anon56 != 0 && dispatch2 == 8 && ((__zext uint8_t)(anon19 != 72) & (__zext uint8_t)(anon19 - 65 > 6)) == 0 && ((__zext uint8_t)(anon20 != 56) & (__zext uint8_t)(anon20 - 49 > 6)) == 0 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9 && phi42 == 8 && anon52 == 8 && anon54 != 0 || anon22 != 0 && anon56 != 0 && dispatch2 == 10 && ((__zext uint8_t)(anon19 != 72) & (__zext uint8_t)(anon19 - 65 > 6)) == 0 && ((__zext uint8_t)(anon20 != 56) & (__zext uint8_t)(anon20 - 49 > 6)) == 0 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9 && phi42 == 8 && anon52 == 8 && anon54 != 0 || anon13 != 0 && anon22 != 0 && anon56 != 0 && dispatch2 == 1 && anon14 == 9 && phi8 == 8 && ((__zext uint8_t)(anon19 != 72) & (__zext uint8_t)(anon19 - 65 > 6)) == 0 && ((__zext uint8_t)(anon20 != 56) & (__zext uint8_t)(anon20 - 49 > 6)) == 0 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9 && phi42 == 8 && anon52 == 8 && anon54 != 0 || anon13 != 0 && anon22 != 0 && anon56 != 0 && dispatch2 == 2 && anon14 == 9 && phi8 == 8 && ((__zext uint8_t)(anon19 != 72) & (__zext uint8_t)(anon19 - 65 > 6)) == 0 && ((__zext uint8_t)(anon20 != 56) & (__zext uint8_t)(anon20 - 49 > 6)) == 0 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9 && phi42 == 8 && anon52 == 8 && anon54 != 0 || anon13 != 0 && anon22 != 0 && anon56 != 0 && dispatch2 == 0 && anon14 == 9 && phi8 == 8 && ((__zext uint8_t)(anon19 != 72) & (__zext uint8_t)(anon19 - 65 > 6)) == 0 && ((__zext uint8_t)(anon20 != 56) & (__zext uint8_t)(anon20 - 49 > 6)) == 0 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9 && phi42 == 8 && anon52 == 8 && anon54 != 0)
+			if (dispatch2 == 6 || anon53 != 0 && dispatch2 == 3 && phi39 == 8 && anon49 == 8 && anon51 != 0 || anon53 != 0 && dispatch2 == 4 && phi39 == 8 && anon49 == 8 && anon51 != 0 || anon53 != 0 && dispatch2 == 1 && anon14 == 9 && phi8 == 8 && anon13 == 0 && phi39 == 8 && anon49 == 8 && anon51 != 0 || anon53 != 0 && dispatch2 == 2 && anon14 == 9 && phi8 == 8 && anon13 == 0 && phi39 == 8 && anon49 == 8 && anon51 != 0 || anon53 != 0 && dispatch2 == 0 && anon14 == 9 && phi8 == 8 && anon13 == 0 && phi39 == 8 && anon49 == 8 && anon51 != 0 || anon53 != 0 && dispatch2 == 13 && anon33 == 9 && phi39 == 8 && anon49 == 8 && anon51 != 0 || anon53 != 0 && dispatch2 == 11 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9 && phi39 == 8 && anon49 == 8 && anon51 != 0 || anon53 != 0 && dispatch2 == 12 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9 && phi39 == 8 && anon49 == 8 && anon51 != 0 || anon22 != 0 && anon53 != 0 && dispatch2 == 9 && ((__zext uint8_t)(anon20 != 56) & (__zext uint8_t)(anon20 - 49 > 6)) == 0 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9 && phi39 == 8 && anon49 == 8 && anon51 != 0 || anon22 != 0 && anon53 != 0 && dispatch2 == 8 && ((__zext uint8_t)(anon19 != 72) & (__zext uint8_t)(anon19 - 65 > 6)) == 0 && ((__zext uint8_t)(anon20 != 56) & (__zext uint8_t)(anon20 - 49 > 6)) == 0 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9 && phi39 == 8 && anon49 == 8 && anon51 != 0 || anon22 != 0 && anon53 != 0 && dispatch2 == 10 && ((__zext uint8_t)(anon19 != 72) & (__zext uint8_t)(anon19 - 65 > 6)) == 0 && ((__zext uint8_t)(anon20 != 56) & (__zext uint8_t)(anon20 - 49 > 6)) == 0 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9 && phi39 == 8 && anon49 == 8 && anon51 != 0 || anon13 != 0 && anon22 != 0 && anon53 != 0 && dispatch2 == 1 && anon14 == 9 && phi8 == 8 && ((__zext uint8_t)(anon19 != 72) & (__zext uint8_t)(anon19 - 65 > 6)) == 0 && ((__zext uint8_t)(anon20 != 56) & (__zext uint8_t)(anon20 - 49 > 6)) == 0 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9 && phi39 == 8 && anon49 == 8 && anon51 != 0 || anon13 != 0 && anon22 != 0 && anon53 != 0 && dispatch2 == 2 && anon14 == 9 && phi8 == 8 && ((__zext uint8_t)(anon19 != 72) & (__zext uint8_t)(anon19 - 65 > 6)) == 0 && ((__zext uint8_t)(anon20 != 56) & (__zext uint8_t)(anon20 - 49 > 6)) == 0 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9 && phi39 == 8 && anon49 == 8 && anon51 != 0 || anon13 != 0 && anon22 != 0 && anon53 != 0 && dispatch2 == 0 && anon14 == 9 && phi8 == 8 && ((__zext uint8_t)(anon19 != 72) & (__zext uint8_t)(anon19 - 65 > 6)) == 0 && ((__zext uint8_t)(anon20 != 56) & (__zext uint8_t)(anon20 - 49 > 6)) == 0 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9 && phi39 == 8 && anon49 == 8 && anon51 != 0)
 			{
-				phi59 = phi_in58;
-				putchar((uint32_t)phi57);
-				phi_in60 = phi59;
+				phi56 = phi_in55;
+				putchar((uint32_t)phi54);
+				phi_in57 = phi56;
 			}
-			if (dispatch2 == 5 || dispatch2 == 6 || anon56 != 0 && dispatch2 == 3 && phi42 == 8 && anon52 == 8 && anon54 != 0 || anon56 != 0 && dispatch2 == 4 && phi42 == 8 && anon52 == 8 && anon54 != 0 || anon56 != 0 && dispatch2 == 1 && anon14 == 9 && phi8 == 8 && anon13 == 0 && phi42 == 8 && anon52 == 8 && anon54 != 0 || anon56 != 0 && dispatch2 == 2 && anon14 == 9 && phi8 == 8 && anon13 == 0 && phi42 == 8 && anon52 == 8 && anon54 != 0 || anon56 != 0 && dispatch2 == 0 && anon14 == 9 && phi8 == 8 && anon13 == 0 && phi42 == 8 && anon52 == 8 && anon54 != 0 || anon56 != 0 && dispatch2 == 13 && anon33 == 9 && phi42 == 8 && anon52 == 8 && anon54 != 0 || anon56 != 0 && dispatch2 == 11 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9 && phi42 == 8 && anon52 == 8 && anon54 != 0 || anon56 != 0 && dispatch2 == 12 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9 && phi42 == 8 && anon52 == 8 && anon54 != 0 || anon22 != 0 && anon56 != 0 && dispatch2 == 9 && ((__zext uint8_t)(anon20 != 56) & (__zext uint8_t)(anon20 - 49 > 6)) == 0 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9 && phi42 == 8 && anon52 == 8 && anon54 != 0 || anon22 != 0 && anon56 != 0 && dispatch2 == 8 && ((__zext uint8_t)(anon19 != 72) & (__zext uint8_t)(anon19 - 65 > 6)) == 0 && ((__zext uint8_t)(anon20 != 56) & (__zext uint8_t)(anon20 - 49 > 6)) == 0 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9 && phi42 == 8 && anon52 == 8 && anon54 != 0 || anon22 != 0 && anon56 != 0 && dispatch2 == 10 && ((__zext uint8_t)(anon19 != 72) & (__zext uint8_t)(anon19 - 65 > 6)) == 0 && ((__zext uint8_t)(anon20 != 56) & (__zext uint8_t)(anon20 - 49 > 6)) == 0 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9 && phi42 == 8 && anon52 == 8 && anon54 != 0 || anon13 != 0 && anon22 != 0 && anon56 != 0 && dispatch2 == 1 && anon14 == 9 && phi8 == 8 && ((__zext uint8_t)(anon19 != 72) & (__zext uint8_t)(anon19 - 65 > 6)) == 0 && ((__zext uint8_t)(anon20 != 56) & (__zext uint8_t)(anon20 - 49 > 6)) == 0 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9 && phi42 == 8 && anon52 == 8 && anon54 != 0 || anon13 != 0 && anon22 != 0 && anon56 != 0 && dispatch2 == 2 && anon14 == 9 && phi8 == 8 && ((__zext uint8_t)(anon19 != 72) & (__zext uint8_t)(anon19 - 65 > 6)) == 0 && ((__zext uint8_t)(anon20 != 56) & (__zext uint8_t)(anon20 - 49 > 6)) == 0 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9 && phi42 == 8 && anon52 == 8 && anon54 != 0 || anon13 != 0 && anon22 != 0 && anon56 != 0 && dispatch2 == 0 && anon14 == 9 && phi8 == 8 && ((__zext uint8_t)(anon19 != 72) & (__zext uint8_t)(anon19 - 65 > 6)) == 0 && ((__zext uint8_t)(anon20 != 56) & (__zext uint8_t)(anon20 - 49 > 6)) == 0 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9 && phi42 == 8 && anon52 == 8 && anon54 != 0)
+			if (dispatch2 == 5 || dispatch2 == 6 || anon53 != 0 && dispatch2 == 3 && phi39 == 8 && anon49 == 8 && anon51 != 0 || anon53 != 0 && dispatch2 == 4 && phi39 == 8 && anon49 == 8 && anon51 != 0 || anon53 != 0 && dispatch2 == 1 && anon14 == 9 && phi8 == 8 && anon13 == 0 && phi39 == 8 && anon49 == 8 && anon51 != 0 || anon53 != 0 && dispatch2 == 2 && anon14 == 9 && phi8 == 8 && anon13 == 0 && phi39 == 8 && anon49 == 8 && anon51 != 0 || anon53 != 0 && dispatch2 == 0 && anon14 == 9 && phi8 == 8 && anon13 == 0 && phi39 == 8 && anon49 == 8 && anon51 != 0 || anon53 != 0 && dispatch2 == 13 && anon33 == 9 && phi39 == 8 && anon49 == 8 && anon51 != 0 || anon53 != 0 && dispatch2 == 11 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9 && phi39 == 8 && anon49 == 8 && anon51 != 0 || anon53 != 0 && dispatch2 == 12 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9 && phi39 == 8 && anon49 == 8 && anon51 != 0 || anon22 != 0 && anon53 != 0 && dispatch2 == 9 && ((__zext uint8_t)(anon20 != 56) & (__zext uint8_t)(anon20 - 49 > 6)) == 0 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9 && phi39 == 8 && anon49 == 8 && anon51 != 0 || anon22 != 0 && anon53 != 0 && dispatch2 == 8 && ((__zext uint8_t)(anon19 != 72) & (__zext uint8_t)(anon19 - 65 > 6)) == 0 && ((__zext uint8_t)(anon20 != 56) & (__zext uint8_t)(anon20 - 49 > 6)) == 0 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9 && phi39 == 8 && anon49 == 8 && anon51 != 0 || anon22 != 0 && anon53 != 0 && dispatch2 == 10 && ((__zext uint8_t)(anon19 != 72) & (__zext uint8_t)(anon19 - 65 > 6)) == 0 && ((__zext uint8_t)(anon20 != 56) & (__zext uint8_t)(anon20 - 49 > 6)) == 0 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9 && phi39 == 8 && anon49 == 8 && anon51 != 0 || anon13 != 0 && anon22 != 0 && anon53 != 0 && dispatch2 == 1 && anon14 == 9 && phi8 == 8 && ((__zext uint8_t)(anon19 != 72) & (__zext uint8_t)(anon19 - 65 > 6)) == 0 && ((__zext uint8_t)(anon20 != 56) & (__zext uint8_t)(anon20 - 49 > 6)) == 0 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9 && phi39 == 8 && anon49 == 8 && anon51 != 0 || anon13 != 0 && anon22 != 0 && anon53 != 0 && dispatch2 == 2 && anon14 == 9 && phi8 == 8 && ((__zext uint8_t)(anon19 != 72) & (__zext uint8_t)(anon19 - 65 > 6)) == 0 && ((__zext uint8_t)(anon20 != 56) & (__zext uint8_t)(anon20 - 49 > 6)) == 0 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9 && phi39 == 8 && anon49 == 8 && anon51 != 0 || anon13 != 0 && anon22 != 0 && anon53 != 0 && dispatch2 == 0 && anon14 == 9 && phi8 == 8 && ((__zext uint8_t)(anon19 != 72) & (__zext uint8_t)(anon19 - 65 > 6)) == 0 && ((__zext uint8_t)(anon20 != 56) & (__zext uint8_t)(anon20 - 49 > 6)) == 0 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9 && phi39 == 8 && anon49 == 8 && anon51 != 0)
 			{
-				phi61 = phi_in60;
+				phi58 = phi_in57;
 				printf(anon28);
-				phi_in60 = phi61 + 4;
+				phi_in57 = phi58 + 4;
 				dispatch2 = 5;
 			}
-			if (phi59 + 28 == phi61)
+			if (phi56 + 28 == phi58)
 			{
-				if (dispatch2 == 5 || dispatch2 == 6 || anon56 != 0 && dispatch2 == 3 && phi42 == 8 && anon52 == 8 && anon54 != 0 || anon56 != 0 && dispatch2 == 4 && phi42 == 8 && anon52 == 8 && anon54 != 0 || anon56 != 0 && dispatch2 == 1 && anon14 == 9 && phi8 == 8 && anon13 == 0 && phi42 == 8 && anon52 == 8 && anon54 != 0 || anon56 != 0 && dispatch2 == 2 && anon14 == 9 && phi8 == 8 && anon13 == 0 && phi42 == 8 && anon52 == 8 && anon54 != 0 || anon56 != 0 && dispatch2 == 0 && anon14 == 9 && phi8 == 8 && anon13 == 0 && phi42 == 8 && anon52 == 8 && anon54 != 0 || anon56 != 0 && dispatch2 == 13 && anon33 == 9 && phi42 == 8 && anon52 == 8 && anon54 != 0 || anon56 != 0 && dispatch2 == 11 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9 && phi42 == 8 && anon52 == 8 && anon54 != 0 || anon56 != 0 && dispatch2 == 12 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9 && phi42 == 8 && anon52 == 8 && anon54 != 0 || anon22 != 0 && anon56 != 0 && dispatch2 == 9 && ((__zext uint8_t)(anon20 != 56) & (__zext uint8_t)(anon20 - 49 > 6)) == 0 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9 && phi42 == 8 && anon52 == 8 && anon54 != 0 || anon22 != 0 && anon56 != 0 && dispatch2 == 8 && ((__zext uint8_t)(anon19 != 72) & (__zext uint8_t)(anon19 - 65 > 6)) == 0 && ((__zext uint8_t)(anon20 != 56) & (__zext uint8_t)(anon20 - 49 > 6)) == 0 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9 && phi42 == 8 && anon52 == 8 && anon54 != 0 || anon22 != 0 && anon56 != 0 && dispatch2 == 10 && ((__zext uint8_t)(anon19 != 72) & (__zext uint8_t)(anon19 - 65 > 6)) == 0 && ((__zext uint8_t)(anon20 != 56) & (__zext uint8_t)(anon20 - 49 > 6)) == 0 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9 && phi42 == 8 && anon52 == 8 && anon54 != 0 || anon13 != 0 && anon22 != 0 && anon56 != 0 && dispatch2 == 1 && anon14 == 9 && phi8 == 8 && ((__zext uint8_t)(anon19 != 72) & (__zext uint8_t)(anon19 - 65 > 6)) == 0 && ((__zext uint8_t)(anon20 != 56) & (__zext uint8_t)(anon20 - 49 > 6)) == 0 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9 && phi42 == 8 && anon52 == 8 && anon54 != 0 || anon13 != 0 && anon22 != 0 && anon56 != 0 && dispatch2 == 2 && anon14 == 9 && phi8 == 8 && ((__zext uint8_t)(anon19 != 72) & (__zext uint8_t)(anon19 - 65 > 6)) == 0 && ((__zext uint8_t)(anon20 != 56) & (__zext uint8_t)(anon20 - 49 > 6)) == 0 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9 && phi42 == 8 && anon52 == 8 && anon54 != 0 || anon13 != 0 && anon22 != 0 && anon56 != 0 && dispatch2 == 0 && anon14 == 9 && phi8 == 8 && ((__zext uint8_t)(anon19 != 72) & (__zext uint8_t)(anon19 - 65 > 6)) == 0 && ((__zext uint8_t)(anon20 != 56) & (__zext uint8_t)(anon20 - 49 > 6)) == 0 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9 && phi42 == 8 && anon52 == 8 && anon54 != 0)
+				if (dispatch2 == 5 || dispatch2 == 6 || anon53 != 0 && dispatch2 == 3 && phi39 == 8 && anon49 == 8 && anon51 != 0 || anon53 != 0 && dispatch2 == 4 && phi39 == 8 && anon49 == 8 && anon51 != 0 || anon53 != 0 && dispatch2 == 1 && anon14 == 9 && phi8 == 8 && anon13 == 0 && phi39 == 8 && anon49 == 8 && anon51 != 0 || anon53 != 0 && dispatch2 == 2 && anon14 == 9 && phi8 == 8 && anon13 == 0 && phi39 == 8 && anon49 == 8 && anon51 != 0 || anon53 != 0 && dispatch2 == 0 && anon14 == 9 && phi8 == 8 && anon13 == 0 && phi39 == 8 && anon49 == 8 && anon51 != 0 || anon53 != 0 && dispatch2 == 13 && anon33 == 9 && phi39 == 8 && anon49 == 8 && anon51 != 0 || anon53 != 0 && dispatch2 == 11 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9 && phi39 == 8 && anon49 == 8 && anon51 != 0 || anon53 != 0 && dispatch2 == 12 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9 && phi39 == 8 && anon49 == 8 && anon51 != 0 || anon22 != 0 && anon53 != 0 && dispatch2 == 9 && ((__zext uint8_t)(anon20 != 56) & (__zext uint8_t)(anon20 - 49 > 6)) == 0 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9 && phi39 == 8 && anon49 == 8 && anon51 != 0 || anon22 != 0 && anon53 != 0 && dispatch2 == 8 && ((__zext uint8_t)(anon19 != 72) & (__zext uint8_t)(anon19 - 65 > 6)) == 0 && ((__zext uint8_t)(anon20 != 56) & (__zext uint8_t)(anon20 - 49 > 6)) == 0 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9 && phi39 == 8 && anon49 == 8 && anon51 != 0 || anon22 != 0 && anon53 != 0 && dispatch2 == 10 && ((__zext uint8_t)(anon19 != 72) & (__zext uint8_t)(anon19 - 65 > 6)) == 0 && ((__zext uint8_t)(anon20 != 56) & (__zext uint8_t)(anon20 - 49 > 6)) == 0 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9 && phi39 == 8 && anon49 == 8 && anon51 != 0 || anon13 != 0 && anon22 != 0 && anon53 != 0 && dispatch2 == 1 && anon14 == 9 && phi8 == 8 && ((__zext uint8_t)(anon19 != 72) & (__zext uint8_t)(anon19 - 65 > 6)) == 0 && ((__zext uint8_t)(anon20 != 56) & (__zext uint8_t)(anon20 - 49 > 6)) == 0 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9 && phi39 == 8 && anon49 == 8 && anon51 != 0 || anon13 != 0 && anon22 != 0 && anon53 != 0 && dispatch2 == 2 && anon14 == 9 && phi8 == 8 && ((__zext uint8_t)(anon19 != 72) & (__zext uint8_t)(anon19 - 65 > 6)) == 0 && ((__zext uint8_t)(anon20 != 56) & (__zext uint8_t)(anon20 - 49 > 6)) == 0 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9 && phi39 == 8 && anon49 == 8 && anon51 != 0 || anon13 != 0 && anon22 != 0 && anon53 != 0 && dispatch2 == 0 && anon14 == 9 && phi8 == 8 && ((__zext uint8_t)(anon19 != 72) & (__zext uint8_t)(anon19 - 65 > 6)) == 0 && ((__zext uint8_t)(anon20 != 56) & (__zext uint8_t)(anon20 - 49 > 6)) == 0 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9 && phi39 == 8 && anon49 == 8 && anon51 != 0)
 				{
 					putchar(10);
-					phi57 = phi57 + 1 & 0xffffffff;
-					anon62 = phi59 + 40;
-					phi_in58 = anon62;
+					phi54 = phi54 + 1 & 0xffffffff;
+					anon59 = phi56 + 40;
+					phi_in55 = anon59;
 					dispatch2 = 6;
 				}
-				if (anon62 == 6297768 && (dispatch2 == 5 || dispatch2 == 6 || anon56 != 0 && dispatch2 == 3 && phi42 == 8 && anon52 == 8 && anon54 != 0 || anon56 != 0 && dispatch2 == 4 && phi42 == 8 && anon52 == 8 && anon54 != 0 || anon56 != 0 && dispatch2 == 1 && anon14 == 9 && phi8 == 8 && anon13 == 0 && phi42 == 8 && anon52 == 8 && anon54 != 0 || anon56 != 0 && dispatch2 == 2 && anon14 == 9 && phi8 == 8 && anon13 == 0 && phi42 == 8 && anon52 == 8 && anon54 != 0 || anon56 != 0 && dispatch2 == 0 && anon14 == 9 && phi8 == 8 && anon13 == 0 && phi42 == 8 && anon52 == 8 && anon54 != 0 || anon56 != 0 && dispatch2 == 13 && anon33 == 9 && phi42 == 8 && anon52 == 8 && anon54 != 0 || anon56 != 0 && dispatch2 == 11 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9 && phi42 == 8 && anon52 == 8 && anon54 != 0 || anon56 != 0 && dispatch2 == 12 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9 && phi42 == 8 && anon52 == 8 && anon54 != 0 || anon22 != 0 && anon56 != 0 && dispatch2 == 9 && ((__zext uint8_t)(anon20 != 56) & (__zext uint8_t)(anon20 - 49 > 6)) == 0 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9 && phi42 == 8 && anon52 == 8 && anon54 != 0 || anon22 != 0 && anon56 != 0 && dispatch2 == 8 && ((__zext uint8_t)(anon19 != 72) & (__zext uint8_t)(anon19 - 65 > 6)) == 0 && ((__zext uint8_t)(anon20 != 56) & (__zext uint8_t)(anon20 - 49 > 6)) == 0 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9 && phi42 == 8 && anon52 == 8 && anon54 != 0 || anon22 != 0 && anon56 != 0 && dispatch2 == 10 && ((__zext uint8_t)(anon19 != 72) & (__zext uint8_t)(anon19 - 65 > 6)) == 0 && ((__zext uint8_t)(anon20 != 56) & (__zext uint8_t)(anon20 - 49 > 6)) == 0 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9 && phi42 == 8 && anon52 == 8 && anon54 != 0 || anon13 != 0 && anon22 != 0 && anon56 != 0 && dispatch2 == 1 && anon14 == 9 && phi8 == 8 && ((__zext uint8_t)(anon19 != 72) & (__zext uint8_t)(anon19 - 65 > 6)) == 0 && ((__zext uint8_t)(anon20 != 56) & (__zext uint8_t)(anon20 - 49 > 6)) == 0 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9 && phi42 == 8 && anon52 == 8 && anon54 != 0 || anon13 != 0 && anon22 != 0 && anon56 != 0 && dispatch2 == 2 && anon14 == 9 && phi8 == 8 && ((__zext uint8_t)(anon19 != 72) & (__zext uint8_t)(anon19 - 65 > 6)) == 0 && ((__zext uint8_t)(anon20 != 56) & (__zext uint8_t)(anon20 - 49 > 6)) == 0 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9 && phi42 == 8 && anon52 == 8 && anon54 != 0 || anon13 != 0 && anon22 != 0 && anon56 != 0 && dispatch2 == 0 && anon14 == 9 && phi8 == 8 && ((__zext uint8_t)(anon19 != 72) & (__zext uint8_t)(anon19 - 65 > 6)) == 0 && ((__zext uint8_t)(anon20 != 56) & (__zext uint8_t)(anon20 - 49 > 6)) == 0 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9 && phi42 == 8 && anon52 == 8 && anon54 != 0))
+				if (anon59 == 6297768 && (dispatch2 == 5 || dispatch2 == 6 || anon53 != 0 && dispatch2 == 3 && phi39 == 8 && anon49 == 8 && anon51 != 0 || anon53 != 0 && dispatch2 == 4 && phi39 == 8 && anon49 == 8 && anon51 != 0 || anon53 != 0 && dispatch2 == 1 && anon14 == 9 && phi8 == 8 && anon13 == 0 && phi39 == 8 && anon49 == 8 && anon51 != 0 || anon53 != 0 && dispatch2 == 2 && anon14 == 9 && phi8 == 8 && anon13 == 0 && phi39 == 8 && anon49 == 8 && anon51 != 0 || anon53 != 0 && dispatch2 == 0 && anon14 == 9 && phi8 == 8 && anon13 == 0 && phi39 == 8 && anon49 == 8 && anon51 != 0 || anon53 != 0 && dispatch2 == 13 && anon33 == 9 && phi39 == 8 && anon49 == 8 && anon51 != 0 || anon53 != 0 && dispatch2 == 11 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9 && phi39 == 8 && anon49 == 8 && anon51 != 0 || anon53 != 0 && dispatch2 == 12 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9 && phi39 == 8 && anon49 == 8 && anon51 != 0 || anon22 != 0 && anon53 != 0 && dispatch2 == 9 && ((__zext uint8_t)(anon20 != 56) & (__zext uint8_t)(anon20 - 49 > 6)) == 0 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9 && phi39 == 8 && anon49 == 8 && anon51 != 0 || anon22 != 0 && anon53 != 0 && dispatch2 == 8 && ((__zext uint8_t)(anon19 != 72) & (__zext uint8_t)(anon19 - 65 > 6)) == 0 && ((__zext uint8_t)(anon20 != 56) & (__zext uint8_t)(anon20 - 49 > 6)) == 0 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9 && phi39 == 8 && anon49 == 8 && anon51 != 0 || anon22 != 0 && anon53 != 0 && dispatch2 == 10 && ((__zext uint8_t)(anon19 != 72) & (__zext uint8_t)(anon19 - 65 > 6)) == 0 && ((__zext uint8_t)(anon20 != 56) & (__zext uint8_t)(anon20 - 49 > 6)) == 0 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9 && phi39 == 8 && anon49 == 8 && anon51 != 0 || anon13 != 0 && anon22 != 0 && anon53 != 0 && dispatch2 == 1 && anon14 == 9 && phi8 == 8 && ((__zext uint8_t)(anon19 != 72) & (__zext uint8_t)(anon19 - 65 > 6)) == 0 && ((__zext uint8_t)(anon20 != 56) & (__zext uint8_t)(anon20 - 49 > 6)) == 0 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9 && phi39 == 8 && anon49 == 8 && anon51 != 0 || anon13 != 0 && anon22 != 0 && anon53 != 0 && dispatch2 == 2 && anon14 == 9 && phi8 == 8 && ((__zext uint8_t)(anon19 != 72) & (__zext uint8_t)(anon19 - 65 > 6)) == 0 && ((__zext uint8_t)(anon20 != 56) & (__zext uint8_t)(anon20 - 49 > 6)) == 0 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9 && phi39 == 8 && anon49 == 8 && anon51 != 0 || anon13 != 0 && anon22 != 0 && anon53 != 0 && dispatch2 == 0 && anon14 == 9 && phi8 == 8 && ((__zext uint8_t)(anon19 != 72) & (__zext uint8_t)(anon19 - 65 > 6)) == 0 && ((__zext uint8_t)(anon20 != 56) & (__zext uint8_t)(anon20 - 49 > 6)) == 0 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9 && phi39 == 8 && anon49 == 8 && anon51 != 0))
 				{
 					putchar(32);
-					phi_in63 = 1;
+					phi_in60 = 1;
 				}
 			}
-			if (dispatch2 == 7 || dispatch2 == 5 && phi59 + 28 == phi61 && anon62 == 6297768 || dispatch2 == 6 && phi59 + 28 == phi61 && anon62 == 6297768 || anon56 != 0 && dispatch2 == 3 && phi42 == 8 && anon52 == 8 && anon54 != 0 && phi59 + 28 == phi61 && anon62 == 6297768 || anon56 != 0 && dispatch2 == 4 && phi42 == 8 && anon52 == 8 && anon54 != 0 && phi59 + 28 == phi61 && anon62 == 6297768 || anon56 != 0 && dispatch2 == 1 && anon14 == 9 && phi8 == 8 && anon13 == 0 && phi42 == 8 && anon52 == 8 && anon54 != 0 && phi59 + 28 == phi61 && anon62 == 6297768 || anon56 != 0 && dispatch2 == 2 && anon14 == 9 && phi8 == 8 && anon13 == 0 && phi42 == 8 && anon52 == 8 && anon54 != 0 && phi59 + 28 == phi61 && anon62 == 6297768 || anon56 != 0 && dispatch2 == 0 && anon14 == 9 && phi8 == 8 && anon13 == 0 && phi42 == 8 && anon52 == 8 && anon54 != 0 && phi59 + 28 == phi61 && anon62 == 6297768 || anon56 != 0 && dispatch2 == 13 && anon33 == 9 && phi42 == 8 && anon52 == 8 && anon54 != 0 && phi59 + 28 == phi61 && anon62 == 6297768 || anon56 != 0 && dispatch2 == 11 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9 && phi42 == 8 && anon52 == 8 && anon54 != 0 && phi59 + 28 == phi61 && anon62 == 6297768 || anon56 != 0 && dispatch2 == 12 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9 && phi42 == 8 && anon52 == 8 && anon54 != 0 && phi59 + 28 == phi61 && anon62 == 6297768 || anon22 != 0 && anon56 != 0 && dispatch2 == 9 && ((__zext uint8_t)(anon20 != 56) & (__zext uint8_t)(anon20 - 49 > 6)) == 0 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9 && phi42 == 8 && anon52 == 8 && anon54 != 0 && phi59 + 28 == phi61 && anon62 == 6297768 || anon22 != 0 && anon56 != 0 && dispatch2 == 8 && ((__zext uint8_t)(anon19 != 72) & (__zext uint8_t)(anon19 - 65 > 6)) == 0 && ((__zext uint8_t)(anon20 != 56) & (__zext uint8_t)(anon20 - 49 > 6)) == 0 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9 && phi42 == 8 && anon52 == 8 && anon54 != 0 && phi59 + 28 == phi61 && anon62 == 6297768 || anon22 != 0 && anon56 != 0 && dispatch2 == 10 && ((__zext uint8_t)(anon19 != 72) & (__zext uint8_t)(anon19 - 65 > 6)) == 0 && ((__zext uint8_t)(anon20 != 56) & (__zext uint8_t)(anon20 - 49 > 6)) == 0 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9 && phi42 == 8 && anon52 == 8 && anon54 != 0 && phi59 + 28 == phi61 && anon62 == 6297768 || anon13 != 0 && anon22 != 0 && anon56 != 0 && dispatch2 == 1 && anon14 == 9 && phi8 == 8 && ((__zext uint8_t)(anon19 != 72) & (__zext uint8_t)(anon19 - 65 > 6)) == 0 && ((__zext uint8_t)(anon20 != 56) & (__zext uint8_t)(anon20 - 49 > 6)) == 0 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9 && phi42 == 8 && anon52 == 8 && anon54 != 0 && phi59 + 28 == phi61 && anon62 == 6297768 || anon13 != 0 && anon22 != 0 && anon56 != 0 && dispatch2 == 2 && anon14 == 9 && phi8 == 8 && ((__zext uint8_t)(anon19 != 72) & (__zext uint8_t)(anon19 - 65 > 6)) == 0 && ((__zext uint8_t)(anon20 != 56) & (__zext uint8_t)(anon20 - 49 > 6)) == 0 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9 && phi42 == 8 && anon52 == 8 && anon54 != 0 && phi59 + 28 == phi61 && anon62 == 6297768 || anon13 != 0 && anon22 != 0 && anon56 != 0 && dispatch2 == 0 && anon14 == 9 && phi8 == 8 && ((__zext uint8_t)(anon19 != 72) & (__zext uint8_t)(anon19 - 65 > 6)) == 0 && ((__zext uint8_t)(anon20 != 56) & (__zext uint8_t)(anon20 - 49 > 6)) == 0 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9 && phi42 == 8 && anon52 == 8 && anon54 != 0 && phi59 + 28 == phi61 && anon62 == 6297768)
+			if (dispatch2 == 7 || dispatch2 == 5 && phi56 + 28 == phi58 && anon59 == 6297768 || dispatch2 == 6 && phi56 + 28 == phi58 && anon59 == 6297768 || anon53 != 0 && dispatch2 == 3 && phi39 == 8 && anon49 == 8 && anon51 != 0 && phi56 + 28 == phi58 && anon59 == 6297768 || anon53 != 0 && dispatch2 == 4 && phi39 == 8 && anon49 == 8 && anon51 != 0 && phi56 + 28 == phi58 && anon59 == 6297768 || anon53 != 0 && dispatch2 == 1 && anon14 == 9 && phi8 == 8 && anon13 == 0 && phi39 == 8 && anon49 == 8 && anon51 != 0 && phi56 + 28 == phi58 && anon59 == 6297768 || anon53 != 0 && dispatch2 == 2 && anon14 == 9 && phi8 == 8 && anon13 == 0 && phi39 == 8 && anon49 == 8 && anon51 != 0 && phi56 + 28 == phi58 && anon59 == 6297768 || anon53 != 0 && dispatch2 == 0 && anon14 == 9 && phi8 == 8 && anon13 == 0 && phi39 == 8 && anon49 == 8 && anon51 != 0 && phi56 + 28 == phi58 && anon59 == 6297768 || anon53 != 0 && dispatch2 == 13 && anon33 == 9 && phi39 == 8 && anon49 == 8 && anon51 != 0 && phi56 + 28 == phi58 && anon59 == 6297768 || anon53 != 0 && dispatch2 == 11 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9 && phi39 == 8 && anon49 == 8 && anon51 != 0 && phi56 + 28 == phi58 && anon59 == 6297768 || anon53 != 0 && dispatch2 == 12 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9 && phi39 == 8 && anon49 == 8 && anon51 != 0 && phi56 + 28 == phi58 && anon59 == 6297768 || anon22 != 0 && anon53 != 0 && dispatch2 == 9 && ((__zext uint8_t)(anon20 != 56) & (__zext uint8_t)(anon20 - 49 > 6)) == 0 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9 && phi39 == 8 && anon49 == 8 && anon51 != 0 && phi56 + 28 == phi58 && anon59 == 6297768 || anon22 != 0 && anon53 != 0 && dispatch2 == 8 && ((__zext uint8_t)(anon19 != 72) & (__zext uint8_t)(anon19 - 65 > 6)) == 0 && ((__zext uint8_t)(anon20 != 56) & (__zext uint8_t)(anon20 - 49 > 6)) == 0 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9 && phi39 == 8 && anon49 == 8 && anon51 != 0 && phi56 + 28 == phi58 && anon59 == 6297768 || anon22 != 0 && anon53 != 0 && dispatch2 == 10 && ((__zext uint8_t)(anon19 != 72) & (__zext uint8_t)(anon19 - 65 > 6)) == 0 && ((__zext uint8_t)(anon20 != 56) & (__zext uint8_t)(anon20 - 49 > 6)) == 0 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9 && phi39 == 8 && anon49 == 8 && anon51 != 0 && phi56 + 28 == phi58 && anon59 == 6297768 || anon13 != 0 && anon22 != 0 && anon53 != 0 && dispatch2 == 1 && anon14 == 9 && phi8 == 8 && ((__zext uint8_t)(anon19 != 72) & (__zext uint8_t)(anon19 - 65 > 6)) == 0 && ((__zext uint8_t)(anon20 != 56) & (__zext uint8_t)(anon20 - 49 > 6)) == 0 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9 && phi39 == 8 && anon49 == 8 && anon51 != 0 && phi56 + 28 == phi58 && anon59 == 6297768 || anon13 != 0 && anon22 != 0 && anon53 != 0 && dispatch2 == 2 && anon14 == 9 && phi8 == 8 && ((__zext uint8_t)(anon19 != 72) & (__zext uint8_t)(anon19 - 65 > 6)) == 0 && ((__zext uint8_t)(anon20 != 56) & (__zext uint8_t)(anon20 - 49 > 6)) == 0 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9 && phi39 == 8 && anon49 == 8 && anon51 != 0 && phi56 + 28 == phi58 && anon59 == 6297768 || anon13 != 0 && anon22 != 0 && anon53 != 0 && dispatch2 == 0 && anon14 == 9 && phi8 == 8 && ((__zext uint8_t)(anon19 != 72) & (__zext uint8_t)(anon19 - 65 > 6)) == 0 && ((__zext uint8_t)(anon20 != 56) & (__zext uint8_t)(anon20 - 49 > 6)) == 0 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9 && phi39 == 8 && anon49 == 8 && anon51 != 0 && phi56 + 28 == phi58 && anon59 == 6297768)
 			{
-				uint32_t phi64 = phi_in63;
+				uint32_t phi61 = phi_in60;
 				printf(anon32);
-				anon65 = phi64 + 1;
-				phi_in63 = anon65;
+				anon62 = phi61 + 1;
+				phi_in60 = anon62;
 				dispatch2 = 7;
 			}
-			if (anon65 == 9 && (dispatch2 == 7 || dispatch2 == 5 && phi59 + 28 == phi61 && anon62 == 6297768 || dispatch2 == 6 && phi59 + 28 == phi61 && anon62 == 6297768 || anon56 != 0 && dispatch2 == 3 && phi42 == 8 && anon52 == 8 && anon54 != 0 && phi59 + 28 == phi61 && anon62 == 6297768 || anon56 != 0 && dispatch2 == 4 && phi42 == 8 && anon52 == 8 && anon54 != 0 && phi59 + 28 == phi61 && anon62 == 6297768 || anon56 != 0 && dispatch2 == 1 && anon14 == 9 && phi8 == 8 && anon13 == 0 && phi42 == 8 && anon52 == 8 && anon54 != 0 && phi59 + 28 == phi61 && anon62 == 6297768 || anon56 != 0 && dispatch2 == 2 && anon14 == 9 && phi8 == 8 && anon13 == 0 && phi42 == 8 && anon52 == 8 && anon54 != 0 && phi59 + 28 == phi61 && anon62 == 6297768 || anon56 != 0 && dispatch2 == 0 && anon14 == 9 && phi8 == 8 && anon13 == 0 && phi42 == 8 && anon52 == 8 && anon54 != 0 && phi59 + 28 == phi61 && anon62 == 6297768 || anon56 != 0 && dispatch2 == 13 && anon33 == 9 && phi42 == 8 && anon52 == 8 && anon54 != 0 && phi59 + 28 == phi61 && anon62 == 6297768 || anon56 != 0 && dispatch2 == 11 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9 && phi42 == 8 && anon52 == 8 && anon54 != 0 && phi59 + 28 == phi61 && anon62 == 6297768 || anon56 != 0 && dispatch2 == 12 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9 && phi42 == 8 && anon52 == 8 && anon54 != 0 && phi59 + 28 == phi61 && anon62 == 6297768 || anon22 != 0 && anon56 != 0 && dispatch2 == 9 && ((__zext uint8_t)(anon20 != 56) & (__zext uint8_t)(anon20 - 49 > 6)) == 0 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9 && phi42 == 8 && anon52 == 8 && anon54 != 0 && phi59 + 28 == phi61 && anon62 == 6297768 || anon22 != 0 && anon56 != 0 && dispatch2 == 8 && ((__zext uint8_t)(anon19 != 72) & (__zext uint8_t)(anon19 - 65 > 6)) == 0 && ((__zext uint8_t)(anon20 != 56) & (__zext uint8_t)(anon20 - 49 > 6)) == 0 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9 && phi42 == 8 && anon52 == 8 && anon54 != 0 && phi59 + 28 == phi61 && anon62 == 6297768 || anon22 != 0 && anon56 != 0 && dispatch2 == 10 && ((__zext uint8_t)(anon19 != 72) & (__zext uint8_t)(anon19 - 65 > 6)) == 0 && ((__zext uint8_t)(anon20 != 56) & (__zext uint8_t)(anon20 - 49 > 6)) == 0 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9 && phi42 == 8 && anon52 == 8 && anon54 != 0 && phi59 + 28 == phi61 && anon62 == 6297768 || anon13 != 0 && anon22 != 0 && anon56 != 0 && dispatch2 == 1 && anon14 == 9 && phi8 == 8 && ((__zext uint8_t)(anon19 != 72) & (__zext uint8_t)(anon19 - 65 > 6)) == 0 && ((__zext uint8_t)(anon20 != 56) & (__zext uint8_t)(anon20 - 49 > 6)) == 0 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9 && phi42 == 8 && anon52 == 8 && anon54 != 0 && phi59 + 28 == phi61 && anon62 == 6297768 || anon13 != 0 && anon22 != 0 && anon56 != 0 && dispatch2 == 2 && anon14 == 9 && phi8 == 8 && ((__zext uint8_t)(anon19 != 72) & (__zext uint8_t)(anon19 - 65 > 6)) == 0 && ((__zext uint8_t)(anon20 != 56) & (__zext uint8_t)(anon20 - 49 > 6)) == 0 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9 && phi42 == 8 && anon52 == 8 && anon54 != 0 && phi59 + 28 == phi61 && anon62 == 6297768 || anon13 != 0 && anon22 != 0 && anon56 != 0 && dispatch2 == 0 && anon14 == 9 && phi8 == 8 && ((__zext uint8_t)(anon19 != 72) & (__zext uint8_t)(anon19 - 65 > 6)) == 0 && ((__zext uint8_t)(anon20 != 56) & (__zext uint8_t)(anon20 - 49 > 6)) == 0 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9 && phi42 == 8 && anon52 == 8 && anon54 != 0 && phi59 + 28 == phi61 && anon62 == 6297768))
+			if (anon62 == 9 && (dispatch2 == 7 || dispatch2 == 5 && phi56 + 28 == phi58 && anon59 == 6297768 || dispatch2 == 6 && phi56 + 28 == phi58 && anon59 == 6297768 || anon53 != 0 && dispatch2 == 3 && phi39 == 8 && anon49 == 8 && anon51 != 0 && phi56 + 28 == phi58 && anon59 == 6297768 || anon53 != 0 && dispatch2 == 4 && phi39 == 8 && anon49 == 8 && anon51 != 0 && phi56 + 28 == phi58 && anon59 == 6297768 || anon53 != 0 && dispatch2 == 1 && anon14 == 9 && phi8 == 8 && anon13 == 0 && phi39 == 8 && anon49 == 8 && anon51 != 0 && phi56 + 28 == phi58 && anon59 == 6297768 || anon53 != 0 && dispatch2 == 2 && anon14 == 9 && phi8 == 8 && anon13 == 0 && phi39 == 8 && anon49 == 8 && anon51 != 0 && phi56 + 28 == phi58 && anon59 == 6297768 || anon53 != 0 && dispatch2 == 0 && anon14 == 9 && phi8 == 8 && anon13 == 0 && phi39 == 8 && anon49 == 8 && anon51 != 0 && phi56 + 28 == phi58 && anon59 == 6297768 || anon53 != 0 && dispatch2 == 13 && anon33 == 9 && phi39 == 8 && anon49 == 8 && anon51 != 0 && phi56 + 28 == phi58 && anon59 == 6297768 || anon53 != 0 && dispatch2 == 11 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9 && phi39 == 8 && anon49 == 8 && anon51 != 0 && phi56 + 28 == phi58 && anon59 == 6297768 || anon53 != 0 && dispatch2 == 12 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9 && phi39 == 8 && anon49 == 8 && anon51 != 0 && phi56 + 28 == phi58 && anon59 == 6297768 || anon22 != 0 && anon53 != 0 && dispatch2 == 9 && ((__zext uint8_t)(anon20 != 56) & (__zext uint8_t)(anon20 - 49 > 6)) == 0 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9 && phi39 == 8 && anon49 == 8 && anon51 != 0 && phi56 + 28 == phi58 && anon59 == 6297768 || anon22 != 0 && anon53 != 0 && dispatch2 == 8 && ((__zext uint8_t)(anon19 != 72) & (__zext uint8_t)(anon19 - 65 > 6)) == 0 && ((__zext uint8_t)(anon20 != 56) & (__zext uint8_t)(anon20 - 49 > 6)) == 0 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9 && phi39 == 8 && anon49 == 8 && anon51 != 0 && phi56 + 28 == phi58 && anon59 == 6297768 || anon22 != 0 && anon53 != 0 && dispatch2 == 10 && ((__zext uint8_t)(anon19 != 72) & (__zext uint8_t)(anon19 - 65 > 6)) == 0 && ((__zext uint8_t)(anon20 != 56) & (__zext uint8_t)(anon20 - 49 > 6)) == 0 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9 && phi39 == 8 && anon49 == 8 && anon51 != 0 && phi56 + 28 == phi58 && anon59 == 6297768 || anon13 != 0 && anon22 != 0 && anon53 != 0 && dispatch2 == 1 && anon14 == 9 && phi8 == 8 && ((__zext uint8_t)(anon19 != 72) & (__zext uint8_t)(anon19 - 65 > 6)) == 0 && ((__zext uint8_t)(anon20 != 56) & (__zext uint8_t)(anon20 - 49 > 6)) == 0 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9 && phi39 == 8 && anon49 == 8 && anon51 != 0 && phi56 + 28 == phi58 && anon59 == 6297768 || anon13 != 0 && anon22 != 0 && anon53 != 0 && dispatch2 == 2 && anon14 == 9 && phi8 == 8 && ((__zext uint8_t)(anon19 != 72) & (__zext uint8_t)(anon19 - 65 > 6)) == 0 && ((__zext uint8_t)(anon20 != 56) & (__zext uint8_t)(anon20 - 49 > 6)) == 0 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9 && phi39 == 8 && anon49 == 8 && anon51 != 0 && phi56 + 28 == phi58 && anon59 == 6297768 || anon13 != 0 && anon22 != 0 && anon53 != 0 && dispatch2 == 0 && anon14 == 9 && phi8 == 8 && ((__zext uint8_t)(anon19 != 72) & (__zext uint8_t)(anon19 - 65 > 6)) == 0 && ((__zext uint8_t)(anon20 != 56) & (__zext uint8_t)(anon20 - 49 > 6)) == 0 && phi25 + 28 == phi27 && anon29 == 6297768 && anon33 == 9 && phi39 == 8 && anon49 == 8 && anon51 != 0 && phi56 + 28 == phi58 && anon59 == 6297768))
 			{
 				putchar(10);
 				break;
 			}
 		}
-		anon66 = phi3 - 1;
-		phi_in1 = anon66;
-		uint64_t phi_in5 = anon47;
+		anon63 = phi3 - 1;
+		phi_in1 = anon63;
+		uint64_t phi_in5 = anon44;
 		dispatch2 = 0;
 	}
-	while (anon66 != 0);
+	while (anon63 != 0);
 	return;
 }
 void _start(uint64_t arg0, uint64_t arg1, uint64_t arg2)
@@ -461,6 +455,7 @@ uint64_t m.constprop.1(uint64_t arg0, uint64_t arg1, uint64_t arg2)
 	if (*anon1 == 0)
 	{
 		uint64_t phi10;
+		uint32_t phi11;
 		*anon1 = 4294967295;
 		uint32_t phi5 = 4294967295;
 		uint32_t phi6 = 4294967295;
@@ -468,7 +463,6 @@ uint64_t m.constprop.1(uint64_t arg0, uint64_t arg1, uint64_t arg2)
 		dispatch8 = 0;
 		do
 		{
-			uint32_t phi11;
 			while (true)
 			{
 				uint32_t phi_in9;
@@ -481,8 +475,8 @@ uint64_t m.constprop.1(uint64_t arg0, uint64_t arg1, uint64_t arg2)
 				{
 					phi_in9 = phi6;
 					phi10 = phi_in7;
-					phi5 = phi5;
-					phi11 = phi_in9;
+					phi11 = phi5;
+					phi6 = phi_in9;
 					if (*(uint32_t*)(((__sext int64_t)((uint32_t)arg2 + *(uint32_t*)(phi10 + 6296832)) + (__sext int64_t)((uint32_t)arg1 + *(uint32_t*)(phi10 + 6296896)) * 10 << 2) + 6297408) == 1)
 					{
 						phi12 = 1;
@@ -497,8 +491,8 @@ uint64_t m.constprop.1(uint64_t arg0, uint64_t arg1, uint64_t arg2)
 				if (dispatch8 == 1 || dispatch8 == 0 && *(uint32_t*)(((__sext int64_t)((uint32_t)arg2 + *(uint32_t*)(phi10 + 6296832)) + (__sext int64_t)((uint32_t)arg1 + *(uint32_t*)(phi10 + 6296896)) * 10 << 2) + 6297408) == 1)
 				{
 					phi_in15 = phi12;
-					phi5 = phi5;
-					phi11 = phi_in9;
+					phi11 = phi5;
+					phi6 = phi_in9;
 					anon17 = (__sext int64_t)*(uint32_t*)(phi10 + 6296832);
 					anon18 = (__sext int64_t)*(uint32_t*)(phi10 + 6296896);
 					anon16 = phi14 + (anon17 + anon18 * 10 << 2);
@@ -521,8 +515,8 @@ uint64_t m.constprop.1(uint64_t arg0, uint64_t arg1, uint64_t arg2)
 					uint32_t phi25 = phi_in15;
 					*(uint32_t*)phi20 = 0;
 					uint32_t anon26 = phi23 + *(uint32_t*)phi24;
-					phi5 = anon26;
 					phi11 = anon26;
+					phi6 = anon26;
 					uint32_t anon27 = phi25 - 1;
 					phi_in15 = anon27;
 					int64_t anon28 = (__sext int64_t)(0 - *(uint32_t*)(phi10 + 6296832)) + (__sext int64_t)(0 - *(uint32_t*)(phi10 + 6296896)) * 10 << 2;
@@ -536,19 +530,19 @@ uint64_t m.constprop.1(uint64_t arg0, uint64_t arg1, uint64_t arg2)
 					}
 				}
 			}
-			phi6 = phi11;
+			phi5 = phi11;
 			phi_in7 = phi10 + 4;
 			dispatch8 = 0;
 		}
 		while (phi10 != 28);
-		if (phi5 == 4294967295)
+		if (phi11 == 4294967295)
 		{
 			*(uint32_t*)((anon2 << 2) + 6297408) = 0;
 			return (__zext uint64_t)*anon1;
 		}
 		else 
 		{
-			return (__zext uint64_t)phi5;
+			return (__zext uint64_t)phi11;
 		}
 	}
 	else 

@@ -69,26 +69,25 @@ void main(uint64_t arg0, uint64_t arg1, uint64_t arg2, uint64_t arg3, uint64_t a
 		while (phi13 > anon20);
 		if ((__zext uint32_t)(phi13 != 255) < ~phi13)
 		{
-			uint32_t phi23;
+			uint32_t phi22;
 			anon21 = (uint64_t)&alloca1;
 			main(4195888, anon21, 0, arg3, phi7, phi11, (__zext uint64_t)(0 - phi13));
-			uint64_t phi22 = 1;
-			uint32_t anon24 = (uint32_t)phi12;
-			phi23 = anon24;
-			if (anon24 == 255)
+			phi_in3 = 1;
+			uint32_t anon23 = (uint32_t)phi12;
+			phi22 = anon23;
+			if (anon23 == 255)
 			{
-				uint32_t anon25 = printf((uint8_t*)0x400884);
-				uint32_t anon26 = fflush(*(struct _IO_FILE**)0x600c30);
-				phi22 = (__zext uint64_t)(anon25 + anon26);
-				phi23 = 255;
+				uint32_t anon24 = printf((uint8_t*)0x400884);
+				uint32_t anon25 = fflush(*(struct _IO_FILE**)0x600c30);
+				phi_in3 = (__zext uint64_t)(anon24 + anon25);
+				phi22 = 255;
 			}
 			phi_in2 = phi7;
-			phi_in3 = phi22;
 			phi_in10 = anon19;
 			phi_in4 = phi11 + 1 & 0xffffffff;
-			uint32_t anon27 = phi23 - 2;
-			phi_in5 = (__zext uint64_t)anon27;
-			phi_in6 = anon27;
+			uint32_t anon26 = phi22 - 2;
+			phi_in5 = (__zext uint64_t)anon26;
+			phi_in6 = anon26;
 		}
 	}
 	while ((__zext uint32_t)(phi13 != 255) < ~phi13);
@@ -96,11 +95,11 @@ void main(uint64_t arg0, uint64_t arg1, uint64_t arg2, uint64_t arg3, uint64_t a
 	{
 		alloca1.field3 = (__zext uint8_t)(phi13 == 0);
 		alloca1.field1 = anon14;
-		uint64_t anon28 = phi8 & 0xffffffff;
-		main(4195952, anon21, (__zext uint64_t)phi13, arg3, phi7, phi11 << 32 >> 32 >> 1 & 0xffffffff, anon28);
-		uint64_t anon29 = (__zext uint64_t)((uint32_t)phi12 - anon20 - alloca1.field1);
-		main(4195982, anon21, anon29, arg3, 0, 0, anon28);
-		main(4196002, anon21, anon29, arg3, phi7, 0, anon28);
+		uint64_t anon27 = phi8 & 0xffffffff;
+		main(4195952, anon21, (__zext uint64_t)phi13, arg3, phi7, phi11 << 32 >> 32 >> 1 & 0xffffffff, anon27);
+		uint64_t anon28 = (__zext uint64_t)((uint32_t)phi12 - anon20 - alloca1.field1);
+		main(4195982, anon21, anon28, arg3, 0, 0, anon27);
+		main(4196002, anon21, anon28, arg3, phi7, 0, anon27);
 	}
 	return;
 }

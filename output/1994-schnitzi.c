@@ -18,7 +18,7 @@ void main(uint64_t arg0, uint64_t arg1)
 	uint32_t* anon10;
 	uint64_t anon15;
 	uint32_t* anon17;
-	uint32_t phi19;
+	uint32_t phi_in19;
 	alloca1.field4 = arg0;
 	struct _IO_FILE** anon3 = (struct _IO_FILE**)0x600c18;
 	uint64_t anon2 = ftell(*anon3);
@@ -70,50 +70,49 @@ void main(uint64_t arg0, uint64_t arg1)
 		while (anon18 != 0);
 	}
 	uint32_t* anon20 = (uint32_t*)0x600c24;
-	phi19 = *anon20;
+	phi_in19 = *anon20;
 	uint32_t dispatch21 = 0;
 	if (*anon20 < *anon17)
 	{
 		while (true)
 		{
-			uint32_t* anon23;
-			uint32_t phi24;
-			uint64_t phi25;
-			uint32_t anon28;
+			uint32_t* anon22;
+			uint32_t phi23;
+			uint64_t phi24;
+			uint32_t anon27;
 			if (dispatch21 == 0)
 			{
-				uint32_t phi_in22 = phi19;
-				anon23 = (uint32_t*)0x600c30;
-				*anon23 = 0;
-				phi24 = phi_in22;
-				phi25 = 0;
+				anon22 = (uint32_t*)0x600c30;
+				*anon22 = 0;
+				phi23 = phi_in19;
+				phi24 = 0;
 			}
 			if (dispatch21 == 1 || dispatch21 == 0 && (*anon10 >> 31 | (__zext uint32_t)(*anon10 == 0)) == 0)
 			{
 				alloca1.field0 = 32;
-				uint32_t phi26 = 32;
-				uint64_t anon27 = phi25 << 32 >> 30;
-				if (phi24 < *(uint32_t*)(anon15 + anon27 + 128))
+				uint32_t phi25 = 32;
+				uint64_t anon26 = phi24 << 32 >> 30;
+				if (phi23 < *(uint32_t*)(anon15 + anon26 + 128))
 				{
-					fseek(*anon3, (__sext int64_t)(phi24 + *(uint32_t*)(anon15 + anon27 + 528)), 0);
+					fseek(*anon3, (__sext int64_t)(phi23 + *(uint32_t*)(anon15 + anon26 + 528)), 0);
 					scanf((uint8_t*)0x400884);
-					phi26 = (__sext int32_t)alloca1.field0;
+					phi25 = (__sext int32_t)alloca1.field0;
 				}
-				putchar(phi26);
-				anon28 = *anon23 + 1;
-				*anon23 = anon28;
+				putchar(phi25);
+				anon27 = *anon22 + 1;
+				*anon22 = anon27;
 			}
 			putchar(10);
-			uint32_t anon29 = *anon20 + 1;
-			*anon20 = anon29;
-			phi19 = anon29;
+			uint32_t anon28 = *anon20 + 1;
+			*anon20 = anon28;
+			phi_in19 = anon28;
 			dispatch21 = 0;
-			if (*anon17 <= anon29)
+			if (*anon17 <= anon28)
 			{
 				break;
 			}
-			phi24 = *anon20;
-			phi25 = (__zext uint64_t)anon28;
+			phi23 = *anon20;
+			phi24 = (__zext uint64_t)anon27;
 			dispatch21 = 1;
 		}
 	}
