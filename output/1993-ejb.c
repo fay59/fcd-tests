@@ -93,9 +93,9 @@ void main(uint64_t arg0, uint64_t arg1)
 								phi16 = anon25;
 								phi17 = *anon1;
 							}
-							phi11 = phi16;
-							uint64_t phi_in26 = phi17;
-							phi13 = phi_in26;
+							uint8_t* phi_in26 = phi16;
+							phi13 = phi17;
+							phi11 = phi_in26;
 						}
 					}
 				}

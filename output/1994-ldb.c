@@ -35,10 +35,7 @@ void main(uint64_t arg0)
 			uint32_t anon5 = puts((uint8_t*)(((__sext int64_t)*anon3 << 2) + 6294336));
 			phi4 = anon5 & *anon3;
 		}
-		if (phi4 == 0)
-		{
-			break;
-		}
+		break;
 	}
 	return;
 }

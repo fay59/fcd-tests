@@ -16,52 +16,40 @@ void main(uint64_t arg0, uint64_t arg1, uint64_t arg2)
 	*anon1 = anon2;
 	*(uint8_t*)anon2 = 13;
 	**(uint8_t**)(arg2 + 16) = 0;
-	uint32_t dispatch4 = 0;
 	while (true)
 	{
-		uint64_t phi5;
-		uint64_t* anon6;
+		uint64_t phi4;
 		uint64_t* anon7;
 		uint64_t anon8;
-		uint8_t phi11;
-		if (dispatch4 == 0)
+		uint64_t* anon5 = (uint64_t*)(arg2 + 8);
+		phi4 = *anon5;
+		uint32_t dispatch6 = 0;
+		do
 		{
-			anon6 = (uint64_t*)(arg2 + 8);
-			phi5 = *anon6;
-		}
-		if (dispatch4 == 1 || dispatch4 == 0)
-		{
-			printf((uint8_t*)phi5);
+			printf((uint8_t*)phi4);
 			anon7 = (uint64_t*)0x6009b0;
 			anon8 = *anon1 - 1;
 			*anon7 = anon8;
-			phi5 = *anon6;
-			dispatch4 = 1;
+			phi4 = *anon5;
 		}
-		if (anon8 >= *anon6 && (dispatch4 == 1 || dispatch4 == 0))
+		while (anon8 < *anon5);
+		uint8_t* anon9 = (uint8_t*)anon8;
+		uint8_t anon10 = *anon9 + 1;
+		*anon9 = anon10;
+		uint8_t phi11 = anon10;
+		if ((__sext int32_t)phi11 > (uint32_t)((__sext int64_t)**(uint8_t**)0x6009a8 + (arg1 << 1)) * (uint32_t)arg1)
 		{
-			uint8_t* anon9 = (uint8_t*)anon8;
-			uint8_t anon10 = *anon9 + 1;
-			*anon9 = anon10;
-			phi11 = anon10;
-		}
-		if (dispatch4 == 2 || anon8 >= *anon6 && dispatch4 == 1 || anon8 >= *anon6 && dispatch4 == 0)
-		{
-			dispatch4 = 0;
-			if ((__sext int32_t)phi11 > (uint32_t)((__sext int64_t)**(uint8_t**)0x6009a8 + (arg1 << 1)) * (uint32_t)arg1)
+			*anon7 = *anon7 - 1;
+			uint8_t anon12 = (uint8_t)((__zext uint64_t)((uint8_t)arg1 + **(uint8_t**)0x6009a8) * (anon3 >> 32));
+			*(uint8_t*)*anon7 = anon12;
+			phi4 = *anon5;
+			dispatch6 = 0;
+			if (*anon5 <= *anon7)
 			{
-				*anon7 = *anon7 - 1;
-				uint8_t anon12 = (uint8_t)((__zext uint64_t)((uint8_t)arg1 + **(uint8_t**)0x6009a8) * (anon3 >> 32));
-				*(uint8_t*)*anon7 = anon12;
-				phi5 = *anon6;
-				dispatch4 = 1;
-				if (*anon6 <= *anon7)
-				{
-					uint8_t anon13 = anon12 + 1;
-					*(uint8_t*)*anon7 = anon13;
-					phi11 = anon13;
-					dispatch4 = 2;
-				}
+				uint8_t anon13 = anon12 + 1;
+				*(uint8_t*)*anon7 = anon13;
+				phi11 = anon13;
+				dispatch6 = 1;
 			}
 		}
 	}
