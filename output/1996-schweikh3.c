@@ -44,7 +44,8 @@ void main(uint64_t arg0, uint64_t arg1, uint64_t arg2)
 			uint64_t phi9 = anon7;
 			if (*anon8 != 0)
 			{
-				while (true)
+				uint64_t anon16;
+				do
 				{
 					uint8_t* anon11;
 					uint8_t* phi12;
@@ -76,13 +77,13 @@ void main(uint64_t arg0, uint64_t arg1, uint64_t arg2)
 						phi14 = *anon6;
 						phi15 = *anon8;
 					}
-					break;
-					uint64_t anon16 = phi15 >> 1;
+					anon16 = phi15 >> 1;
 					*anon8 = anon16;
 					uint64_t anon17 = anon16 | phi14;
 					*anon6 = anon17;
 					phi9 = anon17;
 				}
+				while (anon16 != 0);
 			}
 			if (*anon1 == 99)
 			{

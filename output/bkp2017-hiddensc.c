@@ -208,14 +208,15 @@ void main(uint64_t arg0, uint64_t arg1, uint64_t arg2)
 		privdrop(5923, 7190, 0);
 		while (true)
 		{
-			while (true)
+			uint32_t anon17;
+			do
 			{
 				uint32_t anon16 = accept(alloca1.field6, (struct sockaddr*)&alloca1.field19, &alloca1.field5);
 				alloca1.field10 = anon16;
-				uint32_t anon17 = fork();
+				anon17 = fork();
 				alloca1.field11 = anon17;
-				break;
 			}
+			while (anon17 != 0);
 			uint8_t* anon18 = inet_ntoa(alloca1.field20);
 			alloca1.field14 = (uint64_t)anon18;
 			printf((uint8_t*)0x1c22);
