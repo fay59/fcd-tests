@@ -6,8 +6,4 @@ Under these branches, they publish the decompiled output and the error output un
 
 The `master` branch is meant to have the "master copy" of the test script and executables. Travis CI virtual machines merge with master every time they run.
 
-## Limitations
-
-Fcd does not have a stable output. This means that two invocations on the same executable can have different results. This complexifies the task of verifying output across runs.
-
   [1]: https://github.com/zneak/fcd
