@@ -71,7 +71,7 @@ void main(uint64_t arg0, uint64_t arg1, uint64_t arg2, uint64_t arg3, uint64_t a
 		{
 			uint32_t phi23;
 			anon21 = (uint64_t)&alloca1;
-			main(4195888, anon21, 0, arg3, phi7, phi11, (__zext uint64_t)(0 - phi13));
+			main(4195888, anon21, 0, arg3, phi7, phi11, (__zext uint64_t)-phi13);
 			uint64_t phi22 = 1;
 			uint32_t anon24 = (uint32_t)phi12;
 			phi23 = anon24;

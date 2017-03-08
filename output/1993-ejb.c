@@ -65,7 +65,7 @@ void main(uint64_t arg0, uint64_t arg1)
 							else 
 							{
 								uint64_t phi24;
-								uint64_t anon19 = (__zext uint64_t)(0 - anon10);
+								uint64_t anon19 = (__zext uint64_t)-anon10;
 								uint8_t* anon18 = malloc(anon19);
 								anon20 = (uint64_t*)0x600dd0;
 								uint64_t anon21 = (uint64_t)anon18;
@@ -93,9 +93,9 @@ void main(uint64_t arg0, uint64_t arg1)
 								phi16 = anon25;
 								phi17 = *anon1;
 							}
-							uint8_t* phi_in26 = phi16;
-							phi13 = phi17;
-							phi11 = phi_in26;
+							phi11 = phi16;
+							uint64_t phi_in26 = phi17;
+							phi13 = phi_in26;
 						}
 					}
 				}
@@ -120,7 +120,7 @@ void main(uint64_t arg0, uint64_t arg1)
 			{
 				if (*phi11 == 255)
 				{
-					*(uint8_t*)(*anon20 + (__zext uint64_t)(0 - *anon9) - 1) = *(uint8_t*)(phi13 + 1);
+					*(uint8_t*)(*anon20 + (__zext uint64_t)-*anon9 - 1) = *(uint8_t*)(phi13 + 1);
 					puts((uint8_t*)*anon20);
 				}
 				if (*phi11 == 254)

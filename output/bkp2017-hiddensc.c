@@ -163,7 +163,7 @@ void main(uint64_t arg0, uint64_t arg1, uint64_t arg2)
 	do_srand(5295);
 	uint64_t anon5 = rand64(5300);
 	uint64_t anon6 = (uint64_t)((__zext uint128_t)anon5 * -9223372036854677503 >> 64);
-	*(uint64_t*)&alloca1.field12 = (__sext int64_t)(0 - alloca1.field7) & anon5 + ((anon5 - anon6 >> 1) + anon6 >> 46) * -93824992236885;
+	*(uint64_t*)&alloca1.field12 = (__sext int64_t)-alloca1.field7 & anon5 + ((anon5 - anon6 >> 1) + anon6 >> 46) * -93824992236885;
 	printf((uint8_t*)0x1b83);
 	printf((uint8_t*)0x1b9e);
 	getpid();
