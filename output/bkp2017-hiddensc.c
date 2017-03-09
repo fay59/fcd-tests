@@ -2,7 +2,7 @@
 
 void socket@@GLIBC_2.2.5(uint64_t arg0, uint64_t arg1, uint64_t arg2)
 {
-	llvm.trap();
+	__builtin_trap();
 }
 void _init(uint64_t arg0)
 {
@@ -19,7 +19,7 @@ void _start(uint64_t arg0, uint64_t arg1, uint64_t arg2)
 	uint64_t anon1 = anon2 - 16;
 	*(uint64_t*)anon1 = anon2 - 8;
 	__libc_start_main((uint32_t(*)(uint32_t, uint8_t**, uint8_t**))0x140d, (uint32_t)arg0, (uint8_t**)arg1, (void(*)())0x1a40, (void(*)())0x1ab0, (void(*)())arg2, *(uint8_t**)anon1);
-	llvm.trap();
+	__builtin_trap();
 }
 void deregister_tm_clones(uint64_t arg0)
 {
@@ -181,7 +181,7 @@ void main(uint64_t arg0, uint64_t arg1, uint64_t arg2)
 		{
 			perror((uint8_t*)0x1be0);
 		}
-		llvm.memset.p0i8.i64((uint8_t*)&alloca1.field15, 48, 16, 8, 0);
+		memcpy((uint8_t*)&alloca1.field15, 48, 16);
 		alloca1.field15 = 2;
 		uint16_t anon11 = htons((uint16_t)alloca1.field9);
 		alloca1.field16 = anon11;

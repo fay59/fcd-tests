@@ -11,7 +11,7 @@ void _init(uint64_t arg0)
 void main(uint64_t arg0, uint64_t arg1)
 {
 	uint32_t anon6;
-	uint64_t phi38;
+	uint64_t phi_in38;
 	*(uint64_t*)(arg1 - 8) = arg0;
 	uint64_t anon1 = arg1 - 3376;
 	uint64_t anon2 = arg1 - 3120;
@@ -34,7 +34,7 @@ void main(uint64_t arg0, uint64_t arg1)
 				{
 					uint64_t anon16;
 					uint32_t anon18;
-					uint64_t phi64;
+					uint64_t phi65;
 					uint64_t phi11 = 0;
 					uint32_t phi12 = 0;
 					uint64_t phi_in13 = 0;
@@ -58,7 +58,7 @@ void main(uint64_t arg0, uint64_t arg1)
 					}
 					if (*anon4 == 0 || anon18 <= 119 && *anon4 != 0)
 					{
-						llvm.memset.p0i8.i64((uint8_t*)(anon16 + (phi11 << 32 >> 30)), 0, phi12 > 119 ? 4 : (119 - phi11 << 2 & 0x3fffffffc) + 4, 1, 0);
+						memcpy((uint8_t*)(anon16 + (phi11 << 32 >> 30)), 0, phi12 > 119 ? 4 : (119 - phi11 << 2 & 0x3fffffffc) + 4);
 					}
 					uint64_t phi_in19 = 0;
 					uint8_t phi20 = *anon8;
@@ -101,8 +101,8 @@ void main(uint64_t arg0, uint64_t arg1)
 						if (*(uint32_t*)(anon1 + anon30 + 384) != 0)
 						{
 							uint64_t phi_in32;
-							uint64_t phi37;
-							uint64_t phi_in40;
+							uint64_t phi_in37;
+							uint64_t phi40;
 							uint64_t phi41;
 							uint32_t phi43;
 							uint32_t anon46;
@@ -110,10 +110,10 @@ void main(uint64_t arg0, uint64_t arg1)
 							uint64_t anon49;
 							int64_t anon50;
 							uint32_t anon51;
-							uint64_t phi_in56;
-							uint64_t phi_in57;
+							uint64_t phi56;
+							uint32_t phi57;
 							uint64_t phi58;
-							uint32_t phi59;
+							uint64_t phi59;
 							uint64_t phi60;
 							uint64_t phi61;
 							uint64_t anon33 = anon30 + 4;
@@ -123,10 +123,10 @@ void main(uint64_t arg0, uint64_t arg1)
 							uint64_t phi36 = 1;
 							if (*(uint32_t*)(anon16 + anon33) == 0)
 							{
-								phi37 = phi_in29;
+								phi_in37 = phi_in29;
 								uint64_t anon39 = anon31 >> 32;
-								phi38 = anon39;
-								phi_in40 = phi_in29;
+								phi_in38 = anon39;
+								phi40 = phi_in29;
 								phi41 = anon39;
 							}
 							else 
@@ -150,10 +150,10 @@ void main(uint64_t arg0, uint64_t arg1)
 								while (*(uint32_t*)(phi42 + arg1 - 2988) != 0);
 								anon48 = llvm.ssub.with.overflow.i32(anon46, 4);
 								anon49 = phi_in29 + anon47 + 4294967295 & 0xffffffff;
-								phi37 = anon49;
+								phi_in37 = anon49;
 								anon51 = (uint32_t)phi_in29 + phi43;
 								anon50 = (__sext int64_t)anon51;
-								phi38 = anon50;
+								phi_in38 = anon50;
 							}
 							uint32_t anon52 = (uint32_t)((__sext int64_t)*(uint32_t*)(anon1 + anon30 + 384) % 64);
 							uint64_t anon54 = (__zext uint64_t)anon51;
@@ -161,46 +161,46 @@ void main(uint64_t arg0, uint64_t arg1)
 							uint32_t anon55 = phi43 - 3;
 							if (*(uint32_t*)(anon16 + anon33) == 0 && anon52 == 60 || *(uint32_t*)(anon16 + anon33) != 0 && anon53 == -(((__zext uint32_t)(anon55 < 0 ^ anon48.field1) ^ 1) & (__zext uint32_t)(anon55 != 0)))
 							{
-								phi_in56 = phi37;
-								phi_in57 = phi38;
-								phi58 = phi_in56;
-								phi59 = (uint32_t)(((__sext int64_t)*(uint8_t*)(__sext int64_t)(*(uint32_t*)(anon1 + (phi_in57 << 2) + 384) / 64 + 4197048) - 4) % 10) + 48;
-								phi60 = phi_in57;
+								phi56 = phi_in37;
+								phi57 = (uint32_t)(((__sext int64_t)*(uint8_t*)(__sext int64_t)(*(uint32_t*)(anon1 + (phi_in38 << 2) + 384) / 64 + 4197048) - 4) % 10) + 48;
+								phi58 = phi_in38;
 							}
 							if (*(uint32_t*)(anon16 + anon33) != 0 && anon53 != -(((__zext uint32_t)(anon55 < 0 ^ anon48.field1) ^ 1) & (__zext uint32_t)(anon55 != 0)))
 							{
-								phi_in40 = anon49;
+								phi40 = anon49;
 								phi41 = anon50;
-								phi_in56 = anon54;
-								phi_in57 = anon50;
+								phi59 = anon54;
+								phi60 = anon50;
 								phi61 = 2;
 							}
 							if (anon52 != 60 && *(uint32_t*)(anon16 + anon33) == 0 || *(uint32_t*)(anon16 + anon33) != 0 && anon53 != -(((__zext uint32_t)(anon55 < 0 ^ anon48.field1) ^ 1) & (__zext uint32_t)(anon55 != 0)) && anon46 == 2)
 							{
-								phi_in57 = phi41;
-								phi_in56 = phi_in40;
-								phi61 = (__sext int64_t)*(uint32_t*)(anon1 + (phi_in57 << 2) + 384);
+								uint64_t phi_in62 = phi40;
+								phi59 = phi_in62;
+								phi60 = phi41;
+								phi61 = (__sext int64_t)*(uint32_t*)(anon1 + (phi41 << 2) + 384);
 							}
 							if (anon52 != 60 && *(uint32_t*)(anon16 + anon33) == 0 || *(uint32_t*)(anon16 + anon33) != 0 && anon53 != -(((__zext uint32_t)(anon55 < 0 ^ anon48.field1) ^ 1) & (__zext uint32_t)(anon55 != 0)) && anon46 == 2 || *(uint32_t*)(anon16 + anon33) != 0 && anon53 != -(((__zext uint32_t)(anon55 < 0 ^ anon48.field1) ^ 1) & (__zext uint32_t)(anon55 != 0)) && anon46 != 2)
 							{
-								phi58 = phi_in56;
-								phi59 = (__sext int32_t)*(uint8_t*)(phi61 + 4197048);
-								phi60 = phi_in57;
+								phi_in37 = phi59;
+								phi58 = phi60;
+								phi56 = phi_in37;
+								phi57 = (__sext int32_t)*(uint8_t*)(phi61 + 4197048);
 							}
-							phi_in29 = phi58;
-							uint64_t* anon62 = (uint64_t*)(arg1 - 3368);
-							*anon62 = phi60;
-							putchar(phi59);
-							uint64_t anon63 = *anon62 << 2;
-							if (*(uint32_t*)(anon1 + anon63 + 392) == -*(uint32_t*)(anon1 + anon63 + 396))
+							phi_in29 = phi56;
+							uint64_t* anon63 = (uint64_t*)(arg1 - 3368);
+							*anon63 = phi58;
+							putchar(phi57);
+							uint64_t anon64 = *anon63 << 2;
+							if (*(uint32_t*)(anon1 + anon64 + 392) == -*(uint32_t*)(anon1 + anon64 + 396))
 							{
 								putchar(32);
 							}
 						}
-						phi64 = phi_in29;
-						phi24 = phi64 + 1 & 0xffffffff;
+						phi65 = phi_in29;
+						phi24 = phi65 + 1 & 0xffffffff;
 					}
-					while ((uint32_t)phi64 < 119);
+					while ((uint32_t)phi65 < 119);
 					putchar(10);
 				}
 			}
@@ -216,7 +216,7 @@ void _start(uint64_t arg0, uint64_t arg1, uint64_t arg2)
 	uint64_t anon1 = anon2 - 16;
 	*(uint64_t*)anon1 = anon2 - 8;
 	__libc_start_main((uint32_t(*)(uint32_t, uint8_t**, uint8_t**))0x4004a0, (uint32_t)arg0, (uint8_t**)arg1, (void(*)())0x400a30, (void(*)())0x400aa0, (void(*)())arg2, *(uint8_t**)anon1);
-	llvm.trap();
+	__builtin_trap();
 }
 void deregister_tm_clones(uint64_t arg0)
 {
