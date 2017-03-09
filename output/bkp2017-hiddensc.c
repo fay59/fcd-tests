@@ -181,7 +181,7 @@ void main(uint64_t arg0, uint64_t arg1, uint64_t arg2)
 		{
 			perror((uint8_t*)0x1be0);
 		}
-		memcpy((uint8_t*)&alloca1.field15, 48, 16);
+		memset((uint8_t*)&alloca1.field15, 48, 16);
 		alloca1.field15 = 2;
 		uint16_t anon11 = htons((uint16_t)alloca1.field9);
 		alloca1.field16 = anon11;
