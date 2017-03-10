@@ -5,7 +5,7 @@ void func_4001fb(uint64_t arg0, uint64_t arg1)
 	while (true)
 	{
 		uint64_t phi1 = 10;
-		uint64_t phi2 = 5;
+		uint64_t phi_in2 = 5;
 		uint64_t phi3 = 5;
 		uint64_t phi4 = arg1;
 		if (arg1 != 10)
@@ -18,7 +18,7 @@ void func_4001fb(uint64_t arg0, uint64_t arg1)
 			else 
 			{
 				phi1 = phi4 - 1;
-				phi2 = phi_in5;
+				phi_in2 = phi_in5;
 				if (phi4 == 21)
 				{
 					break;
@@ -27,18 +27,16 @@ void func_4001fb(uint64_t arg0, uint64_t arg1)
 		}
 		if (arg1 == 10 || phi4 >= 1 && phi4 != 21 && arg1 != 10)
 		{
-			uint64_t anon9;
-			uint64_t phi_in6 = phi1;
-			uint64_t phi_in7 = phi2;
+			uint64_t anon7;
+			phi4 = phi1;
 			do
 			{
-				uint64_t phi8 = phi_in7;
-				phi_in7 = 4;
-				anon9 = phi8 * phi_in6;
-				phi3 = anon9;
-				phi4 = phi_in6;
+				uint64_t phi6 = phi_in2;
+				phi_in2 = 4;
+				anon7 = phi6 * phi4;
+				phi3 = anon7;
 			}
-			while (anon9 == 4);
+			while (anon7 == 4);
 		}
 	}
 	return;
