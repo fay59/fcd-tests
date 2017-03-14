@@ -37,10 +37,10 @@ void main(uint64_t arg0, uint64_t arg1, uint64_t arg2)
 		uint8_t anon10 = *anon9 + 1;
 		*anon9 = anon10;
 		uint8_t phi11 = anon10;
-		if ((__sext int32_t)phi11 > (uint32_t)arg1 * (uint32_t)((__sext int64_t)**(uint8_t**)0x6009a8 + (arg1 << 1)))
+		if ((__sext int32_t)phi11 > (uint32_t)((__sext int64_t)**(uint8_t**)0x6009a8 + (arg1 << 1)) * (uint32_t)arg1)
 		{
 			*anon7 = *anon7 - 1;
-			uint8_t anon12 = (uint8_t)((anon3 >> 32) * (__zext uint64_t)((uint8_t)arg1 + **(uint8_t**)0x6009a8));
+			uint8_t anon12 = (uint8_t)((__zext uint64_t)((uint8_t)arg1 + **(uint8_t**)0x6009a8) * (anon3 >> 32));
 			*(uint8_t*)*anon7 = anon12;
 			phi4 = *anon5;
 			dispatch6 = 0;
