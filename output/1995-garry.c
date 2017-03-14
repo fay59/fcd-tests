@@ -87,7 +87,7 @@ uint64_t cb(uint64_t arg0)
 	uint32_t* anon13 = (uint32_t*)0x6012c0;
 	*anon13 = (uint32_t)anon8 - 3 - (__zext uint32_t)anon11.field1 - 6306624;
 	uint64_t phi14 = 6306624;
-	uint64_t phi_in15 = 6296320;
+	uint64_t phi15 = 6296320;
 	uint8_t* phi16 = (uint8_t*)0x601300;
 	uint8_t* phi_in17 = anon2;
 	if (anon1 == null)
@@ -96,140 +96,138 @@ uint64_t cb(uint64_t arg0)
 	}
 	else 
 	{
-		uint64_t phi19;
-		uint8_t* phi21;
+		uint8_t* phi20;
+		uint64_t phi21;
 		do
 		{
-			uint64_t phi18 = phi14;
-			phi19 = phi_in15;
-			uint8_t* phi_in20 = phi16;
-			phi21 = phi_in17;
-			uint64_t phi22 = phi19;
-			uint8_t* phi23 = phi_in20;
-			if (*phi21 != 0)
+			uint64_t phi18 = phi15;
+			uint8_t* phi_in19 = phi16;
+			phi20 = phi_in17;
+			phi21 = phi18;
+			uint8_t* phi22 = phi_in19;
+			if (*phi20 != 0)
 			{
-				uint64_t anon26;
-				if (*phi21 == *anon3)
+				uint64_t anon25;
+				if (*phi20 == *anon3)
 				{
-					anon26 = phi18 + 1;
-					uint8_t* anon25 = (uint8_t*)anon26;
-					uint8_t* anon24 = strchr(anon25, (__sext int32_t)*phi21);
-					if (anon24 == null)
+					anon25 = phi14 + 1;
+					uint8_t* anon24 = (uint8_t*)anon25;
+					uint8_t* anon23 = strchr(anon24, (__sext int32_t)*phi20);
+					if (anon23 == null)
 					{
-						*(uint8_t*)phi22 = *phi21;
-						phi14 = anon26;
-						uint64_t anon27 = phi22 + 1;
-						phi_in15 = anon27;
-						phi16 = (uint8_t*)anon27;
-						phi_in17 = anon25;
+						*(uint8_t*)phi18 = *phi20;
+						phi14 = anon25;
+						uint64_t anon26 = phi18 + 1;
+						phi15 = anon26;
+						phi16 = (uint8_t*)anon26;
+						phi_in17 = anon24;
 					}
 					else 
 					{
-						*anon24 = 0;
-						uint8_t* anon28 = strchr(anon25, 32);
-						if (anon28 == null)
+						*anon23 = 0;
+						uint8_t* anon27 = strchr(anon24, 32);
+						if (anon27 == null)
 						{
-							uint8_t* anon29 = getenv(anon25);
-							if (anon29 == null)
+							uint8_t* anon28 = getenv(anon24);
+							if (anon28 == null)
 							{
-								*anon24 = *anon3;
-								*(uint8_t*)phi22 = *anon3;
-								*(uint8_t*)(phi22 + 1) = *anon3;
+								*anon23 = *anon3;
+								*(uint8_t*)phi18 = *anon3;
+								*(uint8_t*)(phi18 + 1) = *anon3;
+								uint64_t anon29 = phi14 + 2;
+								phi14 = anon29;
 								uint64_t anon30 = phi18 + 2;
-								phi14 = anon30;
-								uint64_t anon31 = phi22 + 2;
-								phi_in15 = anon31;
-								phi16 = (uint8_t*)anon31;
-								phi_in17 = (uint8_t*)anon30;
+								phi15 = anon30;
+								phi16 = (uint8_t*)anon30;
+								phi_in17 = (uint8_t*)anon29;
 							}
 							else 
 							{
+								uint64_t phi33;
 								uint64_t phi34;
-								uint64_t phi35;
-								uint8_t* anon46;
-								uint64_t phi_in32 = (uint64_t)anon29;
-								uint64_t phi_in33 = phi22;
+								uint8_t* anon44;
+								uint64_t phi_in31 = (uint64_t)anon28;
+								uint64_t phi_in32 = phi18;
 								do
 								{
+									phi33 = phi_in31;
 									phi34 = phi_in32;
-									phi35 = phi_in33;
-									if (*(uint8_t*)phi34 != 0)
+									if (*(uint8_t*)phi33 != 0)
 									{
-										uint8_t phi36 = *(uint8_t*)phi34;
-										uint64_t anon37 = phi34 + 1;
-										phi_in32 = anon37;
-										if (*(uint8_t*)phi34 == 92)
+										uint8_t phi35 = *(uint8_t*)phi33;
+										uint64_t anon36 = phi33 + 1;
+										phi_in31 = anon36;
+										if (*(uint8_t*)phi33 == 92)
 										{
-											phi36 = 92;
-											phi_in32 = anon37;
-											uint8_t anon38 = *(uint8_t*)anon37 - 48;
-											if (*(uint8_t*)anon37 == 57 | anon38 < 9)
+											phi35 = 92;
+											phi_in31 = anon36;
+											uint8_t anon37 = *(uint8_t*)anon36 - 48;
+											if (*(uint8_t*)anon36 == 57 | anon37 < 9)
 											{
-												phi36 = anon38;
-												uint64_t anon39 = phi34 + 2;
-												phi_in32 = anon39;
-												uint64_t anon40 = (__zext uint64_t)*(uint8_t*)anon39 + 4294967248;
-												if ((uint8_t)anon40 < 10)
+												phi35 = anon37;
+												uint64_t anon38 = phi33 + 2;
+												phi_in31 = anon38;
+												uint64_t anon39 = (__zext uint64_t)*(uint8_t*)anon38 + 4294967248;
+												if ((uint8_t)anon39 < 10)
 												{
-													uint64_t phi41;
-													uint64_t phi43;
-													uint64_t anon42 = anon40 + ((__zext uint64_t)*(uint8_t*)anon37 << 3) + 34359737984;
-													phi41 = anon42;
-													uint64_t anon44 = phi34 + 3;
-													phi43 = anon44;
-													if (*(uint8_t*)anon44 - 48 < 10)
+													uint64_t phi40;
+													uint64_t phi42;
+													uint64_t anon41 = anon39 + ((__zext uint64_t)*(uint8_t*)anon36 << 3) + 34359737984;
+													phi40 = anon41;
+													uint64_t anon43 = phi33 + 3;
+													phi42 = anon43;
+													if (*(uint8_t*)anon43 - 48 < 10)
 													{
-														phi41 = (__zext uint64_t)*(uint8_t*)anon44 + 4294967248 + (anon42 << 3) & 0xffffffff;
-														phi43 = phi34 + 4;
+														phi40 = (__zext uint64_t)*(uint8_t*)anon43 + 4294967248 + (anon41 << 3) & 0xffffffff;
+														phi42 = phi33 + 4;
 													}
-													uint64_t phi_in45 = phi43;
-													phi36 = (uint8_t)phi41;
-													phi_in32 = phi_in45;
+													phi_in31 = phi42;
+													phi35 = (uint8_t)phi40;
 												}
 											}
 										}
-										anon46 = (uint8_t*)phi35;
-										*anon46 = phi36;
-										phi_in33 = phi35 + 1;
+										anon44 = (uint8_t*)phi34;
+										*anon44 = phi35;
+										phi_in32 = phi34 + 1;
 									}
 								}
-								while (*(uint8_t*)phi34 != 0);
-								uint64_t anon47 = (uint64_t)anon24 + 1;
-								phi14 = anon47;
-								phi_in15 = phi35;
-								phi16 = anon46;
-								phi_in17 = (uint8_t*)anon47;
+								while (*(uint8_t*)phi33 != 0);
+								uint64_t anon45 = (uint64_t)anon23 + 1;
+								phi14 = anon45;
+								phi15 = phi34;
+								phi16 = anon44;
+								phi_in17 = (uint8_t*)anon45;
 							}
 						}
 						else 
 						{
-							*(uint8_t*)phi22 = *phi21;
-							*anon24 = *phi21;
-							phi14 = anon26;
-							uint64_t anon48 = phi22 + 1;
-							phi_in15 = anon48;
-							phi16 = (uint8_t*)anon48;
-							phi_in17 = anon25;
+							*(uint8_t*)phi18 = *phi20;
+							*anon23 = *phi20;
+							phi14 = anon25;
+							uint64_t anon46 = phi18 + 1;
+							phi15 = anon46;
+							phi16 = (uint8_t*)anon46;
+							phi_in17 = anon24;
 						}
 					}
 				}
 				else 
 				{
-					*phi23 = *phi21;
-					uint64_t anon49 = (uint64_t)phi23 + 1;
-					phi19 = anon49;
-					phi18 = anon26;
-					phi22 = anon49;
-					phi23 = (uint8_t*)anon49;
-					if (*phi21 == 0)
+					*phi22 = *phi20;
+					uint64_t anon47 = (uint64_t)phi22 + 1;
+					phi21 = anon47;
+					phi14 = anon25;
+					phi18 = anon47;
+					phi22 = (uint8_t*)anon47;
+					if (*phi20 == 0)
 					{
 						break;
 					}
 				}
 			}
 		}
-		while (*phi21 != 0);
-		*anon13 = (uint32_t)phi19 - 6296320;
+		while (*phi20 != 0);
+		*anon13 = (uint32_t)phi21 - 6296320;
 		return 6296320;
 	}
 }
