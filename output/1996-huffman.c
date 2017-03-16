@@ -33,29 +33,30 @@ void main(uint64_t arg0, uint64_t arg1)
 				{
 					uint64_t anon16;
 					uint32_t anon18;
-					uint32_t anon68;
+					uint32_t anon66;
 					uint64_t phi11 = 0;
 					uint32_t phi12 = 0;
 					uint64_t phi_in13 = 0;
 					uint8_t phi14 = *anon4;
 					if (*anon4 != 0)
 					{
+						uint64_t phi15;
 						uint64_t anon17;
 						do
 						{
-							uint64_t phi15 = phi_in13;
+							phi15 = phi_in13;
 							anon16 = arg1 - 2992;
-							*(uint32_t*)(anon16 + (phi15 << 2 & 0x3fffffffc)) = (__zext uint32_t)(phi14 != 32);
-							anon17 = phi15 + 1;
+							*(uint32_t*)(anon16 + (phi15 << 2)) = (__zext uint32_t)(phi14 != 32);
+							anon17 = (phi15 & 0xffffffff) + 1;
 							phi_in13 = anon17;
-							phi14 = *(uint8_t*)(anon5 + (anon17 & 0xffffffff));
+							phi14 = *(uint8_t*)(anon5 + anon17);
 						}
-						while (*(uint8_t*)(anon5 + (anon17 & 0xffffffff)) != 0);
-						phi11 = anon17;
-						anon18 = (uint32_t)anon17;
-						phi12 = anon18;
+						while (*(uint8_t*)(anon5 + anon17) != 0);
+						phi11 = phi15 + 1;
+						anon18 = (uint32_t)phi15;
+						phi12 = anon18 + 1;
 					}
-					if (*anon4 == 0 || anon18 <= 119 && *anon4 != 0)
+					if (*anon4 == 0 || anon18 <= 118 && *anon4 != 0)
 					{
 						memset((uint8_t*)(anon16 + (phi11 << 32 >> 30)), 0, phi12 > 119 ? 4 : (119 - phi11 << 2 & 0x3fffffffc) + 4);
 					}
@@ -102,7 +103,7 @@ void main(uint64_t arg0, uint64_t arg1)
 						{
 							uint64_t phi_in32;
 							uint64_t phi37;
-							uint64_t phi38;
+							uint64_t phi_in38;
 							uint64_t phi39;
 							uint64_t phi40;
 							uint32_t phi43;
@@ -112,12 +113,11 @@ void main(uint64_t arg0, uint64_t arg1)
 							uint64_t anon50;
 							int64_t anon51;
 							uint32_t anon52;
-							uint64_t phi_in57;
-							uint64_t phi58;
-							uint64_t phi59;
-							uint32_t phi60;
+							uint64_t phi57;
+							uint32_t phi58;
+							uint64_t* anon59;
+							uint64_t phi60;
 							uint64_t phi61;
-							uint64_t phi62;
 							int64_t anon33 = anon30 + 4;
 							phi_in32 = anon33;
 							uint32_t phi_in34 = *(uint32_t*)(anon1 + anon30 + 384);
@@ -126,7 +126,7 @@ void main(uint64_t arg0, uint64_t arg1)
 							if (*(uint32_t*)(anon16 + anon33) == 0)
 							{
 								phi37 = phi_in24;
-								phi38 = anon31;
+								phi_in38 = anon31;
 								phi39 = phi_in24;
 								phi40 = anon31;
 							}
@@ -156,7 +156,7 @@ void main(uint64_t arg0, uint64_t arg1)
 								phi37 = anon50;
 								anon52 = (uint32_t)phi_in24 + phi43;
 								anon51 = (__sext int64_t)anon52;
-								phi38 = anon51;
+								phi_in38 = anon51;
 							}
 							uint32_t anon53 = (uint32_t)((__sext int64_t)*(uint32_t*)(anon1 + anon30 + 384) % 64);
 							uint32_t anon54 = (__zext uint32_t)((uint32_t)((__sext int64_t)anon45 % 64) != 60);
@@ -164,49 +164,47 @@ void main(uint64_t arg0, uint64_t arg1)
 							int32_t anon55 = (__sext int32_t)(anon56 != 0 & !(anon56 < 0 ^ anon49.field1));
 							if (*(uint32_t*)(anon16 + anon33) == 0 && anon53 == 60 || *(uint32_t*)(anon16 + anon33) != 0 && anon54 == anon55)
 							{
-								phi_in57 = phi37;
-								phi58 = phi38;
-								phi59 = phi_in57;
-								phi60 = (uint32_t)(((__sext int64_t)*(uint8_t*)(__sext int64_t)(*(uint32_t*)(anon1 + (phi58 << 2) + 384) / 64 + 4197048) - 4) % 10) + 48;
+								phi57 = phi37;
+								phi58 = (uint32_t)(((__sext int64_t)*(uint8_t*)(__sext int64_t)(*(uint32_t*)(anon1 + (phi_in38 << 2) + 384) / 64 + 4197048) - 4) % 10) + 48;
+								anon59 = (uint64_t*)(arg1 - 3368);
+								*anon59 = phi_in38;
 							}
 							if (*(uint32_t*)(anon16 + anon33) != 0 && anon54 != anon55)
 							{
 								phi39 = anon50;
 								phi40 = anon51;
-								phi61 = (__zext uint64_t)anon52;
-								phi58 = anon51;
-								phi62 = 2;
+								phi60 = (__zext uint64_t)anon52;
+								phi_in38 = anon51;
+								phi61 = 2;
 							}
 							if (anon53 != 60 && *(uint32_t*)(anon16 + anon33) == 0 || *(uint32_t*)(anon16 + anon33) != 0 && anon54 != anon55 && anon47 == 2)
 							{
-								uint64_t phi_in63 = phi39;
-								phi61 = phi_in63;
-								phi58 = phi40;
-								phi62 = (__sext int64_t)*(uint32_t*)(anon1 + (phi40 << 2) + 384);
+								uint64_t phi_in62 = phi39;
+								phi60 = phi_in62;
+								phi_in38 = phi40;
+								phi61 = (__sext int64_t)*(uint32_t*)(anon1 + (phi40 << 2) + 384);
 							}
 							if (anon53 != 60 && *(uint32_t*)(anon16 + anon33) == 0 || *(uint32_t*)(anon16 + anon33) != 0 && anon54 != anon55 && anon47 == 2 || *(uint32_t*)(anon16 + anon33) != 0 && anon54 != anon55 && anon47 != 2)
 							{
-								phi_in57 = phi61;
-								phi59 = phi_in57;
-								phi60 = (__sext int32_t)*(uint8_t*)(phi62 + 4197048);
+								phi57 = phi60;
+								phi58 = (__sext int32_t)*(uint8_t*)(phi61 + 4197048);
+								*anon59 = phi_in38;
 							}
-							phi_in24 = phi59;
-							uint64_t* anon64 = (uint64_t*)(arg1 - 3368);
-							*anon64 = phi58;
-							putchar(phi60);
-							uint64_t anon65 = *anon64 << 2;
-							if (*(uint32_t*)(anon1 + anon65 + 392) == -*(uint32_t*)(anon1 + anon65 + 396))
+							phi_in24 = phi57;
+							putchar(phi58);
+							uint64_t anon63 = *anon59 << 2;
+							if (*(uint32_t*)(anon1 + anon63 + 392) == -*(uint32_t*)(anon1 + anon63 + 396))
 							{
 								putchar(32);
 							}
 						}
-						uint64_t phi66 = phi_in24;
-						anon68 = (uint32_t)phi66;
-						uint32_t anon67 = anon68 + 1;
-						phi_in24 = (__zext uint64_t)anon67;
-						phi25 = anon67;
+						uint64_t phi64 = phi_in24;
+						anon66 = (uint32_t)phi64;
+						uint32_t anon65 = anon66 + 1;
+						phi_in24 = (__zext uint64_t)anon65;
+						phi25 = anon65;
 					}
-					while (anon68 < 119);
+					while (anon66 < 119);
 					putchar(10);
 				}
 			}

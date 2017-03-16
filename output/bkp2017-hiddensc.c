@@ -1,6 +1,6 @@
 #include "tests/bin/bkp2017-hiddensc.h"
 
-void socket@@GLIBC_2.2.5(uint64_t arg0, uint64_t arg1, uint64_t arg2)
+void socket@@GLIBC_2.2.5(uint64_t arg0, uint64_t arg1, uint64_t arg2, uint64_t arg3, uint64_t arg4, uint64_t arg5)
 {
 	__builtin_trap();
 }
@@ -127,23 +127,23 @@ void privdrop(uint64_t arg0, uint64_t arg1, uint64_t arg2)
 }
 uint64_t rand64(uint64_t arg0)
 {
-	uint32_t phi3;
-	uint64_t phi4;
-	uint32_t phi_in1 = 0;
-	uint64_t phi_in2 = 0;
+	uint64_t phi3;
+	uint32_t phi4;
+	uint64_t phi_in1 = 0;
+	uint32_t phi_in2 = 0;
 	do
 	{
 		phi3 = phi_in1;
 		phi4 = phi_in2;
-		if (phi3 < 64)
+		if (phi4 < 64)
 		{
 			uint32_t anon5 = rand();
-			phi_in1 = phi3 + 1;
-			phi_in2 = (__zext uint64_t)(anon5 & 1) | phi4 << 1;
+			phi_in1 = (__zext uint64_t)(anon5 & 1) | phi3 << 1;
+			phi_in2 = phi4 + 1;
 		}
 	}
-	while (phi3 < 64);
-	return phi4;
+	while (phi4 < 64);
+	return phi3;
 }
 void main(uint64_t arg0, uint64_t arg1, uint64_t arg2)
 {
