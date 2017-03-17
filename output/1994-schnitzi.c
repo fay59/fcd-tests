@@ -31,9 +31,9 @@ void main(uint64_t arg0, uint64_t arg1)
 			do
 			{
 				uint64_t phi6 = phi_in5;
-				anon7 = phi6 + 4;
+				anon7 = (phi6 & 0xffffffff) + 4;
 				phi_in5 = anon7;
-				uint16_t anon9 = (uint16_t)*(uint32_t*)(phi6 & 0xffffffff);
+				uint16_t anon9 = (uint16_t)*(uint32_t*)phi6;
 				anon8 = anon9 - 257 & (anon9 ^ 0x8080) & 0x8080;
 			}
 			while (anon8 == 0);
@@ -66,7 +66,7 @@ void main(uint64_t arg0, uint64_t arg1)
 			*anon23 = 0;
 			uint32_t phi24 = phi_in22;
 			uint32_t phi25 = 0;
-			if (*anon10 >= 1)
+			if ((*anon10 >> 31 | (__zext uint32_t)(*anon10 == 0)) == 0)
 			{
 				uint32_t anon28;
 				do

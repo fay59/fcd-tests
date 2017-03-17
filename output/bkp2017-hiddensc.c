@@ -56,7 +56,7 @@ void ALARMhandler(uint64_t arg0, uint64_t arg1)
 	puts((uint8_t*)0x1ad0);
 	exit(1);
 }
-void privdrop(uint64_t arg0, uint64_t arg1, uint64_t arg2)
+void privdrop(uint64_t arg0, uint64_t arg1)
 {
 	struct passwd* anon1 = getpwnam((uint8_t*)arg1);
 	if (anon1 == null)
@@ -75,37 +75,36 @@ void privdrop(uint64_t arg0, uint64_t arg1, uint64_t arg2)
 				uint32_t anon5 = setuid(*(uint32_t*)(anon4 + 16));
 				if (anon5 > 4294967295)
 				{
+					uint32_t anon6;
 					uint32_t anon7;
 					uint32_t anon8;
-					uint32_t anon9;
-					uint8_t anon6 = (uint8_t)arg2;
-					if (anon6 != 0)
+					if (!__undefined)
 					{
-						anon7 = chroot(*(uint8_t**)(anon4 + 32));
-						if (anon7 > 4294967295)
+						anon6 = chroot(*(uint8_t**)(anon4 + 32));
+						if (anon6 > 4294967295)
 						{
-							anon8 = chdir((uint8_t*)0x1b5d);
-							if (anon8 > 4294967295)
+							anon7 = chdir((uint8_t*)0x1b5d);
+							if (anon7 > 4294967295)
 							{
-								anon9 = chdir(*(uint8_t**)(anon4 + 32));
+								anon8 = chdir(*(uint8_t**)(anon4 + 32));
 							}
 						}
 					}
-					if (anon6 != 0 && anon7 > 4294967295 && anon8 > 4294967295 && anon9 > 4294967295 || anon6 == 0)
+					if (__undefined || !__undefined && anon6 > 4294967295 && anon7 > 4294967295 && anon8 > 4294967295)
 					{
 						return;
 					}
-					if (anon6 != 0)
+					if (!__undefined)
 					{
-						uint8_t* anon10;
-						if (anon9 <= 4294967295 && anon7 > 4294967295 && anon8 > 4294967295)
+						uint8_t* anon9;
+						if (anon8 <= 4294967295 && anon6 > 4294967295 && anon7 > 4294967295)
 						{
-							anon10 = (uint8_t*)0x1b60;
-							errx(4294967295, anon10);
+							anon9 = (uint8_t*)0x1b60;
+							errx(4294967295, anon9);
 						}
-						if (anon7 <= 4294967295 || anon8 <= 4294967295 && anon7 > 4294967295)
+						if (anon6 <= 4294967295 || anon7 <= 4294967295 && anon6 > 4294967295)
 						{
-							errx(4294967295, anon10);
+							errx(4294967295, anon9);
 						}
 					}
 				}
@@ -174,6 +173,7 @@ void main(uint64_t arg0, uint64_t arg1, uint64_t arg2)
 	alloca1.field13 = (uint64_t)anon8;
 	if (alloca1.field2 == 2)
 	{
+		uint32_t anon17;
 		uint32_t anon9 = atoi(*(uint8_t**)(alloca1.field0 + 8));
 		alloca1.field9 = anon9;
 		uint32_t anon10 = setsockopt(alloca1.field6, 1, 2, (uint8_t*)&alloca1.field4, 4);
@@ -205,34 +205,43 @@ void main(uint64_t arg0, uint64_t arg1, uint64_t arg2)
 			perror((uint8_t*)0x1bf7);
 		}
 		printf((uint8_t*)0x1bfe);
-		privdrop(5923, 7190, 0);
-		while (true)
+		privdrop(5923, 7190);
+		do
 		{
-			uint32_t anon17;
 			do
 			{
-				uint32_t anon16 = accept(alloca1.field6, (struct sockaddr*)&alloca1.field19, &alloca1.field5);
-				alloca1.field10 = anon16;
-				anon17 = fork();
-				alloca1.field11 = anon17;
+				do
+				{
+					uint32_t anon16 = accept(alloca1.field6, (struct sockaddr*)&alloca1.field19, &alloca1.field5);
+					alloca1.field10 = anon16;
+					anon17 = fork();
+					alloca1.field11 = anon17;
+					if (anon17 == 4294967295)
+					{
+						perror((uint8_t*)0x1c1d);
+						close(alloca1.field10);
+					}
+				}
+				while (anon17 == 4294967295);
+				if ((anon17 >> 31 | (__zext uint32_t)(anon17 == 0)) == 0)
+				{
+					close(alloca1.field10);
+				}
 			}
-			while (anon17 != 0);
-			uint8_t* anon18 = inet_ntoa(alloca1.field20);
-			alloca1.field14 = (uint64_t)anon18;
-			printf((uint8_t*)0x1c22);
-			dup2(alloca1.field10, 1);
-			dup2(alloca1.field10, 2);
-			dup2(alloca1.field10, 0);
-			signal(14, (void(*)(uint32_t))0x1270);
-			alarm(20);
-			while (true)
-			{
-				handle(6186);
-			}
-			break;
-			close(alloca1.field10);
-			perror((uint8_t*)0x1c1d);
-			close(alloca1.field10);
+			while ((anon17 >> 31 | (__zext uint32_t)(anon17 == 0)) == 0);
+		}
+		while (anon17 != 0);
+		uint8_t* anon18 = inet_ntoa(alloca1.field20);
+		alloca1.field14 = (uint64_t)anon18;
+		printf((uint8_t*)0x1c22);
+		dup2(alloca1.field10, 1);
+		dup2(alloca1.field10, 2);
+		dup2(alloca1.field10, 0);
+		signal(14, (void(*)(uint32_t))0x1270);
+		alarm(20);
+		while (true)
+		{
+			handle(6186);
 		}
 	}
 	else 

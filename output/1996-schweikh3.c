@@ -110,7 +110,10 @@ void main(uint64_t arg0, uint64_t arg1, uint64_t arg2)
 						(__asm "ucomisd xmm0, qword ptr [rip + 0x331]")();
 						anon21 = *anon8 + 1024;
 						*anon8 = anon21;
-						phi19 = *anon8 & 0xf;
+						if (*anon6 > anon21)
+						{
+							phi19 = *anon8 & 0xf;
+						}
 					}
 					while (*anon6 > anon21);
 				}

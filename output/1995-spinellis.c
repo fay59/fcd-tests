@@ -83,8 +83,11 @@ uint64_t n(uint64_t arg0)
 	uint32_t anon10 = (uint32_t)((anon11 + (anon11 >> 31 & 1) << 32 >> 33) + ((uint64_t)anon3 - *anon4) * 3) * 3 + (uint32_t)((anon12 >> 31 & 1) + anon12 << 32 >> 33);
 	if (!(anon10 == 0 || anon10 == 1 || anon10 == 2))
 	{
-		phi9 = anon10 + 94;
-		if (anon10 >= 33)
+		if (anon10 < 33)
+		{
+			phi9 = anon10 + 94;
+		}
+		else 
 		{
 			uint32_t anon13 = _IO_getc(*anon2);
 			uint8_t* anon14 = strchr((uint8_t*)(*anon4 & 0xffffffff), anon13);
