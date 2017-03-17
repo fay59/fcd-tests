@@ -51,7 +51,7 @@ void main(uint64_t arg0, uint64_t arg1)
 						phi5 = anon13;
 						if (*anon7 == 0)
 						{
-							uint64_t phi15;
+							uint64_t phi_in15;
 							uint8_t phi16;
 							uint8_t* phi17;
 							int64_t anon14 = (__sext int64_t)anon12;
@@ -60,7 +60,7 @@ void main(uint64_t arg0, uint64_t arg1)
 								*anon13 = anon12;
 								*(uint8_t*)(arg1 + 19) = 1;
 								*(uint8_t*)(arg1 + 17) = 1;
-								phi15 = anon2;
+								phi_in15 = anon2;
 								phi16 = 2;
 								phi17 = anon13;
 							}
@@ -79,14 +79,14 @@ void main(uint64_t arg0, uint64_t arg1)
 									*(uint8_t*)(*anon1 + 3) = 0;
 									uint8_t* anon23 = (uint8_t*)*anon1;
 									*anon23 = *anon11;
-									phi15 = *anon1;
+									phi_in15 = *anon1;
 									phi16 = 0;
 									phi17 = anon23;
 								}
 							}
-							phi4 = phi15;
-							*(uint8_t*)(phi4 + 2) = phi16;
+							*(uint8_t*)(phi_in15 + 2) = phi16;
 							phi5 = phi17;
+							phi4 = phi_in15;
 						}
 					}
 				}
