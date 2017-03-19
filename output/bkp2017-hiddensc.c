@@ -173,7 +173,7 @@ void main(uint64_t arg0, uint64_t arg1, uint64_t arg2)
 	alloca1.field13 = (uint64_t)anon8;
 	if (alloca1.field2 == 2)
 	{
-		uint32_t anon18;
+		uint32_t anon17;
 		uint32_t anon9 = atoi(*(uint8_t**)(alloca1.field0 + 8));
 		alloca1.field9 = anon9;
 		uint32_t anon10 = setsockopt(alloca1.field6, 1, 2, (uint8_t*)&alloca1.field4, 4);
@@ -187,21 +187,20 @@ void main(uint64_t arg0, uint64_t arg1, uint64_t arg2)
 		alloca1.field16 = anon11;
 		uint32_t anon12 = inet_addr((uint8_t*)0x203160);
 		alloca1.field17 = anon12;
-		uint32_t phi_in13 = alloca1.field6;
+		uint32_t phi13 = alloca1.field6;
 		if (alloca1.field6 == 4294967295)
 		{
 			perror((uint8_t*)0x1beb);
-			phi_in13 = alloca1.field6;
+			phi13 = alloca1.field6;
 		}
-		uint32_t phi14 = phi_in13;
 		alloca1.field5 = 16;
-		uint32_t anon15 = bind(phi14, (struct sockaddr*)&alloca1.field15, 16);
-		if (anon15 == 255)
+		uint32_t anon14 = bind(phi13, (struct sockaddr*)&alloca1.field15, 16);
+		if (anon14 == 255)
 		{
 			perror((uint8_t*)0x1bf2);
 		}
-		uint32_t anon16 = listen(alloca1.field6, 10);
-		if (anon16 == 255)
+		uint32_t anon15 = listen(alloca1.field6, 10);
+		if (anon15 == 255)
 		{
 			perror((uint8_t*)0x1bf7);
 		}
@@ -213,27 +212,27 @@ void main(uint64_t arg0, uint64_t arg1, uint64_t arg2)
 			{
 				do
 				{
-					uint32_t anon17 = accept(alloca1.field6, (struct sockaddr*)&alloca1.field19, &alloca1.field5);
-					alloca1.field10 = anon17;
-					anon18 = fork();
-					alloca1.field11 = anon18;
-					if (anon18 == 4294967295)
+					uint32_t anon16 = accept(alloca1.field6, (struct sockaddr*)&alloca1.field19, &alloca1.field5);
+					alloca1.field10 = anon16;
+					anon17 = fork();
+					alloca1.field11 = anon17;
+					if (anon17 == 4294967295)
 					{
 						perror((uint8_t*)0x1c1d);
 						close(alloca1.field10);
 					}
 				}
-				while (anon18 == 4294967295);
-				if ((anon18 >> 31 | (__zext uint32_t)(anon18 == 0)) == 0)
+				while (anon17 == 4294967295);
+				if ((anon17 >> 31 | (__zext uint32_t)(anon17 == 0)) == 0)
 				{
 					close(alloca1.field10);
 				}
 			}
-			while ((anon18 >> 31 | (__zext uint32_t)(anon18 == 0)) == 0);
+			while ((anon17 >> 31 | (__zext uint32_t)(anon17 == 0)) == 0);
 		}
-		while (anon18 != 0);
-		uint8_t* anon19 = inet_ntoa(alloca1.field20);
-		alloca1.field14 = (uint64_t)anon19;
+		while (anon17 != 0);
+		uint8_t* anon18 = inet_ntoa(alloca1.field20);
+		alloca1.field14 = (uint64_t)anon18;
 		printf((uint8_t*)0x1c22);
 		dup2(alloca1.field10, 1);
 		dup2(alloca1.field10, 2);
@@ -248,8 +247,8 @@ void main(uint64_t arg0, uint64_t arg1, uint64_t arg2)
 	else 
 	{
 		printf((uint8_t*)0x1bce);
-		uint64_t* anon20 = __fs_ptr_i64(40);
-		if (*anon20 == alloca1.field22)
+		uint64_t* anon19 = __fs_ptr_i64(40);
+		if (*anon19 == alloca1.field22)
 		{
 			return;
 		}

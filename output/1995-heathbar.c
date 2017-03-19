@@ -96,10 +96,10 @@ uint64_t mAIn(uint64_t arg0, uint64_t arg1, uint64_t arg2)
 	uint8_t anon8;
 	uint64_t anon9;
 	uint8_t anon11;
-	uint32_t* anon13;
-	uint64_t phi_in14;
-	uint32_t anon16;
-	uint64_t anon17;
+	uint32_t* anon12;
+	uint64_t phi13;
+	uint32_t anon15;
+	uint64_t anon16;
 	uint32_t* anon1 = (uint32_t*)0x600ad0;
 	uint32_t anon2 = *anon1 + 1;
 	*anon1 = anon2;
@@ -107,7 +107,7 @@ uint64_t mAIn(uint64_t arg0, uint64_t arg1, uint64_t arg2)
 	uint64_t anon3 = 1 << (anon4 & 0xffffffff) & (__zext uint64_t)*(uint32_t*)0x600ad4;
 	if (anon3 == 0)
 	{
-		uint32_t phi_in10;
+		uint32_t phi10;
 		anon5 = (uint32_t)arg2;
 		anon8 = (uint8_t)anon4 & 0x1f;
 		anon9 = (__zext uint64_t)anon8;
@@ -116,43 +116,41 @@ uint64_t mAIn(uint64_t arg0, uint64_t arg1, uint64_t arg2)
 		if ((anon5 | anon6) == 0)
 		{
 			anon11 = (uint8_t)anon7 & 1;
-			phi_in10 = (__zext uint32_t)((uint8_t)arg2 | anon11);
+			phi10 = (__zext uint32_t)((uint8_t)arg2 | anon11);
 		}
 		else 
 		{
-			phi_in10 = (__zext uint32_t)((__zext uint8_t)((arg2 & 0xff) == 0) | anon11 ^ 1);
+			phi10 = (__zext uint32_t)((__zext uint8_t)((arg2 & 0xff) == 0) | anon11 ^ 1);
 			if (anon8 != 0)
 			{
-				phi_in10 = (uint32_t)((__zext uint64_t)((__zext uint32_t)((arg2 & 0xff) == 0) | anon6 ^ 1) << anon9);
+				phi10 = (uint32_t)((__zext uint64_t)((__zext uint32_t)((arg2 & 0xff) == 0) | anon6 ^ 1) << anon9);
 			}
 		}
-		uint32_t phi12 = phi_in10;
-		anon13 = (uint32_t*)0x600adc;
-		*anon13 = phi12 | anon2;
-		phi_in14 = 0;
+		anon12 = (uint32_t*)0x600adc;
+		*anon12 = phi10 | anon2;
+		phi13 = 0;
 	}
-	uint8_t anon15 = (uint8_t)arg2 | anon11;
-	else if (anon15 != 0)
+	uint8_t anon14 = (uint8_t)arg2 | anon11;
+	else if (anon14 != 0)
 	{
-		anon17 = arg2 & 0xff;
-		anon16 = anon7 & (__zext uint32_t)(anon17 != 0);
-		*anon13 = (anon8 == 0 ? anon16 : (uint32_t)((__zext uint64_t)anon16 << anon9)) | anon2;
-		phi_in14 = 0;
+		anon16 = arg2 & 0xff;
+		anon15 = anon7 & (__zext uint32_t)(anon16 != 0);
+		*anon12 = (anon8 == 0 ? anon15 : (uint32_t)((__zext uint64_t)anon15 << anon9)) | anon2;
+		phi13 = 0;
 	}
-	bool anon18 = anon16 == 1 | (anon7 & 1) == 0 | anon17 == 0;
-	bool anon19 = anon6 == 0 | anon5 == 0;
-	if (anon3 != 0 && anon15 != 0 && anon18 || !anon19 && anon3 == 0)
+	bool anon17 = anon15 == 1 | (anon7 & 1) == 0 | anon16 == 0;
+	bool anon18 = anon6 == 0 | anon5 == 0;
+	if (anon3 != 0 && anon14 != 0 && anon17 || !anon18 && anon3 == 0)
 	{
-		phi_in14 = 1;
+		phi13 = 1;
 	}
-	if (anon3 != 0 && anon15 != 0 && anon18 || !anon19 && anon3 == 0 || anon3 == 0 && anon19 || anon3 != 0 && !anon18 && anon15 != 0)
+	if (anon3 != 0 && anon14 != 0 && anon17 || !anon18 && anon3 == 0 || anon3 == 0 && anon18 || anon3 != 0 && !anon17 && anon14 != 0)
 	{
-		uint64_t phi20 = phi_in14;
-		return phi20;
+		return phi13;
 	}
-	if (anon3 != 0 && anon15 == 0)
+	if (anon3 != 0 && anon14 == 0)
 	{
-		*anon13 = (anon8 == 0 ? 1 : (uint32_t)(1 << anon9)) | anon2;
+		*anon12 = (anon8 == 0 ? 1 : (uint32_t)(1 << anon9)) | anon2;
 		return 0;
 	}
 }

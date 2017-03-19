@@ -78,7 +78,7 @@ uint64_t n(uint64_t arg0)
 	uint8_t* anon6 = strchr((uint8_t*)(*anon4 & 0xffffffff), anon5);
 	uint32_t anon7 = _IO_getc(*anon2);
 	uint8_t* anon8 = strchr((uint8_t*)(*anon4 & 0xffffffff), anon7);
-	uint32_t phi_in9 = 32;
+	uint32_t phi9 = 32;
 	uint64_t anon11 = (uint64_t)anon6 - *anon4;
 	uint64_t anon12 = (uint64_t)anon8 - *anon4;
 	uint32_t anon10 = (uint32_t)((anon11 + (anon11 >> 31 & 1) << 32 >> 33) + ((uint64_t)anon3 - *anon4) * 3) * 3 + (uint32_t)((anon12 >> 31 & 1) + anon12 << 32 >> 33);
@@ -86,26 +86,25 @@ uint64_t n(uint64_t arg0)
 	{
 		if (anon10 < 33)
 		{
-			phi_in9 = anon10 + 94;
+			phi9 = anon10 + 94;
 		}
 		else 
 		{
 			uint32_t anon13 = _IO_getc(*anon2);
 			uint8_t* anon14 = strchr((uint8_t*)(*anon4 & 0xffffffff), anon13);
 			uint64_t anon15 = (uint64_t)anon14 - *anon4;
-			phi_in9 = (uint32_t)(anon15 + (anon15 >> 31 & 1) << 32 >> 33) + anon10 + (anon10 << 1) - 64;
+			phi9 = (uint32_t)(anon15 + (anon15 >> 31 & 1) << 32 >> 33) + anon10 + (anon10 << 1) - 64;
 		}
 	}
 	if (anon10 == 2)
 	{
-		phi_in9 = 9;
+		phi9 = 9;
 	}
 	if (anon10 == 1)
 	{
-		phi_in9 = 10;
+		phi9 = 10;
 	}
-	uint32_t phi16 = phi_in9;
-	return (__zext uint64_t)phi16;
+	return (__zext uint64_t)phi9;
 }
 void __libc_csu_init(uint64_t arg0, uint64_t arg1, uint64_t arg2, uint64_t arg3)
 {
