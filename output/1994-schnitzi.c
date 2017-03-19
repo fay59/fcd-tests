@@ -14,7 +14,7 @@ void main(uint64_t arg0, uint64_t arg1)
 	uint32_t* anon10;
 	uint64_t anon14;
 	uint32_t* anon17;
-	uint32_t phi20;
+	uint32_t phi_in20;
 	alloca1.field4 = arg0;
 	struct _IO_FILE** anon3 = (struct _IO_FILE**)0x600c18;
 	uint64_t anon2 = ftell(*anon3);
@@ -55,45 +55,48 @@ void main(uint64_t arg0, uint64_t arg1)
 		while (anon19 != null);
 	}
 	uint32_t* anon21 = (uint32_t*)0x600c24;
-	phi20 = *anon21;
+	phi_in20 = *anon21;
 	if (*anon21 < *anon17)
 	{
-		uint32_t anon29;
+		uint32_t anon32;
 		do
 		{
-			uint32_t phi_in22 = phi20;
+			uint32_t phi22 = phi_in20;
 			uint32_t* anon23 = (uint32_t*)0x600c30;
 			*anon23 = 0;
-			uint32_t phi24 = phi_in22;
-			uint32_t phi25 = 0;
+			uint32_t phi_in24 = phi22;
+			uint32_t phi_in25 = 0;
 			if ((*anon10 >> 31 | (__zext uint32_t)(*anon10 == 0)) == 0)
 			{
-				uint32_t anon28;
+				uint32_t anon31;
 				do
 				{
+					uint32_t phi26 = phi_in24;
+					uint32_t phi27 = phi_in25;
 					alloca1.field0 = 32;
-					uint32_t phi26 = 32;
-					int64_t anon27 = (__sext int64_t)phi25 << 2;
-					if (phi24 < *(uint32_t*)(anon14 + anon27 + 128))
+					uint32_t phi_in28 = 32;
+					int64_t anon29 = (__sext int64_t)phi27 << 2;
+					if (phi26 < *(uint32_t*)(anon14 + anon29 + 128))
 					{
-						fseek(*anon3, (__sext int64_t)(phi24 + *(uint32_t*)(anon14 + anon27 + 528)), 0);
+						fseek(*anon3, (__sext int64_t)(phi26 + *(uint32_t*)(anon14 + anon29 + 528)), 0);
 						scanf((uint8_t*)0x400884);
-						phi26 = (__sext int32_t)alloca1.field0;
+						phi_in28 = (__sext int32_t)alloca1.field0;
 					}
-					putchar(phi26);
-					anon28 = *anon23 + 1;
-					*anon23 = anon28;
-					phi24 = anon28;
-					phi25 = anon28;
+					uint32_t phi30 = phi_in28;
+					putchar(phi30);
+					anon31 = *anon23 + 1;
+					*anon23 = anon31;
+					phi_in24 = anon31;
+					phi_in25 = anon31;
 				}
-				while (*anon10 > anon28);
+				while (*anon10 > anon31);
 			}
 			putchar(10);
-			anon29 = *anon21 + 1;
-			*anon21 = anon29;
-			phi20 = anon29;
+			anon32 = *anon21 + 1;
+			*anon21 = anon32;
+			phi_in20 = anon32;
 		}
-		while (*anon17 > anon29);
+		while (*anon17 > anon32);
 	}
 	return;
 }

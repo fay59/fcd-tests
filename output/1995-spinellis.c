@@ -10,25 +10,26 @@ void _init(uint64_t arg0)
 }
 void main(uint64_t arg0)
 {
-	uint8_t* anon2;
-	uint32_t anon4;
+	uint32_t anon3;
+	uint32_t anon5;
 	do
 	{
 		uint32_t anon1 = _IO_getc(*(struct _IO_FILE**)0x600be8);
-		anon2 = strchr((uint8_t*)(*(uint64_t*)0x600bd8 & 0xffffffff), anon1);
+		uint8_t* anon2 = strchr((uint8_t*)(*(uint64_t*)0x600bd8 & 0xffffffff), anon1);
+		anon3 = (uint32_t)(uint64_t)anon2 - (uint32_t)*(uint64_t*)0x600bd8;
 	}
-	while ((uint32_t)(uint64_t)anon2 - (uint32_t)*(uint64_t*)0x600bd8 != 6);
+	while (anon3 != 6);
 	do
 	{
-		uint64_t anon3 = n(4195685);
-		anon4 = (uint32_t)anon3;
-		*(uint32_t*)0x600bf4 = anon4;
-		if (anon4 != 36)
+		uint64_t anon4 = n(4195685);
+		anon5 = (uint32_t)anon4;
+		*(uint32_t*)0x600bf4 = anon5;
+		if (anon5 != 36)
 		{
-			_IO_putc(anon4, *(struct _IO_FILE**)0x600be0);
+			_IO_putc(anon5, *(struct _IO_FILE**)0x600be0);
 		}
 	}
-	while (anon4 != 36);
+	while (anon5 != 36);
 	return;
 }
 void _start(uint64_t arg0, uint64_t arg1, uint64_t arg2)
@@ -77,7 +78,7 @@ uint64_t n(uint64_t arg0)
 	uint8_t* anon6 = strchr((uint8_t*)(*anon4 & 0xffffffff), anon5);
 	uint32_t anon7 = _IO_getc(*anon2);
 	uint8_t* anon8 = strchr((uint8_t*)(*anon4 & 0xffffffff), anon7);
-	uint32_t phi9 = 32;
+	uint32_t phi_in9 = 32;
 	uint64_t anon11 = (uint64_t)anon6 - *anon4;
 	uint64_t anon12 = (uint64_t)anon8 - *anon4;
 	uint32_t anon10 = (uint32_t)((anon11 + (anon11 >> 31 & 1) << 32 >> 33) + ((uint64_t)anon3 - *anon4) * 3) * 3 + (uint32_t)((anon12 >> 31 & 1) + anon12 << 32 >> 33);
@@ -85,25 +86,26 @@ uint64_t n(uint64_t arg0)
 	{
 		if (anon10 < 33)
 		{
-			phi9 = anon10 + 94;
+			phi_in9 = anon10 + 94;
 		}
 		else 
 		{
 			uint32_t anon13 = _IO_getc(*anon2);
 			uint8_t* anon14 = strchr((uint8_t*)(*anon4 & 0xffffffff), anon13);
 			uint64_t anon15 = (uint64_t)anon14 - *anon4;
-			phi9 = (uint32_t)(anon15 + (anon15 >> 31 & 1) << 32 >> 33) + anon10 + (anon10 << 1) - 64;
+			phi_in9 = (uint32_t)(anon15 + (anon15 >> 31 & 1) << 32 >> 33) + anon10 + (anon10 << 1) - 64;
 		}
 	}
 	if (anon10 == 2)
 	{
-		phi9 = 9;
+		phi_in9 = 9;
 	}
 	if (anon10 == 1)
 	{
-		phi9 = 10;
+		phi_in9 = 10;
 	}
-	return (__zext uint64_t)phi9;
+	uint32_t phi16 = phi_in9;
+	return (__zext uint64_t)phi16;
 }
 void __libc_csu_init(uint64_t arg0, uint64_t arg1, uint64_t arg2, uint64_t arg3)
 {
