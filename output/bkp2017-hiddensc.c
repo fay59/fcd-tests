@@ -63,65 +63,59 @@ void privdrop(uint64_t arg0, uint64_t arg1)
 	{
 		errx(4294967295, (uint8_t*)0x1b01);
 	}
-	else 
+	else if (setgroups(0, null) > 4294967295)
 	{
-		uint32_t anon2 = setgroups(0, null);
-		if (anon2 > 4294967295)
+		uint64_t anon2 = (uint64_t)anon1;
+		if (setgid(*(uint32_t*)(anon2 + 20)) > 4294967295)
 		{
-			uint64_t anon4 = (uint64_t)anon1;
-			uint32_t anon3 = setgid(*(uint32_t*)(anon4 + 20));
-			if (anon3 > 4294967295)
+			if (setuid(*(uint32_t*)(anon2 + 16)) > 4294967295)
 			{
-				uint32_t anon5 = setuid(*(uint32_t*)(anon4 + 16));
-				if (anon5 > 4294967295)
+				uint32_t anon3;
+				uint32_t anon4;
+				uint32_t anon5;
+				if (!__undefined)
 				{
-					uint32_t anon6;
-					uint32_t anon7;
-					uint32_t anon8;
-					if (!__undefined)
+					anon3 = chroot(*(uint8_t**)(anon2 + 32));
+					if (anon3 > 4294967295)
 					{
-						anon6 = chroot(*(uint8_t**)(anon4 + 32));
-						if (anon6 > 4294967295)
+						anon4 = chdir((uint8_t*)0x1b5d);
+						if (anon4 > 4294967295)
 						{
-							anon7 = chdir((uint8_t*)0x1b5d);
-							if (anon7 > 4294967295)
-							{
-								anon8 = chdir(*(uint8_t**)(anon4 + 32));
-							}
-						}
-					}
-					if (__undefined || !__undefined && anon6 > 4294967295 && anon7 > 4294967295 && anon8 > 4294967295)
-					{
-						return;
-					}
-					if (!__undefined)
-					{
-						uint8_t* anon9;
-						if (anon8 <= 4294967295 && anon6 > 4294967295 && anon7 > 4294967295)
-						{
-							anon9 = (uint8_t*)0x1b60;
-							errx(4294967295, anon9);
-						}
-						if (anon6 <= 4294967295 || anon7 <= 4294967295 && anon6 > 4294967295)
-						{
-							errx(4294967295, anon9);
+							anon5 = chdir(*(uint8_t**)(anon2 + 32));
 						}
 					}
 				}
-				else 
+				if (__undefined || !__undefined && anon3 > 4294967295 && anon4 > 4294967295 && anon5 > 4294967295)
 				{
-					errx(4294967295, (uint8_t*)0x1b48);
+					return;
+				}
+				if (!__undefined)
+				{
+					uint8_t* anon6;
+					if (anon5 <= 4294967295 && anon3 > 4294967295 && anon4 > 4294967295)
+					{
+						anon6 = (uint8_t*)0x1b60;
+						errx(4294967295, anon6);
+					}
+					if (anon3 <= 4294967295 || anon4 <= 4294967295 && anon3 > 4294967295)
+					{
+						errx(4294967295, anon6);
+					}
 				}
 			}
 			else 
 			{
-				errx(4294967295, (uint8_t*)0x1b33);
+				errx(4294967295, (uint8_t*)0x1b48);
 			}
 		}
 		else 
 		{
-			errx(4294967295, (uint8_t*)0x1b15);
+			errx(4294967295, (uint8_t*)0x1b33);
 		}
+	}
+	else 
+	{
+		errx(4294967295, (uint8_t*)0x1b15);
 	}
 }
 uint64_t rand64(uint64_t arg0)
@@ -136,8 +130,7 @@ uint64_t rand64(uint64_t arg0)
 		phi4 = phi_in2;
 		if (phi4 < 64)
 		{
-			uint32_t anon5 = rand();
-			phi_in1 = (__zext uint64_t)(anon5 & 1) | phi3 << 1;
+			phi_in1 = (__zext uint64_t)(rand() & 1) | phi3 << 1;
 			phi_in2 = phi4 + 1;
 		}
 	}
@@ -150,57 +143,48 @@ void main(uint64_t arg0, uint64_t arg1, uint64_t arg2)
 	alloca1.field24 = arg0;
 	alloca1.field2 = (uint32_t)arg1;
 	alloca1.field0 = arg2;
-	uint64_t* anon2 = __fs_ptr_i64(40);
-	alloca1.field22 = *anon2;
+	uint64_t anon2 = *__fs_ptr_i64(40);
+	alloca1.field22 = anon2;
 	setvbuf(**(struct _IO_FILE***)0x202fd0, null, 2, 0);
 	setvbuf(**(struct _IO_FILE***)0x202ff8, null, 2, 0);
 	alloca1.field4 = 1;
-	uint32_t anon3 = socket(2, 1, 0);
-	alloca1.field6 = anon3;
-	uint32_t anon4 = getpagesize();
-	alloca1.field7 = anon4;
+	alloca1.field6 = socket(2, 1, 0);
+	alloca1.field7 = getpagesize();
 	do_srand(5295);
-	uint64_t anon5 = rand64(5300);
-	uint64_t anon6 = (uint64_t)((__zext uint128_t)anon5 * -9223372036854677503 >> 64);
-	*(uint64_t*)&alloca1.field12 = (__sext int64_t)-alloca1.field7 & anon5 + ((anon5 - anon6 >> 1) + anon6 >> 46) * -93824992236885;
+	uint64_t anon3 = rand64(5300);
+	uint64_t anon4 = (uint64_t)((__zext uint128_t)anon3 * -9223372036854677503 >> 64);
+	*(uint64_t*)&alloca1.field12 = (__sext int64_t)-alloca1.field7 & anon3 + ((anon3 - anon4 >> 1) + anon4 >> 46) * -93824992236885;
 	printf((uint8_t*)0x1b83);
 	printf((uint8_t*)0x1b9e);
 	getpid();
 	printf((uint8_t*)0x1bb5);
-	uint32_t anon7 = open((uint8_t*)0x1bc4, 0);
-	alloca1.field8 = anon7;
-	uint8_t* anon8 = mmap(alloca1.field12, (__sext int64_t)alloca1.field7, 5, 2, anon7, 0);
-	alloca1.field13 = (uint64_t)anon8;
+	uint32_t anon5 = open((uint8_t*)0x1bc4, 0);
+	alloca1.field8 = anon5;
+	alloca1.field13 = (uint64_t)mmap(alloca1.field12, (__sext int64_t)alloca1.field7, 5, 2, anon5, 0);
 	if (alloca1.field2 == 2)
 	{
-		uint32_t anon17;
-		uint32_t anon9 = atoi(*(uint8_t**)(alloca1.field0 + 8));
-		alloca1.field9 = anon9;
-		uint32_t anon10 = setsockopt(alloca1.field6, 1, 2, (uint8_t*)&alloca1.field4, 4);
-		if (anon10 <= 4294967295)
+		uint32_t anon7;
+		alloca1.field9 = atoi(*(uint8_t**)(alloca1.field0 + 8));
+		if (setsockopt(alloca1.field6, 1, 2, (uint8_t*)&alloca1.field4, 4) <= 4294967295)
 		{
 			perror((uint8_t*)0x1be0);
 		}
 		memset((uint8_t*)&alloca1.field15, 48, 16);
 		alloca1.field15 = 2;
-		uint16_t anon11 = htons((uint16_t)alloca1.field9);
-		alloca1.field16 = anon11;
-		uint32_t anon12 = inet_addr((uint8_t*)0x203160);
-		alloca1.field17 = anon12;
-		uint32_t phi13 = alloca1.field6;
+		alloca1.field16 = htons((uint16_t)alloca1.field9);
+		alloca1.field17 = inet_addr((uint8_t*)0x203160);
+		uint32_t phi6 = alloca1.field6;
 		if (alloca1.field6 == 4294967295)
 		{
 			perror((uint8_t*)0x1beb);
-			phi13 = alloca1.field6;
+			phi6 = alloca1.field6;
 		}
 		alloca1.field5 = 16;
-		uint32_t anon14 = bind(phi13, (struct sockaddr*)&alloca1.field15, 16);
-		if (anon14 == 255)
+		if (bind(phi6, (struct sockaddr*)&alloca1.field15, 16) == 255)
 		{
 			perror((uint8_t*)0x1bf2);
 		}
-		uint32_t anon15 = listen(alloca1.field6, 10);
-		if (anon15 == 255)
+		if (listen(alloca1.field6, 10) == 255)
 		{
 			perror((uint8_t*)0x1bf7);
 		}
@@ -212,27 +196,25 @@ void main(uint64_t arg0, uint64_t arg1, uint64_t arg2)
 			{
 				do
 				{
-					uint32_t anon16 = accept(alloca1.field6, (struct sockaddr*)&alloca1.field19, &alloca1.field5);
-					alloca1.field10 = anon16;
-					anon17 = fork();
-					alloca1.field11 = anon17;
-					if (anon17 == 4294967295)
+					alloca1.field10 = accept(alloca1.field6, (struct sockaddr*)&alloca1.field19, &alloca1.field5);
+					anon7 = fork();
+					alloca1.field11 = anon7;
+					if (anon7 == 4294967295)
 					{
 						perror((uint8_t*)0x1c1d);
 						close(alloca1.field10);
 					}
 				}
-				while (anon17 == 4294967295);
-				if ((anon17 >> 31 | (__zext uint32_t)(anon17 == 0)) == 0)
+				while (anon7 == 4294967295);
+				if ((anon7 >> 31 | (__zext uint32_t)(anon7 == 0)) == 0)
 				{
 					close(alloca1.field10);
 				}
 			}
-			while ((anon17 >> 31 | (__zext uint32_t)(anon17 == 0)) == 0);
+			while ((anon7 >> 31 | (__zext uint32_t)(anon7 == 0)) == 0);
 		}
-		while (anon17 != 0);
-		uint8_t* anon18 = inet_ntoa(alloca1.field20);
-		alloca1.field14 = (uint64_t)anon18;
+		while (anon7 != 0);
+		alloca1.field14 = (uint64_t)inet_ntoa(alloca1.field20);
 		printf((uint8_t*)0x1c22);
 		dup2(alloca1.field10, 1);
 		dup2(alloca1.field10, 2);
@@ -247,8 +229,8 @@ void main(uint64_t arg0, uint64_t arg1, uint64_t arg2)
 	else 
 	{
 		printf((uint8_t*)0x1bce);
-		uint64_t* anon19 = __fs_ptr_i64(40);
-		if (*anon19 == alloca1.field22)
+		uint64_t anon8 = *__fs_ptr_i64(40);
+		if (anon8 == alloca1.field22)
 		{
 			return;
 		}
@@ -263,8 +245,8 @@ void handle(uint64_t arg0)
 	struct { uint64_t field0; uint8_t* field1; uint64_t field2; uint64_t field3; uint8_t field4; uint8_t field5[103]; uint64_t field6; uint8_t field7[8]; uint64_t field8; } alloca1;
 	uint8_t* anon3;
 	alloca1.field8 = arg0;
-	uint64_t* anon2 = __fs_ptr_i64(40);
-	alloca1.field6 = *anon2;
+	uint64_t anon2 = *__fs_ptr_i64(40);
+	alloca1.field6 = anon2;
 	printf((uint8_t*)0x1c3a);
 	read(0, &alloca1.field4, 100);
 	if (alloca1.field4 == 106)
@@ -300,8 +282,8 @@ void handle(uint64_t arg0)
 			}
 		}
 	}
-	uint64_t* anon7 = __fs_ptr_i64(40);
-	if (*anon7 == alloca1.field6)
+	uint64_t anon7 = *__fs_ptr_i64(40);
+	if (anon7 == alloca1.field6)
 	{
 		return;
 	}
@@ -314,15 +296,15 @@ void do_srand(uint64_t arg0)
 {
 	struct { uint32_t field0; uint32_t field1; uint64_t field2; uint8_t field3[8]; uint64_t field4; } alloca1;
 	alloca1.field4 = arg0;
-	uint64_t* anon2 = __fs_ptr_i64(40);
-	alloca1.field2 = *anon2;
+	uint64_t anon2 = *__fs_ptr_i64(40);
+	alloca1.field2 = anon2;
 	uint32_t anon3 = open((uint8_t*)0x1c61, 114);
 	alloca1.field1 = anon3;
 	read(anon3, (uint8_t*)&alloca1, 4);
 	srand(alloca1.field0);
 	printf((uint8_t*)0x1c6e);
-	uint64_t* anon4 = __fs_ptr_i64(40);
-	if (*anon4 == alloca1.field2)
+	uint64_t anon4 = *__fs_ptr_i64(40);
+	if (anon4 == alloca1.field2)
 	{
 		return;
 	}

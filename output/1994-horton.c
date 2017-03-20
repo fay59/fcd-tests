@@ -83,17 +83,18 @@ void main(uint64_t arg0, uint64_t arg1)
 								uint32_t phi14 = 0;
 								uint64_t phi15 = 1 - phi11 + 6296192;
 								uint64_t phi16 = 6296192 - phi11;
-								uint64_t anon17 = phi11 + phi16;
-								uint64_t anon18 = 480 - phi11;
-								uint64_t anon19 = 160 - phi11;
-								uint64_t anon20 = 320 - phi11;
-								uint64_t anon21 = phi11 + phi15;
-								putchar((__sext int32_t)*(phi14 < 79 ? (uint8_t*)((__sext int64_t)(((__sext int32_t)*(uint8_t*)(anon17 + anon18) + ((__sext int32_t)*(uint8_t*)(anon17 + anon19) << 2) + ((__sext int32_t)*(uint8_t*)phi16 << 3) + ((__sext int32_t)*(uint8_t*)(anon17 + anon20) << 1) << 4) + ((__sext int32_t)*(uint8_t*)phi15 << 3) + ((__sext int32_t)*(uint8_t*)(anon21 + anon19) << 2) + ((__sext int32_t)*(uint8_t*)(anon21 + anon20) << 1) + (__sext int32_t)*(uint8_t*)(anon21 + anon18) + 1) + 4196472) : (uint8_t*)0x400878));
+								uint64_t phi17 = phi11;
+								uint64_t anon18 = phi17 + phi16;
+								uint64_t anon19 = 480 - phi11;
+								uint64_t anon20 = 160 - phi11;
+								uint64_t anon21 = 320 - phi11;
+								uint64_t anon22 = phi17 + phi15;
+								putchar((__sext int32_t)*(phi14 < 79 ? (uint8_t*)((__sext int64_t)(((__sext int32_t)*(uint8_t*)(anon18 + anon19) + ((__sext int32_t)*(uint8_t*)(anon18 + anon20) << 2) + ((__sext int32_t)*(uint8_t*)phi16 << 3) + ((__sext int32_t)*(uint8_t*)(anon18 + anon21) << 1) << 4) + ((__sext int32_t)*(uint8_t*)phi15 << 3) + ((__sext int32_t)*(uint8_t*)(anon22 + anon20) << 2) + ((__sext int32_t)*(uint8_t*)(anon22 + anon21) << 1) + (__sext int32_t)*(uint8_t*)(anon22 + anon19) + 1) + 4196472) : (uint8_t*)0x400878));
 								phi11 = phi11 - 640;
 								phi14 = phi14 + 1;
 								phi15 = (phi15 & 0xf) + 2;
 								phi16 = phi16 + 2;
-								phi11 = 0;
+								phi17 = 0;
 								break;
 							}
 						}

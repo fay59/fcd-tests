@@ -20,8 +20,7 @@ void main(uint64_t arg0, uint64_t arg1, uint64_t arg2)
 		anon4 = phi3 + (phi3 >> 31 & 1) << 32 >> 33;
 		if (anon4 != 0)
 		{
-			struct tm* anon5 = localtime(*anon1);
-			*(uint8_t*)(*(uint64_t*)(arg2 + 32) + (__sext int64_t)*(uint8_t*)(*(uint64_t*)((anon4 << 3) + arg2) + (__sext int64_t)*(uint32_t*)(((uint64_t)anon5 << 32 >> 32) + (anon4 << 2)))) = *(uint8_t*)(*(uint64_t*)(arg2 + 24) + (anon4 & 0xffffffff));
+			*(uint8_t*)(*(uint64_t*)(arg2 + 32) + (__sext int64_t)*(uint8_t*)(*(uint64_t*)((anon4 << 3) + arg2) + (__sext int64_t)*(uint32_t*)(((uint64_t)localtime(*anon1) << 32 >> 32) + (anon4 << 2)))) = *(uint8_t*)(*(uint64_t*)(arg2 + 24) + (anon4 & 0xffffffff));
 			phi_in2 = anon4;
 		}
 	}

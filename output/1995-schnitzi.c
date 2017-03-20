@@ -10,14 +10,9 @@ void _init(uint64_t arg0)
 }
 void main(uint64_t arg0, uint64_t arg1, uint64_t arg2)
 {
-	uint32_t anon1 = atoi(*(uint8_t**)(arg2 + 8));
-	if (anon1 >= (uint32_t)arg1)
+	if (atoi(*(uint8_t**)(arg2 + 8)) >= (uint32_t)arg1 && fork() != 0)
 	{
-		uint32_t anon2 = fork();
-		if (anon2 != 0)
-		{
-			main(4195577, arg1 + 1 & 0xffffffff, arg2);
-		}
+		main(4195577, arg1 + 1 & 0xffffffff, arg2);
 	}
 	__indirect_jump(*(uint64_t*)0x6009d0);
 }

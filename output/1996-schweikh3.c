@@ -98,24 +98,23 @@ void main(uint64_t arg0, uint64_t arg1, uint64_t arg2)
 				uint64_t phi19 = 0;
 				if (*anon6 != 0)
 				{
-					uint64_t anon21;
+					uint64_t anon20;
 					do
 					{
 						time(null);
 						*(uint8_t*)((uint64_t)anon18 + phi19) = 7;
 						printf((uint8_t*)0x400c84);
-						uint64_t anon20 = time(null);
-						difftime(anon20);
+						difftime(time(null));
 						(__asm "subsd xmm0, qword ptr [rip + 0x331]")();
 						(__asm "ucomisd xmm0, qword ptr [rip + 0x331]")();
-						anon21 = *anon8 + 1024;
-						*anon8 = anon21;
-						if (*anon6 > anon21)
+						anon20 = *anon8 + 1024;
+						*anon8 = anon20;
+						if (*anon6 > anon20)
 						{
 							phi19 = *anon8 & 0xf;
 						}
 					}
-					while (*anon6 > anon21);
+					while (*anon6 > anon20);
 				}
 				free(anon18);
 			}
