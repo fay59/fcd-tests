@@ -70,21 +70,9 @@ void privdrop(uint64_t arg0, uint64_t arg1)
 		{
 			if (setuid(*(uint32_t*)(anon2 + 16)) > 4294967295)
 			{
-				uint32_t anon3;
-				uint32_t anon4;
-				uint32_t anon5;
-				if (!__undefined)
-				{
-					anon3 = chroot(*(uint8_t**)(anon2 + 32));
-					if (anon3 > 4294967295)
-					{
-						anon4 = chdir((uint8_t*)0x1b5d);
-						if (anon4 > 4294967295)
-						{
-							anon5 = chdir(*(uint8_t**)(anon2 + 32));
-						}
-					}
-				}
+				uint32_t anon3 = chroot(*(uint8_t**)(anon2 + 32));
+				uint32_t anon4 = chdir((uint8_t*)0x1b5d);
+				uint32_t anon5 = chdir(*(uint8_t**)(anon2 + 32));
 				if (__undefined || !__undefined && anon3 > 4294967295 && anon4 > 4294967295 && anon5 > 4294967295)
 				{
 					return;

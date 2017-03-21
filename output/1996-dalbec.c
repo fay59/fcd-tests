@@ -29,7 +29,7 @@ void main(uint64_t arg0, uint64_t arg1, uint64_t arg2, uint64_t arg3, uint64_t a
 		uint64_t anon17;
 		uint32_t anon18;
 		uint64_t anon20;
-		uint32_t phi24;
+		uint32_t phi23;
 		do
 		{
 			uint64_t phi9;
@@ -80,22 +80,21 @@ void main(uint64_t arg0, uint64_t arg1, uint64_t arg2, uint64_t arg3, uint64_t a
 		}
 		break;
 		main(4195888, anon20, 0, arg3, phi7, phi11, (__zext uint64_t)-phi13);
-		uint64_t phi23 = 1;
-		uint32_t anon25 = (uint32_t)phi12;
-		phi24 = anon25;
-		if (anon25 == 255)
+		phi_in3 = 1;
+		uint32_t anon24 = (uint32_t)phi12;
+		phi23 = anon24;
+		if (anon24 == 255)
 		{
-			uint32_t anon26 = printf((uint8_t*)0x400884);
-			phi23 = (__zext uint64_t)(anon26 + fflush(*(struct _IO_FILE**)0x600c30));
-			phi24 = 255;
+			uint32_t anon25 = printf((uint8_t*)0x400884);
+			phi_in3 = (__zext uint64_t)(anon25 + fflush(*(struct _IO_FILE**)0x600c30));
+			phi23 = 255;
 		}
 		phi_in2 = phi7;
-		phi_in3 = phi23;
 		phi_in10 = anon17;
 		phi_in4 = phi11 + 1 & 0xffffffff;
-		uint32_t anon27 = phi24 - 2;
-		phi_in5 = (__zext uint64_t)anon27;
-		phi_in6 = anon27;
+		uint32_t anon26 = phi23 - 2;
+		phi_in5 = (__zext uint64_t)anon26;
+		phi_in6 = anon26;
 	}
 	return;
 }

@@ -17,6 +17,7 @@ void main(uint64_t arg0, uint64_t arg1, uint64_t arg2)
 	uint8_t* anon1;
 	uint8_t* anon4;
 	uint8_t* anon5;
+	uint8_t* phi11;
 	if (**(uint8_t**)(((arg1 << 32) - 4294967296 >> 29) + arg2) == 99)
 	{
 		anon1 = (uint8_t*)0x601290;
@@ -47,8 +48,7 @@ void main(uint64_t arg0, uint64_t arg1, uint64_t arg2)
 				uint64_t anon16;
 				do
 				{
-					uint8_t* anon11;
-					uint8_t* phi12;
+					uint8_t* anon12;
 					uint8_t* anon13;
 					uint64_t phi14;
 					uint64_t phi15;
@@ -56,24 +56,24 @@ void main(uint64_t arg0, uint64_t arg1, uint64_t arg2)
 					printf(anon10);
 					if (*anon1 == 99)
 					{
-						anon11 = calloc(*anon6, 1);
-						phi12 = anon11;
+						anon12 = calloc(*anon6, 1);
+						phi11 = anon12;
 					}
 					else 
 					{
 						anon13 = malloc(*anon6);
-						phi12 = anon13;
+						phi11 = anon13;
 					}
-					if (*anon1 == 99 && anon11 == null || *anon1 != 99 && anon13 == null)
+					if (*anon1 == 99 && anon12 == null || *anon1 != 99 && anon13 == null)
 					{
 						puts((uint8_t*)0x400c6d);
 						phi14 = *anon6 & ~*anon8;
 						phi15 = *anon8;
 					}
-					if (anon11 != null && *anon1 == 99 || *anon1 != 99 && anon13 != null)
+					if (anon12 != null && *anon1 == 99 || *anon1 != 99 && anon13 != null)
 					{
 						puts((uint8_t*)0x400c67);
-						free(phi12);
+						free(phi11);
 						phi14 = *anon6;
 						phi15 = *anon8;
 					}
