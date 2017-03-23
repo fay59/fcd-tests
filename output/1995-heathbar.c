@@ -131,10 +131,13 @@ uint64_t mAIn(uint64_t arg0, uint64_t arg1, uint64_t arg2)
 	{
 		return phi13;
 	}
-	if (anon3 != 0 && anon14 == 0)
+	if (anon3 != 0)
 	{
-		*anon12 = (anon8 == 0 ? 1 : (uint32_t)(1 << anon9)) | anon2;
-		return 0;
+		if (anon14 == 0)
+		{
+			*anon12 = (anon8 == 0 ? 1 : (uint32_t)(1 << anon9)) | anon2;
+			return 0;
+		}
 	}
 }
 void __libc_csu_init(uint64_t arg0, uint64_t arg1, uint64_t arg2, uint64_t arg3)

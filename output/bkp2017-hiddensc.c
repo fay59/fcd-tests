@@ -45,9 +45,12 @@ void __do_global_dtors_aux(uint64_t arg0)
 }
 void frame_dummy(uint64_t arg0, uint64_t arg1)
 {
-	if (*(uint64_t*)0x202de0 != 0 && *(uint64_t*)0x202fe0 != 0)
+	if (*(uint64_t*)0x202de0 != 0)
 	{
-		((void(*)(uint64_t))*(uint64_t*)0x202fe0)(2108896);
+		if (*(uint64_t*)0x202fe0 != 0)
+		{
+			((void(*)(uint64_t))*(uint64_t*)0x202fe0)(2108896);
+		}
 	}
 	return;
 }
@@ -70,9 +73,21 @@ void privdrop(uint64_t arg0, uint64_t arg1)
 		{
 			if (setuid(*(uint32_t*)(anon2 + 16)) > 4294967295)
 			{
-				uint32_t anon3 = chroot(*(uint8_t**)(anon2 + 32));
-				uint32_t anon4 = chdir((uint8_t*)0x1b5d);
-				uint32_t anon5 = chdir(*(uint8_t**)(anon2 + 32));
+				uint32_t anon3;
+				uint32_t anon4;
+				uint32_t anon5;
+				if (!__undefined)
+				{
+					anon3 = chroot(*(uint8_t**)(anon2 + 32));
+					if (anon3 > 4294967295)
+					{
+						anon4 = chdir((uint8_t*)0x1b5d);
+						if (anon4 > 4294967295)
+						{
+							anon5 = chdir(*(uint8_t**)(anon2 + 32));
+						}
+					}
+				}
 				if (__undefined || !__undefined && anon3 > 4294967295 && anon4 > 4294967295 && anon5 > 4294967295)
 				{
 					return;
@@ -80,10 +95,16 @@ void privdrop(uint64_t arg0, uint64_t arg1)
 				if (!__undefined)
 				{
 					uint8_t* anon6;
-					if (anon5 <= 4294967295 && anon3 > 4294967295 && anon4 > 4294967295)
+					if (anon3 > 4294967295)
 					{
-						anon6 = (uint8_t*)0x1b60;
-						errx(4294967295, anon6);
+						if (anon4 > 4294967295)
+						{
+							if (anon5 <= 4294967295)
+							{
+								anon6 = (uint8_t*)0x1b60;
+								errx(4294967295, anon6);
+							}
+						}
 					}
 					if (anon3 <= 4294967295 || anon4 <= 4294967295 && anon3 > 4294967295)
 					{

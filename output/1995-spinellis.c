@@ -10,23 +10,24 @@ void _init(uint64_t arg0)
 }
 void main(uint64_t arg0)
 {
-	uint32_t anon1;
 	uint32_t anon2;
+	uint32_t anon3;
 	do
 	{
-		anon1 = (uint32_t)(uint64_t)strchr((uint8_t*)(*(uint64_t*)0x600bd8 & 0xffffffff), _IO_getc(*(struct _IO_FILE**)0x600be8)) - (uint32_t)*(uint64_t*)0x600bd8;
+		uint8_t* anon1 = strchr((uint8_t*)(*(uint64_t*)0x600bd8 & 0xffffffff), _IO_getc(*(struct _IO_FILE**)0x600be8));
+		anon2 = (uint32_t)(uint64_t)anon1 - (uint32_t)*(uint64_t*)0x600bd8;
 	}
-	while (anon1 != 6);
+	while (anon2 != 6);
 	do
 	{
-		anon2 = (uint32_t)n(4195685);
-		*(uint32_t*)0x600bf4 = anon2;
-		if (anon2 != 36)
+		anon3 = (uint32_t)n(4195685);
+		*(uint32_t*)0x600bf4 = anon3;
+		if (anon3 != 36)
 		{
-			_IO_putc(anon2, *(struct _IO_FILE**)0x600be0);
+			_IO_putc(anon3, *(struct _IO_FILE**)0x600be0);
 		}
 	}
-	while (anon2 != 36);
+	while (anon3 != 36);
 	return;
 }
 void _start(uint64_t arg0, uint64_t arg1, uint64_t arg2)
