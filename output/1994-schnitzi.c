@@ -14,7 +14,7 @@ void main(uint64_t arg0, uint64_t arg1)
 	uint32_t* anon8;
 	uint64_t anon10;
 	uint32_t* anon15;
-	uint32_t phi17;
+	uint32_t phi_in17;
 	alloca1.field4 = arg0;
 	struct _IO_FILE** anon2 = (struct _IO_FILE**)0x600c18;
 	alloca1.field2 = (uint32_t)ftell(*anon2);
@@ -52,15 +52,15 @@ void main(uint64_t arg0, uint64_t arg1)
 		while (anon16 != null);
 	}
 	uint32_t* anon18 = (uint32_t*)0x600c24;
-	phi17 = *anon18;
+	phi_in17 = *anon18;
 	if (*anon18 < *anon15)
 	{
 		uint32_t anon25;
 		do
 		{
-			uint32_t phi19 = phi17;
-			uint32_t* anon20 = (uint32_t*)0x600c30;
-			*anon20 = 0;
+			uint32_t* anon19 = (uint32_t*)0x600c30;
+			*anon19 = 0;
+			uint32_t phi20 = phi_in17;
 			uint32_t phi21 = 0;
 			if ((*anon8 >> 31 | (__zext uint32_t)(*anon8 == 0)) == 0)
 			{
@@ -70,16 +70,16 @@ void main(uint64_t arg0, uint64_t arg1)
 					alloca1.field0 = 32;
 					uint32_t phi22 = 32;
 					int64_t anon23 = (__sext int64_t)phi21 << 2;
-					if (phi19 < *(uint32_t*)(anon10 + anon23 + 128))
+					if (phi20 < *(uint32_t*)(anon10 + anon23 + 128))
 					{
-						fseek(*anon2, (__sext int64_t)(phi19 + *(uint32_t*)(anon10 + anon23 + 528)), 0);
+						fseek(*anon2, (__sext int64_t)(phi20 + *(uint32_t*)(anon10 + anon23 + 528)), 0);
 						scanf((uint8_t*)0x400884);
 						phi22 = (__sext int32_t)alloca1.field0;
 					}
 					putchar(phi22);
-					anon24 = *anon20 + 1;
-					*anon20 = anon24;
-					phi19 = anon24;
+					anon24 = *anon19 + 1;
+					*anon19 = anon24;
+					phi20 = anon24;
 					phi21 = anon24;
 				}
 				while (*anon8 > anon24);
@@ -87,7 +87,7 @@ void main(uint64_t arg0, uint64_t arg1)
 			putchar(10);
 			anon25 = *anon18 + 1;
 			*anon18 = anon25;
-			phi17 = anon25;
+			phi_in17 = anon25;
 		}
 		while (*anon15 > anon25);
 	}
