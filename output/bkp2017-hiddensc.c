@@ -129,22 +129,14 @@ void privdrop(uint64_t arg0, uint64_t arg1)
 }
 uint64_t rand64(uint64_t arg0)
 {
-	uint64_t phi3;
-	uint32_t phi4;
-	uint64_t phi_in1 = 0;
-	uint32_t phi_in2 = 0;
-	do
+	uint64_t phi1 = 0;
+	uint32_t phi2 = 0;
+	while (phi2 < 64)
 	{
-		phi3 = phi_in1;
-		phi4 = phi_in2;
-		if (phi4 < 64)
-		{
-			phi_in1 = (__zext uint64_t)(rand() & 1) | phi3 << 1;
-			phi_in2 = phi4 + 1;
-		}
+		phi1 = (__zext uint64_t)(rand() & 1) | phi1 << 1;
+		phi2 = phi2 + 1;
 	}
-	while (phi4 < 64);
-	return phi3;
+	return phi1;
 }
 void main(uint64_t arg0, uint64_t arg1, uint64_t arg2)
 {
@@ -152,27 +144,26 @@ void main(uint64_t arg0, uint64_t arg1, uint64_t arg2)
 	alloca1.field24 = arg0;
 	alloca1.field2 = (uint32_t)arg1;
 	alloca1.field0 = arg2;
-	uint64_t anon2 = *__fs_ptr_i64(40);
-	alloca1.field22 = anon2;
+	alloca1.field22 = *__fs_ptr_i64(40);
 	setvbuf(**(struct _IO_FILE***)0x202fd0, null, 2, 0);
 	setvbuf(**(struct _IO_FILE***)0x202ff8, null, 2, 0);
 	alloca1.field4 = 1;
 	alloca1.field6 = socket(2, 1, 0);
 	alloca1.field7 = getpagesize();
 	do_srand(5295);
-	uint64_t anon3 = rand64(5300);
-	uint64_t anon4 = (uint64_t)((__zext uint128_t)anon3 * -9223372036854677503 >> 64);
-	*(uint64_t*)&alloca1.field12 = (__sext int64_t)-alloca1.field7 & anon3 + ((anon3 - anon4 >> 1) + anon4 >> 46) * -93824992236885;
+	uint64_t anon2 = rand64(5300);
+	uint64_t anon3 = (uint64_t)((__zext uint128_t)anon2 * -9223372036854677503 >> 64);
+	*(uint64_t*)&alloca1.field12 = (__sext int64_t)-alloca1.field7 & anon2 + ((anon2 - anon3 >> 1) + anon3 >> 46) * -93824992236885;
 	printf((uint8_t*)0x1b83);
 	printf((uint8_t*)0x1b9e);
 	getpid();
 	printf((uint8_t*)0x1bb5);
-	uint32_t anon5 = open((uint8_t*)0x1bc4, 0);
-	alloca1.field8 = anon5;
-	alloca1.field13 = (uint64_t)mmap(alloca1.field12, (__sext int64_t)alloca1.field7, 5, 2, anon5, 0);
+	uint32_t anon4 = open((uint8_t*)0x1bc4, 0);
+	alloca1.field8 = anon4;
+	alloca1.field13 = (uint64_t)mmap(alloca1.field12, (__sext int64_t)alloca1.field7, 5, 2, anon4, 0);
 	if (alloca1.field2 == 2)
 	{
-		uint32_t anon7;
+		uint32_t anon6;
 		alloca1.field9 = atoi(*(uint8_t**)(alloca1.field0 + 8));
 		if (setsockopt(alloca1.field6, 1, 2, (uint8_t*)&alloca1.field4, 4) <= 4294967295)
 		{
@@ -182,14 +173,14 @@ void main(uint64_t arg0, uint64_t arg1, uint64_t arg2)
 		alloca1.field15 = 2;
 		alloca1.field16 = htons((uint16_t)alloca1.field9);
 		alloca1.field17 = inet_addr((uint8_t*)0x203160);
-		uint32_t phi6 = alloca1.field6;
+		uint32_t phi5 = alloca1.field6;
 		if (alloca1.field6 == 4294967295)
 		{
 			perror((uint8_t*)0x1beb);
-			phi6 = alloca1.field6;
+			phi5 = alloca1.field6;
 		}
 		alloca1.field5 = 16;
-		if (bind(phi6, (struct sockaddr*)&alloca1.field15, 16) == 255)
+		if (bind(phi5, (struct sockaddr*)&alloca1.field15, 16) == 255)
 		{
 			perror((uint8_t*)0x1bf2);
 		}
@@ -206,23 +197,23 @@ void main(uint64_t arg0, uint64_t arg1, uint64_t arg2)
 				do
 				{
 					alloca1.field10 = accept(alloca1.field6, (struct sockaddr*)&alloca1.field19, &alloca1.field5);
-					anon7 = fork();
-					alloca1.field11 = anon7;
-					if (anon7 == 4294967295)
+					anon6 = fork();
+					alloca1.field11 = anon6;
+					if (anon6 == 4294967295)
 					{
 						perror((uint8_t*)0x1c1d);
 						close(alloca1.field10);
 					}
 				}
-				while (anon7 == 4294967295);
-				if ((anon7 >> 31 | (__zext uint32_t)(anon7 == 0)) == 0)
+				while (anon6 == 4294967295);
+				if ((anon6 >> 31 | (__zext uint32_t)(anon6 == 0)) == 0)
 				{
 					close(alloca1.field10);
 				}
 			}
-			while ((anon7 >> 31 | (__zext uint32_t)(anon7 == 0)) == 0);
+			while ((anon6 >> 31 | (__zext uint32_t)(anon6 == 0)) == 0);
 		}
-		while (anon7 != 0);
+		while (anon6 != 0);
 		alloca1.field14 = (uint64_t)inet_ntoa(alloca1.field20);
 		printf((uint8_t*)0x1c22);
 		dup2(alloca1.field10, 1);
@@ -238,8 +229,7 @@ void main(uint64_t arg0, uint64_t arg1, uint64_t arg2)
 	else 
 	{
 		printf((uint8_t*)0x1bce);
-		uint64_t anon8 = *__fs_ptr_i64(40);
-		if (anon8 == alloca1.field22)
+		if (*__fs_ptr_i64(40) == alloca1.field22)
 		{
 			return;
 		}
@@ -252,31 +242,30 @@ void main(uint64_t arg0, uint64_t arg1, uint64_t arg2)
 void handle(uint64_t arg0)
 {
 	struct { uint64_t field0; uint8_t* field1; uint64_t field2; uint64_t field3; uint8_t field4; uint8_t field5[103]; uint64_t field6; uint8_t field7[8]; uint64_t field8; } alloca1;
-	uint8_t* anon3;
+	uint8_t* anon2;
 	alloca1.field8 = arg0;
-	uint64_t anon2 = *__fs_ptr_i64(40);
-	alloca1.field6 = anon2;
+	alloca1.field6 = *__fs_ptr_i64(40);
 	printf((uint8_t*)0x1c3a);
 	read(0, &alloca1.field4, 100);
 	if (alloca1.field4 == 106)
 	{
-		anon3 = (uint8_t*)0x1c4d;
-		printf(anon3);
+		anon2 = (uint8_t*)0x1c4d;
+		printf(anon2);
 		read(0, &alloca1.field4, 100);
-		uint64_t anon4 = strtoll(&alloca1.field4, null, 0);
-		alloca1.field2 = anon4;
-		alloca1.field3 = anon4;
-		((void(*)())anon4)();
+		uint64_t anon3 = strtoll(&alloca1.field4, null, 0);
+		alloca1.field2 = anon3;
+		alloca1.field3 = anon3;
+		((void(*)())anon3)();
 	}
 	if (alloca1.field4 == 97)
 	{
-		printf(anon3);
+		printf(anon2);
 		read(0, &alloca1.field4, 100);
-		uint64_t anon5 = strtoll(&alloca1.field4, null, 0);
-		alloca1.field0 = anon5;
-		uint8_t* anon6 = malloc(anon5);
-		alloca1.field1 = anon6;
-		if (anon6 == null)
+		uint64_t anon4 = strtoll(&alloca1.field4, null, 0);
+		alloca1.field0 = anon4;
+		uint8_t* anon5 = malloc(anon4);
+		alloca1.field1 = anon5;
+		if (anon5 == null)
 		{
 			puts((uint8_t*)0x1c52);
 		}
@@ -291,8 +280,7 @@ void handle(uint64_t arg0)
 			}
 		}
 	}
-	uint64_t anon7 = *__fs_ptr_i64(40);
-	if (anon7 == alloca1.field6)
+	if (*__fs_ptr_i64(40) == alloca1.field6)
 	{
 		return;
 	}
@@ -305,15 +293,13 @@ void do_srand(uint64_t arg0)
 {
 	struct { uint32_t field0; uint32_t field1; uint64_t field2; uint8_t field3[8]; uint64_t field4; } alloca1;
 	alloca1.field4 = arg0;
-	uint64_t anon2 = *__fs_ptr_i64(40);
-	alloca1.field2 = anon2;
-	uint32_t anon3 = open((uint8_t*)0x1c61, 114);
-	alloca1.field1 = anon3;
-	read(anon3, (uint8_t*)&alloca1, 4);
+	alloca1.field2 = *__fs_ptr_i64(40);
+	uint32_t anon2 = open((uint8_t*)0x1c61, 114);
+	alloca1.field1 = anon2;
+	read(anon2, (uint8_t*)&alloca1, 4);
 	srand(alloca1.field0);
 	printf((uint8_t*)0x1c6e);
-	uint64_t anon4 = *__fs_ptr_i64(40);
-	if (anon4 == alloca1.field2)
+	if (*__fs_ptr_i64(40) == alloca1.field2)
 	{
 		return;
 	}

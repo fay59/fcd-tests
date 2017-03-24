@@ -37,13 +37,12 @@ void main(uint64_t arg0, uint64_t arg1)
 					{
 						if (phi8 == 0)
 						{
-							uint64_t phi11;
-							uint32_t anon13;
+							uint64_t phi10;
+							uint32_t anon12;
 							(__asm "movsd qword ptr [rsp], xmm4")();
-							uint32_t phi_in9 = 600;
+							uint32_t phi9 = 600;
 							do
 							{
-								uint32_t phi10 = phi_in9;
 								atof();
 								(__asm "movsd xmm1, qword ptr [rsp]")();
 								(__asm "mulsd xmm0, xmm1")();
@@ -72,25 +71,26 @@ void main(uint64_t arg0, uint64_t arg1)
 								(__asm "movsd xmm6, qword ptr [rip + 0x3ca]")();
 								(__asm "addsd xmm6, qword ptr [rsp]")();
 								(__asm "movsd qword ptr [rsp], xmm6")();
-								phi11 = 0;
-								uint32_t anon12 = phi10 - 1;
-								phi_in9 = anon12;
-								anon13 = anon12 & 0xff;
+								phi10 = 0;
+								uint32_t anon11 = phi9 - 1;
+								phi9 = anon11;
+								anon12 = anon11 & 0xff;
 							}
-							while (anon13 != 0);
+							while (anon12 != 0);
 							while (true)
 							{
+								uint64_t phi_in13 = phi10;
 								uint32_t phi14 = 0;
-								uint64_t phi15 = 1 - phi11 + 6296192;
-								uint64_t phi16 = 6296192 - phi11;
-								uint64_t phi17 = phi11;
+								uint64_t phi15 = 1 - phi_in13 + 6296192;
+								uint64_t phi16 = 6296192 - phi_in13;
+								uint64_t phi17 = phi_in13;
 								uint64_t anon18 = phi17 + phi16;
-								uint64_t anon19 = 480 - phi11;
-								uint64_t anon20 = 160 - phi11;
-								uint64_t anon21 = 320 - phi11;
+								uint64_t anon19 = 480 - phi_in13;
+								uint64_t anon20 = 160 - phi_in13;
+								uint64_t anon21 = 320 - phi_in13;
 								uint64_t anon22 = phi17 + phi15;
 								putchar((__sext int32_t)*(phi14 < 79 ? (uint8_t*)((__sext int64_t)(((__sext int32_t)*(uint8_t*)(anon18 + anon19) + ((__sext int32_t)*(uint8_t*)(anon18 + anon20) << 2) + ((__sext int32_t)*(uint8_t*)phi16 << 3) + ((__sext int32_t)*(uint8_t*)(anon18 + anon21) << 1) << 4) + ((__sext int32_t)*(uint8_t*)phi15 << 3) + ((__sext int32_t)*(uint8_t*)(anon22 + anon20) << 2) + ((__sext int32_t)*(uint8_t*)(anon22 + anon21) << 1) + (__sext int32_t)*(uint8_t*)(anon22 + anon19) + 1) + 4196472) : (uint8_t*)0x400878));
-								phi11 = phi11 - 640;
+								phi10 = phi_in13 - 640;
 								phi14 = phi14 + 1;
 								phi15 = (phi15 & 0xf) + 2;
 								phi16 = phi16 + 2;

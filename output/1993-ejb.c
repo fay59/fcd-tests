@@ -53,7 +53,7 @@ void main(uint64_t arg0, uint64_t arg1)
 						{
 							uint64_t phi15;
 							uint8_t phi16;
-							uint8_t* phi17;
+							uint8_t* phi_in17;
 							int64_t anon14 = (__sext int64_t)anon12;
 							if (((uint32_t)(anon14 >> 30) & 1 | (__zext uint32_t)((anon14 & 0x7f) == 0)) == 0)
 							{
@@ -62,7 +62,7 @@ void main(uint64_t arg0, uint64_t arg1)
 								*(uint8_t*)(arg1 + 17) = 1;
 								phi15 = anon2;
 								phi16 = 2;
-								phi17 = anon13;
+								phi_in17 = anon13;
 							}
 							else 
 							{
@@ -81,13 +81,13 @@ void main(uint64_t arg0, uint64_t arg1)
 									*anon23 = *anon11;
 									phi15 = *anon1;
 									phi16 = 0;
-									phi17 = anon23;
+									phi_in17 = anon23;
 								}
 							}
 							uint64_t phi_in24 = phi15;
 							*(uint8_t*)(phi_in24 + 2) = phi16;
-							phi5 = phi17;
 							phi4 = phi_in24;
+							phi5 = phi_in17;
 						}
 					}
 				}

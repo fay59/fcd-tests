@@ -41,23 +41,19 @@ uint32_t main(uint32_t arg0, uint8_t** arg1)
 }
 uint64_t testO_64(uint64_t arg0, uint64_t arg1, uint64_t arg2)
 {
-	bool anon1 = llvm.ssub.with.overflow.i64(arg1, arg2).field1;
-	return (__zext uint64_t)anon1;
+	return (__zext uint64_t)llvm.ssub.with.overflow.i64(arg1, arg2).field1;
 }
 uint64_t testO_32(uint64_t arg0, uint64_t arg1, uint64_t arg2)
 {
-	bool anon1 = llvm.ssub.with.overflow.i32((uint32_t)arg1, (uint32_t)arg2).field1;
-	return (__zext uint64_t)anon1;
+	return (__zext uint64_t)llvm.ssub.with.overflow.i32((uint32_t)arg1, (uint32_t)arg2).field1;
 }
 uint64_t testNO_64(uint64_t arg0, uint64_t arg1, uint64_t arg2)
 {
-	bool anon1 = llvm.ssub.with.overflow.i64(arg1, arg2).field1;
-	return (__zext uint64_t)!anon1;
+	return (__zext uint64_t)!llvm.ssub.with.overflow.i64(arg1, arg2).field1;
 }
 uint64_t testNO_32(uint64_t arg0, uint64_t arg1, uint64_t arg2)
 {
-	bool anon1 = llvm.ssub.with.overflow.i32((uint32_t)arg1, (uint32_t)arg2).field1;
-	return (__zext uint64_t)!anon1;
+	return (__zext uint64_t)!llvm.ssub.with.overflow.i32((uint32_t)arg1, (uint32_t)arg2).field1;
 }
 uint64_t testB_64(uint64_t arg0, uint64_t arg1, uint64_t arg2)
 {
