@@ -11,81 +11,86 @@ void _init(uint64_t arg0)
 void main(uint64_t arg0, uint64_t arg1, uint64_t arg2, uint64_t arg3, uint64_t arg4, uint64_t arg5, uint64_t arg6)
 {
 	struct { uint8_t field0[8]; uint32_t field1; uint8_t field2[3]; uint8_t field3; uint8_t field4[56]; uint64_t field5; } alloca1;
+	uint64_t phi8;
+	uint32_t phi9;
+	uint32_t anon10;
+	uint32_t anon14;
+	uint64_t anon15;
 	alloca1.field5 = arg0;
 	uint64_t phi2 = arg4 & 0xffffffff;
 	uint64_t phi3 = arg6 & 0xffffffff;
 	uint64_t phi4 = arg5 & 0xffffffff;
-	uint64_t phi5 = arg2 & 0xffffffff;
+	uint64_t phi_in5 = arg2 & 0xffffffff;
 	uint32_t phi_in6 = (uint32_t)arg2;
-	while (true)
+	do
 	{
 		uint64_t phi_in7;
-		uint32_t phi8;
-		uint32_t anon9;
-		uint64_t anon12;
-		uint32_t anon13;
-		uint64_t anon15;
-		uint32_t phi19;
+		uint64_t anon13;
 		do
 		{
 			do
 			{
 				phi_in7 = phi_in7;
-				phi8 = phi_in6;
-				anon9 = (__zext uint32_t)(phi8 != 0) << 8;
-				if (phi8 > anon9)
+				phi8 = phi_in5;
+				phi9 = phi_in6;
+				anon10 = (__zext uint32_t)(phi9 != 0) << 8;
+				if (phi9 > anon10)
 				{
-					alloca1.field1 = anon9;
-					uint64_t anon10 = strtol(*(uint8_t**)arg3, null, 10);
+					alloca1.field1 = anon10;
+					uint64_t anon11 = strtol(*(uint8_t**)arg3, null, 10);
 					phi2 = strtol(*(uint8_t**)(arg3 + 8), null, 10) & 0xffffffff;
-					phi3 = anon10 & 0xffffffff;
+					phi3 = anon11 & 0xffffffff;
 					phi4 = 1;
-					uint32_t anon11 = ~alloca1.field1 - alloca1.field1;
-					phi5 = (__zext uint64_t)anon11;
-					phi_in6 = anon11;
+					uint32_t anon12 = ~alloca1.field1 - alloca1.field1;
+					phi_in5 = (__zext uint64_t)anon12;
+					phi_in6 = anon12;
 				}
 			}
-			while (phi8 > anon9);
+			while (phi9 > anon10);
 			phi2 = 2;
 			phi3 = 0;
-			anon12 = phi_in7 & 0xffffffffffff00ff | (__zext uint64_t)(phi8 == 0) << 8;
-			phi_in7 = anon12;
+			anon13 = phi_in7 & 0xffffffffffff00ff | (__zext uint64_t)(phi9 == 0) << 8;
+			phi_in7 = anon13;
 			phi4 = 1;
-			phi5 = 4294967293;
+			phi_in5 = 4294967293;
 			phi_in6 = 4294967293;
-			anon13 = (__zext uint32_t)(phi8 == 0);
+			anon14 = (__zext uint32_t)(phi9 == 0);
 		}
-		while (phi8 > anon13);
-		if (!((__zext uint32_t)(phi8 == 255) < ~phi8 | (phi4 & 1) == 0))
+		while (phi9 > anon14);
+		if ((__zext uint32_t)(phi9 != 255) < ~phi9)
 		{
-			alloca1.field3 = (__zext uint8_t)(phi8 == 0);
-			uint32_t* anon14 = (uint32_t*)(arg1 - 72);
-			*anon14 = anon9;
+			uint32_t phi17;
 			anon15 = (uint64_t)&alloca1;
-			uint64_t anon16 = phi3 & 0xffffffff;
-			main(4195952, anon15, (__zext uint64_t)phi8, arg3, phi2, phi4 << 32 >> 32 >> 1 & 0xffffffff, anon16);
-			uint64_t anon17 = (__zext uint64_t)((uint32_t)phi5 - anon13 - *anon14);
-			main(4195982, anon15, anon17, arg3, 0, 0, anon16);
-			main(4196002, anon15, anon17, arg3, phi2, 0, anon16);
+			main(4195888, anon15, 0, arg3, phi2, phi4, (__zext uint64_t)-phi9);
+			uint64_t phi16 = 1;
+			uint32_t anon18 = (uint32_t)phi8;
+			phi17 = anon18;
+			if (anon18 == 255)
+			{
+				uint32_t anon19 = printf((uint8_t*)0x400884);
+				phi16 = (__zext uint64_t)(anon19 + fflush(*(struct _IO_FILE**)0x600c30));
+				phi17 = 255;
+			}
+			phi2 = phi2;
+			phi3 = phi16;
+			phi_in7 = anon13;
+			phi4 = phi4 + 1 & 0xffffffff;
+			uint32_t anon20 = phi17 - 2;
+			phi_in5 = (__zext uint64_t)anon20;
+			phi_in6 = anon20;
 		}
-		break;
-		main(4195888, anon15, 0, arg3, phi2, phi4, (__zext uint64_t)-phi8);
-		uint64_t phi18 = 1;
-		uint32_t anon20 = (uint32_t)phi5;
-		phi19 = anon20;
-		if (anon20 == 255)
-		{
-			uint32_t anon21 = printf((uint8_t*)0x400884);
-			phi18 = (__zext uint64_t)(anon21 + fflush(*(struct _IO_FILE**)0x600c30));
-			phi19 = 255;
-		}
-		phi2 = phi2;
-		phi3 = phi18;
-		phi_in7 = anon12;
-		phi4 = phi4 + 1 & 0xffffffff;
-		uint32_t anon22 = phi19 - 2;
-		phi5 = (__zext uint64_t)anon22;
-		phi_in6 = anon22;
+	}
+	while ((__zext uint32_t)(phi9 != 255) < ~phi9);
+	if (!((__zext uint32_t)(phi9 == 255) < ~phi9 | (phi4 & 1) == 0))
+	{
+		alloca1.field3 = (__zext uint8_t)(phi9 == 0);
+		uint32_t* anon21 = (uint32_t*)(arg1 - 72);
+		*anon21 = anon10;
+		uint64_t anon22 = phi3 & 0xffffffff;
+		main(4195952, anon15, (__zext uint64_t)phi9, arg3, phi2, phi4 << 32 >> 32 >> 1 & 0xffffffff, anon22);
+		uint64_t anon23 = (__zext uint64_t)((uint32_t)phi8 - anon14 - *anon21);
+		main(4195982, anon15, anon23, arg3, 0, 0, anon22);
+		main(4196002, anon15, anon23, arg3, phi2, 0, anon22);
 	}
 	return;
 }
