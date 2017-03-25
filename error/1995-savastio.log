@@ -1,1 +1,0 @@
-Assertion failed: (cast<ExpressionStatement>(declaration)->getExpression() == expr), function doRun, file /Users/travis/build/zneak/fcd/fcd/ast/pass_congruence.cpp, line 505.

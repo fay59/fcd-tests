@@ -53,42 +53,40 @@ void main(uint64_t arg0, uint64_t arg1)
 	phi15 = *anon16;
 	if (*anon16 < *anon13)
 	{
-		uint32_t anon24;
+		uint32_t anon22;
 		do
 		{
-			uint32_t phi_in17 = phi15;
-			uint32_t* anon18 = (uint32_t*)0x600c30;
-			*anon18 = 0;
-			uint32_t phi19 = phi_in17;
-			uint32_t phi20 = 0;
+			uint32_t* anon17 = (uint32_t*)0x600c30;
+			*anon17 = 0;
+			uint32_t phi18 = 0;
 			if ((*anon7 >> 31 | (__zext uint32_t)(*anon7 == 0)) == 0)
 			{
-				uint32_t anon23;
+				uint32_t anon21;
 				do
 				{
 					alloca1.field0 = 32;
-					uint32_t phi21 = 32;
-					int64_t anon22 = (__sext int64_t)phi20 << 2;
-					if (phi19 < *(uint32_t*)(anon9 + anon22 + 128))
+					uint32_t phi19 = 32;
+					int64_t anon20 = (__sext int64_t)phi18 << 2;
+					if (phi15 < *(uint32_t*)(anon9 + anon20 + 128))
 					{
-						fseek(*anon2, (__sext int64_t)(phi19 + *(uint32_t*)(anon9 + anon22 + 528)), 0);
+						fseek(*anon2, (__sext int64_t)(phi15 + *(uint32_t*)(anon9 + anon20 + 528)), 0);
 						scanf((uint8_t*)0x400884);
-						phi21 = (__sext int32_t)alloca1.field0;
+						phi19 = (__sext int32_t)alloca1.field0;
 					}
-					putchar(phi21);
-					anon23 = *anon18 + 1;
-					*anon18 = anon23;
-					phi19 = anon23;
-					phi20 = anon23;
+					putchar(phi19);
+					anon21 = *anon17 + 1;
+					*anon17 = anon21;
+					phi15 = anon21;
+					phi18 = anon21;
 				}
-				while (*anon7 > anon23);
+				while (*anon7 > anon21);
 			}
 			putchar(10);
-			anon24 = *anon16 + 1;
-			*anon16 = anon24;
-			phi15 = anon24;
+			anon22 = *anon16 + 1;
+			*anon16 = anon22;
+			phi15 = anon22;
 		}
-		while (*anon13 > anon24);
+		while (*anon13 > anon22);
 	}
 	return;
 }
