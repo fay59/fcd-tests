@@ -1,1 +1,0 @@
-Assertion failed: (false && "empty disjunction means that expression is always true, but this is likely to be a bug somewhere"), function createDisjunction, file /Users/travis/build/zneak/fcd/fcd/ast/pass_backend.cpp, line 171.
