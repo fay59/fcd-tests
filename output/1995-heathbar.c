@@ -121,13 +121,13 @@ uint64_t mAIn(uint64_t arg0, uint64_t arg1, uint64_t arg2)
 		*anon12 = (anon8 == 0 ? anon15 : (uint32_t)((__zext uint64_t)anon15 << anon9)) | anon2;
 		phi13 = 0;
 	}
-	bool anon17 = anon15 == 1 | (anon7 & 1) == 0 | anon16 == 0;
-	bool anon18 = anon6 == 0 | anon5 == 0;
-	if (anon3 != 0 && anon14 != 0 && anon17 || !anon18 && anon3 == 0)
+	bool anon17 = anon6 == 0 | anon5 == 0;
+	bool anon18 = anon15 == 1 | (anon7 & 1) == 0 | anon16 == 0;
+	if (!anon17 || anon3 != 0 && anon14 != 0 && anon18)
 	{
 		phi13 = 1;
 	}
-	if (anon3 != 0 && anon14 != 0 && anon17 || !anon18 && anon3 == 0 || anon3 == 0 && anon18 || anon3 != 0 && !anon17 && anon14 != 0)
+	if (!anon17 || anon3 != 0 && anon14 != 0 && anon18 || anon3 == 0 && anon17 || !anon18 && anon14 != 0)
 	{
 		return phi13;
 	}
