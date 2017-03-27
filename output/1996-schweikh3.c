@@ -124,7 +124,7 @@ void main(uint64_t arg0, uint64_t arg1, uint64_t arg2)
 			wait(4196544);
 			puts((uint8_t*)0x400ce2);
 		}
-		if (anon3 != 0 || anon18 != null && anon3 == 0)
+		if (anon18 != null || anon3 != 0)
 		{
 			return;
 		}

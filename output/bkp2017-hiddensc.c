@@ -88,7 +88,7 @@ void privdrop(uint64_t arg0, uint64_t arg1)
 						}
 					}
 				}
-				if (__undefined || !__undefined && anon3 > 4294967295 && anon4 > 4294967295 && anon5 > 4294967295)
+				if (__undefined || anon3 > 4294967295 && anon4 > 4294967295 && anon5 > 4294967295)
 				{
 					return;
 				}
@@ -106,7 +106,7 @@ void privdrop(uint64_t arg0, uint64_t arg1)
 							}
 						}
 					}
-					if (anon3 <= 4294967295 || anon4 <= 4294967295 && anon3 > 4294967295)
+					if (anon3 <= 4294967295 || anon4 <= 4294967295)
 					{
 						errx(4294967295, anon6);
 					}
