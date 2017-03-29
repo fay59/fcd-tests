@@ -62,17 +62,17 @@ void main(uint64_t arg0, uint64_t arg1, uint64_t arg2, uint64_t arg3, uint64_t a
 			uint32_t phi17;
 			anon15 = (uint64_t)&alloca1;
 			main(4195888, anon15, 0, arg3, phi2, phi4, (__zext uint64_t)-phi9);
-			uint64_t phi16 = 1;
+			uint64_t phi_in16 = 1;
 			uint32_t anon18 = (uint32_t)phi8;
 			phi17 = anon18;
 			if (anon18 == 255)
 			{
 				uint32_t anon19 = printf((uint8_t*)0x400884);
-				phi16 = (__zext uint64_t)(anon19 + fflush(*(struct _IO_FILE**)0x600c30));
+				phi_in16 = (__zext uint64_t)(anon19 + fflush(*(struct _IO_FILE**)0x600c30));
 				phi17 = 255;
 			}
 			phi2 = phi2;
-			phi3 = phi16;
+			phi3 = phi_in16;
 			phi_in7 = anon13;
 			phi4 = phi4 + 1 & 0xffffffff;
 			uint32_t anon20 = phi17 - 2;

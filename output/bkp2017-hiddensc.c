@@ -206,12 +206,12 @@ void main(uint64_t arg0, uint64_t arg1, uint64_t arg2)
 					}
 				}
 				while (anon6 == 4294967295);
-				if ((anon6 >> 31 | (__zext uint32_t)(anon6 == 0)) == 0)
+				if (anon6 >= 1)
 				{
 					close(alloca1.field10);
 				}
 			}
-			while ((anon6 >> 31 | (__zext uint32_t)(anon6 == 0)) == 0);
+			while (anon6 >= 1);
 		}
 		while (anon6 != 0);
 		alloca1.field14 = (uint64_t)inet_ntoa(alloca1.field20);
