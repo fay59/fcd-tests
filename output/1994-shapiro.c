@@ -17,27 +17,27 @@ void main(uint64_t arg0)
 	{
 		uint64_t phi_in4;
 		uint64_t phi3 = phi_in4;
-		uint64_t phi5 = phi2;
+		uint64_t phi_in5 = phi2;
 		anon6 = _IO_getc(anon1);
+		phi2 = phi_in5;
 		uint32_t phi7 = anon6;
 		if (anon6 != 255)
 		{
 			phi_in4 = phi3;
-			phi2 = phi5;
 			uint32_t anon8 = phi7 - 74;
 			if (anon8 < 16)
 			{
-				if ((uint32_t)phi5 == 1)
+				if ((uint32_t)phi2 == 1)
 				{
 					_IO_putc(anon8 << 4 | (uint32_t)phi3 - 74, *(struct _IO_FILE**)0x600ac0);
 					phi_in4 = phi3 & 0xffffffff;
-					phi2 = phi5 & 0xffffffffffffff00;
+					phi2 = phi2 & 0xffffffffffffff00;
 				}
 				else 
 				{
 					uint32_t anon9 = _IO_getc(anon1);
 					phi3 = (__zext uint64_t)phi7;
-					phi5 = 1;
+					phi2 = 1;
 					phi7 = anon9;
 					if (anon9 == 255)
 					{

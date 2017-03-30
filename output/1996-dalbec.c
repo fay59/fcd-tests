@@ -59,38 +59,37 @@ void main(uint64_t arg0, uint64_t arg1, uint64_t arg2, uint64_t arg3, uint64_t a
 		while (phi9 > anon14);
 		if ((__zext uint32_t)(phi9 != 255) < ~phi9)
 		{
-			uint32_t phi17;
+			uint32_t phi16;
 			anon15 = (uint64_t)&alloca1;
 			main(4195888, anon15, 0, arg3, phi2, phi4, (__zext uint64_t)-phi9);
-			uint64_t phi_in16 = 1;
-			uint32_t anon18 = (uint32_t)phi8;
-			phi17 = anon18;
-			if (anon18 == 255)
+			phi3 = 1;
+			uint32_t anon17 = (uint32_t)phi8;
+			phi16 = anon17;
+			if (anon17 == 255)
 			{
-				uint32_t anon19 = printf((uint8_t*)0x400884);
-				phi_in16 = (__zext uint64_t)(anon19 + fflush(*(struct _IO_FILE**)0x600c30));
-				phi17 = 255;
+				uint32_t anon18 = printf((uint8_t*)0x400884);
+				phi3 = (__zext uint64_t)(anon18 + fflush(*(struct _IO_FILE**)0x600c30));
+				phi16 = 255;
 			}
 			phi2 = phi2;
-			phi3 = phi_in16;
 			phi_in7 = anon13;
 			phi4 = phi4 + 1 & 0xffffffff;
-			uint32_t anon20 = phi17 - 2;
-			phi_in5 = (__zext uint64_t)anon20;
-			phi_in6 = anon20;
+			uint32_t anon19 = phi16 - 2;
+			phi_in5 = (__zext uint64_t)anon19;
+			phi_in6 = anon19;
 		}
 	}
 	while ((__zext uint32_t)(phi9 != 255) < ~phi9);
 	if (!((__zext uint32_t)(phi9 == 255) < ~phi9 | (phi4 & 1) == 0))
 	{
 		alloca1.field3 = (__zext uint8_t)(phi9 == 0);
-		uint32_t* anon21 = (uint32_t*)(arg1 - 72);
-		*anon21 = anon10;
-		uint64_t anon22 = phi3 & 0xffffffff;
-		main(4195952, anon15, (__zext uint64_t)phi9, arg3, phi2, phi4 << 32 >> 32 >> 1 & 0xffffffff, anon22);
-		uint64_t anon23 = (__zext uint64_t)((uint32_t)phi8 - anon14 - *anon21);
-		main(4195982, anon15, anon23, arg3, 0, 0, anon22);
-		main(4196002, anon15, anon23, arg3, phi2, 0, anon22);
+		uint32_t* anon20 = (uint32_t*)(arg1 - 72);
+		*anon20 = anon10;
+		uint64_t anon21 = phi3 & 0xffffffff;
+		main(4195952, anon15, (__zext uint64_t)phi9, arg3, phi2, phi4 << 32 >> 32 >> 1 & 0xffffffff, anon21);
+		uint64_t anon22 = (__zext uint64_t)((uint32_t)phi8 - anon14 - *anon20);
+		main(4195982, anon15, anon22, arg3, 0, 0, anon21);
+		main(4196002, anon15, anon22, arg3, phi2, 0, anon21);
 	}
 	return;
 }
