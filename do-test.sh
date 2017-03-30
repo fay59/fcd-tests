@@ -23,16 +23,19 @@ fi
 function fcd {
 	local -r PROGRAM="$1"
 	local -r PROGRAM_BASE_NAME=$(basename $PROGRAM)
+	local -r OUTPUT_PATH="${BASEDIR}/output/${PROGRAM_BASE_NAME}.c"
+	local -r ERROR_PATH="${BASEDIR}/error/${PROGRAM_BASE_NAME}.log"
 	rm -f "${OUTPUT_PATH}" "${ERROR_PATH}"
 	
-	local TIMEFORMAT="%R"
+	local -r TIMEFORMAT="%R"
 	TIME=$(ulimit -SHt 30; {
-		time "${FCD}" -I . -I "${BASEDIR}/include" "$@" \
-			> "${BASEDIR}/output/${PROGRAM_BASE_NAME}.c" \
-			2> "${BASEDIR}/error/${PROGRAM_BASE_NAME}.log";
+		time "${FCD}" -I "${BASEDIR}/include" "$@" \
+			> "${OUTPUT_PATH}" \
+			2> "${ERROR_PATH}";
 	} 2>&1)
-	local RESULT_STATUS=$?
-	echo "| ${PROGRAM_BASE_NAME} | ${RESULT_STATUS} | ${TIME} |"
+	local -r RESULT_STATUS=$?
+	local -r LINE_COUNT=$(wc -l < "${OUTPUT_PATH}")
+	echo "| ${PROGRAM_BASE_NAME} | ${RESULT_STATUS} | ${TIME} | ${LINE_COUNT} |"
 	return $RESULT_STATUS
 }
 
@@ -88,8 +91,8 @@ done
 
 # Run tests.
 OUTPUT_LOG="${BASEDIR}/SUMMARY.md"
-echo "| Program | Exit Code | Execution Time |" | tee "${OUTPUT_LOG}"
-echo "| ------- |:--------- | --------------:|" | tee -a "${OUTPUT_LOG}"
+echo "| Program | Exit Code | Execution Time | Line Count |" | tee "${OUTPUT_LOG}"
+echo "| ------- |:--------- | --------------:| ----------:|" | tee -a "${OUTPUT_LOG}"
 mkdir -p "${BASEDIR}/output" "${BASEDIR}/error"
 for HEADER in "${BASEDIR}"/bin/*.h; do
 	PROGRAM="${HEADER%.h}"
