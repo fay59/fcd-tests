@@ -33,9 +33,16 @@ function fcd {
 			> "${OUTPUT_PATH}" \
 			2> "${ERROR_PATH}";
 	} 2>&1)
+	
 	local -r RESULT_STATUS=$?
-	local -r LINE_COUNT=$(wc -l < "${OUTPUT_PATH}")
-	echo "| ${PROGRAM_BASE_NAME} | ${RESULT_STATUS} | ${TIME} | ${LINE_COUNT} |"
+	if [[ $RESULT_STATUS -eq 0 ]]; then
+		echo -n "| [${PROGRAM_BASE_NAME}](output/${PROGRAM_BASE_NAME}.c) "
+		echo -n "| ${RESULT_STATUS} "
+	else
+		echo -n "| ${PROGRAM_BASE_NAME} "
+		echo -n "| [${RESULT_STATUS}](error/${PROGRAM_BASE_NAME}.log) "
+	fi
+	echo "| ${TIME} | $(wc -l < "${OUTPUT_PATH}") |"
 	return $RESULT_STATUS
 }
 
