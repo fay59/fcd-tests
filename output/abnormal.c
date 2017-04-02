@@ -4,37 +4,34 @@ void func_4001fb(uint64_t arg0, uint64_t arg1)
 {
 	while (true)
 	{
-		bool anon5;
-		uint64_t phi1 = 10;
-		uint64_t phi2 = 5;
-		uint64_t phi3 = 5;
-		uint64_t phi4 = arg1;
+		bool anon3;
+		uint64_t phi_in1 = 10;
+		uint64_t phi_in2 = 5;
+		phi_in2 = 5;
+		phi_in1 = arg1;
 		if (arg1 != 10)
 		{
-			phi2 = phi3;
-			anon5 = ((uint32_t)(phi4 >> 63) | (__zext uint32_t)(phi4 == 0)) != 0 | phi4 == 21;
-			if (anon5)
+			anon3 = ((uint32_t)(phi_in1 >> 63) | (__zext uint32_t)(phi_in1 == 0)) != 0 | phi_in1 == 21;
+			if (anon3)
 			{
 				break;
 			}
 			else 
 			{
-				phi1 = phi4 - 1;
+				phi_in1 = phi_in1 - 1;
 			}
 		}
-		if (!anon5 || arg1 == 10)
+		if (!anon3 || arg1 == 10)
 		{
-			uint64_t anon8;
-			phi4 = phi1;
-			uint64_t phi_in6 = phi2;
+			uint64_t anon5;
 			do
 			{
-				uint64_t phi7 = phi_in6;
-				phi_in6 = 4;
-				anon8 = phi7 * phi4;
-				phi3 = anon8;
+				uint64_t phi4 = phi_in2;
+				phi_in2 = 4;
+				anon5 = phi4 * phi_in1;
+				phi_in2 = anon5;
 			}
-			while (anon8 == 4);
+			while (anon5 == 4);
 		}
 	}
 	return;

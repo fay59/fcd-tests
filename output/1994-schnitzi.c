@@ -14,7 +14,7 @@ void main(uint64_t arg0, uint64_t arg1)
 	uint32_t* anon7;
 	uint64_t anon9;
 	uint32_t* anon13;
-	uint32_t phi15;
+	uint32_t phi_in15;
 	alloca1.field4 = arg0;
 	struct _IO_FILE** anon2 = (struct _IO_FILE**)0x600c18;
 	alloca1.field2 = (uint32_t)ftell(*anon2);
@@ -25,12 +25,12 @@ void main(uint64_t arg0, uint64_t arg1)
 		{
 			uint64_t anon4;
 			uint16_t anon5;
-			uint64_t phi3 = (uint64_t)&alloca1.field1;
+			uint64_t phi_in3 = (uint64_t)&alloca1.field1;
 			do
 			{
-				anon4 = (phi3 & 0xffffffff) + 4;
-				phi3 = anon4;
-				uint16_t anon6 = (uint16_t)*(uint32_t*)phi3;
+				anon4 = (phi_in3 & 0xffffffff) + 4;
+				phi_in3 = anon4;
+				uint16_t anon6 = (uint16_t)*(uint32_t*)phi_in3;
 				anon5 = anon6 - 257 & (anon6 ^ 0x8080) & 0x8080;
 			}
 			while (anon5 == 0);
@@ -50,44 +50,43 @@ void main(uint64_t arg0, uint64_t arg1)
 		while (anon14 != null);
 	}
 	uint32_t* anon16 = (uint32_t*)0x600c24;
-	phi15 = *anon16;
+	phi_in15 = *anon16;
 	if (*anon16 < *anon13)
 	{
-		uint32_t anon23;
+		uint32_t anon22;
 		do
 		{
-			uint32_t phi17 = phi15;
-			uint32_t* anon18 = (uint32_t*)0x600c30;
-			*anon18 = 0;
-			uint32_t phi19 = 0;
+			uint32_t* anon17 = (uint32_t*)0x600c30;
+			*anon17 = 0;
+			uint32_t phi_in18 = 0;
 			if (*anon7 >= 1)
 			{
-				uint32_t anon22;
+				uint32_t anon21;
 				do
 				{
 					alloca1.field0 = 32;
-					uint32_t phi20 = 32;
-					int64_t anon21 = (__sext int64_t)phi19 << 2;
-					if (phi17 < *(uint32_t*)(anon9 + anon21 + 128))
+					uint32_t phi_in19 = 32;
+					int64_t anon20 = (__sext int64_t)phi_in18 << 2;
+					if (phi_in15 < *(uint32_t*)(anon9 + anon20 + 128))
 					{
-						fseek(*anon2, (__sext int64_t)(phi17 + *(uint32_t*)(anon9 + anon21 + 528)), 0);
+						fseek(*anon2, (__sext int64_t)(phi_in15 + *(uint32_t*)(anon9 + anon20 + 528)), 0);
 						scanf((uint8_t*)0x400884);
-						phi20 = (__sext int32_t)alloca1.field0;
+						phi_in19 = (__sext int32_t)alloca1.field0;
 					}
-					putchar(phi20);
-					anon22 = *anon18 + 1;
-					*anon18 = anon22;
-					phi17 = anon22;
-					phi19 = anon22;
+					putchar(phi_in19);
+					anon21 = *anon17 + 1;
+					*anon17 = anon21;
+					phi_in15 = anon21;
+					phi_in18 = anon21;
 				}
-				while (*anon7 > anon22);
+				while (*anon7 > anon21);
 			}
 			putchar(10);
-			anon23 = *anon16 + 1;
-			*anon16 = anon23;
-			phi15 = anon23;
+			anon22 = *anon16 + 1;
+			*anon16 = anon22;
+			phi_in15 = anon22;
 		}
-		while (*anon13 > anon23);
+		while (*anon13 > anon22);
 	}
 	return;
 }

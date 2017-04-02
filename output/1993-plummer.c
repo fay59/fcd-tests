@@ -18,40 +18,40 @@ void main(uint64_t arg0, uint64_t arg1, uint64_t arg2)
 	**(uint8_t**)(arg2 + 16) = 0;
 	while (true)
 	{
-		uint64_t phi4;
+		uint64_t phi_in4;
 		uint64_t* anon7;
 		uint64_t anon8;
 		uint64_t* anon5 = (uint64_t*)(arg2 + 8);
-		phi4 = *anon5;
+		phi_in4 = *anon5;
 		uint32_t dispatch6 = 0;
 		do
 		{
-			printf((uint8_t*)phi4);
+			printf((uint8_t*)phi_in4);
 			anon7 = (uint64_t*)0x6009b0;
 			anon8 = *anon1 - 1;
 			*anon7 = anon8;
-			phi4 = *anon5;
+			phi_in4 = *anon5;
 		}
 		while (anon8 < *anon5);
 		uint8_t* anon9 = (uint8_t*)anon8;
 		uint8_t anon10 = *anon9 + 1;
 		*anon9 = anon10;
-		uint64_t phi11 = anon8;
-		uint8_t phi12 = anon10;
-		if ((__sext int32_t)phi12 > (uint32_t)arg1 * (uint32_t)((__sext int64_t)**(uint8_t**)0x6009a8 + (arg1 << 1)))
+		uint64_t phi_in11 = anon8;
+		uint8_t phi_in12 = anon10;
+		if ((__sext int32_t)phi_in12 > (uint32_t)arg1 * (uint32_t)((__sext int64_t)**(uint8_t**)0x6009a8 + (arg1 << 1)))
 		{
-			uint64_t anon13 = phi11 - 1;
+			uint64_t anon13 = phi_in11 - 1;
 			*anon7 = anon13;
 			uint8_t anon14 = (uint8_t)((anon3 >> 32) * (__zext uint64_t)((uint8_t)arg1 + **(uint8_t**)0x6009a8));
-			*(uint8_t*)phi11 = anon14;
-			phi4 = *anon5;
+			*(uint8_t*)phi_in11 = anon14;
+			phi_in4 = *anon5;
 			dispatch6 = 0;
 			if (*anon5 <= anon13)
 			{
 				uint8_t anon15 = anon14 + 1;
 				*(uint8_t*)anon13 = anon15;
-				phi11 = anon13;
-				phi12 = anon15;
+				phi_in11 = anon13;
+				phi_in12 = anon15;
 				dispatch6 = 1;
 			}
 		}

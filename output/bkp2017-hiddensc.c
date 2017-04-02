@@ -95,16 +95,10 @@ void privdrop(uint64_t arg0, uint64_t arg1)
 				if (!__undefined)
 				{
 					uint8_t* anon6;
-					if (anon3 > 4294967295)
+					if (anon5 <= 4294967295 && anon3 > 4294967295 && anon4 > 4294967295)
 					{
-						if (anon4 > 4294967295)
-						{
-							if (anon5 <= 4294967295)
-							{
-								anon6 = (uint8_t*)0x1b60;
-								errx(4294967295, anon6);
-							}
-						}
+						anon6 = (uint8_t*)0x1b60;
+						errx(4294967295, anon6);
 					}
 					if (anon3 <= 4294967295 || anon4 <= 4294967295)
 					{
@@ -129,14 +123,14 @@ void privdrop(uint64_t arg0, uint64_t arg1)
 }
 uint64_t rand64(uint64_t arg0)
 {
-	uint64_t phi1 = 0;
-	uint32_t phi2 = 0;
-	while (phi2 < 64)
+	uint64_t phi_in1 = 0;
+	uint32_t phi_in2 = 0;
+	while (phi_in2 < 64)
 	{
-		phi1 = (__zext uint64_t)(rand() & 1) | phi1 << 1;
-		phi2 = phi2 + 1;
+		phi_in1 = (__zext uint64_t)(rand() & 1) | phi_in1 << 1;
+		phi_in2 = phi_in2 + 1;
 	}
-	return phi1;
+	return phi_in1;
 }
 void main(uint64_t arg0, uint64_t arg1, uint64_t arg2)
 {
@@ -163,7 +157,7 @@ void main(uint64_t arg0, uint64_t arg1, uint64_t arg2)
 	alloca1.field13 = (uint64_t)mmap(alloca1.field12, (__sext int64_t)alloca1.field7, 5, 2, anon4, 0);
 	if (alloca1.field2 == 2)
 	{
-		uint32_t anon6;
+		uint32_t anon5;
 		alloca1.field9 = atoi(*(uint8_t**)(alloca1.field0 + 8));
 		if (setsockopt(alloca1.field6, 1, 2, (uint8_t*)&alloca1.field4, 4) <= 4294967295)
 		{
@@ -173,14 +167,12 @@ void main(uint64_t arg0, uint64_t arg1, uint64_t arg2)
 		alloca1.field15 = 2;
 		alloca1.field16 = htons((uint16_t)alloca1.field9);
 		alloca1.field17 = inet_addr((uint8_t*)0x203160);
-		uint32_t phi5 = alloca1.field6;
 		if (alloca1.field6 == 4294967295)
 		{
 			perror((uint8_t*)0x1beb);
-			phi5 = alloca1.field6;
 		}
 		alloca1.field5 = 16;
-		if (bind(phi5, (struct sockaddr*)&alloca1.field15, 16) == 255)
+		if (bind(alloca1.field6, (struct sockaddr*)&alloca1.field15, 16) == 255)
 		{
 			perror((uint8_t*)0x1bf2);
 		}
@@ -197,23 +189,23 @@ void main(uint64_t arg0, uint64_t arg1, uint64_t arg2)
 				do
 				{
 					alloca1.field10 = accept(alloca1.field6, (struct sockaddr*)&alloca1.field19, &alloca1.field5);
-					anon6 = fork();
-					alloca1.field11 = anon6;
-					if (anon6 == 4294967295)
+					anon5 = fork();
+					alloca1.field11 = anon5;
+					if (anon5 == 4294967295)
 					{
 						perror((uint8_t*)0x1c1d);
 						close(alloca1.field10);
 					}
 				}
-				while (anon6 == 4294967295);
-				if (anon6 >= 1)
+				while (anon5 == 4294967295);
+				if (anon5 >= 1)
 				{
 					close(alloca1.field10);
 				}
 			}
-			while (anon6 >= 1);
+			while (anon5 >= 1);
 		}
-		while (anon6 != 0);
+		while (anon5 != 0);
 		alloca1.field14 = (uint64_t)inet_ntoa(alloca1.field20);
 		printf((uint8_t*)0x1c22);
 		dup2(alloca1.field10, 1);

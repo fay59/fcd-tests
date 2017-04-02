@@ -10,44 +10,37 @@ void _init(uint64_t arg0)
 }
 void main(uint64_t arg0)
 {
-	uint32_t anon6;
+	uint32_t anon3;
 	struct _IO_FILE* anon1 = fopen((uint8_t*)0x400736, (uint8_t*)0x400734);
-	uint64_t phi2 = 0;
+	uint64_t phi_in2 = 0;
 	do
 	{
-		uint64_t phi_in4;
-		uint64_t phi3 = phi_in4;
-		uint64_t phi_in5 = phi2;
-		anon6 = _IO_getc(anon1);
-		phi2 = phi_in5;
-		uint32_t phi7 = anon6;
-		if (anon6 != 255)
+		anon3 = _IO_getc(anon1);
+		uint32_t phi_in4 = anon3;
+		uint32_t anon5 = phi_in4 - 74;
+		if (anon3 != 255 && anon5 < 16)
 		{
-			phi_in4 = phi3;
-			uint32_t anon8 = phi7 - 74;
-			if (anon8 < 16)
+			uint64_t phi_in6;
+			if ((uint32_t)phi_in2 == 1)
 			{
-				if ((uint32_t)phi2 == 1)
+				_IO_putc(anon5 << 4 | (uint32_t)phi_in6 - 74, *(struct _IO_FILE**)0x600ac0);
+				phi_in6 = phi_in6 & 0xffffffff;
+				phi_in2 = phi_in2 & 0xffffffffffffff00;
+			}
+			else 
+			{
+				uint32_t anon7 = _IO_getc(anon1);
+				phi_in6 = (__zext uint64_t)phi_in4;
+				phi_in2 = 1;
+				phi_in4 = anon7;
+				if (anon7 == 255)
 				{
-					_IO_putc(anon8 << 4 | (uint32_t)phi3 - 74, *(struct _IO_FILE**)0x600ac0);
-					phi_in4 = phi3 & 0xffffffff;
-					phi2 = phi2 & 0xffffffffffffff00;
-				}
-				else 
-				{
-					uint32_t anon9 = _IO_getc(anon1);
-					phi3 = (__zext uint64_t)phi7;
-					phi2 = 1;
-					phi7 = anon9;
-					if (anon9 == 255)
-					{
-						break;
-					}
+					break;
 				}
 			}
 		}
 	}
-	while (anon6 != 255);
+	while (anon3 != 255);
 	exit(0);
 }
 void _start(uint64_t arg0, uint64_t arg1, uint64_t arg2)

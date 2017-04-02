@@ -10,7 +10,7 @@ void _init(uint64_t arg0)
 }
 void main(uint64_t arg0)
 {
-	uint32_t phi3;
+	uint32_t phi_in3;
 	do
 	{
 		while (true)
@@ -22,7 +22,7 @@ void main(uint64_t arg0)
 				*anon1 = 1;
 				anon2 = (uint32_t*)0x600d38;
 				srand((uint32_t)time((uint64_t*)(__zext uint64_t)*anon2));
-				phi3 = *anon1;
+				phi_in3 = *anon1;
 				break;
 			}
 			else 
@@ -30,20 +30,20 @@ void main(uint64_t arg0)
 				uint32_t anon4 = rand();
 				uint32_t anon5 = *anon1 + 1;
 				*anon1 = anon5;
-				uint64_t phi6 = 6294568;
+				uint64_t phi_in6 = 6294568;
 				if ((uint32_t)((__sext int64_t)anon4 % (__sext int64_t)*anon1) == 0)
 				{
-					phi6 = ((__sext int64_t)anon5 << 2) + 6294336;
+					phi_in6 = ((__sext int64_t)anon5 << 2) + 6294336;
 				}
-				if ((uint32_t)(uint64_t)gets((uint8_t*)phi6) == 0)
+				if ((uint32_t)(uint64_t)gets((uint8_t*)phi_in6) == 0)
 				{
-					phi3 = puts((uint8_t*)(((__sext int64_t)*anon2 << 2) + 6294336)) & *anon2;
+					phi_in3 = puts((uint8_t*)(((__sext int64_t)*anon2 << 2) + 6294336)) & *anon2;
 					break;
 				}
 			}
 		}
 	}
-	while (phi3 != 0);
+	while (phi_in3 != 0);
 	return;
 }
 void _start(uint64_t arg0, uint64_t arg1, uint64_t arg2)

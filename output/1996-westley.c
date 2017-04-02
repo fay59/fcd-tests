@@ -12,12 +12,12 @@ void main(uint64_t arg0, uint64_t arg1, uint64_t arg2)
 {
 	uint64_t** anon1 = (uint64_t**)arg2;
 	time(*anon1);
-	uint64_t phi2 = arg1;
-	uint64_t anon3 = phi2 + (phi2 >> 31 & 1) << 32 >> 33;
+	uint64_t phi_in2 = arg1;
+	uint64_t anon3 = phi_in2 + (phi_in2 >> 31 & 1) << 32 >> 33;
 	while (anon3 != 0)
 	{
 		*(uint8_t*)(*(uint64_t*)(arg2 + 32) + (__sext int64_t)*(uint8_t*)(*(uint64_t*)((anon3 << 3) + arg2) + (__sext int64_t)*(uint32_t*)(((uint64_t)localtime(*anon1) << 32 >> 32) + (anon3 << 2)))) = *(uint8_t*)(*(uint64_t*)(arg2 + 24) + (anon3 & 0xffffffff));
-		phi2 = anon3;
+		phi_in2 = anon3;
 	}
 	__indirect_jump(*(uint64_t*)0x6009f0);
 }
