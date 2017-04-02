@@ -17,7 +17,7 @@ void main(uint64_t arg0, uint64_t arg1, uint64_t arg2, uint64_t arg3, uint64_t a
 	uint32_t anon14;
 	uint64_t anon15;
 	alloca1.field5 = arg0;
-	uint64_t phi_in2 = arg4 & 0xffffffff;
+	uint64_t phi2 = arg4 & 0xffffffff;
 	uint64_t phi_in3 = arg6 & 0xffffffff;
 	uint64_t phi_in4 = arg5 & 0xffffffff;
 	uint64_t phi_in5 = arg2 & 0xffffffff;
@@ -37,7 +37,7 @@ void main(uint64_t arg0, uint64_t arg1, uint64_t arg2, uint64_t arg3, uint64_t a
 				{
 					alloca1.field1 = anon9;
 					uint64_t anon10 = strtol(*(uint8_t**)arg3, null, 10);
-					phi_in2 = strtol(*(uint8_t**)(arg3 + 8), null, 10) & 0xffffffff;
+					phi2 = strtol(*(uint8_t**)(arg3 + 8), null, 10) & 0xffffffff;
 					phi_in3 = anon10 & 0xffffffff;
 					phi_in4 = 1;
 					uint32_t anon11 = ~alloca1.field1 - alloca1.field1;
@@ -46,7 +46,7 @@ void main(uint64_t arg0, uint64_t arg1, uint64_t arg2, uint64_t arg3, uint64_t a
 				}
 			}
 			while (phi8 > anon9);
-			phi_in2 = 2;
+			phi2 = 2;
 			phi_in3 = 0;
 			anon13 = phi12 & 0xffffffffffff00ff | (__zext uint64_t)(phi8 == 0) << 8;
 			phi12 = anon13;
@@ -60,7 +60,7 @@ void main(uint64_t arg0, uint64_t arg1, uint64_t arg2, uint64_t arg3, uint64_t a
 		{
 			uint32_t phi_in17;
 			anon15 = (uint64_t)&alloca1;
-			main(4195888, anon15, 0, arg3, phi_in2, phi_in4, (__zext uint64_t)-phi8);
+			main(4195888, anon15, 0, arg3, phi2, phi_in4, (__zext uint64_t)-phi8);
 			uint64_t phi_in16 = 1;
 			uint32_t anon18 = (uint32_t)phi7;
 			phi_in17 = anon18;
@@ -85,10 +85,10 @@ void main(uint64_t arg0, uint64_t arg1, uint64_t arg2, uint64_t arg3, uint64_t a
 		uint32_t* anon21 = (uint32_t*)(arg1 - 72);
 		*anon21 = anon9;
 		uint64_t anon22 = phi_in3 & 0xffffffff;
-		main(4195952, anon15, (__zext uint64_t)phi8, arg3, phi_in2, phi_in4 << 32 >> 32 >> 1 & 0xffffffff, anon22);
+		main(4195952, anon15, (__zext uint64_t)phi8, arg3, phi2, phi_in4 << 32 >> 32 >> 1 & 0xffffffff, anon22);
 		uint64_t anon23 = (__zext uint64_t)((uint32_t)phi7 - anon14 - *anon21);
 		main(4195982, anon15, anon23, arg3, 0, 0, anon22);
-		main(4196002, anon15, anon23, arg3, phi_in2, 0, anon22);
+		main(4196002, anon15, anon23, arg3, phi2, 0, anon22);
 	}
 	return;
 }

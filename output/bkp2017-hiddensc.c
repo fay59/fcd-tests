@@ -95,10 +95,16 @@ void privdrop(uint64_t arg0, uint64_t arg1)
 				if (!__undefined)
 				{
 					uint8_t* anon6;
-					if (anon5 <= 4294967295 && anon3 > 4294967295 && anon4 > 4294967295)
+					if (anon3 > 4294967295)
 					{
-						anon6 = (uint8_t*)0x1b60;
-						errx(4294967295, anon6);
+						if (anon4 > 4294967295)
+						{
+							if (anon5 <= 4294967295)
+							{
+								anon6 = (uint8_t*)0x1b60;
+								errx(4294967295, anon6);
+							}
+						}
 					}
 					if (anon3 <= 4294967295 || anon4 <= 4294967295)
 					{

@@ -1,1 +1,17 @@
 Assertion failed: (Ty && "Invalid GetElementPtrInst indices for type!"), function checkGEPType, file llvm/include/llvm/IR/Instructions.h, line 823.
+Stack dump:
+0.	Optimizing LLVM IR
+1.	Running pass 'Identify locals' on module '1993-ant'.
+0  fcd                      0x000000010a2c5e68 llvm::sys::PrintStackTrace(llvm::raw_ostream&) + 40
+1  fcd                      0x000000010a2c6426 SignalHandler(int) + 358
+2  libsystem_platform.dylib 0x00007fff909e652a _sigtramp + 26
+3  libsystem_platform.dylib 0x00007fff56ebf9c0 _sigtramp + 3326973104
+4  libsystem_c.dylib        0x00007fff9c7576df abort + 129
+5  libsystem_c.dylib        0x00007fff9c71edd8 basename + 0
+6  fcd                      0x0000000108d982d5 llvm::GetElementPtrInst::getGEPReturnType(llvm::Type*, llvm::Value*, llvm::ArrayRef<llvm::Value*>) + 245
+7  fcd                      0x0000000109e453ea llvm::GetElementPtrInst::Create(llvm::Type*, llvm::Value*, llvm::ArrayRef<llvm::Value*>, llvm::Twine const&, llvm::Instruction*) + 122
+8  fcd                      0x0000000108d8f954 (anonymous namespace)::IdentifyLocals::runOnModule(llvm::Module&) + 5016
+9  fcd                      0x0000000109e9b04a llvm::legacy::PassManagerImpl::run(llvm::Module&) + 938
+10 fcd                      0x0000000108db5f6a main + 13598
+11 libdyld.dylib            0x00007fff919285ad start + 1
+12 libdyld.dylib            0x000000000000000a start + 1852668510

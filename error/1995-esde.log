@@ -1,1 +1,16 @@
 Assertion failed: (front == 0 || back == 0 || signbit(front) == signbit(back)), function readObject, file /Users/travis/build/zneak/fcd/fcd/pass_locals.cpp, line 939.
+Stack dump:
+0.	Optimizing LLVM IR
+1.	Running pass 'Identify locals' on module '1995-esde'.
+0  fcd                      0x000000010946fe68 llvm::sys::PrintStackTrace(llvm::raw_ostream&) + 40
+1  fcd                      0x0000000109470426 SignalHandler(int) + 358
+2  libsystem_platform.dylib 0x00007fff909e652a _sigtramp + 26
+3  libsystem_platform.dylib 0x00007fff57d158b0 _sigtramp + 3342005152
+4  libsystem_c.dylib        0x00007fff9c7576df abort + 129
+5  libsystem_c.dylib        0x00007fff9c71edd8 basename + 0
+6  fcd                      0x0000000107f3af58 (anonymous namespace)::IdentifyLocals::readObject(llvm::Value&, (anonymous namespace)::StackObject*) + 2022
+7  fcd                      0x0000000107f3872c (anonymous namespace)::IdentifyLocals::runOnModule(llvm::Module&) + 368
+8  fcd                      0x000000010904504a llvm::legacy::PassManagerImpl::run(llvm::Module&) + 938
+9  fcd                      0x0000000107f5ff6a main + 13598
+10 libdyld.dylib            0x00007fff919285ad start + 1
+11 libdyld.dylib            0x000000000000000a start + 1852668510
